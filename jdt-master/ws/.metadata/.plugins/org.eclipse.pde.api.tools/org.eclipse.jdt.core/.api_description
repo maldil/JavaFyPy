@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.jdt.core" modificationStamp="12018" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.jdt.core/batch&lt;org.eclipse.jdt.core.compiler.batch"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTNode.java[ASTNode" modificationStamp="12269" restrictions="2" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.jdom"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.jdt.core/formatter&lt;org.eclipse.jdt.core.formatter"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.eval"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.jdt.core/batch&lt;org.eclipse.jdt.core.compiler"/>
+        <fragment handle="=org.eclipse.jdt.core/compiler&lt;org.eclipse.jdt.core.compiler"/>
+        <fragment handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.compiler"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.jdt.core/antadapter&lt;org.eclipse.jdt.core"/>
+        <fragment handle="=org.eclipse.jdt.core/batch&lt;org.eclipse.jdt.core"/>
+        <fragment handle="=org.eclipse.jdt.core/compiler&lt;org.eclipse.jdt.core"/>
+        <fragment handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core"/>
+        <fragment handle="=org.eclipse.jdt.core/formatter&lt;org.eclipse.jdt.core"/>
+        <fragment handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core"/>
+        <fragment handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.index"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom.rewrite"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search"/>
+    </package>
+</component>

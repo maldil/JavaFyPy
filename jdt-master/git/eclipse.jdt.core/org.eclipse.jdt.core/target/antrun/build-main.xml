@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <replace dir="/Users/malinda/Documents/Research_Topic_2/eclips_workspace_cpat_new/jdt-master/git/eclipse.jdt.core/org.eclipse.jdt.core/target/classes" value="${buildQualifier}," token="bundle_qualifier,">
+      <include name="org/eclipse/jdt/internal/compiler/batch/messages.properties" />
+    </replace>
+    <replace dir="/Users/malinda/Documents/Research_Topic_2/eclips_workspace_cpat_new/jdt-master/git/eclipse.jdt.core/org.eclipse.jdt.core/target/classes" value="${unqualifiedVersion}" token="bundle_version">
+      <include name="org/eclipse/jdt/internal/compiler/batch/messages.properties" />
+    </replace>
+  </target>
+</project>
