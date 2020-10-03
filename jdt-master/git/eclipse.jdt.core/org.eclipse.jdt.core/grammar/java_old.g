@@ -1337,6 +1337,8 @@ Statement -> IfThenStatement
 Statement -> IfThenElseStatement
 Statement -> WhileStatement
 Statement -> ForStatement
+Statement -> WithStatement
+
 -----------------------------------------------
 -- 1.5 feature
 -----------------------------------------------
@@ -1349,6 +1351,7 @@ StatementNoShortIf -> LabeledStatementNoShortIf
 StatementNoShortIf -> IfThenElseStatementNoShortIf
 StatementNoShortIf -> WhileStatementNoShortIf
 StatementNoShortIf -> ForStatementNoShortIf
+StatementNoShortIf -> WithStatementNoShortIf
 -----------------------------------------------
 -- 1.5 feature
 -----------------------------------------------
@@ -1512,6 +1515,15 @@ ForStatement ::= 'for' '(' ForInitopt ';' Expressionopt ';' ForUpdateopt ')' Sta
 ForStatementNoShortIf ::= 'for' '(' ForInitopt ';' Expressionopt ';' ForUpdateopt ')' StatementNoShortIf
 /.$putCase consumeStatementFor() ; $break ./
 /:$readableName ForStatement:/
+
+WithStatement ::= 'with' '(' Expression ')' Statement
+/.$putCase consumeStatementWith() ; $break ./
+/:$readableName WithStatement:/
+
+WithStatementNoShortIf ::= 'with' '(' Expression ')' StatementNoShortIf
+/.$putCase consumeStatementWith() ; $break ./
+/:$readableName WithStatement:/
+
 
 --the minus one allows to avoid a stack-to-stack transfer
 ForInit ::= StatementExpressionList
