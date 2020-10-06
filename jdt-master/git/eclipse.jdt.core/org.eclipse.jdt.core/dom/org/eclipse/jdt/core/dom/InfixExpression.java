@@ -128,6 +128,7 @@ public class InfixExpression extends Expression {
 		public static final Operator CONDITIONAL_AND = new Operator("&&");//$NON-NLS-1$
 		public static final Operator POW = new Operator("^");//$NON-NLS-1$
 		public static final Operator FLOORDIV = new InfixExpression.Operator("//");
+		public static final Operator IN = new Operator("in");
 		/**
 		 * Map from token to operator (key type: <code>String</code>;
 		 * value type: <code>Operator</code>).
@@ -157,6 +158,7 @@ public class InfixExpression extends Expression {
 					CONDITIONAL_AND,
 					POW,
 					FLOORDIV,
+					IN,
 				};
 			for (int i = 0; i < ops.length; i++) {
 				CODES.put(ops[i].toString(), ops[i]);

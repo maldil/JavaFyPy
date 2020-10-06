@@ -12752,6 +12752,7 @@ protected void parse() {
 	this.hasReportedError = false;
 	int act = START_STATE;
 	this.unstackedAct = ERROR_ACTION;
+	this.unstackedAct = ERROR_ACTION;
 	this.stateStackTop = -1;
 	this.currentToken = getFirstToken();
 

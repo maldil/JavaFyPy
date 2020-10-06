@@ -49,7 +49,7 @@ public class JavadocQualifiedTypeReference extends QualifiedTypeReference implem
 		TypeBinding type = this.resolvedType = getTypeBinding(scope);
 		// End resolution when getTypeBinding(scope) returns null. This may happen in
 		// certain circumstances, typically when an illegal access is done on a type
-		// variable (see bug https://bugs.eclipse.org/bugs/show_bug.cgi?id=204749)
+		// variable (see bug https://bugs.eclipse.org/bugs/show_bug.cgi?id=749)
 		if (type == null) return null;
 		if (!type.isValidBinding()) {
 			Binding binding = scope.getTypeOrPackage(this.tokens);

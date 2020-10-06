@@ -3,7 +3,7 @@ Main-Class: org.eclipse.jdt.internal.compiler.batch.Main
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: org.eclipse.jdt.core; singleton:=true
-Bundle-Version: 3.24.0.v20201001-1837
+Bundle-Version: 3.24.0.v20201003-0422
 Bundle-Activator: org.eclipse.jdt.core.JavaCore
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
@@ -74,5 +74,5 @@ Bundle-ActivationPolicy: lazy
 Automatic-Module-Name: org.eclipse.jdt.core
 Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/jdt/ecli
  pse.jdt.core.git;path="jdt-master/git/eclipse.jdt.core/org.eclipse.jdt.
- core";commitId=cda8ddec35aae7e48bd2e11c474e3d9bd3e15af4
+ core";commitId=3874eb32978b8a18e0468b80ce8436e7e6abfaf8
 
