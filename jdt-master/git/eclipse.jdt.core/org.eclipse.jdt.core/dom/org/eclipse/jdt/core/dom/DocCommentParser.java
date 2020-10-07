@@ -668,6 +668,7 @@ class DocCommentParser extends AbstractCommentParser {
 			case TerminalTokens.TokenNamevoid:
 			case TerminalTokens.TokenNamevolatile:
 			case TerminalTokens.TokenNamewhile:
+			case TerminalTokens.TokenNamewithstmt:
 			case TerminalTokens.TokenNameenum :
 			case TerminalTokens.TokenNameconst :
 			case TerminalTokens.TokenNamegoto :

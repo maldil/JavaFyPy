@@ -4286,6 +4286,7 @@ public static boolean isKeyword(int token) {
 		case TerminalTokens.TokenNamevoid:
 		case TerminalTokens.TokenNamevolatile:
 		case TerminalTokens.TokenNamewhile:
+		case TerminalTokens.TokenNamewithstmt:
 			return true;
 		default:
 			return false;

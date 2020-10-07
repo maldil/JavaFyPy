@@ -3184,6 +3184,9 @@ public final class AST {
 	 * a JLS2 AST
 	 * @since 3.1
 	 */
+	public PyWithStatement newPyWithStatement () {return new PyWithStatement(this);}
+
+
 	public WildcardType newWildcardType() {
 		WildcardType result = new WildcardType(this);
 		return result;

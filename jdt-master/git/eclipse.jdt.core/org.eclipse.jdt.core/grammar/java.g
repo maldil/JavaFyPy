@@ -48,7 +48,7 @@ $Terminals
 	interface long native new non-sealed null package private
 	protected public return short static strictfp super switch
 	synchronized this throw throws transient true try void
-	volatile while module open requires transitive exports opens to uses provides with
+	volatile while module open requires transitive exports opens to uses provides with withstmt
 
 	IntegerLiteral
 	LongLiteral
@@ -1337,7 +1337,7 @@ Statement -> IfThenStatement
 Statement -> IfThenElseStatement
 Statement -> WhileStatement
 Statement -> ForStatement
-Statement -> WithStatement
+Statement -> WithstmtStatement
 
 -----------------------------------------------
 -- 1.5 feature
@@ -1351,7 +1351,7 @@ StatementNoShortIf -> LabeledStatementNoShortIf
 StatementNoShortIf -> IfThenElseStatementNoShortIf
 StatementNoShortIf -> WhileStatementNoShortIf
 StatementNoShortIf -> ForStatementNoShortIf
-StatementNoShortIf -> WithStatementNoShortIf
+StatementNoShortIf -> WithstmtStatementNoShortIf
 -----------------------------------------------
 -- 1.5 feature
 -----------------------------------------------
@@ -1516,13 +1516,13 @@ ForStatementNoShortIf ::= 'for' '(' ForInitopt ';' Expressionopt ';' ForUpdateop
 /.$putCase consumeStatementFor() ; $break ./
 /:$readableName ForStatement:/
 
-WithStatement ::= 'with' '(' Expression ')' Statement
-/.$putCase consumeStatementWith() ; $break ./
-/:$readableName WithStatement:/
+WithstmtStatement ::= 'withstmt' '(' Expression ')' Statement
+/.$putCase consumeStatementWithstmt() ; $break ./
+/:$readableName WithstmtStatement:/
 
-WithStatementNoShortIf ::= 'with' '(' Expression ')' StatementNoShortIf
-/.$putCase consumeStatementWith() ; $break ./
-/:$readableName WithStatement:/
+WithstmtStatementNoShortIf ::= 'withstmt' '(' Expression ')' StatementNoShortIf
+/.$putCase consumeStatementWithstmt() ; $break ./
+/:$readableName WithstmtStatement:/
 
 
 --the minus one allows to avoid a stack-to-stack transfer

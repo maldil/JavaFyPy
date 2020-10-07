@@ -1,28 +1,28 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?artifactRepository version='1.1.0'?>
 <artifacts size='5'>
-  <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core' version='3.24.0.v20201003-0422'>
+  <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core' version='3.24.0.v20201006-2012'>
     <properties size='6'>
-      <property name='artifact.size' value='6964225'/>
-      <property name='download.size' value='6964225'/>
+      <property name='artifact.size' value='6967012'/>
+      <property name='download.size' value='6967012'/>
       <property name='maven-groupId' value='org.eclipse.jdt'/>
       <property name='maven-artifactId' value='org.eclipse.jdt.core'/>
       <property name='maven-version' value='3.24.0-SNAPSHOT'/>
-      <property name='download.stats' value='org.eclipse.jdt.core/3.24.0.v20201003-0422'/>
+      <property name='download.stats' value='org.eclipse.jdt.core/3.24.0.v20201006-2012'/>
     </properties>
   </artifact>
-  <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core.source' version='3.24.0.v20201003-0422'>
+  <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core.source' version='3.24.0.v20201006-2012'>
     <properties size='7'>
-      <property name='artifact.size' value='5251563'/>
-      <property name='download.size' value='5251563'/>
+      <property name='artifact.size' value='5253369'/>
+      <property name='download.size' value='5253369'/>
       <property name='maven-groupId' value='org.eclipse.jdt'/>
       <property name='maven-artifactId' value='org.eclipse.jdt.core'/>
       <property name='maven-version' value='3.24.0-SNAPSHOT'/>
       <property name='maven-classifier' value='sources'/>
-      <property name='download.stats' value='org.eclipse.jdt.core.source/3.24.0.v20201003-0422'/>
+      <property name='download.stats' value='org.eclipse.jdt.core.source/3.24.0.v20201006-2012'/>
     </properties>
   </artifact>
-  <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core.ant.compiler.adapter' version='3.24.0.v20201003-0422'>
+  <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core.ant.compiler.adapter' version='3.24.0.v20201006-2012'>
     <properties size='7'>
       <property name='artifact.size' value='12604'/>
       <property name='download.size' value='12604'/>
@@ -30,29 +30,29 @@
       <property name='maven-artifactId' value='org.eclipse.jdt.core'/>
       <property name='maven-version' value='3.24.0-SNAPSHOT'/>
       <property name='maven-classifier' value='antadapter'/>
-      <property name='download.stats' value='org.eclipse.jdt.core.ant.compiler.adapter/3.24.0.v20201003-0422'/>
+      <property name='download.stats' value='org.eclipse.jdt.core.ant.compiler.adapter/3.24.0.v20201006-2012'/>
     </properties>
   </artifact>
-  <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core.compiler.batch.source' version='3.24.0.v20201003-0422'>
+  <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core.compiler.batch.source' version='3.24.0.v20201006-2012'>
     <properties size='7'>
-      <property name='artifact.size' value='2176257'/>
-      <property name='download.size' value='2176257'/>
+      <property name='artifact.size' value='2176367'/>
+      <property name='download.size' value='2176367'/>
       <property name='maven-groupId' value='org.eclipse.jdt'/>
       <property name='maven-artifactId' value='org.eclipse.jdt.core'/>
       <property name='maven-version' value='3.24.0-SNAPSHOT'/>
       <property name='maven-classifier' value='batch-compiler-src'/>
-      <property name='download.stats' value='org.eclipse.jdt.core.compiler.batch.source/3.24.0.v20201003-0422'/>
+      <property name='download.stats' value='org.eclipse.jdt.core.compiler.batch.source/3.24.0.v20201006-2012'/>
     </properties>
   </artifact>
-  <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core.compiler.batch' version='3.24.0.v20201003-0422'>
+  <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core.compiler.batch' version='3.24.0.v20201006-2012'>
     <properties size='7'>
-      <property name='artifact.size' value='2712226'/>
-      <property name='download.size' value='2712226'/>
+      <property name='artifact.size' value='2712323'/>
+      <property name='download.size' value='2712323'/>
       <property name='maven-groupId' value='org.eclipse.jdt'/>
       <property name='maven-artifactId' value='org.eclipse.jdt.core'/>
       <property name='maven-version' value='3.24.0-SNAPSHOT'/>
       <property name='maven-classifier' value='batch-compiler'/>
-      <property name='download.stats' value='org.eclipse.jdt.core.compiler.batch/3.24.0.v20201003-0422'/>
+      <property name='download.stats' value='org.eclipse.jdt.core.compiler.batch/3.24.0.v20201006-2012'/>
     </properties>
   </artifact>
 </artifacts>

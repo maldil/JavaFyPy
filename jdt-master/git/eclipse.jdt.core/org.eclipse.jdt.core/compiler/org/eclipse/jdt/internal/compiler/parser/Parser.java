@@ -7581,12 +7581,12 @@ protected void consumeRule(int act) {
 		    consumeStatementFor() ;
 			break;
 
-    case 459 : if (DEBUG) { System.out.println("WithStatement ::= with LPAREN Expression RPAREN..."); }  //$NON-NLS-1$
-		    consumeStatementWith() ;
+    case 459 : if (DEBUG) { System.out.println("WithstmtStatement ::= withstmt LPAREN Expression RPAREN"); }  //$NON-NLS-1$
+		    consumeStatementWithstmt() ;
 			break;
 
-    case 460 : if (DEBUG) { System.out.println("WithStatementNoShortIf ::= with LPAREN Expression RPAREN"); }  //$NON-NLS-1$
-		    consumeStatementWith() ;
+    case 460 : if (DEBUG) { System.out.println("WithstmtStatementNoShortIf ::= withstmt LPAREN..."); }  //$NON-NLS-1$
+		    consumeStatementWithstmt() ;
 			break;
 
     case 461 : if (DEBUG) { System.out.println("ForInit ::= StatementExpressionList"); }  //$NON-NLS-1$
@@ -9736,7 +9736,7 @@ protected void consumeStatementTry(boolean withFinally, boolean hasResources) {
 	tryStmt.sourceStart = this.intStack[this.intPtr--];
 	pushOnAstStack(tryStmt);
 }
-protected void consumeStatementWith(){
+protected void consumeStatementWithstmt(){
 	// WithStatement ::= 'with' '(' Expression ')' Statement
 	// WithStatementNoShortIf ::= 'while' '(' Expression ')' StatementNoShortIf
 
@@ -10330,7 +10330,7 @@ protected void consumeToken(int type) {
 		case TokenNameopens:
 		case TokenNameuses:
 		case TokenNameprovides:
-			case TokenNamewith:
+		case TokenNamewithstmt:
 		case TokenNameRestrictedIdentifierYield:
 			pushOnIntStack(this.scanner.startPosition);
 			break;

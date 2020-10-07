@@ -63,6 +63,7 @@ import org.eclipse.jdt.internal.compiler.ast.SuperReference;
 import org.eclipse.jdt.internal.compiler.ast.TypeReference;
 import org.eclipse.jdt.internal.compiler.ast.UnionTypeReference;
 import org.eclipse.jdt.internal.compiler.ast.Wildcard;
+import org.eclipse.jdt.internal.compiler.ast.WithStatement;
 import org.eclipse.jdt.internal.compiler.classfmt.ClassFileConstants;
 import org.eclipse.jdt.internal.compiler.impl.CompilerOptions;
 import org.eclipse.jdt.internal.compiler.lookup.BlockScope;
@@ -2985,6 +2986,9 @@ class ASTConverter {
 		if (statement instanceof org.eclipse.jdt.internal.compiler.ast.TryStatement) {
 			return convert((org.eclipse.jdt.internal.compiler.ast.TryStatement) statement);
 		}
+		if (statement instanceof org.eclipse.jdt.internal.compiler.ast.WithStatement){
+			return convert((org.eclipse.jdt.internal.compiler.ast.WithStatement)statement);
+		}
 		if (statement instanceof org.eclipse.jdt.internal.compiler.ast.TypeDeclaration) {
 			ASTNode result = convert((org.eclipse.jdt.internal.compiler.ast.TypeDeclaration) statement);
 			if (result == null || !(result instanceof TypeDeclaration || result instanceof RecordDeclaration)) {
@@ -3406,6 +3410,17 @@ class ASTConverter {
 				prefixExpression.setOperator(PrefixExpression.Operator.COMPLEMENT);
 		}
 		return prefixExpression;
+	}
+
+	public PyWithStatement convert(org.eclipse.jdt.internal.compiler.ast.WithStatement statement){
+		final PyWithStatement pyWithStatement  = new PyWithStatement(this.ast);
+		pyWithStatement.setSourceRange(statement.sourceStart, statement.sourceEnd - statement.sourceStart + 1);
+		pyWithStatement.setExpression(convert(statement.header));
+		final Statement action = convert(statement.statement);
+		if (action == null) return null;
+		pyWithStatement.setBody(action);
+		return pyWithStatement;
+
 	}
 
 	public WhileStatement convert(org.eclipse.jdt.internal.compiler.ast.WhileStatement statement) {

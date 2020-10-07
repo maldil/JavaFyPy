@@ -1005,6 +1005,7 @@ public abstract class ASTNode {
 	 * @see #getNodeType()
 	 * @since 3.0
 	 */
+	public static final int PY_WITH_STATEMENT = 104;
 	public static Class nodeClassForType(int nodeType) {
 		switch (nodeType) {
 			case ANNOTATION_TYPE_DECLARATION :
@@ -1213,6 +1214,8 @@ public abstract class ASTNode {
 				return WildcardType.class;
 			case YIELD_STATEMENT :
 				return YieldStatement.class;
+			case PY_WITH_STATEMENT:
+				return PyWithStatement.class;
 		}
 		throw new IllegalArgumentException();
 	}

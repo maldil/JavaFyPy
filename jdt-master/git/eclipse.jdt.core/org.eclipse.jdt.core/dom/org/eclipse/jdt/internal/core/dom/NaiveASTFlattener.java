@@ -1996,6 +1996,17 @@ public class NaiveASTFlattener extends ASTVisitor {
 	}
 
 	@Override
+	public boolean visit(PyWithStatement node) {
+		printIndent();
+		this.buffer.append("withstmt (");//$NON-NLS-1$
+		node.getExpression().accept(this);
+		this.buffer.append(") ");//$NON-NLS-1$
+		node.getBody().accept(this);
+		return false;
+	}
+
+
+	@Override
 	public boolean visit(WildcardType node) {
 		visitTypeAnnotations(node);
 		this.buffer.append("?");//$NON-NLS-1$

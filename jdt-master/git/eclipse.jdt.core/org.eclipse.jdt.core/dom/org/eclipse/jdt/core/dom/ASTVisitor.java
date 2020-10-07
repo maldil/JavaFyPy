@@ -1888,6 +1888,9 @@ public abstract class ASTVisitor {
 		return true;
 	}
 
+
+	public boolean visit(PyWithStatement pyWithStatement) {return true; }
+
 	/**
 	 * Visits the given type-specific AST node.
 	 * <p>
@@ -3198,6 +3201,11 @@ public abstract class ASTVisitor {
 		// default implementation: do nothing
 	}
 
+	public void endVisit(PyWithStatement node) {
+		// default implementation: do nothing
+	}
+
+
 	/**
 	 * End of visit the given type-specific AST node.
 	 * <p>
@@ -3223,4 +3231,6 @@ public abstract class ASTVisitor {
 	public void endVisit(YieldStatement node) {
 		// default implementation: do nothing
 	}
+
+
 }

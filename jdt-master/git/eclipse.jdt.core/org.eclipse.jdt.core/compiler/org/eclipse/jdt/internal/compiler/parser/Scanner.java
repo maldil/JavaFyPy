@@ -4171,6 +4171,17 @@ private int internalScanIdentifierOrKeyword(int index, int length, char[] data) 
 					//return TokenNamewidefp ;
 					//else
 					//return TokenNameIdentifier;
+				case 8:
+					if ((data[++index] == 'i')
+							&& (data[++index] == 't')
+							&& (data[++index] == 'h')
+							&& (data[++index] == 's')
+							&& (data[++index] == 't')
+							&& (data[++index] == 'm')
+							&& (data[++index] == 't'))
+						return TokenNamewithstmt;
+					else
+						return TokenNameIdentifier;
 				default :
 					return TokenNameIdentifier;
 			}
@@ -4718,6 +4729,8 @@ public String toStringAction(int act) {
 			return "volatile"; //$NON-NLS-1$
 		case TokenNamewhile :
 			return "while"; //$NON-NLS-1$
+		case TokenNamewithstmt:
+			return "withstmt";
 		case TokenNamemodule :
 			return "module"; //$NON-NLS-1$
 		case TokenNamerequires :
@@ -4943,6 +4956,7 @@ public static boolean isKeyword(int token) {
 		case TerminalTokens.TokenNamevoid:
 		case TerminalTokens.TokenNamevolatile:
 		case TerminalTokens.TokenNamewhile:
+		case TerminalTokens.TokenNamewithstmt:
 			return true;
 		case TerminalTokens.TokenNameRestrictedIdentifierYield:
 		case TerminalTokens.TokenNameRestrictedIdentifierrecord:
@@ -5284,6 +5298,7 @@ protected final boolean maybeAtLambdaOrCast() { // Could the '(' we saw just now
 		case TokenNamefor:
 		case TokenNamesynchronized:
 		case TokenNametry:
+		case TokenNamewithstmt:
 			return false; // not a viable prefix for cast or lambda.
 		default:
 			return this.activeParser.atConflictScenario(TokenNameLPAREN);
@@ -5745,6 +5760,7 @@ public int fastForward(Statement unused) {
 			case TokenNamevoid:
 			case TokenNamevolatile:
 			case TokenNamewhile:
+			case TokenNamewithstmt:
 			case TokenNameIntegerLiteral: // ??!
 			case TokenNameLongLiteral:
 			case TokenNameFloatingPointLiteral:
