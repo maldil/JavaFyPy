@@ -104,6 +104,7 @@ public interface TerminalTokens {
 							TokenNameprovides = 127,
 							TokenNamewith = 133,
 							TokenNamewithstmt = 89,
+							TokenNamein = 136,
 							TokenNameIntegerLiteral = 55,
 							TokenNameLongLiteral = 56,
 							TokenNameFloatingPointLiteral = 57,
@@ -173,5 +174,5 @@ public interface TerminalTokens {
 							TokenNameRestrictedIdentifiersealed = 41,
 							TokenNameRestrictedIdentifierpermits = 128,
 							TokenNameEOF = 64,
-							TokenNameERROR = 136;
+							TokenNameERROR = 137;
 }

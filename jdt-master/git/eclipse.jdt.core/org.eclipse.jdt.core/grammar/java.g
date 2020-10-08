@@ -48,7 +48,7 @@ $Terminals
 	interface long native new non-sealed null package private
 	protected public return short static strictfp super switch
 	synchronized this throw throws transient true try void
-	volatile while module open requires transitive exports opens to uses provides with withstmt
+	volatile while module open requires transitive exports opens to uses provides with withstmt in
 
 	IntegerLiteral
 	LongLiteral
@@ -1229,6 +1229,11 @@ CompactConstructorHeaderName ::= Modifiersopt TypeParameters 'Identifier'
 InstanceofExpression -> RelationalExpression
 InstanceofExpression ::= InstanceofExpression 'instanceof' TypeOrPattern
 /.$putCase consumeInstanceOfExpression(); $break ./
+/:$readableName Expression:/
+
+InExpression -> RelationalExpression
+InExpression ::= InExpression 'in' Name
+/.$putCase consumeInExpression(); $break ./
 /:$readableName Expression:/
 
 TypeOrPattern -> Type
@@ -2418,6 +2423,7 @@ EnhancedForStatementHeader ::= EnhancedForStatementHeaderInit ':' Expression ')'
 /:$readableName EnhancedForStatementHeader:/
 /:$compliance 1.5:/
 
+
 -----------------------------------------------
 -- 1.5 features : static imports
 -----------------------------------------------
@@ -2747,6 +2753,15 @@ InstanceofExpression_NotName ::= Name 'instanceof' TypeOrPattern
 InstanceofExpression_NotName ::= InstanceofExpression_NotName 'instanceof' TypeOrPattern
 /.$putCase consumeInstanceOfExpression(); $break ./
 /:$readableName Expression:/
+
+
+InExpression_NotName -> RelationalExpression_NotName
+InExpression_NotName ::= Name 'in' Name
+/.$putCase consumeInExpressionWithName(); $break ./
+InExpression_NotName ::= InExpression_NotName 'in' Name
+/.$putCase consumeInExpression(); $break ./
+/:$readableName Expression:/
+
 
 EqualityExpression_NotName -> InstanceofExpression_NotName
 EqualityExpression_NotName ::= EqualityExpression_NotName '==' InstanceofExpression

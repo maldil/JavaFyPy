@@ -4426,6 +4426,9 @@ protected void consumeToken(int token) {
 			case TokenNameinstanceof:
 				pushOnElementStack(K_BINARY_OPERATOR, INSTANCEOF);
 				break;
+			case TokenNamein:
+				pushOnElementStack(K_BINARY_OPERATOR, IN);
+				break;
 			case TokenNameQUESTION:
 				if(previous != TokenNameLESS && previous != TokenNameCOMMA) {
 					pushOnElementStack(K_CONDITIONAL_OPERATOR, QUESTION);

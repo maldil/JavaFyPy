@@ -1177,6 +1177,7 @@ public abstract class AbstractCommentParser implements JavadocTagConstants {
 				case TerminalTokens.TokenNamevoid:
 				case TerminalTokens.TokenNamevolatile:
 				case TerminalTokens.TokenNamewhile:
+				case TerminalTokens.TokenNamein:
 					if (iToken == 0) {
 						pushIdentifier(true, true);
 						primitiveToken = token;

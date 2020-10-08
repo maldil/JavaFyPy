@@ -3746,6 +3746,8 @@ private int internalScanIdentifierOrKeyword(int index, int length, char[] data) 
 				case 2 :
 					if (data[++index] == 'f')
 						return TokenNameif;
+					else if ( data[index] == 'n')
+						return TokenNamein;
 					else
 						return TokenNameIdentifier;
 				case 3 :
@@ -4737,7 +4739,8 @@ public String toStringAction(int act) {
 			return "requires"; //$NON-NLS-1$
 		case TokenNameexports :
 			return "exports"; //$NON-NLS-1$
-
+		case TokenNamein:
+			return "in";
 		case TokenNameIntegerLiteral :
 			return "Integer(" + new String(getCurrentTokenSource()) + ")"; //$NON-NLS-1$ //$NON-NLS-2$
 		case TokenNameLongLiteral :
@@ -4852,6 +4855,8 @@ public String toStringAction(int act) {
 			return "EOF"; //$NON-NLS-1$
 		case TokenNameWHITESPACE :
 			return "white_space(" + new String(getCurrentTokenSource()) + ")"; //$NON-NLS-1$ //$NON-NLS-2$
+		case TokenNamein:
+			return  "in";
 		default :
 			return "not-a-token"; //$NON-NLS-1$
 	}
@@ -4957,6 +4962,7 @@ public static boolean isKeyword(int token) {
 		case TerminalTokens.TokenNamevolatile:
 		case TerminalTokens.TokenNamewhile:
 		case TerminalTokens.TokenNamewithstmt:
+		case TerminalTokens.TokenNamein:
 			return true;
 		case TerminalTokens.TokenNameRestrictedIdentifierYield:
 		case TerminalTokens.TokenNameRestrictedIdentifierrecord:
@@ -5336,6 +5342,7 @@ protected final boolean maybeAtReferenceExpression() { // Did the '<' we saw jus
 				case TokenNameAT:         // @Deprecated <T> void foo() {}
 				case TokenNameinstanceof: // if (o instanceof List<E>[])
 				case TokenNamedefault:
+				case TokenNamein:
 					return false;
 				default:
 					break;
@@ -5364,6 +5371,7 @@ private final boolean maybeAtEllipsisAnnotationsStart() { // Did the '@' we saw 
 		case TokenNameLESS:
 		case TokenNameAND:
 		case TokenNamethrows:
+		case TokenNamein:
 			return false;
 		default:
 			return true;

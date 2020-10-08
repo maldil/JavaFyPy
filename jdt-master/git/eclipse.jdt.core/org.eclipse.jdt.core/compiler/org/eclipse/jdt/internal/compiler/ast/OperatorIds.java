@@ -43,4 +43,5 @@ public interface OperatorIds {
 	public static final int INSTANCEOF = 31;
 	public static final int PLUS_PLUS = 32;
 	public static final int MINUS_MINUS = 33;
+	public static final int IN = 34;
 }

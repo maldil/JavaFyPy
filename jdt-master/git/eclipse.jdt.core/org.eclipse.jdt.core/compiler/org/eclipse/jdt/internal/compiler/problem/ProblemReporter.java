@@ -5142,6 +5142,7 @@ private boolean isKeyword(int token) {
 		case TerminalTokens.TokenNamevolatile:
 		case TerminalTokens.TokenNamewhile:
 		case TerminalTokens.TokenNamewithstmt:
+		case TerminalTokens.TokenNamein:
 			return true;
 		case TerminalTokens.TokenNameRestrictedIdentifierYield:
 		case TerminalTokens.TokenNameRestrictedIdentifierrecord:
