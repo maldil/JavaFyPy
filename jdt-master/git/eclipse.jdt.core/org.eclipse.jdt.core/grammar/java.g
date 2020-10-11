@@ -1232,10 +1232,10 @@ InstanceofExpression ::= InstanceofExpression 'instanceof' TypeOrPattern
 /:$readableName Expression:/
 
 --Python in Nodes
-InExpression -> RelationalExpression
-InExpression ::= InExpression 'in' Expression
-/.$putCase consumeInExpression(); $break ./
-/:$readableName Expression:/
+--InExpression -> RelationalExpression
+--InExpression ::= InExpression 'in' Expression
+--/.$putCase consumeInExpression(); $break ./
+--/:$readableName Expression:/
 
 TypeOrPattern -> Type
 TypeOrPattern -> Pattern
@@ -2127,16 +2127,15 @@ EqualityExpression ::= EqualityExpression '!=' InstanceofExpression
 
 
 -- Python in Nodes
-EqualityExpression -> InExpression
-EqualityExpression ::= EqualityExpression '==' InExpression
-/.$putCase consumeEqualityExpression(OperatorIds.EQUAL_EQUAL); $break ./
-EqualityExpression ::= EqualityExpression '!=' InExpression
-/.$putCase consumeEqualityExpression(OperatorIds.NOT_EQUAL); $break ./
+InExpression -> EqualityExpression
+InExpression ::= InExpression 'in' EqualityExpression
+/.$putCase consumeInExpression(); $break ./
 /:$readableName Expression:/
 
 
-AndExpression -> EqualityExpression
-AndExpression ::= AndExpression '&' EqualityExpression
+
+AndExpression -> InExpression
+AndExpression ::= AndExpression '&' InExpression
 /.$putCase consumeBinaryExpression(OperatorIds.AND); $break ./
 /:$readableName Expression:/
 
@@ -2766,12 +2765,10 @@ InstanceofExpression_NotName ::= InstanceofExpression_NotName 'instanceof' TypeO
 /:$readableName Expression:/
 
 --Python nodes
-InExpression_NotName -> RelationalExpression_NotName
-InExpression_NotName ::= Expression 'in' Expression
-/.$putCase consumeInExpressionWithName(); $break ./
-InExpression_NotName ::= InExpression_NotName 'in' Expression
-/.$putCase consumeInExpression(); $break ./
-/:$readableName Expression:/
+--InExpression_NotName -> InstanceofExpression_NotName
+--InExpression_NotName ::= InExpression_NotName 'in' InstanceofExpression
+--/.$putCase consumeInExpression(); $break ./
+--/:$readableName Expression:/
 
 
 EqualityExpression_NotName -> InstanceofExpression_NotName
@@ -2787,26 +2784,22 @@ EqualityExpression_NotName ::= Name '!=' InstanceofExpression
 
 
 --Python nodes
-EqualityExpression_NotName -> InExpression_NotName
-EqualityExpression_NotName ::= EqualityExpression_NotName '==' InExpression
-/.$putCase consumeEqualityExpression(OperatorIds.EQUAL_EQUAL); $break ./
-EqualityExpression_NotName ::= Name '==' InExpression
-/.$putCase consumeEqualityExpressionWithName(OperatorIds.EQUAL_EQUAL); $break ./
-EqualityExpression_NotName ::= EqualityExpression_NotName '!=' InExpression
-/.$putCase consumeEqualityExpression(OperatorIds.NOT_EQUAL); $break ./
-EqualityExpression_NotName ::= Name '!=' InExpression
-/.$putCase consumeEqualityExpressionWithName(OperatorIds.NOT_EQUAL); $break ./
-/:$readableName Expression:/
+InExpression_NotName -> EqualityExpression_NotName
+InExpression_NotName ::= InExpression_NotName 'in' EqualityExpression
+/.$putCase consumeInExpression(); $break ./
+InExpression_NotName ::= Name 'in' EqualityExpression
+/.$putCase consumeInExpressionWithName(); $break ./
+--/:$readableName Expression:/
 
 
 
 
 
 
-AndExpression_NotName -> EqualityExpression_NotName
-AndExpression_NotName ::= AndExpression_NotName '&' EqualityExpression
+AndExpression_NotName -> InExpression_NotName
+AndExpression_NotName ::= AndExpression_NotName '&' InExpression
 /.$putCase consumeBinaryExpression(OperatorIds.AND); $break ./
-AndExpression_NotName ::= Name '&' EqualityExpression
+AndExpression_NotName ::= Name '&' InExpression
 /.$putCase consumeBinaryExpressionWithName(OperatorIds.AND); $break ./
 /:$readableName Expression:/
 
