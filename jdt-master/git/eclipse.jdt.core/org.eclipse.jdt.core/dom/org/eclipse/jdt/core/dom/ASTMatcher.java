@@ -2931,4 +2931,13 @@ public class ASTMatcher {
 		return	safeSubtreeMatch(node.getExpression(), o.getExpression());
 	}
 
+    public boolean match(PyInExpression pyInExpression, Object other) {
+		if (!(other instanceof PyInExpression)) {
+			return false;
+		}
+		PyInExpression o = (PyInExpression) other;
+		return
+				safeSubtreeMatch(pyInExpression.getLeftOperand(), o.getLeftOperand())
+						&& safeSubtreeMatch(pyInExpression.getRightOperand(), o.getRightOperand());
+    }
 }

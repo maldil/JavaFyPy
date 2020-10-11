@@ -1891,6 +1891,10 @@ public abstract class ASTVisitor {
 
 	public boolean visit(PyWithStatement pyWithStatement) {return true; }
 
+	public boolean visit(PyInExpression pyInExpression) {
+		return true;
+	}
+
 	/**
 	 * Visits the given type-specific AST node.
 	 * <p>
@@ -3233,4 +3237,6 @@ public abstract class ASTVisitor {
 	}
 
 
+	public void endVisit(PyInExpression pyInExpression) {
+	}
 }

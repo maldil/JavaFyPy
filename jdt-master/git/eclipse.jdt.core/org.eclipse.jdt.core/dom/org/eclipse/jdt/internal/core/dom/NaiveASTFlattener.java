@@ -2005,6 +2005,14 @@ public class NaiveASTFlattener extends ASTVisitor {
 		return false;
 	}
 
+	@Override
+	public boolean visit(PyInExpression node) {
+		printIndent();
+		node.getLeftOperand().accept(this);
+		this.buffer.append(" in ");//$NON-NLS-1$
+		node.getRightOperand().accept(this);
+		return false;
+	}
 
 	@Override
 	public boolean visit(WildcardType node) {

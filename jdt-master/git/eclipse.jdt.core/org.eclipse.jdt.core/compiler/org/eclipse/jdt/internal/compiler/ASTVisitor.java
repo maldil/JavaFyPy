@@ -507,6 +507,9 @@ public abstract class ASTVisitor {
 		// do nothing by default
 	}
 
+	public void endVisit(InExpression inExpression, BlockScope scope) {
+		// do nothing by default
+	}
 	public void endVisit(Wildcard wildcard, BlockScope scope) {
 		// do nothing by default
 	}
@@ -1017,6 +1020,9 @@ public abstract class ASTVisitor {
 		return true; // do nothing by default, keep traversing
 	}
 	public boolean visit(WithStatement withStatement, BlockScope scope) {
+		return true; // do nothing by default, keep traversing
+	}
+	public boolean visit(InExpression inExpression, BlockScope scope) {
 		return true; // do nothing by default, keep traversing
 	}
 	public boolean visit(Wildcard wildcard, BlockScope scope) {

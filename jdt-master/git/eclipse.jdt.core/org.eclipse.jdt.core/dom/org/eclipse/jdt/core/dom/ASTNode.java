@@ -1006,6 +1006,8 @@ public abstract class ASTNode {
 	 * @since 3.0
 	 */
 	public static final int PY_WITH_STATEMENT = 104;
+
+	public static final int PY_IN_EXPRESSION = 105;
 	public static Class nodeClassForType(int nodeType) {
 		switch (nodeType) {
 			case ANNOTATION_TYPE_DECLARATION :
@@ -1086,6 +1088,8 @@ public abstract class ASTNode {
 				return Initializer.class;
 			case INSTANCEOF_EXPRESSION :
 				return InstanceofExpression.class;
+			case PY_IN_EXPRESSION:
+				return PyInExpression.class;
 			case INTERSECTION_TYPE:
 				return IntersectionType.class;
 			case JAVADOC :

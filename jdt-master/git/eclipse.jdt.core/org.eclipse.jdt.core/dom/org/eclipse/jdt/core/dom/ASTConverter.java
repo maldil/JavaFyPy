@@ -40,6 +40,7 @@ import org.eclipse.jdt.internal.compiler.ast.Argument;
 import org.eclipse.jdt.internal.compiler.ast.CompactConstructorDeclaration;
 import org.eclipse.jdt.internal.compiler.ast.FieldReference;
 import org.eclipse.jdt.internal.compiler.ast.ForeachStatement;
+import org.eclipse.jdt.internal.compiler.ast.InExpression;
 import org.eclipse.jdt.internal.compiler.ast.IntersectionCastTypeReference;
 import org.eclipse.jdt.internal.compiler.ast.JavadocArgumentExpression;
 import org.eclipse.jdt.internal.compiler.ast.JavadocFieldReference;
@@ -2047,8 +2048,13 @@ class ASTConverter {
 		if (expression instanceof org.eclipse.jdt.internal.compiler.ast.SwitchExpression) {
 			return convert((org.eclipse.jdt.internal.compiler.ast.SwitchExpression) expression);
 		}
+		if (expression instanceof org.eclipse.jdt.internal.compiler.ast.InExpression){
+			return convert((org.eclipse.jdt.internal.compiler.ast.InExpression) expression);
+		}
 		return null;
 	}
+
+
 
 	public StringLiteral convert(org.eclipse.jdt.internal.compiler.ast.ExtendedStringLiteral expression) {
 		expression.computeConstant();
@@ -2212,6 +2218,21 @@ class ASTConverter {
 			}
 		}
 		return ifStatement;
+	}
+
+	public PyInExpression convert(InExpression inExpression){
+		PyInExpression pyinExpression = new PyInExpression(this.ast);
+		if (this.resolveBindings) {
+			//TODO impliment this
+		}
+		Expression leftExpression = convert(inExpression.left);
+		pyinExpression.setLeftOperand(leftExpression);
+		Expression rightExpression = convert(inExpression.right);
+		pyinExpression.setRightOperand(rightExpression);
+		int startPosition = leftExpression.getStartPosition();
+		int sourceEnd = rightExpression.getStartPosition() + rightExpression.getLength() - 1;
+		pyinExpression.setSourceRange(startPosition, sourceEnd - startPosition + 1);
+		return pyinExpression;
 	}
 
 	public InstanceofExpression convert(org.eclipse.jdt.internal.compiler.ast.InstanceOfExpression expression) {

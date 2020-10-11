@@ -1231,8 +1231,9 @@ InstanceofExpression ::= InstanceofExpression 'instanceof' TypeOrPattern
 /.$putCase consumeInstanceOfExpression(); $break ./
 /:$readableName Expression:/
 
+--Python in Nodes
 InExpression -> RelationalExpression
-InExpression ::= InExpression 'in' Name
+InExpression ::= InExpression 'in' Expression
 /.$putCase consumeInExpression(); $break ./
 /:$readableName Expression:/
 
@@ -2124,6 +2125,16 @@ EqualityExpression ::= EqualityExpression '!=' InstanceofExpression
 /.$putCase consumeEqualityExpression(OperatorIds.NOT_EQUAL); $break ./
 /:$readableName Expression:/
 
+
+-- Python in Nodes
+EqualityExpression -> InExpression
+EqualityExpression ::= EqualityExpression '==' InExpression
+/.$putCase consumeEqualityExpression(OperatorIds.EQUAL_EQUAL); $break ./
+EqualityExpression ::= EqualityExpression '!=' InExpression
+/.$putCase consumeEqualityExpression(OperatorIds.NOT_EQUAL); $break ./
+/:$readableName Expression:/
+
+
 AndExpression -> EqualityExpression
 AndExpression ::= AndExpression '&' EqualityExpression
 /.$putCase consumeBinaryExpression(OperatorIds.AND); $break ./
@@ -2754,11 +2765,11 @@ InstanceofExpression_NotName ::= InstanceofExpression_NotName 'instanceof' TypeO
 /.$putCase consumeInstanceOfExpression(); $break ./
 /:$readableName Expression:/
 
-
+--Python nodes
 InExpression_NotName -> RelationalExpression_NotName
-InExpression_NotName ::= Name 'in' Name
+InExpression_NotName ::= Expression 'in' Expression
 /.$putCase consumeInExpressionWithName(); $break ./
-InExpression_NotName ::= InExpression_NotName 'in' Name
+InExpression_NotName ::= InExpression_NotName 'in' Expression
 /.$putCase consumeInExpression(); $break ./
 /:$readableName Expression:/
 
@@ -2773,6 +2784,24 @@ EqualityExpression_NotName ::= EqualityExpression_NotName '!=' InstanceofExpress
 EqualityExpression_NotName ::= Name '!=' InstanceofExpression
 /.$putCase consumeEqualityExpressionWithName(OperatorIds.NOT_EQUAL); $break ./
 /:$readableName Expression:/
+
+
+--Python nodes
+EqualityExpression_NotName -> InExpression_NotName
+EqualityExpression_NotName ::= EqualityExpression_NotName '==' InExpression
+/.$putCase consumeEqualityExpression(OperatorIds.EQUAL_EQUAL); $break ./
+EqualityExpression_NotName ::= Name '==' InExpression
+/.$putCase consumeEqualityExpressionWithName(OperatorIds.EQUAL_EQUAL); $break ./
+EqualityExpression_NotName ::= EqualityExpression_NotName '!=' InExpression
+/.$putCase consumeEqualityExpression(OperatorIds.NOT_EQUAL); $break ./
+EqualityExpression_NotName ::= Name '!=' InExpression
+/.$putCase consumeEqualityExpressionWithName(OperatorIds.NOT_EQUAL); $break ./
+/:$readableName Expression:/
+
+
+
+
+
 
 AndExpression_NotName -> EqualityExpression_NotName
 AndExpression_NotName ::= AndExpression_NotName '&' EqualityExpression
