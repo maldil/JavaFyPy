@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 10/11/20, 12:22:01 PM PDT -->
+<!-- 10/15/20, 2:11:40 PM PDT -->
 <!DOCTYPE compiler PUBLIC "-//Eclipse.org//DTD Eclipse JDT 3.2.006 Compiler//EN" "http://www.eclipse.org/jdt/core/compiler_32_006.dtd">
-<compiler copyright="Copyright IBM Corp 2000, 2020. All rights reserved." name="Eclipse Compiler for Java(TM)" version="v20200917-0451, 3.24.0">
+<compiler copyright="Copyright IBM Corp 2000, 2020. All rights reserved." name="Eclipse Compiler for Java(TM)" version="v20201005-1133, 3.24.0">
 	<command_line>
 		<argument value="-warn:+fieldHiding,-unavoidableGenericProblems"/>
 		<argument value="-verbose"/>
@@ -194,9 +194,8 @@
 		<classpath id="JAR" path="/Users/malinda/.m2/repository/p2/osgi/bundle/org.eclipse.compare.core/3.6.900.v20200412-2017/org.eclipse.compare.core-3.6.900.v20200412-2017.jar"/>
 		<classpath id="JAR" path="/Users/malinda/.m2/repository/.cache/tycho/org.apache.ant-1.10.8.v20200515-1239.jar/lib/ant.jar"/>
 		<classpath id="FOLDER" path="/Users/malinda/Documents/Research_Topic_2/eclips_workspace_cpat_new/jdt-master/git/eclipse.jdt.core/org.eclipse.jdt.core/target/classes/"/>
-		<classpath id="FOLDER" path="/Users/malinda/Documents/Research_Topic_2/eclips_workspace_cpat_new/jdt-master/git/eclipse.jdt.core/org.eclipse.jdt.core/target/jdtCompilerAdapter.jar-classes/"/>
 	</classpaths>
-	<sources>
+	<sources path="/Users/malinda/Documents/Research_Topic_2/eclips_workspace_cpat_new/jdt-master/git/eclipse.jdt.core/org.eclipse.jdt.core/target/jdtCompilerAdapter.jar-classes">
 		<source output="/Users/malinda/Documents/Research_Topic_2/eclips_workspace_cpat_new/jdt-master/git/eclipse.jdt.core/org.eclipse.jdt.core/target/classes" package="org/eclipse/jdt/internal/core" path="/Users/malinda/Documents/Research_Topic_2/eclips_workspace_cpat_new/jdt-master/git/eclipse.jdt.core/org.eclipse.jdt.core/model/org/eclipse/jdt/internal/core/Module.java">
 		</source>
 	</sources>

@@ -64,7 +64,6 @@ import org.eclipse.jdt.internal.compiler.ast.SuperReference;
 import org.eclipse.jdt.internal.compiler.ast.TypeReference;
 import org.eclipse.jdt.internal.compiler.ast.UnionTypeReference;
 import org.eclipse.jdt.internal.compiler.ast.Wildcard;
-import org.eclipse.jdt.internal.compiler.ast.WithStatement;
 import org.eclipse.jdt.internal.compiler.classfmt.ClassFileConstants;
 import org.eclipse.jdt.internal.compiler.impl.CompilerOptions;
 import org.eclipse.jdt.internal.compiler.lookup.BlockScope;
@@ -2141,6 +2140,13 @@ class ASTConverter {
 				return createFakeEmptyStatement(statement);
 			default :
 				EnhancedForStatement enhancedForStatement = new EnhancedForStatement(this.ast);
+
+				ArrayList<SingleVariableDeclaration> elementVariables = new ArrayList<SingleVariableDeclaration>();
+				for  (LocalDeclaration obj:   statement.elementVariablesExtras){
+					elementVariables.add(convertToSingleVariableDeclaration(obj));
+				}
+
+				enhancedForStatement.setParameters(elementVariables);
 				enhancedForStatement.setParameter(convertToSingleVariableDeclaration(statement.elementVariable));
 				org.eclipse.jdt.internal.compiler.ast.Expression collection = statement.collection;
 				if (collection == null) return null;

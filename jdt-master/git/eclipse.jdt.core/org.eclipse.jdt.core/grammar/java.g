@@ -827,6 +827,8 @@ VariableDeclaratorId ::= 'Identifier' Dimsopt
 
 VariableInitializer -> Expression
 VariableInitializer -> ArrayInitializer
+
+
 /:$readableName VariableInitializer:/
 /:$recovery_template Identifier:/
 
@@ -2050,6 +2052,11 @@ CastExpression ::= PushLPAREN Name Dims AdditionalBoundsListOpt PushRPAREN Insid
 /.$putCase consumeCastExpressionWithNameArray(); $break ./
 /:$readableName CastExpression:/
 
+
+
+
+
+
 AdditionalBoundsListOpt ::= $empty
 /.$putCase consumeZeroAdditionalBounds(); $break ./
 /:$readableName AdditionalBoundsListOpt:/
@@ -2409,6 +2416,9 @@ EnumBodyDeclarationsopt ::= $empty
 EnumBodyDeclarationsopt -> EnumDeclarations
 /:$readableName EnumBodyDeclarationsopt:/
 
+
+
+
 -----------------------------------------------
 -- 1.5 features : enhanced for statement
 -----------------------------------------------
@@ -2420,7 +2430,11 @@ EnhancedForStatementNoShortIf ::= EnhancedForStatementHeader StatementNoShortIf
 /.$putCase consumeEnhancedForStatement(); $break ./
 /:$readableName EnhancedForStatementNoShortIf:/
 
-EnhancedForStatementHeaderInit ::= 'for' '(' Type PushModifiers Identifier Dimsopt
+ForLocalDeclaration ::= Type PushModifiers Identifier Dimsopt
+ForLocalDeclaration_List ::= ForLocalDeclaration
+ForLocalDeclaration_List ::= ForLocalDeclaration_List ',' ForLocalDeclaration
+
+EnhancedForStatementHeaderInit ::= 'for' '(' ForLocalDeclaration_List
 /.$putCase consumeEnhancedForStatementHeaderInit(false); $break ./
 /:$readableName EnhancedForStatementHeaderInit:/
 

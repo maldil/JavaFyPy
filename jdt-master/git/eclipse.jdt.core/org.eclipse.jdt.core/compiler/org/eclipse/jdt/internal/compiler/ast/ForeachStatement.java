@@ -49,9 +49,12 @@ import org.eclipse.jdt.internal.compiler.lookup.TagBits;
 import org.eclipse.jdt.internal.compiler.lookup.TypeBinding;
 import org.eclipse.jdt.internal.compiler.lookup.TypeIds;
 
+import java.util.ArrayList;
+
 public class ForeachStatement extends Statement {
 
 	public LocalDeclaration elementVariable;
+	public ArrayList<LocalDeclaration> elementVariablesExtras;
 	public int elementVariableImplicitWidening = -1;
 	public Expression collection;
 	public Statement action;
@@ -89,6 +92,15 @@ public class ForeachStatement extends Statement {
 		LocalDeclaration elementVariable,
 		int start) {
 
+		this.elementVariable = elementVariable;
+		this.sourceStart = start;
+		this.kind = -1;
+	}
+
+	public ForeachStatement(
+			LocalDeclaration elementVariable,
+			int start, ArrayList<LocalDeclaration> localDeclarations) {
+		this.elementVariablesExtras = localDeclarations;
 		this.elementVariable = elementVariable;
 		this.sourceStart = start;
 		this.kind = -1;
@@ -411,10 +423,19 @@ public class ForeachStatement extends Statement {
 	}
 
 	@Override
-	public StringBuffer printStatement(int indent, StringBuffer output) {
+	public StringBuffer printStatement(int indent, final StringBuffer output) {
 
 		printIndent(indent, output).append("for ("); //$NON-NLS-1$
-		this.elementVariable.printAsExpression(0, output);
+
+		elementVariable.printAsExpression(0,output);
+
+		for (int j = 0; j<elementVariablesExtras.size(); j++){
+			output.append(',');
+			elementVariablesExtras.get(j).printAsExpression(0,output);
+		}
+
+//		this.elementVariable.printAsExpression(0, output);
+
 		output.append(" : ");//$NON-NLS-1$
 		if (this.collection != null) {
 			this.collection.print(0, output).append(") "); //$NON-NLS-1$
@@ -673,9 +694,15 @@ public class ForeachStatement extends Statement {
 	public void traverse(
 		ASTVisitor visitor,
 		BlockScope blockScope) {
-
 		if (visitor.visit(this, blockScope)) {
-			this.elementVariable.traverse(visitor, this.scope);
+			if (this.elementVariable!=null){
+				this.elementVariable.traverse(visitor,this.scope);
+			}
+
+			for (LocalDeclaration variable : this.elementVariablesExtras) {
+				variable.traverse(visitor, this.scope);
+			}
+
 			if (this.collection != null) {
 				this.collection.traverse(visitor, this.scope);
 			}

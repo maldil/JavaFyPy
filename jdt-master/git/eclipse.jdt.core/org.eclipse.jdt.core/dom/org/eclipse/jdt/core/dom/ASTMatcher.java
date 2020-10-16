@@ -814,7 +814,7 @@ public class ASTMatcher {
 		}
 		EnhancedForStatement o = (EnhancedForStatement) other;
 		return (
-			safeSubtreeMatch(node.getParameter(), o.getParameter())
+			safeSubtreeMatch(node.Parameters(), o.Parameters()) // changed this to match with list of parameters
 				&& safeSubtreeMatch(node.getExpression(), o.getExpression())
 				&& safeSubtreeMatch(node.getBody(), o.getBody()));
 	}

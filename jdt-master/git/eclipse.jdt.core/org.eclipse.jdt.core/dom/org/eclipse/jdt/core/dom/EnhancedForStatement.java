@@ -14,6 +14,8 @@
 
 package org.eclipse.jdt.core.dom;
 
+import org.eclipse.jdt.internal.compiler.ast.LocalDeclaration;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,6 +43,10 @@ public class EnhancedForStatement extends Statement {
 	public static final ChildPropertyDescriptor PARAMETER_PROPERTY =
 		new ChildPropertyDescriptor(EnhancedForStatement.class, "parameter", SingleVariableDeclaration.class, OPTIONAL, CYCLE_RISK); //$NON-NLS-1$
 
+	public static final ChildListPropertyDescriptor PARAMETERS_PROPERTY =
+			new ChildListPropertyDescriptor(EnhancedForStatement.class, "parameters", SingleVariableDeclaration.class, CYCLE_RISK);
+
+
 	/**
 	 * The "expression" structural property of this node type (child type: {@link Expression}).
 	 */
@@ -61,11 +67,12 @@ public class EnhancedForStatement extends Statement {
 	private static final List PROPERTY_DESCRIPTORS;
 
 	static {
-		List properyList = new ArrayList(4);
+		List properyList = new ArrayList(5);
 		createPropertyList(EnhancedForStatement.class, properyList);
 		addProperty(PARAMETER_PROPERTY, properyList);
 		addProperty(EXPRESSION_PROPERTY, properyList);
 		addProperty(BODY_PROPERTY, properyList);
+		addProperty(PARAMETERS_PROPERTY,properyList);
 		PROPERTY_DESCRIPTORS = reapPropertyList(properyList);
 	}
 
@@ -88,6 +95,9 @@ public class EnhancedForStatement extends Statement {
 	 * legal node.
 	 */
 	private SingleVariableDeclaration parameter = null;
+
+	private ASTNode.NodeList parameters =
+			new ASTNode.NodeList(PARAMETERS_PROPERTY);
 
 	/**
 	 * The expression; lazily initialized; defaults to a unspecified, but legal,
@@ -117,6 +127,7 @@ public class EnhancedForStatement extends Statement {
 	final List internalStructuralPropertiesForType(int apiLevel) {
 		return propertyDescriptors(apiLevel);
 	}
+
 
 	@Override
 	final ASTNode internalGetSetChildProperty(ChildPropertyDescriptor property, boolean get, ASTNode child) {
@@ -157,6 +168,8 @@ public class EnhancedForStatement extends Statement {
 	ASTNode clone0(AST target) {
 		EnhancedForStatement result = new EnhancedForStatement(target);
 		result.setSourceRange(getStartPosition(), getLength());
+		result.setParameter(this.parameter);
+		result.parameters.addAll(this.parameters);
 		result.copyLeadingComment(this);
 		result.setParameter((SingleVariableDeclaration) getParameter().clone(target));
 		result.setExpression((Expression) getExpression().clone(target));
@@ -176,7 +189,12 @@ public class EnhancedForStatement extends Statement {
 		boolean visitChildren = visitor.visit(this);
 		if (visitChildren) {
 			// visit children in normal left to right reading order
-			acceptChild(visitor, getParameter());
+
+			acceptChild(visitor,getParameter());
+			for (Object o : parameters) {
+				acceptChild(visitor, (SingleVariableDeclaration)o);
+			}
+
 			acceptChild(visitor, getExpression());
 			acceptChild(visitor, getBody());
 		}
@@ -221,6 +239,18 @@ public class EnhancedForStatement extends Statement {
 		this.parameter = parameter;
 		postReplaceChild(oldChild, parameter, PARAMETER_PROPERTY);
 	}
+
+	public void setParameters(ArrayList<SingleVariableDeclaration> elementVariables) {
+		if (elementVariables == null) {
+			throw new IllegalArgumentException();
+		}
+		this.parameters.addAll(elementVariables);
+	}
+
+	public ASTNode.NodeList Parameters() {
+		return parameters;
+	}
+
 
 	/**
 	 * Returns the expression of this enhanced for statement.
@@ -310,8 +340,8 @@ public class EnhancedForStatement extends Statement {
 	@Override
 	int treeSize() {
 		return
-			memSize()
-			+ (this.parameter == null ? 0 : getParameter().treeSize())
+			memSize() + (this.parameter == null ? 0 : parameter.treeSize())
+			+ (this.parameters == null ? 0 : parameters.listSize())
 			+ (this.expression == null ? 0 : getExpression().treeSize())
 			+ (this.body == null ? 0 : getBody().treeSize());
 	}

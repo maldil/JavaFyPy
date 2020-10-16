@@ -652,6 +652,10 @@ public class NaiveASTFlattener extends ASTVisitor {
 		printIndent();
 		this.buffer.append("for (");//$NON-NLS-1$
 		node.getParameter().accept(this);
+		for (int j=0;j<node.Parameters().size();j++){
+			this.buffer.append(',');
+			((SingleVariableDeclaration)node.Parameters().get(j)).accept(this);
+		}
 		this.buffer.append(" : ");//$NON-NLS-1$
 		node.getExpression().accept(this);
 		this.buffer.append(") ");//$NON-NLS-1$
