@@ -14,8 +14,6 @@
 
 package org.eclipse.jdt.core.dom;
 
-import org.eclipse.jdt.internal.compiler.ast.LocalDeclaration;
-
 import java.util.ArrayList;
 import java.util.List;
 

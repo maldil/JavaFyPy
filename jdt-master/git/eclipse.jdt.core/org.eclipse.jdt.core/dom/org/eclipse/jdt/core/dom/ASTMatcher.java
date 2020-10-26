@@ -2940,4 +2940,24 @@ public class ASTMatcher {
 				safeSubtreeMatch(pyInExpression.getLeftOperand(), o.getLeftOperand())
 						&& safeSubtreeMatch(pyInExpression.getRightOperand(), o.getRightOperand());
     }
+
+    public boolean match(PyTupleExpression node, Object other) {
+		if (!(other instanceof PyTupleExpression)) {
+			return false;
+		}
+		PyTupleExpression o = (PyTupleExpression) other;
+		return safeSubtreeMatch(node.expressions(), o.expressions());
+    }
+
+    public boolean match(PyGenerator node, Object other) {
+		if (!(other instanceof PyGenerator)) {
+			return false;
+		}
+		PyGenerator o = (PyGenerator) other;
+		return (
+				safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())
+						&& safeSubtreeMatch(node.getConditionalExpression(), o.getConditionalExpression())
+						&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()) &&
+						safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
+    }
 }

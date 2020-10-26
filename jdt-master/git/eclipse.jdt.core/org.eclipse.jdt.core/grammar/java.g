@@ -48,7 +48,7 @@ $Terminals
 	interface long native new non-sealed null package private
 	protected public return short static strictfp super switch
 	synchronized this throw throws transient true try void
-	volatile while module open requires transitive exports opens to uses provides with withstmt in
+	volatile while module open requires transitive exports opens to uses provides with withstmt in pyjavatuple
 
 	IntegerLiteral
 	LongLiteral
@@ -1689,7 +1689,7 @@ PrimaryNoNewArray -> Literal
 PrimaryNoNewArray ::= 'this'
 /.$putCase consumePrimaryNoNewArrayThis(); $break ./
 
-PrimaryNoNewArray ::= PushLPAREN Expression_NotName PushRPAREN 
+PrimaryNoNewArray ::= PushLPAREN Expression_NotName PushRPAREN
 /.$putCase consumePrimaryNoNewArray(); $break ./
 
 PrimaryNoNewArray ::= PushLPAREN Name PushRPAREN 
@@ -2064,7 +2064,7 @@ AdditionalBoundsListOpt -> AdditionalBoundList
 /:$compliance 1.8:/
 /:$readableName AdditionalBoundsListOpt:/
 
--- Production name hardcoded in parser. Must be ::= and not -> 
+-- Production name hardcoded in parser. Must be ::= and not ->
 ParenthesizedCastNameAndBounds ::= '(' CastNameAndBounds ')'
 /:$readableName ParenthesizedCastNameAndBounds:/
 
@@ -2139,10 +2139,14 @@ InExpression ::= InExpression 'in' EqualityExpression
 /.$putCase consumeInExpression(); $break ./
 /:$readableName Expression:/
 
+TupleExpression -> InExpression
+TupleExpression ::= TupleExpression 'pyjavatuple' InExpression
+/.$putCase consumeTuple(); $break ./
+/:$readableName Expression:/
 
 
-AndExpression -> InExpression
-AndExpression ::= AndExpression '&' InExpression
+AndExpression -> TupleExpression
+AndExpression ::= AndExpression '&' TupleExpression
 /.$putCase consumeBinaryExpression(OperatorIds.AND); $break ./
 /:$readableName Expression:/
 
@@ -2166,9 +2170,15 @@ ConditionalOrExpression ::= ConditionalOrExpression '||' ConditionalAndExpressio
 /.$putCase consumeBinaryExpression(OperatorIds.OR_OR); $break ./
 /:$readableName Expression:/
 
+
 ConditionalExpression -> ConditionalOrExpression
 ConditionalExpression ::= ConditionalOrExpression '?' Expression ':' ConditionalExpression
 /.$putCase consumeConditionalExpression(OperatorIds.QUESTIONCOLON) ; $break ./
+/:$readableName Expression:/
+--InGeneratorExpression -> ConditionalExpression
+--InGeneratorExpression ::= Expression 'for' TupleExpression ':' InGeneratorExpression 'if' ConditionalExpression
+ConditionalExpression ::= TupleExpression EnhancedForStatementHeaderInit  ':' ConditionalExpression 'if' ConditionalOrExpression
+/.$putCase consumeGenerators() ; $break ./
 /:$readableName Expression:/
 
 AssignmentExpression -> ConditionalExpression
@@ -2228,6 +2238,19 @@ ClassHeaderExtendsopt ::= $empty
 ClassHeaderExtendsopt -> ClassHeaderExtends
 /:$readableName ClassHeaderExtends:/
 
+--ExpListExpression ::= Expression
+--ExpListExpression ::= ExpListExpression ',' Expression
+
+
+--Tuple ::= '(' ExpListExpression ')'
+--/.$putCase consumeTuple(); $break ./
+--/:$readableName Tuple:/
+
+--Tuple -> Expressionopt
+--Tuple -> AssignmentExpression
+--/:$readableName Tuple:/
+
+
 Expressionopt ::= $empty
 /.$putCase consumeEmptyExpression(); $break ./
 Expressionopt -> Expression
@@ -2246,7 +2269,7 @@ ConstantExpression -> Expression
 -- The rules below are for optional terminal symbols.  An optional comma,
 -- is only used in the context of an array initializer - It is a
 -- "syntactic sugar" that otherwise serves no other purpose. By contrast,
--- an optional identifier is used in the definition of a break and 
+-- an optional identifier is used in the definition of a break and
 -- continue statement. When the identifier does not appear, a NULL
 -- is produced. When the identifier is present, the user should use the
 -- corresponding TOKEN(i) method. See break statement as an example.
@@ -2263,10 +2286,10 @@ ClassBodyDeclarationsopt ::= NestedType ClassBodyDeclarations
 /.$putCase consumeClassBodyDeclarationsopt(); $break ./
 /:$readableName ClassBodyDeclarations:/
 
-Modifiersopt ::= $empty 
+Modifiersopt ::= $empty
 /. $putCase consumeDefaultModifiers(); $break ./
 Modifiersopt ::= Modifiers
-/.$putCase consumeModifiers(); $break ./ 
+/.$putCase consumeModifiers(); $break ./
 /:$readableName Modifiers:/
 
 BlockStatementsopt ::= $empty
@@ -2302,7 +2325,7 @@ ClassHeaderPermittedSubclassesopt -> ClassHeaderPermittedSubclasses
 /:$readableName ClassHeaderPermittedSubclasses:/
 /:$compliance 15:/
 
--- Production name hardcoded in parser. Must be ::= and not -> 
+-- Production name hardcoded in parser. Must be ::= and not ->
 PermittedSubclasses ::= ClassTypeList
 /:$readableName PermittedSubclasses:/
 
@@ -2327,7 +2350,7 @@ InterfaceMemberDeclarationsopt ::= NestedType InterfaceMemberDeclarations
 /. $putCase consumeInterfaceMemberDeclarationsopt(); $break ./
 /:$readableName InterfaceMemberDeclarations:/
 
-NestedType ::= $empty 
+NestedType ::= $empty
 /.$putCase consumeNestedType(); $break./
 /:$readableName NestedType:/
 
@@ -2434,6 +2457,7 @@ ForLocalDeclaration ::= Type PushModifiers Identifier Dimsopt
 ForLocalDeclaration_List ::= ForLocalDeclaration
 ForLocalDeclaration_List ::= ForLocalDeclaration_List ',' ForLocalDeclaration
 
+
 EnhancedForStatementHeaderInit ::= 'for' '(' ForLocalDeclaration_List
 /.$putCase consumeEnhancedForStatementHeaderInit(false); $break ./
 /:$readableName EnhancedForStatementHeaderInit:/
@@ -2441,6 +2465,10 @@ EnhancedForStatementHeaderInit ::= 'for' '(' ForLocalDeclaration_List
 EnhancedForStatementHeaderInit ::= 'for' '(' Modifiers Type PushRealModifiers Identifier Dimsopt
 /.$putCase consumeEnhancedForStatementHeaderInit(true); $break ./
 /:$readableName EnhancedForStatementHeaderInit:/
+
+EnhancedForStatementHeaderInit ::= 'for' ForLocalDeclaration_List
+/.$putCase consumeGenEnhancedForStatementHeaderInit(); $break ./
+/:$readableName GenEnhancedForStatementHeaderInit:/
 
 EnhancedForStatementHeader ::= EnhancedForStatementHeaderInit ':' Expression ')'
 /.$putCase consumeEnhancedForStatementHeader(); $break ./
@@ -2806,14 +2834,18 @@ InExpression_NotName ::= Name 'in' EqualityExpression
 --/:$readableName Expression:/
 
 
+TupleExpression_NotName -> InExpression_NotName
+TupleExpression_NotName ::= TupleExpression_NotName 'pyjavatuple' InExpression
+/.$putCase consumeTuple(); $break ./
+TupleExpression_NotName ::= Name 'pyjavatuple' InExpression
+/.$putCase consumeTupleWithName(); $break ./
+/:$readableName Expression:/
 
 
-
-
-AndExpression_NotName -> InExpression_NotName
-AndExpression_NotName ::= AndExpression_NotName '&' InExpression
+AndExpression_NotName -> TupleExpression_NotName
+AndExpression_NotName ::= AndExpression_NotName '&' TupleExpression
 /.$putCase consumeBinaryExpression(OperatorIds.AND); $break ./
-AndExpression_NotName ::= Name '&' InExpression
+AndExpression_NotName ::= Name '&' TupleExpression
 /.$putCase consumeBinaryExpressionWithName(OperatorIds.AND); $break ./
 /:$readableName Expression:/
 
@@ -2845,12 +2877,25 @@ ConditionalOrExpression_NotName ::= Name '||' ConditionalAndExpression
 /.$putCase consumeBinaryExpressionWithName(OperatorIds.OR_OR); $break ./
 /:$readableName Expression:/
 
+
+
 ConditionalExpression_NotName -> ConditionalOrExpression_NotName
 ConditionalExpression_NotName ::= ConditionalOrExpression_NotName '?' Expression ':' ConditionalExpression
 /.$putCase consumeConditionalExpression(OperatorIds.QUESTIONCOLON) ; $break ./
 ConditionalExpression_NotName ::= Name '?' Expression ':' ConditionalExpression
 /.$putCase consumeConditionalExpressionWithName(OperatorIds.QUESTIONCOLON) ; $break ./
+--ConditionalExpression_NotName ::= Expression 'for' TupleExpression ':' ConditionalExpression 'if' ConditionalOrExpression_NotName
+--/.$putCase consumeGenerators() ; $break ./
+--ConditionalExpression_NotName ::= Expression 'for' TupleExpression ':' ConditionalExpression 'if' Name
+--/.$putCase consumeGeneratorsWithName() ; $break ./
 /:$readableName Expression:/
+
+--InGeneratorExpression_NotName -> ConditionalExpression_NotName
+--InGeneratorExpression_NotName ::= Expression 'for' TupleExpression ':' InGeneratorExpression 'if' ConditionalExpression_NotName
+--/.$putCase consumeGenerators() ; $break ./
+--InGeneratorExpression_NotName ::= Expression 'for' TupleExpression ':' Name 'if' ConditionalExpression_NotName
+--/.$putCase consumeGeneratorsWithName() ; $break ./
+--/:$readableName Expression:/
 
 AssignmentExpression_NotName -> ConditionalExpression_NotName
 AssignmentExpression_NotName -> Assignment
@@ -2858,6 +2903,7 @@ AssignmentExpression_NotName -> Assignment
 
 Expression_NotName -> AssignmentExpression_NotName
 /:$readableName Expression:/
+
 -----------------------------------------------
 -- 1.5 features : end of generics
 -----------------------------------------------

@@ -1895,6 +1895,12 @@ public abstract class ASTVisitor {
 		return true;
 	}
 
+	public boolean visit(PyGenerator pyGenerator) {
+		return true;
+	}
+	public boolean visit(PyTupleExpression pyTupleExpression) {
+		return true;
+	}
 	/**
 	 * Visits the given type-specific AST node.
 	 * <p>
@@ -3238,5 +3244,13 @@ public abstract class ASTVisitor {
 
 
 	public void endVisit(PyInExpression pyInExpression) {
+	}
+
+
+	public void endVisit(PyTupleExpression pyTupleExpression) {
+	}
+
+
+	public void endVisit(PyGenerator pyGenerator) {
 	}
 }

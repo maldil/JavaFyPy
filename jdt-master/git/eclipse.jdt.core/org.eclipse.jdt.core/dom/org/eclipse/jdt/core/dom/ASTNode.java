@@ -1008,6 +1008,10 @@ public abstract class ASTNode {
 	public static final int PY_WITH_STATEMENT = 104;
 
 	public static final int PY_IN_EXPRESSION = 105;
+
+	public static final int TUPLE_EXPRESSION = 106;
+
+	public static final int PY_GENERATOR_EXPRESSION = 107;
 	public static Class nodeClassForType(int nodeType) {
 		switch (nodeType) {
 			case ANNOTATION_TYPE_DECLARATION :
@@ -1090,6 +1094,8 @@ public abstract class ASTNode {
 				return InstanceofExpression.class;
 			case PY_IN_EXPRESSION:
 				return PyInExpression.class;
+			case TUPLE_EXPRESSION:
+				return PyTupleExpression.class;
 			case INTERSECTION_TYPE:
 				return IntersectionType.class;
 			case JAVADOC :
@@ -1220,6 +1226,8 @@ public abstract class ASTNode {
 				return YieldStatement.class;
 			case PY_WITH_STATEMENT:
 				return PyWithStatement.class;
+			case PY_GENERATOR_EXPRESSION:
+				return PyGenerator.class;
 		}
 		throw new IllegalArgumentException();
 	}

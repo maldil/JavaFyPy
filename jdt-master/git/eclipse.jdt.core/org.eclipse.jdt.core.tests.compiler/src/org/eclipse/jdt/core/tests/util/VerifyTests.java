@@ -207,10 +207,10 @@ public void run() throws IOException {
 	this.socket = new Socket("localhost", this.portNumber);
 	this.socket.setTcpNoDelay(true);
 
-	DataInputStream in = new DataInputStream(this.socket.getInputStream());
+	DataInputStream inx = new DataInputStream(this.socket.getInputStream());
 	final DataOutputStream out = new DataOutputStream(this.socket.getOutputStream());
 	while (true) {
-		final String className = in.readUTF();
+		final String className = inx.readUTF();
 		Thread thread = new Thread() {
 			@Override
 			public void run() {

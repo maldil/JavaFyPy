@@ -17,6 +17,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.eclipse.jdt.core.dom.*;
+import org.eclipse.jdt.internal.compiler.parser.Parser;
 import org.eclipse.jdt.internal.compiler.parser.ScannerHelper;
 import org.eclipse.jdt.internal.core.dom.util.DOMASTUtil;
 
@@ -2010,11 +2011,56 @@ public class NaiveASTFlattener extends ASTVisitor {
 	}
 
 	@Override
+	public boolean visit(PyGenerator node) {
+		printIndent();
+		this.buffer.append("gen (");//$NON-NLS-1$
+		node.getTargetExpression().accept(this);
+		this.buffer.append(" for ");
+
+		for (int j=0;j<node.getValueExpression().size();j++){
+			((SingleVariableDeclaration)node.getValueExpression().get(j)).accept(this);
+			if (j!=node.getValueExpression().size()-1){
+				this.buffer.append(',');
+			}
+		}
+		this.buffer.append(" : ");
+		node.getIteratorExpression().accept(this);
+		this.buffer.append(" if ");
+		node.getConditionalExpression().accept(this);
+		this.buffer.append(") ");//$NON-NLS-1$
+		return false;
+	}
+
+	@Override
 	public boolean visit(PyInExpression node) {
 		printIndent();
 		node.getLeftOperand().accept(this);
 		this.buffer.append(" in ");//$NON-NLS-1$
 		node.getRightOperand().accept(this);
+		return false;
+	}
+
+	@Override
+	public boolean visit(PyTupleExpression node){
+		printIndent();
+		this.buffer.append("(");
+		for (int i = node.expressions().size()-1;i>=0;i--){
+			((Expression)node.expressions().get(i)).accept(this);
+			if (i!=0){
+				this.buffer.append(" pyjavatuple ");
+			}
+
+		}
+		this.buffer.append(")");
+
+//		for (Iterator it = node.expressions().iterator(); it.hasNext(); ) {
+//			Expression e = (Expression) it.next();
+//			e.accept(this);
+//			if (it.hasNext()) {
+//				this.buffer.append(" pyjavatuple ");//$NON-NLS-1$
+//			}
+//		}
+
 		return false;
 	}
 

@@ -3738,7 +3738,27 @@ private int internalScanIdentifierOrKeyword(int index, int length, char[] data) 
 					&& (data[++index] == 'o')) {
 					return TokenNamegoto;
 				}
+//				else{
+//					if ((data[index] == 'f')
+//							&& (data[++index] == 'o')
+//							&& (data[++index] == 'r')) {
+//						return TokenNamegfor;
+//					}
+//					else{
+//						return TokenNameIdentifier;
+//					}
+//				}
+				return TokenNameIdentifier;
 			} //no goto in java are allowed, so why java removes this keyword ???
+//			else if (length==3){
+//				if ((data[++index] == 'i')
+//						&& (data[++index] == 'f')) {
+//					return TokenNamegif;
+//				}
+//				else{
+//					return TokenNameIdentifier;
+//				}
+//			}
 			return TokenNameIdentifier;
 
 		case 'i' : //if implements import instanceof int interface
@@ -3814,6 +3834,11 @@ private int internalScanIdentifierOrKeyword(int index, int length, char[] data) 
 					&& (data[++index] == 'g')) {
 					return TokenNamelong;
 				}
+//				else if ((data[index] == 'g')
+//						&& (data[++index] == 'e')
+//						&& (data[++index] == 'n')){
+//					return TokenNamelgen;
+//				}
 			}
 			return TokenNameIdentifier;
 
@@ -3942,6 +3967,21 @@ private int internalScanIdentifierOrKeyword(int index, int length, char[] data) 
 						return TokenNameprotected;
 					} else
 						return TokenNameIdentifier;
+				case 11:
+					if ((data[++index] == 'y')
+							&& (data[++index] == 'j')
+							&& (data[++index] == 'a')
+							&& (data[++index] == 'v')
+							&& (data[++index] == 'a')
+							&& (data[++index] == 't')
+							&& (data[++index] == 'u')
+							&& (data[++index] == 'p')
+							&& (data[++index] == 'l')
+							&& (data[++index] == 'e')){
+						return TokenNamepyjavatuple;
+					} else
+						return TokenNameIdentifier;
+
 
 				default :
 					return TokenNameIdentifier;

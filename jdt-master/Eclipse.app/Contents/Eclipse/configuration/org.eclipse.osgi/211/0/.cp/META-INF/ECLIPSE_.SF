@@ -1,0 +1,142 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: vOVYZX+Z6KP5jVK31hxlFJJdWn6W4
+ ycSoWEGf3CSnTw=
+SHA-256-Digest-Manifest: vA/5lO39cZs+ETClsm95riG2/YAYn0ySNjUafzyUvYc=
+Created-By: 1.8.0_51 (Oracle Corporation)
+
+Name: org/eclipse/jdt/internal/junit/runner/RerunExecutionListener.cla
+ ss
+SHA-256-Digest: fiu5Il6V6DNP4UQ+/uiHISjzTH8thqxfJQIxg6Fp6cc=
+
+Name: org/eclipse/jdt/internal/junit/runner/IClassifiesThrowables.clas
+ s
+SHA-256-Digest: w76+sc9LGmj2XXQTWo0hkFw9ZGR+B8+mtZ74qx2Bbig=
+
+Name: org/eclipse/jdt/internal/junit/runner/TestExecution.class
+SHA-256-Digest: sKGe0TObtt6wHIisHTGrFXkaYNVgcJLiqHVUwjEAKNg=
+
+Name: org/eclipse/jdt/internal/junit/runner/NullPrioritizer.class
+SHA-256-Digest: MDKBkykkercYic2/6TUQJFIPFxHS70a9e/qfkJkq3Dw=
+
+Name: org/eclipse/jdt/internal/junit/runner/IListensToTestExecutions.c
+ lass
+SHA-256-Digest: 6PrTJVxOTzY+nV9zXq1WK7PlijH7NITUvDa1ljaKkGM=
+
+Name: org/eclipse/jdt/internal/junit/runner/TestIdMap.class
+SHA-256-Digest: YZ7gVL7G4VSTPq7X0g1DS/ho5KTjnp5E9Y4s6MDSZDo=
+
+Name: org/eclipse/jdt/internal/junit/runner/RemoteTestRunner.class
+SHA-256-Digest: 5wEyoICqGTomZgIPCIEd2GI9WZ4q2Ey4RH6m6N8S2x0=
+
+Name: org/eclipse/jdt/internal/junit/runner/ITestPrioritizer.class
+SHA-256-Digest: wpm2P564QKBA+W5Ko5jtoaqMULYO0Rjx8cOhHz2j1TY=
+
+Name: org/eclipse/jdt/internal/junit/runner/DefaultClassifier.class
+SHA-256-Digest: 0ZwCoIXBbUfPVD01l6kVAhsIzJWLtkiQjEVuMMKQXhg=
+
+Name: org/eclipse/jdt/internal/junit/runner/RemoteTestRunner$ReaderThr
+ ead.class
+SHA-256-Digest: upmfLX2GddlPTqSR3MjU4r/+OQfClK/Q+QcK0FlemG0=
+
+Name: org/eclipse/jdt/internal/junit/runner/CustomHashtable.class
+SHA-256-Digest: ePw37uz8UI3BagWZf3tkPoamYvOMZYQnutyFNtn9Yd4=
+
+Name: org/eclipse/jdt/internal/junit/runner/TestReferenceFailure.class
+SHA-256-Digest: 1e+9IQ1qe2Pl/9D4SZWWu/FrKwJMG2kqTPxJqMquqR0=
+
+Name: org/eclipse/jdt/internal/junit/runner/junit3/JUnit3TestLoader.cl
+ ass
+SHA-256-Digest: zL3PgHeF/tgNhbW/4YSRMzzYsVt6y7lZAw4vqZGMb1k=
+
+Name: org/eclipse/jdt/internal/junit/runner/AbstractTestLoader.class
+SHA-256-Digest: vRlfCaGB7tfRK0fUCDNjoPdc32DKO7WyhTzJ6afY3TU=
+
+Name: org/eclipse/jdt/internal/junit/runner/FirstRunExecutionListener.
+ class
+SHA-256-Digest: JRG9lyhWbGc15m8+tn2OIO2i0f4MyWlQwqm8IrMUdPY=
+
+Name: org/eclipse/jdt/internal/junit/runner/ITestLoader.class
+SHA-256-Digest: SYg4lScW/V3YCKFjQSBMk6uiJtlk45vvNMMYuoh467I=
+
+Name: org/eclipse/jdt/internal/junit/runner/IElementComparer.class
+SHA-256-Digest: AZMTyQwMUF+Em+TGHhFHTq/ZauyUQQcrhlrD7uj2wHw=
+
+Name: org/eclipse/jdt/internal/junit/runner/junit3/JUnit3Listener.clas
+ s
+SHA-256-Digest: LUaQviIr588JiQtJUai2adoYS5+ZKzomXCEMNSBX9jA=
+
+Name: plugin.properties
+SHA-256-Digest: Y8ofFtUuAp8INNu6RwL3FZYU+4lEJkxXdI7MV6e51lw=
+
+Name: org/eclipse/jdt/internal/junit/runner/RemoteTestRunner$RerunRequ
+ est.class
+SHA-256-Digest: Z1mlwYdQ7vuFQBnSeNVTm5lBDg1mNkYpjPKPngRuWuQ=
+
+Name: org/eclipse/jdt/internal/junit/runner/JUnitMessages.properties
+SHA-256-Digest: YnmZUhaztupz6mD76swQdnUVRlji7WpaMY6jWEqY4u0=
+
+Name: org/eclipse/jdt/internal/junit/runner/MessageIds.class
+SHA-256-Digest: NRrAYJDZmI6y16aZ7r6w9ZLnfu/Pf8KTS08L7mVRkWo=
+
+Name: about.html
+SHA-256-Digest: ncO+WCNUIJ0JLCOl/ot53yopwTqvvtVu0qSgblesdYo=
+
+Name: org/eclipse/jdt/internal/junit/runner/CustomHashtable$HashEnumer
+ ator.class
+SHA-256-Digest: 6j2FutAaJXnAGeXTSDitRprq1afA40QfOWbr5mCY/hc=
+
+Name: org/eclipse/jdt/internal/junit/runner/ITestRunner.class
+SHA-256-Digest: kH3p5Wnq1Z7NlA2nchMVL8ZOcBLf8mgMlgb8n4RIN5w=
+
+Name: .api_description
+SHA-256-Digest: bXjpAhWalegomg21hcQ83ik7CtyC3TlP2StCfzKQd7Y=
+
+Name: org/eclipse/jdt/internal/junit/runner/ITestReference.class
+SHA-256-Digest: ICJnwj/fWLSpqTv4xouENlqR+hQ+W02J85tLVIudd1A=
+
+Name: org/eclipse/jdt/internal/junit/runner/junit3/JUnit3TestLoader$1.
+ class
+SHA-256-Digest: 1mZcOCvra2MF6NVIcfs5C2tVnL2wJfrx9AbrNrbNKao=
+
+Name: org/eclipse/jdt/internal/junit/runner/CustomHashtable$EmptyEnume
+ rator.class
+SHA-256-Digest: wh+4hd4RIMlTiaiEpwPE0lnzxg+Qag+O6GQ281TOEAk=
+
+Name: org/eclipse/jdt/internal/junit/runner/MessageSender.class
+SHA-256-Digest: 00srIUL+lncdn7TEzY+cE7KBz2RtSSd6zGb9W+Ze4Ww=
+
+Name: org/eclipse/jdt/internal/junit/runner/junit3/JUnit3TestReference
+ $1.class
+SHA-256-Digest: qRtwVzEAHK/pTapk556hYX4QioKQ2xNuv9DLHH6bH44=
+
+Name: org/eclipse/jdt/internal/junit/runner/IVisitsTestTrees.class
+SHA-256-Digest: PncRe4/PusNRAe3Qm7XWM9X0ca4Io2Rrx+efh6G9cJU=
+
+Name: org/eclipse/jdt/internal/junit/runner/CustomHashtable$HashMapEnt
+ ry.class
+SHA-256-Digest: bj6PHS8zOc2iHb9RgEp+sn86kQBL7whjAShf+5exo9A=
+
+Name: org/eclipse/jdt/internal/junit/runner/junit3/JUnit3Identifier.cl
+ ass
+SHA-256-Digest: DGl0YrQkD1hw5+Esxj6xSz5r02ATSfbFF0MtT8Mimvo=
+
+Name: org/eclipse/jdt/internal/junit/runner/FailedComparison.class
+SHA-256-Digest: KMG1G8OisnjNRTNkTSf8Amfl98qXH+wQR4K+iFy0k+o=
+
+Name: org/eclipse/jdt/internal/junit/runner/FailuresFirstPrioritizer.c
+ lass
+SHA-256-Digest: cWv4cpPxC4ZSU0F0u1biJSQ3mR0aGfH1uXFPSqIDy1c=
+
+Name: org/eclipse/jdt/internal/junit/runner/junit3/JUnit3TestReference
+ .class
+SHA-256-Digest: kCMx/AF3GPhFOB8AzgcvsCofrYZMwNqnKbV6KWboIQc=
+
+Name: org/eclipse/jdt/internal/junit/runner/ITestIdentifier.class
+SHA-256-Digest: v72coIXPHbc0mwW5uhyJ+NUi+SCp/yitnckZZqSNkfE=
+
+Name: org/eclipse/jdt/internal/junit/runner/JUnitMessages.class
+SHA-256-Digest: YIJoc0azhdM3p+vUpii24ePcuzRF+1FCHH+XNStPBC0=
+
+Name: org/eclipse/jdt/internal/junit/runner/IStopListener.class
+SHA-256-Digest: VLGpn04S4cOKmg7ah2qOv+G5lP+LqAvHlPbe0pOw58E=
+

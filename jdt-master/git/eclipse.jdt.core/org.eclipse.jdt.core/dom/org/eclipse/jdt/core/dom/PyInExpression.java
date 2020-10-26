@@ -1,5 +1,6 @@
 package org.eclipse.jdt.core.dom;
 
+import org.eclipse.jdt.internal.compiler.ast.InExpression;
 import org.eclipse.jdt.internal.core.dom.util.DOMASTUtil;
 
 import java.util.ArrayList;

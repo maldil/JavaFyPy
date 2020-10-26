@@ -3186,8 +3186,11 @@ public final class AST {
 	 */
 	public PyWithStatement newPyWithStatement () {return new PyWithStatement(this);}
 
+	public PyGenerator newPyGenerator(){return new PyGenerator(this);}
+
 	public PyInExpression newPyInExpression () {return new PyInExpression(this);}
 
+	public PyTupleExpression newPyTupleExpression () {return new PyTupleExpression(this);}
 
 	public WildcardType newWildcardType() {
 		WildcardType result = new WildcardType(this);

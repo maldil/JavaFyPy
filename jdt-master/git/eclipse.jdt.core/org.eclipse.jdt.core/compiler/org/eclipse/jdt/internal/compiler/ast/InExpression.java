@@ -1,18 +1,21 @@
 package org.eclipse.jdt.internal.compiler.ast;
 
+import org.eclipse.jdt.core.dom.PyTupleExpression;
 import org.eclipse.jdt.internal.compiler.ASTVisitor;
+import org.eclipse.jdt.internal.compiler.codegen.CodeStream;
+import org.eclipse.jdt.internal.compiler.flow.FlowContext;
+import org.eclipse.jdt.internal.compiler.flow.FlowInfo;
 import org.eclipse.jdt.internal.compiler.lookup.BlockScope;
 
 public class InExpression extends OperatorExpression{
     public Expression left;
     public Expression right;
 
-
     public InExpression(Expression left, Expression right) {
         this.left = left;
         this.right = right;
         right.bits |= IgnoreRawTypeCheck;
-        this.bits |= INSTANCEOF << OperatorSHIFT;
+        this.bits |= IN << OperatorSHIFT;
         this.sourceStart = left.sourceStart;
         this.sourceEnd = right.sourceEnd;
     }
@@ -32,4 +35,13 @@ public class InExpression extends OperatorExpression{
         }
         visitor.endVisit(this, scope);
     }
+
+    @Override
+    public FlowInfo analyseCode(BlockScope currentScope, FlowContext flowContext, FlowInfo flowInfo) {return flowInfo;}
+
+    @Override
+    public void generateCode(BlockScope currentScope, CodeStream codeStream) {}
+
+    @Override
+    public void resolve(BlockScope upperScope) {}
 }

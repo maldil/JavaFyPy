@@ -26,7 +26,10 @@
   <properties>
     <defaultSigning-excludeInnerJars>true</defaultSigning-excludeInnerJars>
     <code.ignoredWarnings>-warn:+fieldHiding,-unavoidableGenericProblems</code.ignoredWarnings>
+<!--	  <maven.compiler.source>1.8</maven.compiler.source>-->
+<!--	  <maven.compiler.target>1.8</maven.compiler.target>-->
   </properties>
+
 
   <build>
     <plugins>
@@ -202,4 +205,11 @@
 	</profile>
   </profiles>
 
+<!--	<dependencies>-->
+<!--	<dependency>-->
+<!--		<groupId>org.apache.maven.plugins</groupId>-->
+<!--		<artifactId>maven-compiler-plugin</artifactId>-->
+<!--		<version>3.8.1</version>-->
+<!--	</dependency>-->
+<!--	</dependencies>-->
 </project>

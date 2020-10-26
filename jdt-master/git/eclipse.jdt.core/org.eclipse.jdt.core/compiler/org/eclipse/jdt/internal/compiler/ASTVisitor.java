@@ -1049,4 +1049,18 @@ public abstract class ASTVisitor {
 	public  boolean visit(RecordComponent recordComponent, BlockScope scope) {
 		return true; // do nothing by default, keep traversing
 	}
+
+    public boolean visit(TupleExpression tupleExpression, BlockScope scope) {
+		return true;
+    }
+
+	public boolean visit(PyGenerators pyGenerators, BlockScope scope) {
+		return true;
+	}
+	public void endVisit(TupleExpression tupleExpression, BlockScope scope) {
+	}
+
+
+	public void endVisit(PyGenerators pyGenerators, BlockScope scope) {
+	}
 }

@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: org.eclipse.jdt.core.tests.compiler;singleton:=true
-Bundle-Version: 3.12.1400.v20201011-1932
+Bundle-Version: 3.12.1400.v20201016-0104
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Export-Package: org.eclipse.jdt.core.tests.compiler,org.eclipse.jdt.core
@@ -26,5 +26,5 @@ Bundle-ActivationPolicy: lazy
 Automatic-Module-Name: org.eclipse.jdt.core.tests.compiler
 Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/jdt/ecli
  pse.jdt.core.git;path="jdt-master/git/eclipse.jdt.core/org.eclipse.jdt.
- core.tests.compiler";commitId=19d51aa2bcd0f3c4842d2da67884a4564496855f
+ core.tests.compiler";commitId=0a377ffc6798af1967f9dfa4c41dd7922fdfce98
 

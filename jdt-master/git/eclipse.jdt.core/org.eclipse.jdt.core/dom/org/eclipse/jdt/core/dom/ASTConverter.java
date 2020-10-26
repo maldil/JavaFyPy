@@ -52,6 +52,7 @@ import org.eclipse.jdt.internal.compiler.ast.NameReference;
 import org.eclipse.jdt.internal.compiler.ast.OperatorIds;
 import org.eclipse.jdt.internal.compiler.ast.ParameterizedQualifiedTypeReference;
 import org.eclipse.jdt.internal.compiler.ast.ParameterizedSingleTypeReference;
+import org.eclipse.jdt.internal.compiler.ast.PyGenerators;
 import org.eclipse.jdt.internal.compiler.ast.QualifiedAllocationExpression;
 import org.eclipse.jdt.internal.compiler.ast.QualifiedSuperReference;
 import org.eclipse.jdt.internal.compiler.ast.QualifiedTypeReference;
@@ -61,6 +62,7 @@ import org.eclipse.jdt.internal.compiler.ast.SingleNameReference;
 import org.eclipse.jdt.internal.compiler.ast.SingleTypeReference;
 import org.eclipse.jdt.internal.compiler.ast.StringLiteralConcatenation;
 import org.eclipse.jdt.internal.compiler.ast.SuperReference;
+import org.eclipse.jdt.internal.compiler.ast.TupleExpression;
 import org.eclipse.jdt.internal.compiler.ast.TypeReference;
 import org.eclipse.jdt.internal.compiler.ast.UnionTypeReference;
 import org.eclipse.jdt.internal.compiler.ast.Wildcard;
@@ -2050,6 +2052,9 @@ class ASTConverter {
 		if (expression instanceof org.eclipse.jdt.internal.compiler.ast.InExpression){
 			return convert((org.eclipse.jdt.internal.compiler.ast.InExpression) expression);
 		}
+		if (expression instanceof org.eclipse.jdt.internal.compiler.ast.TupleExpression){
+			return convert((org.eclipse.jdt.internal.compiler.ast.TupleExpression) expression);
+		}
 		return null;
 	}
 
@@ -2241,6 +2246,19 @@ class ASTConverter {
 		return pyinExpression;
 	}
 
+	public PyTupleExpression convert (TupleExpression tupleExpression){
+		PyTupleExpression pyTupleExpression = new PyTupleExpression(this.ast);
+		org.eclipse.jdt.internal.compiler.ast.Expression node = tupleExpression.left;
+		pyTupleExpression.setSourceRange(tupleExpression.sourceStart, tupleExpression.sourceEnd - tupleExpression.sourceStart + 1);
+		pyTupleExpression.expressions().add(convert(tupleExpression.right));
+		while (node instanceof TupleExpression){
+			pyTupleExpression.expressions().add(convert(((TupleExpression) node).right));
+			node = ((TupleExpression) node).left;
+		}
+		pyTupleExpression.expressions().add(convert(node));
+		return pyTupleExpression;
+	}
+
 	public InstanceofExpression convert(org.eclipse.jdt.internal.compiler.ast.InstanceOfExpression expression) {
 		InstanceofExpression instanceOfExpression = new InstanceofExpression(this.ast);
 		if (this.resolveBindings) {
@@ -2430,6 +2448,22 @@ class ASTConverter {
 			expr = superMethodInvocation;
 		} else {
 			// returns a MethodInvocation
+			if ("gen".equals(new String(expression.selector)) && expression.arguments.length==1 && expression.arguments[0] instanceof PyGenerators){
+				final PyGenerator pyGenerator = new PyGenerator(this.ast);
+				PyGenerators pyGenerators = (PyGenerators) expression.arguments[0];
+				pyGenerator.setIteratorExpression(convert(pyGenerators.getIterator()));
+				pyGenerator.setConditionalExpression(convert(pyGenerators.getBinaryExpression()));
+				for (LocalDeclaration value : pyGenerators.typeValues) {
+					pyGenerator.getValueExpression().add(convertToSingleVariableDeclaration(value));
+				}
+				//pyGenerator.setValueExpression(convert(pyGenerators.getValue()));
+				Expression target = convert(pyGenerators.getTarget());
+				pyGenerator.setTargetExpression(target);
+				expr = pyGenerator;
+				expr.setSourceRange(target.getStartPosition(), expression.sourceEnd - sourceStart + 1);
+				return expr;
+			}
+
 			final MethodInvocation methodInvocation = new MethodInvocation(this.ast);
 			if (this.resolveBindings) {
 				recordNodes(methodInvocation, expression);
