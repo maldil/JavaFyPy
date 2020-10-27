@@ -49,6 +49,7 @@ import org.eclipse.jdt.internal.compiler.ast.LocalDeclaration;
 import org.eclipse.jdt.internal.compiler.ast.MessageSend;
 import org.eclipse.jdt.internal.compiler.ast.ModuleReference;
 import org.eclipse.jdt.internal.compiler.ast.NameReference;
+import org.eclipse.jdt.internal.compiler.ast.NotInExpression;
 import org.eclipse.jdt.internal.compiler.ast.OperatorIds;
 import org.eclipse.jdt.internal.compiler.ast.ParameterizedQualifiedTypeReference;
 import org.eclipse.jdt.internal.compiler.ast.ParameterizedSingleTypeReference;
@@ -2055,6 +2056,9 @@ class ASTConverter {
 		if (expression instanceof org.eclipse.jdt.internal.compiler.ast.TupleExpression){
 			return convert((org.eclipse.jdt.internal.compiler.ast.TupleExpression) expression);
 		}
+		if (expression instanceof org.eclipse.jdt.internal.compiler.ast.NotInExpression){
+			return convert((org.eclipse.jdt.internal.compiler.ast.NotInExpression) expression);
+		}
 		return null;
 	}
 
@@ -2244,6 +2248,18 @@ class ASTConverter {
 		int sourceEnd = rightExpression.getStartPosition() + rightExpression.getLength() - 1;
 		pyinExpression.setSourceRange(startPosition, sourceEnd - startPosition + 1);
 		return pyinExpression;
+	}
+
+	public PyNotInExpression convert (NotInExpression notInExpression){
+		PyNotInExpression pyNotInExpression = new PyNotInExpression(this.ast);
+		Expression leftExpression = convert(notInExpression.left);
+		pyNotInExpression.setLeftOperand(leftExpression);
+		Expression rightExpression = convert(notInExpression.right);
+		pyNotInExpression.setRightOperand(rightExpression);
+		int startPosition = leftExpression.getStartPosition();
+		int sourceEnd = rightExpression.getStartPosition() + rightExpression.getLength() - 1;
+		pyNotInExpression.setSourceRange(startPosition, sourceEnd - startPosition + 1);
+		return pyNotInExpression;
 	}
 
 	public PyTupleExpression convert (TupleExpression tupleExpression){

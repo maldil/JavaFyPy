@@ -3863,6 +3863,9 @@ private int internalScanIdentifierOrKeyword(int index, int length, char[] data) 
 				case 3 :
 					if ((data[++index] == 'e') && (data[++index] == 'w'))
 						return TokenNamenew;
+					else if ((data[index] == 'o' && data[++index] == 't')){
+						return TokenNamenot;
+					}
 					else {
 						int token = checkFor_KeyWord(index - 1, length, data);
 						return token != TokenNameNotAToken ? token : TokenNameIdentifier;

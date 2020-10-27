@@ -48,7 +48,7 @@ $Terminals
 	interface long native new non-sealed null package private
 	protected public return short static strictfp super switch
 	synchronized this throw throws transient true try void
-	volatile while module open requires transitive exports opens to uses provides with withstmt in pyjavatuple
+	volatile while module open requires transitive exports opens to uses provides with withstmt in pyjavatuple not
 
 	IntegerLiteral
 	LongLiteral
@@ -2139,8 +2139,13 @@ InExpression ::= InExpression 'in' EqualityExpression
 /.$putCase consumeInExpression(); $break ./
 /:$readableName Expression:/
 
-TupleExpression -> InExpression
-TupleExpression ::= TupleExpression 'pyjavatuple' InExpression
+NotInExpression -> InExpression
+NotInExpression ::= NotInExpression 'not' 'in' InExpression
+/.$putCase consumeNotInExpression(); $break ./
+/:$readableName Expression:/
+
+TupleExpression -> NotInExpression
+TupleExpression ::= TupleExpression 'pyjavatuple' NotInExpression
 /.$putCase consumeTuple(); $break ./
 /:$readableName Expression:/
 
@@ -2834,10 +2839,17 @@ InExpression_NotName ::= Name 'in' EqualityExpression
 --/:$readableName Expression:/
 
 
-TupleExpression_NotName -> InExpression_NotName
-TupleExpression_NotName ::= TupleExpression_NotName 'pyjavatuple' InExpression
+NotInExpression_NotName -> InExpression_NotName
+NotInExpression_NotName ::= NotInExpression_NotName 'not' 'in' InExpression
+/.$putCase consumeNotInExpression(); $break ./
+NotInExpression_NotName ::= Name 'not' 'in' InExpression
+/.$putCase consumeNotInExpressionWithName(); $break ./
+--/:$readableName Expression:/
+
+TupleExpression_NotName -> NotInExpression_NotName
+TupleExpression_NotName ::= TupleExpression_NotName 'pyjavatuple' NotInExpression
 /.$putCase consumeTuple(); $break ./
-TupleExpression_NotName ::= Name 'pyjavatuple' InExpression
+TupleExpression_NotName ::= Name 'pyjavatuple' NotInExpression
 /.$putCase consumeTupleWithName(); $break ./
 /:$readableName Expression:/
 

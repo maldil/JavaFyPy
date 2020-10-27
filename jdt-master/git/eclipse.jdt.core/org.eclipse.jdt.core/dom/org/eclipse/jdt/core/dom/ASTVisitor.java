@@ -1894,7 +1894,9 @@ public abstract class ASTVisitor {
 	public boolean visit(PyInExpression pyInExpression) {
 		return true;
 	}
-
+	public boolean visit(PyNotInExpression pyNotInExpression) {
+		return true;
+	}
 	public boolean visit(PyGenerator pyGenerator) {
 		return true;
 	}
@@ -3252,5 +3254,9 @@ public abstract class ASTVisitor {
 
 
 	public void endVisit(PyGenerator pyGenerator) {
+	}
+
+
+	public void endVisit(PyNotInExpression pyNotInExpression) {
 	}
 }

@@ -3190,6 +3190,8 @@ public final class AST {
 
 	public PyInExpression newPyInExpression () {return new PyInExpression(this);}
 
+	public PyNotInExpression newPyNotInExpression () {return new PyNotInExpression(this);}
+
 	public PyTupleExpression newPyTupleExpression () {return new PyTupleExpression(this);}
 
 	public WildcardType newWildcardType() {

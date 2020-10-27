@@ -129,6 +129,7 @@ public class InfixExpression extends Expression {
 		public static final Operator POW = new Operator("^");//$NON-NLS-1$
 		public static final Operator FLOORDIV = new InfixExpression.Operator("//");
 		public static final Operator IN = new Operator("in");
+		public static final Operator NOT_IN = new Operator("not in");
 		/**
 		 * Map from token to operator (key type: <code>String</code>;
 		 * value type: <code>Operator</code>).
@@ -159,6 +160,7 @@ public class InfixExpression extends Expression {
 					POW,
 					FLOORDIV,
 					IN,
+					NOT_IN,
 				};
 			for (int i = 0; i < ops.length; i++) {
 				CODES.put(ops[i].toString(), ops[i]);

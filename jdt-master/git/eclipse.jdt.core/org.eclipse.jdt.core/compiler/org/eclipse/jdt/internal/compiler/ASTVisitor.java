@@ -1057,10 +1057,19 @@ public abstract class ASTVisitor {
 	public boolean visit(PyGenerators pyGenerators, BlockScope scope) {
 		return true;
 	}
+
+	public boolean visit(NotInExpression notInExpression, BlockScope scope) {
+		return true;
+	}
+	
 	public void endVisit(TupleExpression tupleExpression, BlockScope scope) {
 	}
 
 
 	public void endVisit(PyGenerators pyGenerators, BlockScope scope) {
+	}
+
+
+	public void endVisit(NotInExpression notInExpression, BlockScope scope) {
 	}
 }

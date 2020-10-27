@@ -2960,4 +2960,16 @@ public class ASTMatcher {
 						&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()) &&
 						safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
     }
+
+    public boolean match(PyNotInExpression pyNotInExpression, Object other) {
+		if (!(other instanceof PyNotInExpression)) {
+			return false;
+		}
+		PyNotInExpression o = (PyNotInExpression) other;
+		return
+				safeSubtreeMatch(pyNotInExpression.getLeftOperand(), o.getLeftOperand())
+						&& safeSubtreeMatch(pyNotInExpression.getRightOperand(), o.getRightOperand());
+    }
+
+
 }

@@ -234,6 +234,7 @@ NestedType=NestedType
 NonWildTypeArgumentsopt=NonWildTypeArgumentsopt
 NormalAnnotation=NormalAnnotation
 NormalTypeAnnotation=NormalAnnotation
+NotInExpression=Expression
 NumericType=NumericType
 OneDimLoop=Dimension
 OnlySynchronized=OnlySynchronized

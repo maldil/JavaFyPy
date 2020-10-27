@@ -2041,6 +2041,15 @@ public class NaiveASTFlattener extends ASTVisitor {
 	}
 
 	@Override
+	public boolean visit(PyNotInExpression node) {
+		printIndent();
+		node.getLeftOperand().accept(this);
+		this.buffer.append(" not in ");//$NON-NLS-1$
+		node.getRightOperand().accept(this);
+		return false;
+	}
+
+	@Override
 	public boolean visit(PyTupleExpression node){
 		printIndent();
 		this.buffer.append("(");

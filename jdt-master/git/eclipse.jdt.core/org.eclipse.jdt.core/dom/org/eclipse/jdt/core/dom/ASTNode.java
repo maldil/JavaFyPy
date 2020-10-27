@@ -1012,6 +1012,9 @@ public abstract class ASTNode {
 	public static final int TUPLE_EXPRESSION = 106;
 
 	public static final int PY_GENERATOR_EXPRESSION = 107;
+
+	public static final int PY_NOT_IN_EXPRESSION = 105;
+
 	public static Class nodeClassForType(int nodeType) {
 		switch (nodeType) {
 			case ANNOTATION_TYPE_DECLARATION :

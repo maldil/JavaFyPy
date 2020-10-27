@@ -6,9 +6,9 @@
     <package visibility="1">
         <fragment handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom"/>
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTNode.java[ASTNode" modificationStamp="12273" restrictions="2" visibility="0"/>
-        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{InfixExpression.java[InfixExpression" modificationStamp="12340" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{InfixExpression.java[InfixExpression" modificationStamp="12341" restrictions="4" visibility="0"/>
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{AST.java[AST" modificationStamp="12269" restrictions="4" visibility="0"/>
-        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTConverter.java[ASTConverter" modificationStamp="12271" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTConverter.java[ASTConverter" modificationStamp="12272" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTVisitor.java[ASTVisitor" modificationStamp="12277" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{DocCommentParser.java[DocCommentParser" modificationStamp="12315" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTMatcher.java[ASTMatcher" modificationStamp="12270" restrictions="0" visibility="0"/>

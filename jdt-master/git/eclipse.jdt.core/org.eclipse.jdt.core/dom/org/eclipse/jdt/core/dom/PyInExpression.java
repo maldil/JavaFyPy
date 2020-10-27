@@ -63,7 +63,7 @@ public class PyInExpression extends Expression{
     }
 
     int getNodeType0() {
-       return PY_WITH_STATEMENT;
+       return PY_IN_EXPRESSION;
     }
 
     boolean subtreeMatch0(ASTMatcher matcher, Object other) {
