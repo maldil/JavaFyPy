@@ -1281,6 +1281,8 @@ public abstract class ASTNode {
 	 */
 	private int pyStartPosition = -1;
 
+	private int pyColumnOffSet = -1;
+
 	/**
 	 * A character index into the original source string,
 	 * or <code>-1</code> if no source position information is available
@@ -3116,6 +3118,15 @@ public abstract class ASTNode {
 	public final void setPyStartPosition(int startPos) {
 		this.pyStartPosition=startPos;
 	}
+
+	public final int getPyColumnOffSet() {
+		return this.pyColumnOffSet;
+	}
+	public final void setPyColumnOffSet(int startPos) {
+		this.pyColumnOffSet=startPos;
+	}
+
+
 
 	/**
 	 * Returns the character index into the original source file indicating
