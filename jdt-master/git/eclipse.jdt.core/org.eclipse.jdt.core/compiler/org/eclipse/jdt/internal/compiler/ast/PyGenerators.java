@@ -15,7 +15,7 @@ public class PyGenerators extends OperatorExpression implements IPolyExpression{
     private Expression value=null;
     public ArrayList<LocalDeclaration> typeValues=null;
     private Expression iterator=null;
-    private BinaryExpression binaryExpression=null;
+    private Expression binaryExpression=null;
     public void updateIndices(){
         this.sourceStart = target.sourceStart;
         this.sourceEnd = binaryExpression.sourceEnd;
@@ -55,7 +55,7 @@ public class PyGenerators extends OperatorExpression implements IPolyExpression{
         return iterator;
     }
 
-    public BinaryExpression getBinaryExpression() {
+    public Expression getBinaryExpression() {
         return binaryExpression;
     }
 
@@ -75,7 +75,7 @@ public class PyGenerators extends OperatorExpression implements IPolyExpression{
         this.iterator = iterator;
     }
 
-    public void setBinaryExpression(BinaryExpression binaryExpression) {
+    public void setBinaryExpression(Expression binaryExpression) {
         this.binaryExpression = binaryExpression;
     }
 

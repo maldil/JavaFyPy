@@ -1977,7 +1977,7 @@ public class Parser implements TerminalTokens, ParserBasicInformation, Conflicte
 
 
         PyGenerators pyGenerators =  new PyGenerators();
-        pyGenerators.setBinaryExpression((BinaryExpression) this.expressionStack[this.expressionPtr+3]);
+        pyGenerators.setBinaryExpression( this.expressionStack[this.expressionPtr+3]);
         pyGenerators.setIterator(this.expressionStack[this.expressionPtr+2]);
         pyGenerators.setTypeValues(((TupleTypeExpression)this.expressionStack[this.expressionPtr+1]).getLocalDeclarations());
         pyGenerators.setTarget(this.expressionStack[this.expressionPtr]);
