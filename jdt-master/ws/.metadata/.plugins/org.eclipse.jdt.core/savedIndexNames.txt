@@ -40,7 +40,6 @@ INDEX VERSION 1.131+/Users/malinda/Documents/Research_Topic_2/eclips_workspace_c
 3957609542.index
 3227758173.index
 224182649.index
-994219623.index
 824309646.index
 3945370686.index
 2135854116.index
