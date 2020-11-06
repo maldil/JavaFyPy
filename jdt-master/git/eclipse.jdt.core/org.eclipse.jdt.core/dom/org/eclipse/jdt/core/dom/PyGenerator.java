@@ -107,6 +107,10 @@ public class PyGenerator extends Expression{
         return conditionalExpression;
     }
 
+    public Expression internalGetConditionalExpression(){
+        return conditionalExpression;
+    }
+
     public Expression getIteratorExpression() {
         if (this.iteratorExpression == null) {
             // lazy init must be thread-safe for readers
@@ -204,7 +208,9 @@ public class PyGenerator extends Expression{
     ASTNode clone0(AST target) {
         PyGenerator pyGenerator = new PyGenerator(target);
         pyGenerator.setSourceRange(getStartPosition(), getLength());
-        pyGenerator.setConditionalExpression((Expression) getConditionalExpression().clone(target));
+        if (internalGetConditionalExpression()!=null){
+            pyGenerator.setConditionalExpression((Expression) internalGetConditionalExpression().clone(target));
+        }
         pyGenerator.setTargetExpression(
                 (Expression) getTargetExpression().clone(target));
         for (Object o : valueExpression) {
@@ -220,7 +226,9 @@ public class PyGenerator extends Expression{
         boolean visitChildren = visitor.visit(this);
         if (visitChildren) {
             // visit children in normal left to right reading order
-            acceptChild(visitor, getConditionalExpression());
+            if ( internalGetConditionalExpression()!=null){
+                acceptChild(visitor, internalGetConditionalExpression());
+            }
             acceptChild(visitor, getIteratorExpression());
             for (Object o : valueExpression) {
                 acceptChild(visitor, (ASTNode) o);

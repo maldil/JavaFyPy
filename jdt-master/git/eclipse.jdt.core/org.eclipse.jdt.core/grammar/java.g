@@ -1919,6 +1919,12 @@ ArrayCreationWithArrayInitializer ::= 'new' PrimitiveType DimWithOrWithOutExprs 
 /.$putCase consumeArrayCreationExpressionWithInitializer(); $break ./
 /:$readableName ArrayCreationWithArrayInitializer:/
 
+
+ArrayCreationWithArrayInitializer ::= 'new' UnionType DimWithOrWithOutExprs ArrayInitializer
+/.$putCase consumeArrayCreationExpressionWithUnionTypeWithInitializer(); $break ./
+/:$readableName ArrayCreationWithArrayInitializer:/
+
+
 ArrayCreationWithoutArrayInitializer ::= 'new' ClassOrInterfaceType DimWithOrWithOutExprs
 /.$putCase consumeArrayCreationExpressionWithoutInitializer(); $break ./
 
@@ -2176,14 +2182,19 @@ ConditionalOrExpression ::= ConditionalOrExpression '||' ConditionalAndExpressio
 /:$readableName Expression:/
 
 
+
 ConditionalExpression -> ConditionalOrExpression
 ConditionalExpression ::= ConditionalOrExpression '?' Expression ':' ConditionalExpression
 /.$putCase consumeConditionalExpression(OperatorIds.QUESTIONCOLON) ; $break ./
 /:$readableName Expression:/
 --InGeneratorExpression -> ConditionalExpression
 --InGeneratorExpression ::= Expression 'for' TupleExpression ':' InGeneratorExpression 'if' ConditionalExpression
-ConditionalExpression ::= TupleExpression EnhancedForStatementHeaderInit  ':' ConditionalExpression 'if' ConditionalOrExpression
+ConditionalExpression ::= TupleExpression EnhancedForStatementHeaderInit  ':' Expression 'if' ConditionalOrExpression
 /.$putCase consumeGenerators() ; $break ./
+--ConditionalExpression ::= TupleExpression EnhancedForStatementHeaderInit  ':' Name
+--/.$putCase consumeGeneratorsWithoutIFWithName() ; $break ./
+ConditionalExpression ::= TupleExpression EnhancedForStatementHeaderInit  ':' Expression
+/.$putCase consumeGeneratorsWithoutIF() ; $break ./
 /:$readableName Expression:/
 
 AssignmentExpression -> ConditionalExpression

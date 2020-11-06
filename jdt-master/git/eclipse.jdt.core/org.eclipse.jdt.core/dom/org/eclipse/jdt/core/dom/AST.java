@@ -3188,6 +3188,8 @@ public final class AST {
 
 	public PyGenerator newPyGenerator(){return new PyGenerator(this);}
 
+	public PyListComprehension newPyListComprehension(){return new PyListComprehension(this);}
+
 	public PyInExpression newPyInExpression () {return new PyInExpression(this);}
 
 	public PyNotInExpression newPyNotInExpression () {return new PyNotInExpression(this);}

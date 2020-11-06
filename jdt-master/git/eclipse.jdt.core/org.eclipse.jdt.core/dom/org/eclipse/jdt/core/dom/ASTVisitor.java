@@ -1903,6 +1903,9 @@ public abstract class ASTVisitor {
 	public boolean visit(PyTupleExpression pyTupleExpression) {
 		return true;
 	}
+	public boolean visit(PyListComprehension pyListComprehension) {
+		return true;
+	}
 	/**
 	 * Visits the given type-specific AST node.
 	 * <p>
@@ -3258,5 +3261,9 @@ public abstract class ASTVisitor {
 
 
 	public void endVisit(PyNotInExpression pyNotInExpression) {
+	}
+
+
+	public void endVisit(PyListComprehension pyListComprehension) {
 	}
 }

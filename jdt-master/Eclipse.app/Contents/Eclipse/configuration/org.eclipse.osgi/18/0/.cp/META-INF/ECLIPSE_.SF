@@ -1,0 +1,33 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: xduOGqU0dX7lEYFBzjv+aiu8XpxvO
+ i1jangS5JQb9Hs=
+SHA-256-Digest-Manifest: NYBdeNy6IC7nwdjPymxUva12Mx8X3Ad8vP+xYbcPX6A=
+Created-By: 1.8.0_162 (Oracle Corporation)
+
+Name: about.html
+SHA-256-Digest: vygDAyYJyji7ke4aATeQ3PNUFh1tmTD13gMkyAvbmrc=
+
+Name: javax/inject/Inject.class
+SHA-256-Digest: 5pR3b3vSKGs6+f/h47VUx1vRnYxd7A95VtiBfykraSo=
+
+Name: javax/inject/Scope.class
+SHA-256-Digest: ZmGbM5LFYvXOG/kc99KsZ3GNQTLjDVrMqUdbCIkaJKQ=
+
+Name: javax/inject/Named.class
+SHA-256-Digest: G9MM/AZMlV9ZTrfEt+CoIEcNENLxquUPFEj3PrBOvVw=
+
+Name: plugin.properties
+SHA-256-Digest: 9EMEVJVXhW6qmCrPB4ayM12QJTJSnh95YiNKhrH8U7E=
+
+Name: javax/inject/Provider.class
+SHA-256-Digest: SIhrC64s5NWFSIgeMH3oScm4Ai9In7y0atwnuSjN9kY=
+
+Name: javax/inject/Singleton.class
+SHA-256-Digest: bqBQ7bpl/vgdjHchFL/5GJ3G2ywrBzTejj3Tml0gFXA=
+
+Name: javax/inject/Qualifier.class
+SHA-256-Digest: Y7pnzgjd4wLIjJkdCMHdGjO4Pg8ecytBZuChiouyltg=
+
+Name: META-INF/eclipse.inf
+SHA-256-Digest: rEULrt3GCNggFeuBb9QugPCG48TouWYgzDw3Q1PhCCQ=
+

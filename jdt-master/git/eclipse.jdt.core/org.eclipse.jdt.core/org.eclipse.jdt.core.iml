@@ -18,9 +18,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.osgi:3.16.100.v20200904-1304">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.osgi:3.16.100.v20201030-1916">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.osgi/3.16.100.v20200904-1304/org.eclipse.osgi-3.16.100.v20200904-1304.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.osgi/3.16.100.v20201030-1916/org.eclipse.osgi-3.16.100.v20201030-1916.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -252,36 +252,36 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.compare.core:3.6.900.v20200412-2017">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.compare.core:3.6.1000.v20201020-1107">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.compare.core/3.6.900.v20200412-2017/org.eclipse.compare.core-3.6.900.v20200412-2017.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.compare.core/3.6.1000.v20201020-1107/org.eclipse.compare.core-3.6.1000.v20201020-1107.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.core.runtime:3.19.0.v20200724-1004">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.core.runtime:3.20.0.v20201027-1526">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.core.runtime/3.19.0.v20200724-1004/org.eclipse.core.runtime-3.19.0.v20200724-1004.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.core.runtime/3.20.0.v20201027-1526/org.eclipse.core.runtime-3.20.0.v20201027-1526.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.core.commands:3.9.800.v20200910-0548">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.core.commands:3.9.800.v20201021-1339">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.core.commands/3.9.800.v20200910-0548/org.eclipse.core.commands-3.9.800.v20200910-0548.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.core.commands/3.9.800.v20201021-1339/org.eclipse.core.commands-3.9.800.v20201021-1339.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.equinox.common:3.14.0.v20200915-1207">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.equinox.common:3.14.0.v20200929-1802">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.equinox.common/3.14.0.v20200915-1207/org.eclipse.equinox.common-3.14.0.v20200915-1207.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.equinox.common/3.14.0.v20200929-1802/org.eclipse.equinox.common-3.14.0.v20200929-1802.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -297,18 +297,18 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.equinox.preferences:3.8.0.v20200422-1833">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.equinox.preferences:3.8.100.v20201027-1107">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.equinox.preferences/3.8.0.v20200422-1833/org.eclipse.equinox.preferences-3.8.0.v20200422-1833.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.equinox.preferences/3.8.100.v20201027-1107/org.eclipse.equinox.preferences-3.8.100.v20201027-1107.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.equinox.registry:3.9.100.v20200915-1207">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.equinox.registry:3.10.0.v20200929-1802">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.equinox.registry/3.9.100.v20200915-1207/org.eclipse.equinox.registry-3.9.100.v20200915-1207.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.equinox.registry/3.10.0.v20200929-1802/org.eclipse.equinox.registry-3.10.0.v20200929-1802.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -342,9 +342,9 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.core.resources:3.13.900.v20200915-0813">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.core.resources:3.13.900.v20201028-1137">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.core.resources/3.13.900.v20200915-0813/org.eclipse.core.resources-3.13.900.v20200915-0813.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.core.resources/3.13.900.v20201028-1137/org.eclipse.core.resources-3.13.900.v20201028-1137.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

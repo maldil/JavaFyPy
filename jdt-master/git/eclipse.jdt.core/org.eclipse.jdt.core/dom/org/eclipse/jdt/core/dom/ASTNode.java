@@ -1013,7 +1013,9 @@ public abstract class ASTNode {
 
 	public static final int PY_GENERATOR_EXPRESSION = 107;
 
-	public static final int PY_NOT_IN_EXPRESSION = 105;
+	public static final int PY_NOT_IN_EXPRESSION = 108;
+
+	public static final int PY_LIST_COMPREHENSION_EXPRESSION = 109;
 
 	public static Class nodeClassForType(int nodeType) {
 		switch (nodeType) {

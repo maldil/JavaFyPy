@@ -18,7 +18,10 @@ public class PyGenerators extends OperatorExpression implements IPolyExpression{
     private Expression binaryExpression=null;
     public void updateIndices(){
         this.sourceStart = target.sourceStart;
-        this.sourceEnd = binaryExpression.sourceEnd;
+        if (binaryExpression!=null){
+            this.sourceEnd = binaryExpression.sourceEnd;
+        }
+        this.sourceEnd = iterator.sourceEnd;
     }
 
     public StringBuffer printExpressionNoParenthesis(int indent, StringBuffer output) {
@@ -33,10 +36,14 @@ public class PyGenerators extends OperatorExpression implements IPolyExpression{
             }
             output.append(':');
         }
-        if (iterator!=null) {
-            this.iterator.printExpression(0, output).append(" if ");
+        if (binaryExpression==null) {
+            return this.iterator.printExpression(0, output);
         }
-        return binaryExpression.printExpression(0, output) ;
+        else{
+            this.iterator.printExpression(0, output).append(" if ");
+            return binaryExpression.printExpression(0, output) ;
+        }
+
     }
 
     public ArrayList<LocalDeclaration> getTypeValues() {

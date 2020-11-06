@@ -2025,8 +2025,32 @@ public class NaiveASTFlattener extends ASTVisitor {
 		}
 		this.buffer.append(" : ");
 		node.getIteratorExpression().accept(this);
-		this.buffer.append(" if ");
-		node.getConditionalExpression().accept(this);
+		if (node.internalGetConditionalExpression()!=null){
+			this.buffer.append(" if ");
+			node.getConditionalExpression().accept(this);
+		}
+		this.buffer.append(") ");//$NON-NLS-1$
+		return false;
+	}
+
+	public boolean visit(PyListComprehension node) {
+		printIndent();
+		this.buffer.append("listc (");//$NON-NLS-1$
+		node.getTargetExpression().accept(this);
+		this.buffer.append(" for ");
+
+		for (int j=0;j<node.getValueExpression().size();j++){
+			((SingleVariableDeclaration)node.getValueExpression().get(j)).accept(this);
+			if (j!=node.getValueExpression().size()-1){
+				this.buffer.append(',');
+			}
+		}
+		this.buffer.append(" : ");
+		node.getIteratorExpression().accept(this);
+		if (node.internalGetConditionalExpression()!=null){
+			this.buffer.append(" if ");
+			node.getConditionalExpression().accept(this);
+		}
 		this.buffer.append(") ");//$NON-NLS-1$
 		return false;
 	}

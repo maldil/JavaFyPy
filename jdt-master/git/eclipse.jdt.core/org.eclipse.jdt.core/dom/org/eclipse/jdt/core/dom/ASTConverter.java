@@ -2464,11 +2464,13 @@ class ASTConverter {
 			expr = superMethodInvocation;
 		} else {
 			// returns a MethodInvocation
-			if ("gen".equals(new String(expression.selector)) && expression.arguments.length==1 && expression.arguments[0] instanceof PyGenerators){
+			if ("gen".equals(new String(expression.selector)) && expression.arguments != null && expression.arguments.length==1 && expression.arguments[0] instanceof PyGenerators){
 				final PyGenerator pyGenerator = new PyGenerator(this.ast);
 				PyGenerators pyGenerators = (PyGenerators) expression.arguments[0];
 				pyGenerator.setIteratorExpression(convert(pyGenerators.getIterator()));
-				pyGenerator.setConditionalExpression(convert(pyGenerators.getBinaryExpression()));
+				if (pyGenerators.getBinaryExpression()!=null){
+					pyGenerator.setConditionalExpression(convert(pyGenerators.getBinaryExpression()));
+				}
 				for (LocalDeclaration value : pyGenerators.typeValues) {
 					pyGenerator.getValueExpression().add(convertToSingleVariableDeclaration(value));
 				}
@@ -2476,6 +2478,23 @@ class ASTConverter {
 				Expression target = convert(pyGenerators.getTarget());
 				pyGenerator.setTargetExpression(target);
 				expr = pyGenerator;
+				expr.setSourceRange(target.getStartPosition(), expression.sourceEnd - sourceStart + 1);
+				return expr;
+			}
+			else if ("listc".equals(new String(expression.selector)) && expression.arguments != null && expression.arguments.length==1 && expression.arguments[0] instanceof PyGenerators){
+				final PyListComprehension pylistcomp = new PyListComprehension(this.ast);
+				PyGenerators pyGenerators = (PyGenerators) expression.arguments[0];
+				pylistcomp.setIteratorExpression(convert(pyGenerators.getIterator()));
+				if (pyGenerators.getBinaryExpression()!=null){
+					pylistcomp.setConditionalExpression(convert(pyGenerators.getBinaryExpression()));
+				}
+				for (LocalDeclaration value : pyGenerators.typeValues) {
+					pylistcomp.getValueExpression().add(convertToSingleVariableDeclaration(value));
+				}
+				//pyGenerator.setValueExpression(convert(pyGenerators.getValue()));
+				Expression target = convert(pyGenerators.getTarget());
+				pylistcomp.setTargetExpression(target);
+				expr = pylistcomp;
 				expr.setSourceRange(target.getStartPosition(), expression.sourceEnd - sourceStart + 1);
 				return expr;
 			}

@@ -2954,11 +2954,19 @@ public class ASTMatcher {
 			return false;
 		}
 		PyGenerator o = (PyGenerator) other;
-		return (
-				safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())
-						&& safeSubtreeMatch(node.getConditionalExpression(), o.getConditionalExpression())
-						&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()) &&
-						safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
+		if (node.internalGetConditionalExpression()!=null){
+			return (
+					safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())
+							&& safeSubtreeMatch(node.getConditionalExpression(), o.getConditionalExpression())
+							&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()) &&
+							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
+		}
+		else{
+			return (
+					safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())
+							&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()) &&
+							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
+		}
     }
 
     public boolean match(PyNotInExpression pyNotInExpression, Object other) {
@@ -2972,4 +2980,23 @@ public class ASTMatcher {
     }
 
 
+    public boolean match(PyListComprehension node, Object other) {
+		if (!(other instanceof PyListComprehension)) {
+			return false;
+		}
+		PyListComprehension o = (PyListComprehension) other;
+		if (node.internalGetConditionalExpression()!=null){
+			return (
+					safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())
+							&& safeSubtreeMatch(node.getConditionalExpression(), o.getConditionalExpression())
+							&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()) &&
+							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
+		}
+		else{
+			return (
+					safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())
+							&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()) &&
+							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
+		}
+    }
 }

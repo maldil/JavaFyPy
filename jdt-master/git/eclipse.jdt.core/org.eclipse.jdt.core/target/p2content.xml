@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <units size='5'>
-  <unit id='org.eclipse.jdt.core' version='3.24.0.v20201029-0459' generation='2'>
-    <update id='org.eclipse.jdt.core' range='[0.0.0,3.24.0.v20201029-0459)' severity='0'/>
+  <unit id='org.eclipse.jdt.core' version='3.24.0.v20201031-0651' generation='2'>
+    <update id='org.eclipse.jdt.core' range='[0.0.0,3.24.0.v20201031-0651)' severity='0'/>
     <properties size='8'>
       <property name='df_LT.pluginName' value='Java Development Tools Core'/>
       <property name='df_LT.providerName' value='Eclipse.org'/>
@@ -13,8 +13,8 @@
       <property name='maven-version' value='3.24.0-SNAPSHOT'/>
     </properties>
     <provides size='59'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core' version='3.24.0.v20201029-0459'/>
-      <provided namespace='osgi.bundle' name='org.eclipse.jdt.core' version='3.24.0.v20201029-0459'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core' version='3.24.0.v20201031-0651'/>
+      <provided namespace='osgi.bundle' name='org.eclipse.jdt.core' version='3.24.0.v20201031-0651'/>
       <provided namespace='java.package' name='org.eclipse.jdt.core' version='0.0.0'/>
       <provided namespace='java.package' name='org.eclipse.jdt.core.compiler' version='0.0.0'/>
       <provided namespace='java.package' name='org.eclipse.jdt.core.compiler.batch' version='0.0.0'/>
@@ -69,7 +69,7 @@
       <provided namespace='java.package' name='org.eclipse.jdt.internal.formatter' version='0.0.0'/>
       <provided namespace='java.package' name='org.eclipse.jdt.internal.formatter.linewrap' version='0.0.0'/>
       <provided namespace='java.package' name='org.eclipse.jdt.internal.formatter.old' version='0.0.0'/>
-      <provided namespace='osgi.identity' name='org.eclipse.jdt.core' version='3.24.0.v20201029-0459'>
+      <provided namespace='osgi.identity' name='org.eclipse.jdt.core' version='3.24.0.v20201031-0651'>
         <properties size='1'>
           <property name='type' value='osgi.bundle'/>
         </properties>
@@ -90,19 +90,19 @@
       </requiredProperties>
     </requires>
     <artifacts size='1'>
-      <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core' version='3.24.0.v20201029-0459'/>
+      <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core' version='3.24.0.v20201031-0651'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
       <instructions size='1'>
         <instruction key='manifest'>
-          Bundle-SymbolicName: org.eclipse.jdt.core; singleton:=true&#xA;Bundle-Version: 3.24.0.v20201029-0459&#xA;
+          Bundle-SymbolicName: org.eclipse.jdt.core; singleton:=true&#xA;Bundle-Version: 3.24.0.v20201031-0651&#xA;
         </instruction>
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='org.eclipse.jdt.core.source' version='3.24.0.v20201029-0459' singleton='false'>
-    <update id='org.eclipse.jdt.core.source' range='[0.0.0,3.24.0.v20201029-0459)' severity='0'/>
+  <unit id='org.eclipse.jdt.core.source' version='3.24.0.v20201031-0651' singleton='false'>
+    <update id='org.eclipse.jdt.core.source' range='[0.0.0,3.24.0.v20201031-0651)' severity='0'/>
     <properties size='9'>
       <property name='df_LT.bundleVendor' value='Eclipse.org'/>
       <property name='df_LT.bundleName' value='Java Development Tools Core Source'/>
@@ -115,9 +115,9 @@
       <property name='maven-classifier' value='sources'/>
     </properties>
     <provides size='5'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core.source' version='3.24.0.v20201029-0459'/>
-      <provided namespace='osgi.bundle' name='org.eclipse.jdt.core.source' version='3.24.0.v20201029-0459'/>
-      <provided namespace='osgi.identity' name='org.eclipse.jdt.core.source' version='3.24.0.v20201029-0459'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core.source' version='3.24.0.v20201031-0651'/>
+      <provided namespace='osgi.bundle' name='org.eclipse.jdt.core.source' version='3.24.0.v20201031-0651'/>
+      <provided namespace='osgi.identity' name='org.eclipse.jdt.core.source' version='3.24.0.v20201031-0651'>
         <properties size='1'>
           <property name='type' value='osgi.bundle'/>
         </properties>
@@ -126,19 +126,19 @@
       <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
     </provides>
     <artifacts size='1'>
-      <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core.source' version='3.24.0.v20201029-0459'/>
+      <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core.source' version='3.24.0.v20201031-0651'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
       <instructions size='1'>
         <instruction key='manifest'>
-          Bundle-SymbolicName: org.eclipse.jdt.core.source&#xA;Bundle-Version: 3.24.0.v20201029-0459&#xA;
+          Bundle-SymbolicName: org.eclipse.jdt.core.source&#xA;Bundle-Version: 3.24.0.v20201031-0651&#xA;
         </instruction>
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='org.eclipse.jdt.core.ant.compiler.adapter' version='3.24.0.v20201029-0459' generation='2'>
-    <update id='org.eclipse.jdt.core.ant.compiler.adapter' range='[0.0.0,3.24.0.v20201029-0459)' severity='0'/>
+  <unit id='org.eclipse.jdt.core.ant.compiler.adapter' version='3.24.0.v20201031-0651' generation='2'>
+    <update id='org.eclipse.jdt.core.ant.compiler.adapter' range='[0.0.0,3.24.0.v20201031-0651)' severity='0'/>
     <properties size='9'>
       <property name='df_LT.pluginName' value='JDT ECJ Ant Compiler Adapter'/>
       <property name='df_LT.providerName' value='Eclipse.org'/>
@@ -151,9 +151,9 @@
       <property name='maven-classifier' value='antadapter'/>
     </properties>
     <provides size='5'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core.ant.compiler.adapter' version='3.24.0.v20201029-0459'/>
-      <provided namespace='osgi.bundle' name='org.eclipse.jdt.core.ant.compiler.adapter' version='3.24.0.v20201029-0459'/>
-      <provided namespace='osgi.identity' name='org.eclipse.jdt.core.ant.compiler.adapter' version='3.24.0.v20201029-0459'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core.ant.compiler.adapter' version='3.24.0.v20201031-0651'/>
+      <provided namespace='osgi.bundle' name='org.eclipse.jdt.core.ant.compiler.adapter' version='3.24.0.v20201031-0651'/>
+      <provided namespace='osgi.identity' name='org.eclipse.jdt.core.ant.compiler.adapter' version='3.24.0.v20201031-0651'>
         <properties size='1'>
           <property name='type' value='osgi.bundle'/>
         </properties>
@@ -174,19 +174,19 @@
       </requiredProperties>
     </requires>
     <artifacts size='1'>
-      <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core.ant.compiler.adapter' version='3.24.0.v20201029-0459'/>
+      <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core.ant.compiler.adapter' version='3.24.0.v20201031-0651'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
       <instructions size='1'>
         <instruction key='manifest'>
-          Bundle-SymbolicName: org.eclipse.jdt.core.ant.compiler.adapter;singleton:=true&#xA;Bundle-Version: 3.24.0.v20201029-0459&#xA;
+          Bundle-SymbolicName: org.eclipse.jdt.core.ant.compiler.adapter;singleton:=true&#xA;Bundle-Version: 3.24.0.v20201031-0651&#xA;
         </instruction>
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='org.eclipse.jdt.core.compiler.batch.source' version='3.24.0.v20201029-0459' singleton='false'>
-    <update id='org.eclipse.jdt.core.compiler.batch.source' range='[0.0.0,3.24.0.v20201029-0459)' severity='0'/>
+  <unit id='org.eclipse.jdt.core.compiler.batch.source' version='3.24.0.v20201031-0651' singleton='false'>
+    <update id='org.eclipse.jdt.core.compiler.batch.source' range='[0.0.0,3.24.0.v20201031-0651)' severity='0'/>
     <properties size='6'>
       <property name='org.eclipse.equinox.p2.name' value='Source of Eclipse Compiler for Java(TM)'/>
       <property name='org.eclipse.equinox.p2.provider' value='Eclipse.org'/>
@@ -196,9 +196,9 @@
       <property name='maven-classifier' value='batch-compiler-src'/>
     </properties>
     <provides size='4'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core.compiler.batch.source' version='3.24.0.v20201029-0459'/>
-      <provided namespace='osgi.bundle' name='org.eclipse.jdt.core.compiler.batch.source' version='3.24.0.v20201029-0459'/>
-      <provided namespace='osgi.identity' name='org.eclipse.jdt.core.compiler.batch.source' version='3.24.0.v20201029-0459'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core.compiler.batch.source' version='3.24.0.v20201031-0651'/>
+      <provided namespace='osgi.bundle' name='org.eclipse.jdt.core.compiler.batch.source' version='3.24.0.v20201031-0651'/>
+      <provided namespace='osgi.identity' name='org.eclipse.jdt.core.compiler.batch.source' version='3.24.0.v20201031-0651'>
         <properties size='1'>
           <property name='type' value='osgi.bundle'/>
         </properties>
@@ -206,19 +206,19 @@
       <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='source' version='1.0.0'/>
     </provides>
     <artifacts size='1'>
-      <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core.compiler.batch.source' version='3.24.0.v20201029-0459'/>
+      <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core.compiler.batch.source' version='3.24.0.v20201031-0651'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
       <instructions size='1'>
         <instruction key='manifest'>
-          Bundle-SymbolicName: org.eclipse.jdt.core.compiler.batch.source&#xA;Bundle-Version: 3.24.0.v20201029-0459&#xA;
+          Bundle-SymbolicName: org.eclipse.jdt.core.compiler.batch.source&#xA;Bundle-Version: 3.24.0.v20201031-0651&#xA;
         </instruction>
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='org.eclipse.jdt.core.compiler.batch' version='3.24.0.v20201029-0459' singleton='false'>
-    <update id='org.eclipse.jdt.core.compiler.batch' range='[0.0.0,3.24.0.v20201029-0459)' severity='0'/>
+  <unit id='org.eclipse.jdt.core.compiler.batch' version='3.24.0.v20201031-0651' singleton='false'>
+    <update id='org.eclipse.jdt.core.compiler.batch' range='[0.0.0,3.24.0.v20201031-0651)' severity='0'/>
     <properties size='6'>
       <property name='org.eclipse.equinox.p2.name' value='Eclipse Compiler for Java(TM)'/>
       <property name='org.eclipse.equinox.p2.provider' value='Eclipse.org'/>
@@ -228,8 +228,8 @@
       <property name='maven-classifier' value='batch-compiler'/>
     </properties>
     <provides size='24'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core.compiler.batch' version='3.24.0.v20201029-0459'/>
-      <provided namespace='osgi.bundle' name='org.eclipse.jdt.core.compiler.batch' version='3.24.0.v20201029-0459'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core.compiler.batch' version='3.24.0.v20201031-0651'/>
+      <provided namespace='osgi.bundle' name='org.eclipse.jdt.core.compiler.batch' version='3.24.0.v20201031-0651'/>
       <provided namespace='java.package' name='org.eclipse.jdt.core' version='0.0.0'/>
       <provided namespace='java.package' name='org.eclipse.jdt.core.compiler' version='0.0.0'/>
       <provided namespace='java.package' name='org.eclipse.jdt.internal.antadapter' version='0.0.0'/>
@@ -250,7 +250,7 @@
       <provided namespace='java.package' name='org.eclipse.jdt.internal.compiler.problem' version='0.0.0'/>
       <provided namespace='java.package' name='org.eclipse.jdt.internal.compiler.util' version='0.0.0'/>
       <provided namespace='java.package' name='org.eclipse.jdt.internal.compiler.tool' version='0.0.0'/>
-      <provided namespace='osgi.identity' name='org.eclipse.jdt.core.compiler.batch' version='3.24.0.v20201029-0459'>
+      <provided namespace='osgi.identity' name='org.eclipse.jdt.core.compiler.batch' version='3.24.0.v20201031-0651'>
         <properties size='1'>
           <property name='type' value='osgi.bundle'/>
         </properties>
@@ -258,13 +258,13 @@
       <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
     </provides>
     <artifacts size='1'>
-      <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core.compiler.batch' version='3.24.0.v20201029-0459'/>
+      <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core.compiler.batch' version='3.24.0.v20201031-0651'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
       <instructions size='1'>
         <instruction key='manifest'>
-          Bundle-SymbolicName: org.eclipse.jdt.core.compiler.batch&#xA;Bundle-Version: 3.24.0.v20201029-0459&#xA;
+          Bundle-SymbolicName: org.eclipse.jdt.core.compiler.batch&#xA;Bundle-Version: 3.24.0.v20201031-0651&#xA;
         </instruction>
       </instructions>
     </touchpointData>
