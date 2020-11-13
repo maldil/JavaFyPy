@@ -1058,6 +1058,9 @@ public abstract class ASTVisitor {
 		return true;
 	}
 
+	public boolean visit(PyDicComp pyDicComp, BlockScope scope) {
+		return true;
+	}
 	public boolean visit(NotInExpression notInExpression, BlockScope scope) {
 		return true;
 	}
@@ -1071,5 +1074,9 @@ public abstract class ASTVisitor {
 
 
 	public void endVisit(NotInExpression notInExpression, BlockScope scope) {
+	}
+
+
+	public void endVisit(PyDicComp pyDicComp, BlockScope scope) {
 	}
 }

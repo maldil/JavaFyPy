@@ -1900,10 +1900,16 @@ public abstract class ASTVisitor {
 	public boolean visit(PyGenerator pyGenerator) {
 		return true;
 	}
+	public boolean visit(PyDictComprehension pyDictComprehension) {
+		return true;
+	}
 	public boolean visit(PyTupleExpression pyTupleExpression) {
 		return true;
 	}
 	public boolean visit(PyListComprehension pyListComprehension) {
+		return true;
+	}
+	public boolean visit(PySetComprehension pySetComprehension) {
 		return true;
 	}
 	/**
@@ -3265,5 +3271,13 @@ public abstract class ASTVisitor {
 
 
 	public void endVisit(PyListComprehension pyListComprehension) {
+	}
+
+
+	public void endVisit(PyDictComprehension pyDictComprehension) {
+	}
+
+
+	public void endVisit(PySetComprehension pySetComprehension) {
 	}
 }

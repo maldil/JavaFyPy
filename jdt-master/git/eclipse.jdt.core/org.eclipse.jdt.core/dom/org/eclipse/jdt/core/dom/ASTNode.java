@@ -1017,6 +1017,9 @@ public abstract class ASTNode {
 
 	public static final int PY_LIST_COMPREHENSION_EXPRESSION = 109;
 
+	public static final int PY_DICT_COMPREHENSION_EXPRESSION = 110;
+	public static final int PY_SET_COMPREHENSION_EXPRESSION = 111;
+
 	public static Class nodeClassForType(int nodeType) {
 		switch (nodeType) {
 			case ANNOTATION_TYPE_DECLARATION :
@@ -1233,6 +1236,12 @@ public abstract class ASTNode {
 				return PyWithStatement.class;
 			case PY_GENERATOR_EXPRESSION:
 				return PyGenerator.class;
+			case PY_DICT_COMPREHENSION_EXPRESSION:
+				return PyDictComprehension.class;
+			case PY_LIST_COMPREHENSION_EXPRESSION:
+				return PyListComprehension.class;
+			case PY_SET_COMPREHENSION_EXPRESSION:
+				return PySetComprehension.class;
 		}
 		throw new IllegalArgumentException();
 	}
@@ -1271,6 +1280,8 @@ public abstract class ASTNode {
 	 * @see #property2
 	 */
 	private Object property1 = null;
+
+	private Object pyObject = null;
 
 	/**
 	 * Auxiliary field used in representing node properties efficiently.
@@ -3288,6 +3299,13 @@ public abstract class ASTNode {
 		return size;
 	}
 
+	public Object getPyObject(){
+		return pyObject;
+	}
+
+	public void setPyObject(Object ob){
+		this.pyObject=ob;
+	}
 	/**
 	 * Returns an estimate of the memory footprint in bytes of the entire
 	 * subtree rooted at this node.

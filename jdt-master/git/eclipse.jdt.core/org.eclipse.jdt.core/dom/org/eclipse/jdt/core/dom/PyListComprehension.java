@@ -193,7 +193,7 @@ public class PyListComprehension extends Expression{
                 (Expression) getTargetExpression().clone(target));
         for (Object o : valueExpression) {
             pyGenerator.valueExpression.add(
-                    ((Expression) o).clone(target));
+                    ((SingleVariableDeclaration) o).clone(target));
         }
         pyGenerator.setIteratorExpression(
                 (Expression) getIteratorExpression().clone(target));

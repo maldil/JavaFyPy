@@ -108,6 +108,7 @@ $Terminals
 	ELLIPSIS
 	ARROW
 	COLON_COLON
+	COLON_COLON_COLON
 	BeginLambda
 	BeginIntersectionCast
 	BeginTypeArguments
@@ -125,6 +126,7 @@ $Terminals
 $Alias
 
 	'::'   ::= COLON_COLON
+	':::'   ::= COLON_COLON_COLON
 	'->'   ::= ARROW
 	'++'   ::= PLUS_PLUS
 	'--'   ::= MINUS_MINUS
@@ -1919,12 +1921,6 @@ ArrayCreationWithArrayInitializer ::= 'new' PrimitiveType DimWithOrWithOutExprs 
 /.$putCase consumeArrayCreationExpressionWithInitializer(); $break ./
 /:$readableName ArrayCreationWithArrayInitializer:/
 
-
-ArrayCreationWithArrayInitializer ::= 'new' UnionType DimWithOrWithOutExprs ArrayInitializer
-/.$putCase consumeArrayCreationExpressionWithUnionTypeWithInitializer(); $break ./
-/:$readableName ArrayCreationWithArrayInitializer:/
-
-
 ArrayCreationWithoutArrayInitializer ::= 'new' ClassOrInterfaceType DimWithOrWithOutExprs
 /.$putCase consumeArrayCreationExpressionWithoutInitializer(); $break ./
 
@@ -2187,15 +2183,17 @@ ConditionalExpression -> ConditionalOrExpression
 ConditionalExpression ::= ConditionalOrExpression '?' Expression ':' ConditionalExpression
 /.$putCase consumeConditionalExpression(OperatorIds.QUESTIONCOLON) ; $break ./
 /:$readableName Expression:/
---InGeneratorExpression -> ConditionalExpression
---InGeneratorExpression ::= Expression 'for' TupleExpression ':' InGeneratorExpression 'if' ConditionalExpression
 ConditionalExpression ::= TupleExpression EnhancedForStatementHeaderInit  ':' Expression 'if' ConditionalOrExpression
 /.$putCase consumeGenerators() ; $break ./
---ConditionalExpression ::= TupleExpression EnhancedForStatementHeaderInit  ':' Name
---/.$putCase consumeGeneratorsWithoutIFWithName() ; $break ./
 ConditionalExpression ::= TupleExpression EnhancedForStatementHeaderInit  ':' Expression
 /.$putCase consumeGeneratorsWithoutIF() ; $break ./
 /:$readableName Expression:/
+ConditionalExpression ::= TupleExpression ':::' TupleExpression  EnhancedForStatementHeaderInit  ':::' Expression 'if' ConditionalOrExpression
+/.$putCase consumeDickCompWithIF() ; $break ./
+ConditionalExpression ::= TupleExpression ':::' TupleExpression  EnhancedForStatementHeaderInit  ':::' Expression
+/.$putCase consumeDickCompWithoutIF() ; $break ./
+
+
 
 AssignmentExpression -> ConditionalExpression
 AssignmentExpression -> Assignment
@@ -3198,6 +3196,7 @@ AT308DOTDOTDOT ::= '@'
 ELLIPSIS ::=    '...'    
 ARROW ::= '->'
 COLON_COLON ::= '::'
+COLON_COLON_COLON ::= ':::'
 
 $end
 

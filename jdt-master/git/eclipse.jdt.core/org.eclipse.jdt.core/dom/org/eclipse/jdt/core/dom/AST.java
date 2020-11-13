@@ -3188,6 +3188,8 @@ public final class AST {
 
 	public PyGenerator newPyGenerator(){return new PyGenerator(this);}
 
+	public PyDictComprehension newPyDictComprehension(){return new PyDictComprehension(this);}
+
 	public PyListComprehension newPyListComprehension(){return new PyListComprehension(this);}
 
 	public PyInExpression newPyInExpression () {return new PyInExpression(this);}
@@ -3195,6 +3197,10 @@ public final class AST {
 	public PyNotInExpression newPyNotInExpression () {return new PyNotInExpression(this);}
 
 	public PyTupleExpression newPyTupleExpression () {return new PyTupleExpression(this);}
+
+	public PyErrorExpression newPyErrorExpression() {return new PyErrorExpression(this);}
+
+	public PySetComprehension newPySetComprehension() {return new PySetComprehension(this);}
 
 	public WildcardType newWildcardType() {
 		WildcardType result = new WildcardType(this);

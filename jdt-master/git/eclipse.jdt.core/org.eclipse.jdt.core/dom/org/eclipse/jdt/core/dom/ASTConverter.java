@@ -17,6 +17,7 @@
 package org.eclipse.jdt.core.dom;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -53,6 +54,7 @@ import org.eclipse.jdt.internal.compiler.ast.NotInExpression;
 import org.eclipse.jdt.internal.compiler.ast.OperatorIds;
 import org.eclipse.jdt.internal.compiler.ast.ParameterizedQualifiedTypeReference;
 import org.eclipse.jdt.internal.compiler.ast.ParameterizedSingleTypeReference;
+import org.eclipse.jdt.internal.compiler.ast.PyDicComp;
 import org.eclipse.jdt.internal.compiler.ast.PyGenerators;
 import org.eclipse.jdt.internal.compiler.ast.QualifiedAllocationExpression;
 import org.eclipse.jdt.internal.compiler.ast.QualifiedSuperReference;
@@ -2059,6 +2061,12 @@ class ASTConverter {
 		if (expression instanceof org.eclipse.jdt.internal.compiler.ast.NotInExpression){
 			return convert((org.eclipse.jdt.internal.compiler.ast.NotInExpression) expression);
 		}
+		if (expression instanceof org.eclipse.jdt.internal.compiler.ast.PyDicComp){
+			return convert((org.eclipse.jdt.internal.compiler.ast.PyDicComp) expression);
+		}
+		if (expression instanceof org.eclipse.jdt.internal.compiler.ast.PyGenerators){
+			return convert((org.eclipse.jdt.internal.compiler.ast.PyGenerators) expression);
+		}
 		return null;
 	}
 
@@ -2248,6 +2256,44 @@ class ASTConverter {
 		int sourceEnd = rightExpression.getStartPosition() + rightExpression.getLength() - 1;
 		pyinExpression.setSourceRange(startPosition, sourceEnd - startPosition + 1);
 		return pyinExpression;
+	}
+
+	public Expression convert(PyDicComp dicComp){
+		if (dicComp.getTarget2() instanceof SingleNameReference && Arrays.deepToString(((SingleNameReference) dicComp.getTarget2()).getName()).equals("SET_PYTHON") ){
+			PySetComprehension setComprehension = new PySetComprehension(this.ast);
+			if (dicComp.getBinaryExpression() !=null) {
+				setComprehension.setConditionalExpression(convert(dicComp.getBinaryExpression()));
+			}
+			setComprehension.setIteratorExpression(convert(dicComp.getIterator()));
+			setComprehension.setTargetExpression(convert(dicComp.getTarget1()));
+			int finish_pos = dicComp.getBinaryExpression()==null?dicComp.getIterator().sourceEnd():dicComp.getBinaryExpression().sourceEnd();
+			setComprehension.setSourceRange(dicComp.getTarget1().sourceStart(),finish_pos - dicComp.getTarget1().sourceStart()+1);
+			return setComprehension;
+		}
+		else{
+			PyDictComprehension dictComprehension = new PyDictComprehension(this.ast);
+			if (dicComp.getBinaryExpression() !=null) {
+				dictComprehension.setConditionalExpression(convert(dicComp.getBinaryExpression()));
+			}
+			dictComprehension.setIteratorExpression(convert(dicComp.getIterator()));
+			dictComprehension.setTarget1Expression(convert(dicComp.getTarget1()));
+			dictComprehension.setTarget2Expression(convert(dicComp.getTarget2()));
+			int finish_pos = dicComp.getBinaryExpression()==null?dicComp.getIterator().sourceEnd():dicComp.getBinaryExpression().sourceEnd();
+			dictComprehension.setSourceRange(dicComp.getTarget1().sourceStart(),finish_pos - dicComp.getTarget1().sourceStart()+1);
+			return dictComprehension;
+		}
+	}
+
+	public PyGenerator convert(PyGenerators dicComp){
+		PyGenerator generator = new PyGenerator(this.ast);
+		if (dicComp.getBinaryExpression()!=null) {
+			generator.setConditionalExpression(convert(dicComp.getBinaryExpression()));
+		}
+		generator.setIteratorExpression(convert(dicComp.getIterator()));
+		generator.setTargetExpression(convert(dicComp.getTarget()));
+		int finish_pos = dicComp.getBinaryExpression()==null?dicComp.getIterator().sourceEnd():dicComp.getBinaryExpression().sourceEnd();
+		generator.setSourceRange(dicComp.getTarget().sourceStart(),finish_pos - dicComp.getTarget().sourceStart()+1);
+		return generator;
 	}
 
 	public PyNotInExpression convert (NotInExpression notInExpression){
@@ -2496,6 +2542,43 @@ class ASTConverter {
 				pylistcomp.setTargetExpression(target);
 				expr = pylistcomp;
 				expr.setSourceRange(target.getStartPosition(), expression.sourceEnd - sourceStart + 1);
+				return expr;
+			}
+
+			else if ("dictc".equals(new String(expression.selector)) && expression.arguments != null && expression.arguments.length==1 && expression.arguments[0] instanceof PyDicComp){
+				PyDicComp pyDicComp = (PyDicComp) expression.arguments[0];
+				Expression target2 = convert(pyDicComp.getTarget2());
+				if (target2 instanceof Name && ((Name) target2).getFullyQualifiedName().equals("SET_PYTHON")){
+					final PySetComprehension pyset = new PySetComprehension(this.ast);
+					pyset.setIteratorExpression(convert(pyDicComp.getIterator()));
+					if (pyDicComp.getBinaryExpression()!=null){
+						pyset.setConditionalExpression(convert(pyDicComp.getBinaryExpression()));
+					}
+					for (LocalDeclaration value : pyDicComp.typeValues) {
+						pyset.getValueExpression().add(convertToSingleVariableDeclaration(value));
+					}
+					Expression target1 = convert(pyDicComp.getTarget1());
+					pyset.setSourceRange(target1.getStartPosition(), expression.sourceEnd - sourceStart + 1);
+					pyset.setTargetExpression(target1);
+					return pyset;
+				}
+
+				final PyDictComprehension pylistcomp = new PyDictComprehension(this.ast);
+
+				pylistcomp.setIteratorExpression(convert(pyDicComp.getIterator()));
+				if (pyDicComp.getBinaryExpression()!=null){
+					pylistcomp.setConditionalExpression(convert(pyDicComp.getBinaryExpression()));
+				}
+				for (LocalDeclaration value : pyDicComp.typeValues) {
+					pylistcomp.getValueExpression().add(convertToSingleVariableDeclaration(value));
+				}
+				//pyGenerator.setValueExpression(convert(pyGenerators.getValue()));
+				Expression target1 = convert(pyDicComp.getTarget1());
+
+				pylistcomp.setTarget1Expression(target1);
+				pylistcomp.setTarget2Expression(target2);
+				expr = pylistcomp;
+				expr.setSourceRange(target1.getStartPosition(), expression.sourceEnd - sourceStart + 1);
 				return expr;
 			}
 

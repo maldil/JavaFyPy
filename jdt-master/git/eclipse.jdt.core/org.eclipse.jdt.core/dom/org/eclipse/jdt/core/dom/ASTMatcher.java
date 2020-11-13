@@ -2999,4 +2999,46 @@ public class ASTMatcher {
 							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
 		}
     }
+
+    public boolean match(PyDictComprehension node, Object other) {
+		if (!(other instanceof PyDictComprehension)) {
+			return false;
+		}
+		PyDictComprehension o = (PyDictComprehension) other;
+		if (node.internalGetConditionalExpression()!=null){
+			return (
+					safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())
+							&& safeSubtreeMatch(node.getConditionalExpression(), o.getConditionalExpression())
+							&& safeSubtreeMatch(node.getTarget1Expression(), o.getTarget1Expression()) &&
+							safeSubtreeMatch(node.getTarget2Expression(), o.getTarget2Expression()) &&
+							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
+		}
+		else{
+			return (
+					safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())
+							&& safeSubtreeMatch(node.getTarget1Expression(), o.getTarget1Expression()) &&
+							safeSubtreeMatch(node.getTarget2Expression(), o.getTarget2Expression()) &&
+							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
+		}
+    }
+
+	public boolean match(PySetComprehension node, Object other) {
+		if (!(other instanceof PySetComprehension)) {
+			return false;
+		}
+		PySetComprehension o = (PySetComprehension) other;
+		if (node.internalGetConditionalExpression()!=null){
+			return (
+					safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())
+							&& safeSubtreeMatch(node.getConditionalExpression(), o.getConditionalExpression())
+							&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()) &&
+							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
+		}
+		else{
+			return (
+					safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())
+							&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()) &&
+							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
+		}
+	}
 }

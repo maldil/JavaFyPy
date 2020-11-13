@@ -1704,8 +1704,12 @@ protected int getNextToken0() throws InvalidInputException {
 				case '?' :
 					return TokenNameQUESTION;
 				case ':' :
-					if (getNextChar(':'))
+					if (getNextChar(':')) {
+						if (getNextChar(':')){
+							return TokenNameCOLON_COLON_COLON;
+						}
 						return TokenNameCOLON_COLON;
+					}
 					++this.yieldColons;
 					return TokenNameCOLON;
 				case '\'' :
@@ -4888,6 +4892,8 @@ public String toStringAction(int act) {
 			return ":"; //$NON-NLS-1$
 		case TokenNameCOLON_COLON :
 			return "::"; //$NON-NLS-1$
+		case TokenNameCOLON_COLON_COLON:
+			return ":::";
 		case TokenNameCOMMA :
 			return ","; //$NON-NLS-1$
 		case TokenNameDOT :
@@ -5588,6 +5594,7 @@ private boolean disambiguateYieldWithLookAhead() {
 			case TokenNameELLIPSIS :
 			case TokenNameARROW :
 			case TokenNameCOLON_COLON :
+			case TokenNameCOLON_COLON_COLON:
 				return false;
 			case TokenNameMINUS_MINUS :
 			case TokenNamePLUS_PLUS :
