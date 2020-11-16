@@ -2169,6 +2169,12 @@ class ASTConverter {
 				if (collection == null) return null;
 				enhancedForStatement.setExpression(convert(collection));
 				final Statement action = convert(statement.action);
+
+				if (statement.elseaction!=null){
+					final Statement elasAction = convert(statement.elseaction);
+					enhancedForStatement.setElseBody(elasAction);
+				}
+
 				if (action == null) return null;
 				enhancedForStatement.setBody(action);
 				int start = statement.sourceStart;

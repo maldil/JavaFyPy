@@ -6674,3 +6674,1834 @@ java.lang.IllegalArgumentException: Unsupported api 524288
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-11-13 12:13:16.263 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=13.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/malinda/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/malinda/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2020-11-13 12:13:21.883
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2020-11-13 12:13:22.486
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-13 12:13:22.486
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@50e1f3fc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@54737322,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-11-13 12:13:37.285
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.Factory.resolveMethod(Factory.java:197)
+	at org.eclipse.pde.api.tools.internal.provisional.scanner.TagScanner$Visitor.scanMethodJavaDoc(TagScanner.java:505)
+	at org.eclipse.pde.api.tools.internal.provisional.scanner.TagScanner$Visitor.visit(TagScanner.java:484)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3042)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:447)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3042)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.pde.api.tools.internal.provisional.scanner.TagScanner.scan(TagScanner.java:690)
+	at org.eclipse.pde.api.tools.internal.provisional.scanner.TagScanner.scan(TagScanner.java:636)
+	at org.eclipse.pde.api.tools.internal.ProjectApiDescription$TypeNode.refresh(ProjectApiDescription.java:250)
+	at org.eclipse.pde.api.tools.internal.ApiDescription.findNode(ApiDescription.java:430)
+	at org.eclipse.pde.api.tools.internal.ApiDescription.resolveAnnotations(ApiDescription.java:448)
+	at org.eclipse.pde.api.tools.internal.CompositeApiDescription.resolveAnnotations(CompositeApiDescription.java:66)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder$ResourceDeltaVisitor.visit(IncrementalApiBuilder.java:172)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:253)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-11-13 12:13:37.493
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.Factory.resolveMethod(Factory.java:197)
+	at org.eclipse.pde.api.tools.internal.provisional.scanner.TagScanner$Visitor.scanMethodJavaDoc(TagScanner.java:505)
+	at org.eclipse.pde.api.tools.internal.provisional.scanner.TagScanner$Visitor.visit(TagScanner.java:484)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3042)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:447)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3042)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.pde.api.tools.internal.provisional.scanner.TagScanner.scan(TagScanner.java:690)
+	at org.eclipse.pde.api.tools.internal.provisional.scanner.TagScanner.scan(TagScanner.java:636)
+	at org.eclipse.pde.api.tools.internal.ProjectApiDescription$TypeNode.refresh(ProjectApiDescription.java:250)
+	at org.eclipse.pde.api.tools.internal.ApiDescription.findNode(ApiDescription.java:430)
+	at org.eclipse.pde.api.tools.internal.ApiDescription.resolveAnnotations(ApiDescription.java:448)
+	at org.eclipse.pde.api.tools.internal.CompositeApiDescription.resolveAnnotations(CompositeApiDescription.java:66)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder$ResourceDeltaVisitor.visit(IncrementalApiBuilder.java:172)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:253)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-11-13 12:13:37.614
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.Factory.resolveMethod(Factory.java:197)
+	at org.eclipse.pde.api.tools.internal.provisional.scanner.TagScanner$Visitor.scanMethodJavaDoc(TagScanner.java:505)
+	at org.eclipse.pde.api.tools.internal.provisional.scanner.TagScanner$Visitor.visit(TagScanner.java:484)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3042)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:447)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3042)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:447)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3042)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.pde.api.tools.internal.provisional.scanner.TagScanner.scan(TagScanner.java:690)
+	at org.eclipse.pde.api.tools.internal.provisional.scanner.TagScanner.scan(TagScanner.java:636)
+	at org.eclipse.pde.api.tools.internal.ProjectApiDescription$TypeNode.refresh(ProjectApiDescription.java:250)
+	at org.eclipse.pde.api.tools.internal.ApiDescription.findNode(ApiDescription.java:430)
+	at org.eclipse.pde.api.tools.internal.ApiDescription.resolveAnnotations(ApiDescription.java:448)
+	at org.eclipse.pde.api.tools.internal.CompositeApiDescription.resolveAnnotations(CompositeApiDescription.java:66)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder$ResourceDeltaVisitor.visit(IncrementalApiBuilder.java:172)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:253)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-11-13 12:13:37.906
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.Factory.resolveMethod(Factory.java:197)
+	at org.eclipse.pde.api.tools.internal.provisional.scanner.TagScanner$Visitor.scanMethodJavaDoc(TagScanner.java:505)
+	at org.eclipse.pde.api.tools.internal.provisional.scanner.TagScanner$Visitor.visit(TagScanner.java:484)
+	at org.eclipse.jdt.core.dom.MethodDeclaration.accept0(MethodDeclaration.java:674)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3042)
+	at org.eclipse.jdt.core.dom.TypeDeclaration.accept0(TypeDeclaration.java:447)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.jdt.core.dom.ASTNode.acceptChildren(ASTNode.java:3042)
+	at org.eclipse.jdt.core.dom.CompilationUnit.accept0(CompilationUnit.java:258)
+	at org.eclipse.jdt.core.dom.ASTNode.accept(ASTNode.java:2971)
+	at org.eclipse.pde.api.tools.internal.provisional.scanner.TagScanner.scan(TagScanner.java:690)
+	at org.eclipse.pde.api.tools.internal.provisional.scanner.TagScanner.scan(TagScanner.java:636)
+	at org.eclipse.pde.api.tools.internal.ProjectApiDescription$TypeNode.refresh(ProjectApiDescription.java:250)
+	at org.eclipse.pde.api.tools.internal.ApiDescription.findNode(ApiDescription.java:430)
+	at org.eclipse.pde.api.tools.internal.ApiDescription.resolveAnnotations(ApiDescription.java:448)
+	at org.eclipse.pde.api.tools.internal.CompositeApiDescription.resolveAnnotations(CompositeApiDescription.java:66)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder$ResourceDeltaVisitor.visit(IncrementalApiBuilder.java:172)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:253)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-13 12:14:03.044
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-13 12:14:03.045
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-13 12:14:03.045
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-13 12:14:03.046
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-11-13 12:14:03.111
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer$Visitor.visit(ReferenceAnalyzer.java:87)
+	at org.eclipse.pde.api.tools.internal.builder.TypeScope.accept(TypeScope.java:90)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.extractReferences(ReferenceAnalyzer.java:203)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.analyze(ReferenceAnalyzer.java:237)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkApiUsage(BaseApiAnalyzer.java:1272)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:288)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-11-13 12:14:08.256
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.pde.api.tools 4 75 2020-11-13 12:14:08.256
+!MESSAGE Errors running builder 'API Analysis Builder' on project 'org.eclipse.jdt.core'.
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer$Visitor.visit(ReferenceAnalyzer.java:87)
+	at org.eclipse.pde.api.tools.internal.builder.TypeScope.accept(TypeScope.java:90)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.extractReferences(ReferenceAnalyzer.java:203)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.analyze(ReferenceAnalyzer.java:237)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkApiUsage(BaseApiAnalyzer.java:1272)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:288)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-11-14 21:32:24.557 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=13.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/malinda/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/malinda/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2020-11-14 21:32:30.237
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2020-11-14 21:32:30.849
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-14 21:32:30.849
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3395c2a7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5e05a706,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 21:33:27.212
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 21:33:27.214
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 21:33:27.215
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 21:33:27.216
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-11-14 21:33:27.287
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer$Visitor.visit(ReferenceAnalyzer.java:87)
+	at org.eclipse.pde.api.tools.internal.builder.TypeScope.accept(TypeScope.java:90)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.extractReferences(ReferenceAnalyzer.java:203)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.analyze(ReferenceAnalyzer.java:237)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkApiUsage(BaseApiAnalyzer.java:1272)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:288)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-11-14 21:33:28.799
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.pde.api.tools 4 75 2020-11-14 21:33:28.799
+!MESSAGE Errors running builder 'API Analysis Builder' on project 'org.eclipse.jdt.core'.
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer$Visitor.visit(ReferenceAnalyzer.java:87)
+	at org.eclipse.pde.api.tools.internal.builder.TypeScope.accept(TypeScope.java:90)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.extractReferences(ReferenceAnalyzer.java:203)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.analyze(ReferenceAnalyzer.java:237)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkApiUsage(BaseApiAnalyzer.java:1272)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:288)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 21:47:34.215
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 21:47:34.216
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 21:47:34.217
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 21:47:34.217
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-11-14 21:47:34.225
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer$Visitor.visit(ReferenceAnalyzer.java:87)
+	at org.eclipse.pde.api.tools.internal.builder.TypeScope.accept(TypeScope.java:90)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.extractReferences(ReferenceAnalyzer.java:203)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.analyze(ReferenceAnalyzer.java:237)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkApiUsage(BaseApiAnalyzer.java:1272)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:288)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-11-14 21:47:35.039
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.pde.api.tools 4 75 2020-11-14 21:47:35.039
+!MESSAGE Errors running builder 'API Analysis Builder' on project 'org.eclipse.jdt.core'.
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer$Visitor.visit(ReferenceAnalyzer.java:87)
+	at org.eclipse.pde.api.tools.internal.builder.TypeScope.accept(TypeScope.java:90)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.extractReferences(ReferenceAnalyzer.java:203)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.analyze(ReferenceAnalyzer.java:237)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkApiUsage(BaseApiAnalyzer.java:1272)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:288)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 21:57:09.674
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 21:57:09.675
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 21:57:09.675
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 21:57:09.676
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-11-14 21:57:09.685
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer$Visitor.visit(ReferenceAnalyzer.java:87)
+	at org.eclipse.pde.api.tools.internal.builder.TypeScope.accept(TypeScope.java:90)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.extractReferences(ReferenceAnalyzer.java:203)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.analyze(ReferenceAnalyzer.java:237)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkApiUsage(BaseApiAnalyzer.java:1272)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:288)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-11-14 21:57:11.100
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.pde.api.tools 4 75 2020-11-14 21:57:11.100
+!MESSAGE Errors running builder 'API Analysis Builder' on project 'org.eclipse.jdt.core'.
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer$Visitor.visit(ReferenceAnalyzer.java:87)
+	at org.eclipse.pde.api.tools.internal.builder.TypeScope.accept(TypeScope.java:90)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.extractReferences(ReferenceAnalyzer.java:203)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.analyze(ReferenceAnalyzer.java:237)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkApiUsage(BaseApiAnalyzer.java:1272)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:288)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 22:03:57.155
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 22:03:57.156
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 22:03:57.157
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 22:03:57.157
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-11-14 22:03:57.167
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer$Visitor.visit(ReferenceAnalyzer.java:87)
+	at org.eclipse.pde.api.tools.internal.builder.TypeScope.accept(TypeScope.java:90)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.extractReferences(ReferenceAnalyzer.java:203)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.analyze(ReferenceAnalyzer.java:237)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkApiUsage(BaseApiAnalyzer.java:1272)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:288)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-11-14 22:03:57.371
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.pde.api.tools 4 75 2020-11-14 22:03:57.371
+!MESSAGE Errors running builder 'API Analysis Builder' on project 'org.eclipse.jdt.core'.
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer$Visitor.visit(ReferenceAnalyzer.java:87)
+	at org.eclipse.pde.api.tools.internal.builder.TypeScope.accept(TypeScope.java:90)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.extractReferences(ReferenceAnalyzer.java:203)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.analyze(ReferenceAnalyzer.java:237)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkApiUsage(BaseApiAnalyzer.java:1272)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:288)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 22:26:08.008
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 22:26:08.009
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 22:26:08.010
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 22:26:08.010
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-11-14 22:26:08.018
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer$Visitor.visit(ReferenceAnalyzer.java:87)
+	at org.eclipse.pde.api.tools.internal.builder.TypeScope.accept(TypeScope.java:90)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.extractReferences(ReferenceAnalyzer.java:203)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.analyze(ReferenceAnalyzer.java:237)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkApiUsage(BaseApiAnalyzer.java:1272)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:288)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-11-14 22:26:08.848
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.pde.api.tools 4 75 2020-11-14 22:26:08.848
+!MESSAGE Errors running builder 'API Analysis Builder' on project 'org.eclipse.jdt.core'.
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer$Visitor.visit(ReferenceAnalyzer.java:87)
+	at org.eclipse.pde.api.tools.internal.builder.TypeScope.accept(TypeScope.java:90)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.extractReferences(ReferenceAnalyzer.java:203)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.analyze(ReferenceAnalyzer.java:237)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkApiUsage(BaseApiAnalyzer.java:1272)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:288)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 23:28:05.336
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 23:28:05.337
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 23:28:05.338
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 23:28:05.338
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-11-14 23:28:05.347
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer$Visitor.visit(ReferenceAnalyzer.java:87)
+	at org.eclipse.pde.api.tools.internal.builder.TypeScope.accept(TypeScope.java:90)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.extractReferences(ReferenceAnalyzer.java:203)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.analyze(ReferenceAnalyzer.java:237)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkApiUsage(BaseApiAnalyzer.java:1272)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:288)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-11-14 23:28:06.389
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.pde.api.tools 4 75 2020-11-14 23:28:06.389
+!MESSAGE Errors running builder 'API Analysis Builder' on project 'org.eclipse.jdt.core'.
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer$Visitor.visit(ReferenceAnalyzer.java:87)
+	at org.eclipse.pde.api.tools.internal.builder.TypeScope.accept(TypeScope.java:90)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.extractReferences(ReferenceAnalyzer.java:203)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.analyze(ReferenceAnalyzer.java:237)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkApiUsage(BaseApiAnalyzer.java:1272)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:288)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 23:49:19.753
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 23:49:19.755
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 23:49:19.755
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-14 23:49:19.756
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-11-14 23:49:19.766
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer$Visitor.visit(ReferenceAnalyzer.java:87)
+	at org.eclipse.pde.api.tools.internal.builder.TypeScope.accept(TypeScope.java:90)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.extractReferences(ReferenceAnalyzer.java:203)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.analyze(ReferenceAnalyzer.java:237)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkApiUsage(BaseApiAnalyzer.java:1272)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:288)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-11-14 23:49:20.068
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.pde.api.tools 4 75 2020-11-14 23:49:20.068
+!MESSAGE Errors running builder 'API Analysis Builder' on project 'org.eclipse.jdt.core'.
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer$Visitor.visit(ReferenceAnalyzer.java:87)
+	at org.eclipse.pde.api.tools.internal.builder.TypeScope.accept(TypeScope.java:90)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.extractReferences(ReferenceAnalyzer.java:203)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.analyze(ReferenceAnalyzer.java:237)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkApiUsage(BaseApiAnalyzer.java:1272)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:288)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-15 00:09:05.360
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-15 00:09:05.361
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-15 00:09:05.362
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.pde.api.tools 4 120 2020-11-15 00:09:05.362
+!MESSAGE Error logged from API Tools Core: 
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.provisional.comparator.ApiComparator.compare(ApiComparator.java:362)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:1435)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkCompatibility(BaseApiAnalyzer.java:656)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:262)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 2 2020-11-15 00:09:05.372
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer$Visitor.visit(ReferenceAnalyzer.java:87)
+	at org.eclipse.pde.api.tools.internal.builder.TypeScope.accept(TypeScope.java:90)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.extractReferences(ReferenceAnalyzer.java:203)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.analyze(ReferenceAnalyzer.java:237)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkApiUsage(BaseApiAnalyzer.java:1272)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:288)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 75 2020-11-15 00:09:06.112
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.pde.api.tools 4 75 2020-11-15 00:09:06.112
+!MESSAGE Errors running builder 'API Analysis Builder' on project 'org.eclipse.jdt.core'.
+!STACK 0
+java.lang.IllegalArgumentException: Unsupported api 524288
+	at org.objectweb.asm.ClassVisitor.<init>(ClassVisitor.java:70)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.<init>(TypeStructureBuilder.java:61)
+	at org.eclipse.pde.api.tools.internal.model.TypeStructureBuilder.buildTypeStructure(TypeStructureBuilder.java:262)
+	at org.eclipse.pde.api.tools.internal.model.AbstractApiTypeRoot.getStructure(AbstractApiTypeRoot.java:62)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer$Visitor.visit(ReferenceAnalyzer.java:87)
+	at org.eclipse.pde.api.tools.internal.builder.TypeScope.accept(TypeScope.java:90)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.extractReferences(ReferenceAnalyzer.java:203)
+	at org.eclipse.pde.api.tools.internal.builder.ReferenceAnalyzer.analyze(ReferenceAnalyzer.java:237)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.checkApiUsage(BaseApiAnalyzer.java:1272)
+	at org.eclipse.pde.api.tools.internal.builder.BaseApiAnalyzer.analyzeComponent(BaseApiAnalyzer.java:288)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:305)
+	at org.eclipse.pde.api.tools.internal.builder.IncrementalApiBuilder.build(IncrementalApiBuilder.java:256)
+	at org.eclipse.pde.api.tools.internal.builder.ApiAnalysisBuilder.build(ApiAnalysisBuilder.java:436)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

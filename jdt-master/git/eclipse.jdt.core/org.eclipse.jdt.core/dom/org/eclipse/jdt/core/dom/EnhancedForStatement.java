@@ -57,6 +57,8 @@ public class EnhancedForStatement extends Statement {
 	public static final ChildPropertyDescriptor BODY_PROPERTY =
 		new ChildPropertyDescriptor(EnhancedForStatement.class, "body", Statement.class, MANDATORY, CYCLE_RISK); //$NON-NLS-1$
 
+	public static final ChildPropertyDescriptor ELSE_BODY_PROPERTY =
+			new ChildPropertyDescriptor(EnhancedForStatement.class, "elsebody", Statement.class, OPTIONAL, CYCLE_RISK); //$NON-NLS-1$
 	/**
 	 * A list of property descriptors (element type:
 	 * {@link StructuralPropertyDescriptor}),
@@ -71,6 +73,7 @@ public class EnhancedForStatement extends Statement {
 		addProperty(EXPRESSION_PROPERTY, properyList);
 		addProperty(BODY_PROPERTY, properyList);
 		addProperty(PARAMETERS_PROPERTY,properyList);
+		addProperty(ELSE_BODY_PROPERTY,properyList);
 		PROPERTY_DESCRIPTORS = reapPropertyList(properyList);
 	}
 
@@ -108,6 +111,8 @@ public class EnhancedForStatement extends Statement {
 	 * statement.
 	 */
 	private Statement body = null;
+
+	private Statement elseBody = null;
 
 	/**
 	 * Creates a new AST node for an enchanced for statement owned by the
@@ -153,6 +158,15 @@ public class EnhancedForStatement extends Statement {
 				return null;
 			}
 		}
+
+		if (property == ELSE_BODY_PROPERTY) {
+			if (get) {
+				return getElseBody();
+			} else {
+				setElseBody((Statement) child);
+				return null;
+			}
+		}
 		// allow default implementation to flag the error
 		return super.internalGetSetChildProperty(property, get, child);
 	}
@@ -173,6 +187,10 @@ public class EnhancedForStatement extends Statement {
 		result.setExpression((Expression) getExpression().clone(target));
 		result.setBody(
 			(Statement) ASTNode.copySubtree(target, getBody()));
+		if (this.elseBody!=null){
+			result.setElseBody(
+					(Statement) ASTNode.copySubtree(target, getElseBody()));
+		}
 		return result;
 	}
 
@@ -195,6 +213,9 @@ public class EnhancedForStatement extends Statement {
 
 			acceptChild(visitor, getExpression());
 			acceptChild(visitor, getBody());
+			if (this.elseBody!=null){
+				acceptChild(visitor,getElseBody());
+			}
 		}
 		visitor.endVisit(this);
 	}
@@ -309,6 +330,7 @@ public class EnhancedForStatement extends Statement {
 		return this.body;
 	}
 
+
 	/**
 	 * Sets the body of this enhanced for statement.
 	 *
@@ -328,6 +350,30 @@ public class EnhancedForStatement extends Statement {
 		preReplaceChild(oldChild, statement, BODY_PROPERTY);
 		this.body = statement;
 		postReplaceChild(oldChild, statement, BODY_PROPERTY);
+	}
+
+	public Statement getElseBody() {
+//		if (this.elseBody == null) {
+//			// lazy init must be thread-safe for readers
+//			synchronized (this) {
+//				if (this.elseBody == null) {
+//					preLazyInit();
+//					this.elseBody = new Block(this.ast);
+//					postLazyInit(this.elseBody, ELSE_BODY_PROPERTY);
+//				}
+//			}
+//		}
+		return this.elseBody;
+	}
+
+	public void setElseBody(Statement statement) {
+		if (statement == null) {
+			throw new IllegalArgumentException();
+		}
+		ASTNode oldChild = this.elseBody;
+		preReplaceChild(oldChild, statement, ELSE_BODY_PROPERTY);
+		this.elseBody = statement;
+		postReplaceChild(oldChild, statement, ELSE_BODY_PROPERTY);
 	}
 
 	@Override

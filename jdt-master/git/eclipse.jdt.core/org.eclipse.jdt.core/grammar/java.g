@@ -1348,6 +1348,7 @@ Statement -> IfThenElseStatement
 Statement -> WhileStatement
 Statement -> ForStatement
 Statement -> WithstmtStatement
+Statement -> EnhancedForStatementWithElse
 
 -----------------------------------------------
 -- 1.5 feature
@@ -1356,17 +1357,21 @@ Statement -> EnhancedForStatement
 /:$readableName Statement:/
 /:$recovery_template ;:/
 
+
+
 StatementNoShortIf -> StatementWithoutTrailingSubstatement
 StatementNoShortIf -> LabeledStatementNoShortIf
 StatementNoShortIf -> IfThenElseStatementNoShortIf
 StatementNoShortIf -> WhileStatementNoShortIf
 StatementNoShortIf -> ForStatementNoShortIf
 StatementNoShortIf -> WithstmtStatementNoShortIf
+StatementNoShortIf -> EnhancedForStatementNoShortIfWithElse
 -----------------------------------------------
 -- 1.5 feature
 -----------------------------------------------
 StatementNoShortIf -> EnhancedForStatementNoShortIf
 /:$readableName Statement:/
+
 
 StatementWithoutTrailingSubstatement -> AssertStatement
 StatementWithoutTrailingSubstatement -> Block
@@ -1425,6 +1430,7 @@ IfThenElseStatement ::= 'if' '(' Expression ')' StatementNoShortIf 'else' Statem
 IfThenElseStatementNoShortIf ::= 'if' '(' Expression ')' StatementNoShortIf 'else' StatementNoShortIf
 /.$putCase consumeStatementIfWithElse(); $break ./
 /:$readableName IfStatement:/
+
 
 SwitchStatement ::= 'switch' '(' Expression ')' OpenBlock SwitchBlock
 /.$putCase consumeStatementSwitch() ; $break ./
@@ -2452,6 +2458,24 @@ EnumBodyDeclarationsopt ::= $empty
 /.$putCase consumeEmptyEnumDeclarations(); $break ./
 EnumBodyDeclarationsopt -> EnumDeclarations
 /:$readableName EnumBodyDeclarationsopt:/
+
+
+EnhancedForStatementWithElse ::= EnhancedForStatementHeader Statement 'else' Statement
+/.$putCase consumeEnhancedForStatementWithElse(); $break ./
+/:$readableName EnhancedForStatementWithElse:/
+
+EnhancedForStatementWithElse ::= EnhancedForStatementHeader StatementNoShortIf 'else' Statement
+/.$putCase consumeEnhancedForStatementWithElse(); $break ./
+/:$readableName EnhancedForStatementWithElse:/
+
+EnhancedForStatementNoShortIfWithElse ::= EnhancedForStatementHeader Statement 'else' StatementNoShortIf
+/.$putCase consumeEnhancedForStatementWithElse(); $break ./
+/:$readableName EnhancedForStatementWithElse:/
+
+EnhancedForStatementNoShortIfWithElse ::= EnhancedForStatementHeader StatementNoShortIf 'else' StatementNoShortIf
+/.$putCase consumeEnhancedForStatementWithElse(); $break ./
+/:$readableName EnhancedForStatementWithElse:/
+
 
 
 

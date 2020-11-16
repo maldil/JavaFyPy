@@ -58,6 +58,7 @@ public class ForeachStatement extends Statement {
 	public int elementVariableImplicitWidening = -1;
 	public Expression collection;
 	public Statement action;
+	public Statement elseaction;
 
 	// set the kind of foreach
 	private int kind;
@@ -449,6 +450,13 @@ public class ForeachStatement extends Statement {
 			output.append('\n');
 			this.action.printStatement(indent + 1, output);
 		}
+
+		if (this.elseaction!=null){
+			output.append('\n');
+			printIndent(indent, output).append("else");
+			output.append('\n');
+			this.elseaction.printStatement(indent + 1, output);
+		}
 		return output;
 	}
 
@@ -688,6 +696,9 @@ public class ForeachStatement extends Statement {
 		if (this.action != null) {
 			this.action.resolve(this.scope);
 		}
+		if (this.elseaction != null) {
+			this.elseaction.resolve(this.scope);
+		}
 	}
 
 	@Override
@@ -707,6 +718,9 @@ public class ForeachStatement extends Statement {
 				this.collection.traverse(visitor, this.scope);
 			}
 			if (this.action != null) {
+				this.action.traverse(visitor, this.scope);
+			}
+			if (this.elseaction != null) {
 				this.action.traverse(visitor, this.scope);
 			}
 		}

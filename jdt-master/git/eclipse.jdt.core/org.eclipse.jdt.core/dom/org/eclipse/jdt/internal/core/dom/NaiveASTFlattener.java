@@ -661,6 +661,13 @@ public class NaiveASTFlattener extends ASTVisitor {
 		node.getExpression().accept(this);
 		this.buffer.append(") ");//$NON-NLS-1$
 		node.getBody().accept(this);
+		if (node.getElseBody()!=null)
+		{
+			printIndent();
+			this.buffer.append("else");
+			node.getElseBody().accept(this);
+		}
+
 		return false;
 	}
 
