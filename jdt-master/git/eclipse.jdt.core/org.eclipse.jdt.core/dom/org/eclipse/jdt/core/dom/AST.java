@@ -3202,6 +3202,8 @@ public final class AST {
 
 	public PySetComprehension newPySetComprehension() {return new PySetComprehension(this);}
 
+	public PyYieldReturnStatement newPyYieldReturnStatement() {return new PyYieldReturnStatement(this);}
+
 	public WildcardType newWildcardType() {
 		WildcardType result = new WildcardType(this);
 		return result;

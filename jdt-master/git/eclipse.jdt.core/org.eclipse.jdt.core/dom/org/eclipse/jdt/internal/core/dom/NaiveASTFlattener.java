@@ -1771,6 +1771,10 @@ public class NaiveASTFlattener extends ASTVisitor {
 			this.buffer.append(" finally ");//$NON-NLS-1$
 			node.getFinally().accept(this);
 		}
+		if (node.getElse() != null) {
+			this.buffer.append(" else ");//$NON-NLS-1$
+			node.getElse().accept(this);
+		}
 		return false;
 	}
 
@@ -2177,6 +2181,18 @@ public class NaiveASTFlattener extends ASTVisitor {
 		}
 		printIndent();
 		this.buffer.append("yield"); //$NON-NLS-1$
+		if (node.getExpression() != null) {
+			this.buffer.append(" ");//$NON-NLS-1$
+			node.getExpression().accept(this);
+		}
+		this.buffer.append(";\n");//$NON-NLS-1$
+		return false;
+	}
+
+	@Override
+	public boolean visit(PyYieldReturnStatement node) {
+		printIndent();
+		this.buffer.append("yieldr");//$NON-NLS-1$
 		if (node.getExpression() != null) {
 			this.buffer.append(" ");//$NON-NLS-1$
 			node.getExpression().accept(this);

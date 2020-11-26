@@ -3041,4 +3041,12 @@ public class ASTMatcher {
 							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
 		}
 	}
+
+    public boolean match(PyYieldReturnStatement node, Object other) {
+		if (!(other instanceof PyYieldReturnStatement)) {
+			return false;
+		}
+		PyYieldReturnStatement o = (PyYieldReturnStatement) other;
+		return safeSubtreeMatch(node.getExpression(), o.getExpression());
+    }
 }

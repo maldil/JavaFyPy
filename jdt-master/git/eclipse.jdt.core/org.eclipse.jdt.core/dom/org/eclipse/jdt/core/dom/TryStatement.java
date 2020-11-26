@@ -77,6 +77,9 @@ public class TryStatement extends Statement {
 	public static final ChildPropertyDescriptor FINALLY_PROPERTY =
 		new ChildPropertyDescriptor(TryStatement.class, "finally", Block.class, OPTIONAL, CYCLE_RISK); //$NON-NLS-1$
 
+	public static final ChildPropertyDescriptor ELSE_PROPERTY =
+			new ChildPropertyDescriptor(TryStatement.class, "else", Block.class, OPTIONAL, CYCLE_RISK); //$NON-NLS-1$
+
 	/**
 	 * A list of property descriptors (element type:
 	 * {@link StructuralPropertyDescriptor}),
@@ -101,27 +104,30 @@ public class TryStatement extends Statement {
 	private static final List PROPERTY_DESCRIPTORS_9_0;
 
 	static {
-		List propertyList = new ArrayList(4);
+		List propertyList = new ArrayList(5);
 		createPropertyList(TryStatement.class, propertyList);
 		addProperty(BODY_PROPERTY, propertyList);
 		addProperty(CATCH_CLAUSES_PROPERTY, propertyList);
 		addProperty(FINALLY_PROPERTY, propertyList);
+		addProperty(ELSE_PROPERTY,propertyList);
 		PROPERTY_DESCRIPTORS = reapPropertyList(propertyList);
 
-		propertyList = new ArrayList(5);
+		propertyList = new ArrayList(6);
 		createPropertyList(TryStatement.class, propertyList);
 		addProperty(RESOURCES_PROPERTY, propertyList);
 		addProperty(BODY_PROPERTY, propertyList);
 		addProperty(CATCH_CLAUSES_PROPERTY, propertyList);
 		addProperty(FINALLY_PROPERTY, propertyList);
+		addProperty(ELSE_PROPERTY, propertyList);
 		PROPERTY_DESCRIPTORS_4_0 = reapPropertyList(propertyList);
 
-		propertyList = new ArrayList(5);
+		propertyList = new ArrayList(6);
 		createPropertyList(TryStatement.class, propertyList);
 		addProperty(RESOURCES2_PROPERTY, propertyList);
 		addProperty(BODY_PROPERTY, propertyList);
 		addProperty(CATCH_CLAUSES_PROPERTY, propertyList);
 		addProperty(FINALLY_PROPERTY, propertyList);
+		addProperty(ELSE_PROPERTY, propertyList);
 		PROPERTY_DESCRIPTORS_9_0 = reapPropertyList(propertyList);
 	}
 
@@ -176,7 +182,7 @@ public class TryStatement extends Statement {
 	 */
 	private Block optionalFinallyBody = null;
 
-
+	private Block optionalElseBody = null;
 	/**
 	 * Creates a new AST node for a try statement owned by the given
 	 * AST. By default, the try statement has no resources, an empty block, no catch
@@ -254,6 +260,7 @@ public class TryStatement extends Statement {
 			ASTNode.copySubtrees(target, catchClauses()));
 		result.setFinally(
 			(Block) ASTNode.copySubtree(target, getFinally()));
+		result.setElse((Block) ASTNode.copySubtree(target, getElse()));
 		return result;
 	}
 
@@ -274,6 +281,7 @@ public class TryStatement extends Statement {
 			acceptChild(visitor, getBody());
 			acceptChildren(visitor, this.catchClauses);
 			acceptChild(visitor, getFinally());
+			acceptChild(visitor, getElse());
 		}
 		visitor.endVisit(this);
 	}
@@ -339,6 +347,8 @@ public class TryStatement extends Statement {
 		return this.optionalFinallyBody;
 	}
 
+	public Block getElse() {return  this.optionalElseBody;}
+
 	/**
 	 * Sets or clears the finally block of this try statement.
 	 *
@@ -358,6 +368,13 @@ public class TryStatement extends Statement {
 		postReplaceChild(oldChild, block, FINALLY_PROPERTY);
 	}
 
+
+	public void setElse(Block block) {
+		ASTNode oldChild = this.optionalElseBody;
+		preReplaceChild(oldChild, block, ELSE_PROPERTY);
+		this.optionalElseBody = block;
+		postReplaceChild(oldChild, block, ELSE_PROPERTY);
+	}
 	/**
 	 * Returns the live ordered list of resources for this try statement (added in JLS4 API).
 	 *
@@ -390,6 +407,7 @@ public class TryStatement extends Statement {
 			+ (this.resources == null ? 0 : this.resources.listSize())
 			+ (this.body == null ? 0 : getBody().treeSize())
 			+ this.catchClauses.listSize()
-			+ (this.optionalFinallyBody == null ? 0 : getFinally().treeSize());
+			+ (this.optionalFinallyBody == null ? 0 : getFinally().treeSize())
+					+ (this.optionalElseBody == null ? 0 : getFinally().treeSize());
 	}
 }

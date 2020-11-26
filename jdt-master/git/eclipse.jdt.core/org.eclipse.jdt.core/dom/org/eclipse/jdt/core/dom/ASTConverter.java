@@ -2650,7 +2650,7 @@ class ASTConverter {
 	}
 
 	public Expression convert(org.eclipse.jdt.internal.compiler.ast.LambdaExpression lambda) {
-		if (this.ast.apiLevel < AST.JLS8_INTERNAL) {
+		if (this.ast.apiLevel < AST.JLS4_INTERNAL) {
 			return createFakeNullLiteral(lambda);
 		}
 		final LambdaExpression	lambdaExpression = new LambdaExpression(this.ast);
@@ -3091,6 +3091,15 @@ class ASTConverter {
 		return returnStatement;
 	}
 
+	public PyYieldReturnStatement convert(org.eclipse.jdt.internal.compiler.ast.YieldReturnStatement statement) {
+		final PyYieldReturnStatement returnStatement = new PyYieldReturnStatement(this.ast);
+		returnStatement.setSourceRange(statement.sourceStart, statement.sourceEnd - statement.sourceStart + 1);
+		if (statement.expression != null) {
+			returnStatement.setExpression(convert(statement.expression));
+		}
+		return returnStatement;
+	}
+
 	public SingleMemberAnnotation convert(org.eclipse.jdt.internal.compiler.ast.SingleMemberAnnotation annotation) {
 		final SingleMemberAnnotation singleMemberAnnotation = new SingleMemberAnnotation(this.ast);
 		setTypeNameForAnnotation(annotation, singleMemberAnnotation);
@@ -3158,6 +3167,9 @@ class ASTConverter {
 		}
 		if (statement instanceof org.eclipse.jdt.internal.compiler.ast.ReturnStatement) {
 			return convert((org.eclipse.jdt.internal.compiler.ast.ReturnStatement) statement);
+		}
+		if (statement instanceof org.eclipse.jdt.internal.compiler.ast.YieldReturnStatement) {
+			return convert((org.eclipse.jdt.internal.compiler.ast.YieldReturnStatement) statement);
 		}
 		if (statement instanceof org.eclipse.jdt.internal.compiler.ast.SwitchStatement) {
 			return convert((org.eclipse.jdt.internal.compiler.ast.SwitchStatement) statement);
@@ -3408,6 +3420,9 @@ class ASTConverter {
 		}
 		if (statement.finallyBlock != null) {
 			tryStatement.setFinally(convert(statement.finallyBlock));
+		}
+		if (statement.elseBlock!=null){
+			tryStatement.setElse(convert(statement.elseBlock));
 		}
 		return tryStatement;
 	}

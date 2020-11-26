@@ -48,7 +48,7 @@ $Terminals
 	interface long native new non-sealed null package private
 	protected public return short static strictfp super switch
 	synchronized this throw throws transient true try void
-	volatile while module open requires transitive exports opens to uses provides with withstmt in pyjavatuple not
+	volatile while module open requires transitive exports opens to uses provides with withstmt in pyjavatuple not yieldr
 
 	IntegerLiteral
 	LongLiteral
@@ -1387,6 +1387,7 @@ StatementWithoutTrailingSubstatement -> ThrowStatement
 StatementWithoutTrailingSubstatement -> TryStatement
 StatementWithoutTrailingSubstatement -> TryStatementWithResources
 StatementWithoutTrailingSubstatement -> YieldStatement
+StatementWithoutTrailingSubstatement -> YieldReturnStatement
 /:$readableName Statement:/
 
 EmptyStatement ::= ';'
@@ -1583,6 +1584,10 @@ ReturnStatement ::= 'return' Expressionopt ';'
 /.$putCase consumeStatementReturn() ; $break ./
 /:$readableName ReturnStatement:/
 
+YieldReturnStatement ::= 'yieldr' Expressionopt ';'
+/.$putCase consumeStatementYieldReturn() ; $break ./
+/:$readableName YieldReturnStatement:/
+
 ThrowStatement ::= 'throw' Expression ';'
 /.$putCase consumeStatementThrow(); $break ./
 /:$readableName ThrowStatement:/
@@ -1601,14 +1606,22 @@ OnlySynchronized ::= 'synchronized'
 
 TryStatement ::= 'try' TryBlock Catches
 /.$putCase consumeStatementTry(false, false); $break ./
+TryStatement ::= 'try' TryBlock Catches 'else' Block
+/.$putCase consumeStatementTryWithElse(false, false); $break ./
 TryStatement ::= 'try' TryBlock Catchesopt Finally
 /.$putCase consumeStatementTry(true, false); $break ./
+TryStatement ::= 'try' TryBlock Catchesopt Finally 'else' Block
+/.$putCase consumeStatementTryWithElse(true, false); $break ./
 /:$readableName TryStatement:/
 
 TryStatementWithResources ::= 'try' ResourceSpecification TryBlock Catchesopt
 /.$putCase consumeStatementTry(false, true); $break ./
+TryStatementWithResources ::= 'try' ResourceSpecification TryBlock Catchesopt 'else' Block
+/.$putCase consumeStatementTryWithElse(false, true); $break ./
 TryStatementWithResources ::= 'try' ResourceSpecification TryBlock Catchesopt Finally
 /.$putCase consumeStatementTry(true, true); $break ./
+TryStatementWithResources ::= 'try' ResourceSpecification TryBlock Catchesopt Finally 'else' Block
+/.$putCase consumeStatementTryWithElse(true, true); $break ./
 /:$readableName TryStatementWithResources:/
 /:$compliance 1.7:/
 
@@ -1746,54 +1759,54 @@ ReferenceExpressionTypeArgumentsAndTrunk ::= ReferenceExpressionTypeArgumentsAnd
 
 ReferenceExpressionTypeArgumentsAndTrunk0 ::= OnlyTypeArguments Dimsopt 
 /.$putCase consumeReferenceExpressionTypeArgumentsAndTrunk(false); $break ./
-/:$compliance 1.8:/
+/:$compliance 1.5:/
 ReferenceExpressionTypeArgumentsAndTrunk0 ::= OnlyTypeArguments '.' ClassOrInterfaceType Dimsopt 
 /.$putCase consumeReferenceExpressionTypeArgumentsAndTrunk(true); $break ./
 /:$readableName ReferenceExpressionTypeArgumentsAndTrunk:/
-/:$compliance 1.8:/
+/:$compliance 1.5:/
 
 ReferenceExpression ::= PrimitiveType Dims '::' NonWildTypeArgumentsopt IdentifierOrNew
 /.$putCase consumeReferenceExpressionTypeForm(true); $break ./
-/:$compliance 1.8:/
+/:$compliance 1.5:/
 
 ReferenceExpression ::= Name Dimsopt '::' NonWildTypeArgumentsopt IdentifierOrNew
 /.$putCase consumeReferenceExpressionTypeForm(false); $break ./
-/:$compliance 1.8:/
+/:$compliance 1.5:/
 
 -- BeginTypeArguments is a synthetic token the scanner concocts to help disambiguate
 -- between '<' as an operator and '<' in '<' TypeArguments '>'
 ReferenceExpression ::= Name BeginTypeArguments ReferenceExpressionTypeArgumentsAndTrunk '::' NonWildTypeArgumentsopt IdentifierOrNew
 /.$putCase consumeReferenceExpressionGenericTypeForm(); $break ./
-/:$compliance 1.8:/
+/:$compliance 1.5:/
 
 ReferenceExpression ::= Primary '::' NonWildTypeArgumentsopt Identifier
 /.$putCase consumeReferenceExpressionPrimaryForm(); $break ./
-/:$compliance 1.8:/
+/:$compliance 1.5:/
 ReferenceExpression ::= QualifiedSuperReceiver '::' NonWildTypeArgumentsopt Identifier
 /.$putCase consumeReferenceExpressionPrimaryForm(); $break ./
-/:$compliance 1.8:/
+/:$compliance 1.5:/
 ReferenceExpression ::= 'super' '::' NonWildTypeArgumentsopt Identifier
 /.$putCase consumeReferenceExpressionSuperForm(); $break ./
 /:$readableName ReferenceExpression:/
-/:$compliance 1.8:/
+/:$compliance 1.5:/
 
 NonWildTypeArgumentsopt ::= $empty
 /.$putCase consumeEmptyTypeArguments(); $break ./
 NonWildTypeArgumentsopt -> OnlyTypeArguments
 /:$readableName NonWildTypeArgumentsopt:/
-/:$compliance 1.8:/
+/:$compliance 1.5:/
 
 IdentifierOrNew ::= 'Identifier'
 /.$putCase consumeIdentifierOrNew(false); $break ./
 IdentifierOrNew ::= 'new'
 /.$putCase consumeIdentifierOrNew(true); $break ./
 /:$readableName IdentifierOrNew:/
-/:$compliance 1.8:/
+/:$compliance 1.5:/
 
 LambdaExpression ::= LambdaParameters '->' LambdaBody
 /.$putCase consumeLambdaExpression(); $break ./
 /:$readableName LambdaExpression:/
-/:$compliance 1.8:/
+/:$compliance 1.5:/
 
 NestedLambda ::= $empty
 /.$putCase consumeNestedLambda(); $break ./
@@ -1802,13 +1815,13 @@ NestedLambda ::= $empty
 LambdaParameters ::= Identifier NestedLambda
 /.$putCase consumeTypeElidedLambdaParameter(false); $break ./
 /:$readableName TypeElidedFormalParameter:/
-/:$compliance 1.8:/
+/:$compliance 1.5:/
 
 -- to make the grammar LALR(1), the scanner transforms the input string to
 -- contain synthetic tokens to signal start of lambda parameter list.
 LambdaParameters -> BeginLambda NestedLambda LambdaParameterList
 /:$readableName LambdaParameters:/
-/:$compliance 1.8:/
+/:$compliance 1.5:/
 
 -- Production name hardcoded in parser. Must be ::= and not -> 
 ParenthesizedLambdaParameterList ::= LambdaParameterList
@@ -1817,7 +1830,7 @@ ParenthesizedLambdaParameterList ::= LambdaParameterList
 LambdaParameterList -> PushLPAREN FormalParameterListopt PushRPAREN
 LambdaParameterList -> PushLPAREN TypeElidedFormalParameterList PushRPAREN
 /:$readableName LambdaParameterList:/
-/:$compliance 1.8:/
+/:$compliance 1.5:/
 
 TypeElidedFormalParameterList -> TypeElidedFormalParameter
 TypeElidedFormalParameterList ::= TypeElidedFormalParameterList ',' TypeElidedFormalParameter
@@ -1830,13 +1843,13 @@ TypeElidedFormalParameterList ::= TypeElidedFormalParameterList ',' TypeElidedFo
 TypeElidedFormalParameter ::= Modifiersopt Identifier
 /.$putCase consumeTypeElidedLambdaParameter(true); $break ./
 /:$readableName TypeElidedFormalParameter:/
-/:$compliance 1.8:/
+/:$compliance 1.5:/
 
 -- A lambda body of the form x is really '{' return x; '}'
 LambdaBody -> ElidedLeftBraceAndReturn Expression ElidedSemicolonAndRightBrace
 LambdaBody -> Block
 /:$readableName LambdaBody:/
-/:$compliance 1.8:/
+/:$compliance 1.5:/
 
 ElidedLeftBraceAndReturn ::= $empty
 /.$putCase consumeElidedLeftBraceAndReturn(); $break ./

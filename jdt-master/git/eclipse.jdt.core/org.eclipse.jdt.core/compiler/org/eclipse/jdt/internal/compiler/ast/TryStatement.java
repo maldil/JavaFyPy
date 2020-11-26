@@ -52,6 +52,7 @@ public class TryStatement extends SubRoutineStatement {
 
 	public Statement[] resources = new Statement[0];
 	public Block tryBlock;
+	public Block elseBlock;
 	public Block[] catchBlocks;
 
 	public Argument[] catchArguments;
@@ -1086,6 +1087,12 @@ public StringBuffer printStatement(int indent, StringBuffer output) {
 		printIndent(indent, output).append("finally\n"); //$NON-NLS-1$
 		this.finallyBlock.printStatement(indent + 1, output);
 	}
+
+	if (this.elseBlock != null){
+		output.append('\n');
+		printIndent(indent, output).append("else\n"); //$NON-NLS-1$
+		this.elseBlock.printStatement(indent + 1, output);
+	}
 	return output;
 }
 
@@ -1247,6 +1254,9 @@ public void traverse(ASTVisitor visitor, BlockScope blockScope) {
 		}
 		if (this.finallyBlock != null)
 			this.finallyBlock.traverse(visitor, this.scope);
+		if (this.elseBlock != null){
+			this.elseBlock.traverse(visitor, this.scope);
+		}
 	}
 	visitor.endVisit(this, blockScope);
 }

@@ -124,7 +124,7 @@ public class LambdaExpression extends Expression {
 	 */
 	LambdaExpression(AST ast) {
 		super(ast);
-		unsupportedIn2_3_4();
+		unsupportedIn2_3();
 	}
 
 	@Override

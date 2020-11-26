@@ -1912,6 +1912,10 @@ public abstract class ASTVisitor {
 	public boolean visit(PySetComprehension pySetComprehension) {
 		return true;
 	}
+
+	public boolean visit(PyYieldReturnStatement pyYieldReturnStatement) {
+		return true;
+	}
 	/**
 	 * Visits the given type-specific AST node.
 	 * <p>
@@ -3279,5 +3283,9 @@ public abstract class ASTVisitor {
 
 
 	public void endVisit(PySetComprehension pySetComprehension) {
+	}
+
+
+	public void endVisit(PyYieldReturnStatement pyYieldReturnStatement) {
 	}
 }

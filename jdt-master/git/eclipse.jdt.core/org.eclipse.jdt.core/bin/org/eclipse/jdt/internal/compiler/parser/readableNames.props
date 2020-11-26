@@ -396,4 +396,5 @@ WildcardBounds3=WildcardBound3
 WildcardBounds=WildcardBounds
 WithstmtStatement=WithstmtStatement
 WithstmtStatementNoShortIf=WithstmtStatement
+YieldReturnStatement=YieldReturnStatement
 YieldStatement=YieldStatement

@@ -4242,7 +4242,13 @@ private int internalScanIdentifierOrKeyword(int index, int length, char[] data) 
 						&& (data[++index] == 'e')
 						&& (data[++index] == 'l')
 						&& (data[++index] == 'd'))
-						return disambiguatedRestrictedIdentifierYield(TokenNameRestrictedIdentifierYield);
+						return disambiguatedRestrictedIdentifierYield(TokenNameRestrictedIdentifierYield); //Malinda Java
+					if ((data[index] == 'i')
+							&& (data[++index] == 'e')
+							&& (data[++index] == 'l')
+							&& (data[++index] == 'd')
+							&& (data[++index] == 'r'))
+						return TokenNameyieldr;
 					//$FALL-THROUGH$
 				default :
 					return TokenNameIdentifier;
@@ -4748,6 +4754,8 @@ public String toStringAction(int act) {
 			return "public"; //$NON-NLS-1$
 		case TokenNamereturn :
 			return "return"; //$NON-NLS-1$
+		case TokenNameyieldr:
+			return "yield";
 		case TokenNameRestrictedIdentifiersealed:
 			return "sealed"; //$NON-NLS-1$
 		case TokenNameshort :
@@ -5012,6 +5020,7 @@ public static boolean isKeyword(int token) {
 		case TerminalTokens.TokenNamewhile:
 		case TerminalTokens.TokenNamewithstmt:
 		case TerminalTokens.TokenNamein:
+		case TerminalTokens.TokenNameyieldr:
 			return true;
 		case TerminalTokens.TokenNameRestrictedIdentifierYield:
 		case TerminalTokens.TokenNameRestrictedIdentifierrecord:
@@ -5804,6 +5813,7 @@ public int fastForward(Statement unused) {
 			case TokenNamepublic:
 			case TokenNameRestrictedIdentifiersealed:
 			case TokenNamereturn:
+			case TokenNameyieldr:
 			case TokenNameshort:
 			case TokenNamestatic:
 			case TokenNamestrictfp:
