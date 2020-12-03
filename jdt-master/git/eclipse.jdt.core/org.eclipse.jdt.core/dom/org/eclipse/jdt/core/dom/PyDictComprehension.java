@@ -16,16 +16,8 @@ public class PyDictComprehension  extends Expression{
         super(ast);
     }
 
-    public static final ChildPropertyDescriptor CONDITIONAL_EXPRESSION_PROPERTY =
-            new ChildPropertyDescriptor(PyDictComprehension.class, "conditionalExpression", Expression.class, OPTIONAL, CYCLE_RISK); //$NON-NLS-1$
+    public static final ChildListPropertyDescriptor COMPARATOR= new ChildListPropertyDescriptor(PyDictComprehension.class, "comparator", PyComparator.class, CYCLE_RISK);
 
-    public static final ChildPropertyDescriptor ITERATOR_EXPRESSION_PROPERTY =
-            new ChildPropertyDescriptor(PyDictComprehension.class, "iteratorExpression", Expression.class, MANDATORY, CYCLE_RISK); //$NON-NLS-1$
-
-    //    public static final ChildPropertyDescriptor VALUE_EXPRESSION_PROPERTY =
-//            new ChildPropertyDescriptor(PyGenerator.class, "valueExpression", SingleVariableDeclaration.class, MANDATORY, CYCLE_RISK); //$NON-NLS-1$
-    public static final ChildListPropertyDescriptor VALUE_EXPRESSION_PROPERTY =
-            new ChildListPropertyDescriptor(PyDictComprehension.class, "parameters", SingleVariableDeclaration.class, CYCLE_RISK);
 
     public static final ChildPropertyDescriptor TARGET1_EXPRESSION_PROPERTY =
             new ChildPropertyDescriptor(PyDictComprehension.class, "target1Expression", Expression.class, MANDATORY, CYCLE_RISK); //$NON-NLS-1$
@@ -33,10 +25,10 @@ public class PyDictComprehension  extends Expression{
     public static final ChildPropertyDescriptor TARGET2_EXPRESSION_PROPERTY =
             new ChildPropertyDescriptor(PyDictComprehension.class, "target2Expression", Expression.class, MANDATORY, CYCLE_RISK); //$NON-NLS-1$
 
-    private Expression conditionalExpression = null;
-    private Expression iteratorExpression = null;
+//    private Expression conditionalExpression = null;
+//    private Expression iteratorExpression = null;
     // private Expression valueExpression = null;
-    private ASTNode.NodeList valueExpression = new ASTNode.NodeList(VALUE_EXPRESSION_PROPERTY);
+    private ASTNode.NodeList comparator = new ASTNode.NodeList(COMPARATOR);
     private Expression target1Expression = null;
     private Expression target2Expression = null;
 
@@ -45,9 +37,9 @@ public class PyDictComprehension  extends Expression{
     static {
         List properyList = new ArrayList(6);
         createPropertyList(PyDictComprehension.class, properyList);
-        addProperty(CONDITIONAL_EXPRESSION_PROPERTY, properyList);
-        addProperty(ITERATOR_EXPRESSION_PROPERTY, properyList);
-        addProperty(VALUE_EXPRESSION_PROPERTY, properyList);
+//        addProperty(CONDITIONAL_EXPRESSION_PROPERTY, properyList);
+//        addProperty(ITERATOR_EXPRESSION_PROPERTY, properyList);
+        addProperty(COMPARATOR, properyList);
         addProperty(TARGET1_EXPRESSION_PROPERTY, properyList);
         addProperty(TARGET2_EXPRESSION_PROPERTY, properyList);
         PROPERTY_DESCRIPTORS = reapPropertyList(properyList);
@@ -59,22 +51,22 @@ public class PyDictComprehension  extends Expression{
 
     @Override
     final ASTNode internalGetSetChildProperty(ChildPropertyDescriptor property, boolean get, ASTNode child) {
-        if (property == CONDITIONAL_EXPRESSION_PROPERTY) {
-            if (get) {
-                return getConditionalExpression();
-            } else {
-                setConditionalExpression((Expression) child);
-                return null;
-            }
-        }
-        if (property == ITERATOR_EXPRESSION_PROPERTY) {
-            if (get) {
-                return getIteratorExpression();
-            } else {
-                setIteratorExpression((Expression) child);
-                return null;
-            }
-        }
+//        if (property == CONDITIONAL_EXPRESSION_PROPERTY) {
+//            if (get) {
+//                return getConditionalExpression();
+//            } else {
+//                setConditionalExpression((Expression) child);
+//                return null;
+//            }
+//        }
+//        if (property == ITERATOR_EXPRESSION_PROPERTY) {
+//            if (get) {
+//                return getIteratorExpression();
+//            } else {
+//                setIteratorExpression((Expression) child);
+//                return null;
+//            }
+//        }
 //        if (property == VALUE_EXPRESSION_PROPERTY) {
 //            if (get) {
 //                return getValueExpression();
@@ -104,43 +96,7 @@ public class PyDictComprehension  extends Expression{
         return super.internalGetSetChildProperty(property, get, child);
     }
 
-    public Expression getConditionalExpression() {
-
-        if (this.conditionalExpression == null) {
-            // lazy init must be thread-safe for readers
-            synchronized (this) {
-                if (this.conditionalExpression == null) {
-                    preLazyInit();
-                    this.conditionalExpression = new SimpleName(this.ast);
-                    postLazyInit(this.conditionalExpression, CONDITIONAL_EXPRESSION_PROPERTY);
-                }
-            }
-        }
-
-        return conditionalExpression;
-    }
-
-    public Expression internalGetConditionalExpression(){
-        return conditionalExpression;
-    }
-
-    public Expression getIteratorExpression() {
-        if (this.iteratorExpression == null) {
-            // lazy init must be thread-safe for readers
-            synchronized (this) {
-                if (this.iteratorExpression == null) {
-                    preLazyInit();
-                    this.iteratorExpression = new SimpleName(this.ast);
-                    postLazyInit(this.iteratorExpression, ITERATOR_EXPRESSION_PROPERTY);
-                }
-            }
-        }
-        return iteratorExpression;
-    }
-
-    public NodeList getValueExpression() {
-        return this.valueExpression;
-    }
+    public NodeList getComparator(){return comparator;};
 
     public Expression getTarget1Expression() {
         if (this.target1Expression == null) {
@@ -168,27 +124,6 @@ public class PyDictComprehension  extends Expression{
             }
         }
         return target2Expression;
-    }
-
-    public void setConditionalExpression(Expression expression) {
-        if (expression == null) {
-            throw new IllegalArgumentException();
-        }
-        ASTNode oldChild = this.conditionalExpression;
-        preReplaceChild(oldChild, expression, CONDITIONAL_EXPRESSION_PROPERTY);
-        this.conditionalExpression = expression;
-        postReplaceChild(oldChild, expression, CONDITIONAL_EXPRESSION_PROPERTY);
-    }
-
-    public void setIteratorExpression(Expression expression) {
-        if (expression == null) {
-            throw new IllegalArgumentException();
-        }
-        ASTNode oldChild = this.iteratorExpression;
-        preReplaceChild(oldChild, expression, ITERATOR_EXPRESSION_PROPERTY);
-        this.iteratorExpression = expression;
-        postReplaceChild(oldChild, expression, ITERATOR_EXPRESSION_PROPERTY);
-
     }
 
     public void setTarget1Expression(Expression expression) {
@@ -228,19 +163,15 @@ public class PyDictComprehension  extends Expression{
     ASTNode clone0(AST target) {
         PyDictComprehension pyDictComp = new PyDictComprehension(target);
         pyDictComp.setSourceRange(getStartPosition(), getLength());
-        if (internalGetConditionalExpression()!=null){
-            pyDictComp.setConditionalExpression((Expression) internalGetConditionalExpression().clone(target));
+
+        for (Object o : comparator) {
+            pyDictComp.comparator.add(
+                    ((PyComparator) o).clone(target));
         }
         pyDictComp.setTarget1Expression(
                 (Expression) getTarget1Expression().clone(target));
         pyDictComp.setTarget2Expression(
                 (Expression) getTarget2Expression().clone(target));
-        for (Object o : valueExpression) {
-            pyDictComp.valueExpression.add(
-                    ((SingleVariableDeclaration) o).clone(target));
-        }
-        pyDictComp.setIteratorExpression(
-                (Expression) getIteratorExpression().clone(target));
         return pyDictComp;
     }
 
@@ -248,11 +179,8 @@ public class PyDictComprehension  extends Expression{
         boolean visitChildren = visitor.visit(this);
         if (visitChildren) {
             // visit children in normal left to right reading order
-            if ( internalGetConditionalExpression()!=null){
-                acceptChild(visitor, internalGetConditionalExpression());
-            }
-            acceptChild(visitor, getIteratorExpression());
-            for (Object o : valueExpression) {
+
+            for (Object o : comparator) {
                 acceptChild(visitor, (ASTNode) o);
             }
             acceptChild(visitor, getTarget1Expression());
@@ -264,9 +192,7 @@ public class PyDictComprehension  extends Expression{
     int treeSize() {
         return
                 memSize()
-                        + (this.conditionalExpression == null ? 0 : getConditionalExpression().treeSize())
-                        + (this.iteratorExpression == null ? 0 : getIteratorExpression().treeSize())
-                        + (this.valueExpression == null ? 0 : valueExpression.listSize())
+                        + (this.comparator == null ? 0 : comparator.listSize())
                         + (this.target1Expression == null ? 0 : getTarget1Expression().treeSize())
                         +(this.target2Expression == null ? 0 : getTarget2Expression().treeSize());
     }

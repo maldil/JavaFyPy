@@ -2026,6 +2026,17 @@ public class NaiveASTFlattener extends ASTVisitor {
 		printIndent();
 		this.buffer.append("gen (");//$NON-NLS-1$
 		node.getTargetExpression().accept(this);
+
+		for (int j=0;j<node.getComparators().size();j++){
+			((PyComparator)node.getComparators().get(j)).accept(this);
+		}
+		this.buffer.append(") ");//$NON-NLS-1$
+		return false;
+	}
+
+	@Override
+	public boolean visit(PyComparator node) {
+		printIndent();
 		this.buffer.append(" for ");
 
 		for (int j=0;j<node.getValueExpression().size();j++){
@@ -2040,7 +2051,6 @@ public class NaiveASTFlattener extends ASTVisitor {
 			this.buffer.append(" if ");
 			node.getConditionalExpression().accept(this);
 		}
-		this.buffer.append(") ");//$NON-NLS-1$
 		return false;
 	}
 
@@ -2051,20 +2061,11 @@ public class NaiveASTFlattener extends ASTVisitor {
 		node.getTarget1Expression().accept(this);
 		this.buffer.append(" ::: ");
 		node.getTarget2Expression().accept(this);
-		this.buffer.append(" for ");
 
-		for (int j=0;j<node.getValueExpression().size();j++){
-			((SingleVariableDeclaration)node.getValueExpression().get(j)).accept(this);
-			if (j!=node.getValueExpression().size()-1){
-				this.buffer.append(',');
-			}
+		for (int j=0;j<node.getComparator().size();j++){
+			((PyComparator)node.getComparator().get(j)).accept(this);
 		}
-		this.buffer.append(" ::: ");
-		node.getIteratorExpression().accept(this);
-		if (node.internalGetConditionalExpression()!=null){
-			this.buffer.append(" if ");
-			node.getConditionalExpression().accept(this);
-		}
+
 		this.buffer.append(") ");//$NON-NLS-1$
 		return false;
 	}
@@ -2073,19 +2074,8 @@ public class NaiveASTFlattener extends ASTVisitor {
 		printIndent();
 		this.buffer.append("listc (");//$NON-NLS-1$
 		node.getTargetExpression().accept(this);
-		this.buffer.append(" for ");
-
-		for (int j=0;j<node.getValueExpression().size();j++){
-			((SingleVariableDeclaration)node.getValueExpression().get(j)).accept(this);
-			if (j!=node.getValueExpression().size()-1){
-				this.buffer.append(',');
-			}
-		}
-		this.buffer.append(" : ");
-		node.getIteratorExpression().accept(this);
-		if (node.internalGetConditionalExpression()!=null){
-			this.buffer.append(" if ");
-			node.getConditionalExpression().accept(this);
+		for (int j=0;j<node.getComparator().size();j++){
+			((PyComparator)node.getComparator().get(j)).accept(this);
 		}
 		this.buffer.append(") ");//$NON-NLS-1$
 		return false;
@@ -2097,20 +2087,11 @@ public class NaiveASTFlattener extends ASTVisitor {
 		this.buffer.append("dictc (");//$NON-NLS-1$
 		node.getTargetExpression().accept(this);
 		this.buffer.append(" ::: SET_PYTHON");
-		this.buffer.append(" for ");
 
-		for (int j=0;j<node.getValueExpression().size();j++){
-			((SingleVariableDeclaration)node.getValueExpression().get(j)).accept(this);
-			if (j!=node.getValueExpression().size()-1){
-				this.buffer.append(',');
-			}
+		for (int j=0;j<node.getComparator().size();j++){
+			((PyComparator)node.getComparator().get(j)).accept(this);
 		}
-		this.buffer.append(" ::: ");
-		node.getIteratorExpression().accept(this);
-		if (node.internalGetConditionalExpression()!=null){
-			this.buffer.append(" if ");
-			node.getConditionalExpression().accept(this);
-		}
+
 		this.buffer.append(") ");//$NON-NLS-1$
 		return false;
 	}

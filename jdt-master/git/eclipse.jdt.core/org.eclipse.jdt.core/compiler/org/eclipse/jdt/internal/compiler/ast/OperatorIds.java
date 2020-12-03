@@ -45,4 +45,5 @@ public interface OperatorIds {
 	public static final int MINUS_MINUS = 33;
 	public static final int IN = 34;
 	public static final int NOT_IN = 35;
+	public static final int POWER = 36;
 }

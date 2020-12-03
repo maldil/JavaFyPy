@@ -13,37 +13,29 @@ public class PyDicComp extends OperatorExpression implements IPolyExpression{
 //    ConditionalExpression ::= TupleExpression '::' TupleExpression  EnhancedForStatementHeaderInit  '::' Expression 'if' ConditionalOrExpression
     private Expression target1=null;
     private Expression target2=null;
-    public ArrayList<LocalDeclaration> typeValues=null;
-    private Expression iterator=null;
-    private Expression binaryExpression=null;
-
+//    public ArrayList<LocalDeclaration> typeValues=null;
+//    private Expression iterator=null;
+//    private Expression binaryExpression=null;
+    public ArrayList<PyComparator> comparetors=null;
     public void updateIndices(){
         this.sourceStart = target1.sourceStart;
-        if (binaryExpression!=null){
-            this.sourceEnd = binaryExpression.sourceEnd;
-        }
-        this.sourceEnd = iterator.sourceEnd;
+        this.sourceEnd = comparetors.get(comparetors.size()-1).sourceEnd;
+    }
+
+    public PyDicComp() {
+        this.comparetors = new ArrayList<PyComparator>();
     }
 
     public StringBuffer printExpressionNoParenthesis(int indent, StringBuffer output) {
-        this.target1.printExpression(indent, output).append(" :: "); //$NON-NLS-1$
-        this.target2.printExpression(indent, output).append(" for ");
-        if (this.typeValues!=null){
-            for(int j = 0; j < this.typeValues.size(); ++j) {
-                (this.typeValues.get(j)).printAsExpression(0, output);
-                if (j!=this.typeValues.size()-1)
-                    output.append(',');
-            }
-            output.append("::");
-        }
-        if (binaryExpression==null) {
-            return this.iterator.printExpression(0, output);
-        }
-        else{
-            this.iterator.printExpression(0, output).append(" if ");
-            return binaryExpression.printExpression(0, output) ;
-        }
+        this.target1.printExpression(indent, output).append(" ::: "); //$NON-NLS-1$
+        this.target2.printExpression(indent, output);
 
+        if (this.comparetors!=null) {
+            for (int j = 0; j < this.comparetors.size(); ++j) {
+                (this.comparetors.get(j)).printExpressionNoParenthesis(indent, output);
+            }
+        }
+        return output;
     }
 
     public Expression getTarget1() {
@@ -54,18 +46,6 @@ public class PyDicComp extends OperatorExpression implements IPolyExpression{
         return target2;
     }
 
-    public ArrayList<LocalDeclaration> getTypeValues() {
-        return typeValues;
-    }
-
-    public Expression getIterator() {
-        return iterator;
-    }
-
-    public Expression getBinaryExpression() {
-        return binaryExpression;
-    }
-
     public void setTarget1(Expression target1) {
         this.target1 = target1;
     }
@@ -74,16 +54,12 @@ public class PyDicComp extends OperatorExpression implements IPolyExpression{
         this.target2 = target2;
     }
 
-    public void setTypeValues(ArrayList<LocalDeclaration> typeValues) {
-        this.typeValues = typeValues;
+    public ArrayList<PyComparator> getComparetors() {
+        return comparetors;
     }
 
-    public void setIterator(Expression iterator) {
-        this.iterator = iterator;
-    }
-
-    public void setBinaryExpression(Expression binaryExpression) {
-        this.binaryExpression = binaryExpression;
+    public void setComparetor(PyComparator comparetor) {
+        this.comparetors.add(comparetor);
     }
 
     @Override
@@ -91,15 +67,11 @@ public class PyDicComp extends OperatorExpression implements IPolyExpression{
         if (visitor.visit(this, scope)) {
             this.target1.traverse(visitor, scope);
             this.target2.traverse(visitor, scope);
-            if (typeValues!=null)
+            if (comparetors!=null)
             {
-                for (LocalDeclaration typeValue : typeValues) {
+                for (PyComparator typeValue : comparetors) {
                     typeValue.traverse(visitor,scope);
                 }
-            }
-            this.iterator.traverse(visitor, scope);
-            if (binaryExpression!=null){
-                this.binaryExpression.traverse(visitor, scope);
             }
         }
         visitor.endVisit(this, scope);

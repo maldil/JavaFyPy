@@ -3188,6 +3188,8 @@ public final class AST {
 
 	public PyGenerator newPyGenerator(){return new PyGenerator(this);}
 
+	public PyComparator newPyComarator(){return new PyComparator(this);}
+
 	public PyDictComprehension newPyDictComprehension(){return new PyDictComprehension(this);}
 
 	public PyListComprehension newPyListComprehension(){return new PyListComprehension(this);}

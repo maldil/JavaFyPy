@@ -2954,20 +2954,30 @@ public class ASTMatcher {
 			return false;
 		}
 		PyGenerator o = (PyGenerator) other;
+
+		return (safeSubtreeMatch(node.getComparators(), o.getComparators())
+				&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()));
+
+	}
+
+	public boolean match(PyComparator node, Object other) {
+		if (!(other instanceof PyComparator)) {
+			return false;
+		}
+		PyComparator o = (PyComparator) other;
 		if (node.internalGetConditionalExpression()!=null){
 			return (
 					safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())
-							&& safeSubtreeMatch(node.getConditionalExpression(), o.getConditionalExpression())
-							&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()) &&
+							&& safeSubtreeMatch(node.getConditionalExpression(), o.getConditionalExpression())&&
 							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
 		}
 		else{
 			return (
-					safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())
-							&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()) &&
+					safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())&&
 							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
 		}
-    }
+
+	}
 
     public boolean match(PyNotInExpression pyNotInExpression, Object other) {
 		if (!(other instanceof PyNotInExpression)) {
@@ -2985,19 +2995,9 @@ public class ASTMatcher {
 			return false;
 		}
 		PyListComprehension o = (PyListComprehension) other;
-		if (node.internalGetConditionalExpression()!=null){
-			return (
-					safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())
-							&& safeSubtreeMatch(node.getConditionalExpression(), o.getConditionalExpression())
-							&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()) &&
-							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
-		}
-		else{
-			return (
-					safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())
-							&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()) &&
-							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
-		}
+
+		return (safeSubtreeMatch(node.getComparator(), o.getComparator())
+				&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()));
     }
 
     public boolean match(PyDictComprehension node, Object other) {
@@ -3005,21 +3005,10 @@ public class ASTMatcher {
 			return false;
 		}
 		PyDictComprehension o = (PyDictComprehension) other;
-		if (node.internalGetConditionalExpression()!=null){
-			return (
-					safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())
-							&& safeSubtreeMatch(node.getConditionalExpression(), o.getConditionalExpression())
-							&& safeSubtreeMatch(node.getTarget1Expression(), o.getTarget1Expression()) &&
-							safeSubtreeMatch(node.getTarget2Expression(), o.getTarget2Expression()) &&
-							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
-		}
-		else{
-			return (
-					safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())
-							&& safeSubtreeMatch(node.getTarget1Expression(), o.getTarget1Expression()) &&
-							safeSubtreeMatch(node.getTarget2Expression(), o.getTarget2Expression()) &&
-							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
-		}
+		return (safeSubtreeMatch(node.getComparator(), o.getComparator())
+				&& safeSubtreeMatch(node.getTarget1Expression(), o.getTarget1Expression())
+		&& safeSubtreeMatch(node.getTarget2Expression(), o.getTarget2Expression()));
+
     }
 
 	public boolean match(PySetComprehension node, Object other) {
@@ -3027,19 +3016,8 @@ public class ASTMatcher {
 			return false;
 		}
 		PySetComprehension o = (PySetComprehension) other;
-		if (node.internalGetConditionalExpression()!=null){
-			return (
-					safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())
-							&& safeSubtreeMatch(node.getConditionalExpression(), o.getConditionalExpression())
-							&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()) &&
-							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
-		}
-		else{
-			return (
-					safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())
-							&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()) &&
-							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
-		}
+		return (safeSubtreeMatch(node.getComparator(), o.getComparator())
+				&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()));
 	}
 
     public boolean match(PyYieldReturnStatement node, Object other) {
@@ -3049,4 +3027,5 @@ public class ASTMatcher {
 		PyYieldReturnStatement o = (PyYieldReturnStatement) other;
 		return safeSubtreeMatch(node.getExpression(), o.getExpression());
     }
+
 }

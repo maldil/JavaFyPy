@@ -108,7 +108,8 @@ public class Assignment extends Expression {
 		/** &gt;&gt;&gt;= operator. */
 		public static final Operator RIGHT_SHIFT_UNSIGNED_ASSIGN =
 			new Operator(">>>=");//$NON-NLS-1$
-
+		public static final Operator POWER_ASSIGN =
+				new Operator("**=");//$NON-NLS-1$
 		/**
 		 * Returns the assignment operator corresponding to the given string,
 		 * or <code>null</code> if none.

@@ -1022,6 +1022,7 @@ public abstract class ASTNode {
 
 	public static final int PY_YIELD_RETURN_STATEMENT = 112;
 
+	public static final int PY_COMPARATOR= 113;
 	public static Class nodeClassForType(int nodeType) {
 		switch (nodeType) {
 			case ANNOTATION_TYPE_DECLARATION :

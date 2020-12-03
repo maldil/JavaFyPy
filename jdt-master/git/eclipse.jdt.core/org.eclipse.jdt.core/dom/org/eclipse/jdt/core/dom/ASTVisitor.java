@@ -1900,6 +1900,9 @@ public abstract class ASTVisitor {
 	public boolean visit(PyGenerator pyGenerator) {
 		return true;
 	}
+	public boolean visit(PyComparator pyComparator) {
+		return true;
+	}
 	public boolean visit(PyDictComprehension pyDictComprehension) {
 		return true;
 	}
@@ -3287,5 +3290,9 @@ public abstract class ASTVisitor {
 
 
 	public void endVisit(PyYieldReturnStatement pyYieldReturnStatement) {
+	}
+
+
+	public void endVisit(PyComparator pyComparator) {
 	}
 }

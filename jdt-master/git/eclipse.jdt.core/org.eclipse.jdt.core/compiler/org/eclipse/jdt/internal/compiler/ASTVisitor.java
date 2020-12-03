@@ -1058,6 +1058,10 @@ public abstract class ASTVisitor {
 		return true;
 	}
 
+	public boolean visit(PyComparator pyComparator, BlockScope scope) {
+		return true;
+	}
+	
 	public boolean visit(PyDicComp pyDicComp, BlockScope scope) {
 		return true;
 	}
@@ -1078,5 +1082,9 @@ public abstract class ASTVisitor {
 
 
 	public void endVisit(PyDicComp pyDicComp, BlockScope scope) {
+	}
+
+
+	public void endVisit(PyComparator pyComparator, BlockScope scope) {
 	}
 }
