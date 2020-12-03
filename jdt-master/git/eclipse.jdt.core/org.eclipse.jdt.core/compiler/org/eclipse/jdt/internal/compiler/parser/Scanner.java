@@ -1636,8 +1636,13 @@ protected int getNextToken0() throws InvalidInputException {
 						return TokenNameNOT_EQUAL;
 					return TokenNameNOT;
 				case '*' :
-					if (getNextChar('='))
+					if (getNextChar('=')) {
 						return TokenNameMULTIPLY_EQUAL;
+					}
+					else if (getNextChar('*') && getNextChar('=')){
+						return TokenNamePOWER_EQUAL;
+					}
+
 					return TokenNameMULTIPLY;
 				case '%' :
 					if (getNextChar('='))

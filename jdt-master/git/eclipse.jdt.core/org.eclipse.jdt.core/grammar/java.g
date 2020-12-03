@@ -70,6 +70,7 @@ $Terminals
 	PLUS_EQUAL
 	MINUS_EQUAL
 	MULTIPLY_EQUAL
+	POWER_EQUAL
 	DIVIDE_EQUAL
 	AND_EQUAL
 	OR_EQUAL
@@ -87,6 +88,7 @@ $Terminals
 	XOR
 	AND
 	MULTIPLY
+	POWER
 	OR
 	TWIDDLE
 	DIVIDE
@@ -140,6 +142,7 @@ $Alias
 	'+='   ::= PLUS_EQUAL
 	'-='   ::= MINUS_EQUAL
 	'*='   ::= MULTIPLY_EQUAL
+	'**='  ::= POWER_EQUAL
 	'/='   ::= DIVIDE_EQUAL
 	'&='   ::= AND_EQUAL
 	'|='   ::= OR_EQUAL
@@ -2197,20 +2200,25 @@ ConditionalOrExpression ::= ConditionalOrExpression '||' ConditionalAndExpressio
 /:$readableName Expression:/
 
 
-
 ConditionalExpression -> ConditionalOrExpression
 ConditionalExpression ::= ConditionalOrExpression '?' Expression ':' ConditionalExpression
 /.$putCase consumeConditionalExpression(OperatorIds.QUESTIONCOLON) ; $break ./
 /:$readableName Expression:/
-ConditionalExpression ::= TupleExpression EnhancedForStatementHeaderInit  ':' Expression 'if' ConditionalOrExpression
+ConditionalExpression ::= TupleExpression GeneratorHeader_List
 /.$putCase consumeGenerators() ; $break ./
-ConditionalExpression ::= TupleExpression EnhancedForStatementHeaderInit  ':' Expression
-/.$putCase consumeGeneratorsWithoutIF() ; $break ./
-/:$readableName Expression:/
-ConditionalExpression ::= TupleExpression ':::' TupleExpression  EnhancedForStatementHeaderInit  ':::' Expression 'if' ConditionalOrExpression
-/.$putCase consumeDickCompWithIF() ; $break ./
-ConditionalExpression ::= TupleExpression ':::' TupleExpression  EnhancedForStatementHeaderInit  ':::' Expression
-/.$putCase consumeDickCompWithoutIF() ; $break ./
+ConditionalExpression ::= TupleExpression ':::' TupleExpression  GeneratorHeader_List
+/.$putCase consumeDickComp() ; $break ./
+
+
+
+GeneratorHeader ::= EnhancedForStatementHeaderInit  ':' Expression
+/.$putCase consumeGeneratorHeaderWithoutIf() ; $break ./
+GeneratorHeader ::= EnhancedForStatementHeaderInit  ':' Expression 'if' ConditionalOrExpression
+/.$putCase consumeGeneratorHeaderWithIf() ; $break ./
+
+GeneratorHeader_List ::= GeneratorHeader
+/.$putCase consumeGeneratorHeader(); $break ./
+GeneratorHeader_List ::= GeneratorHeader_List GeneratorHeader
 
 
 
@@ -2235,6 +2243,8 @@ AssignmentOperator ::= '='
 /.$putCase consumeAssignmentOperator(EQUAL); $break ./
 AssignmentOperator ::= '*='
 /.$putCase consumeAssignmentOperator(MULTIPLY); $break ./
+AssignmentOperator ::= '**='
+/.$putCase consumeAssignmentOperator(POWER); $break ./
 AssignmentOperator ::= '/='
 /.$putCase consumeAssignmentOperator(DIVIDE); $break ./
 AssignmentOperator ::= '%='
@@ -3192,7 +3202,8 @@ RIGHT_SHIFT ::=    '>>'
 UNSIGNED_RIGHT_SHIFT ::=    '>>>'  
 PLUS_EQUAL ::=    '+='   
 MINUS_EQUAL ::=    '-='   
-MULTIPLY_EQUAL ::=    '*='   
+MULTIPLY_EQUAL ::=    '*='
+POWER_EQUAL ::=    '**='
 DIVIDE_EQUAL ::=    '/='   
 AND_EQUAL ::=    '&='   
 OR_EQUAL ::=    '|='   
@@ -3209,7 +3220,8 @@ NOT ::=    '!'
 REMAINDER ::=    '%'    
 XOR ::=    '^'    
 AND ::=    '&'    
-MULTIPLY ::=    '*'    
+MULTIPLY ::=    '*'
+POWER ::= '**'
 OR ::=    '|'    
 TWIDDLE ::=    '~'    
 DIVIDE ::=    '/'    
