@@ -1,5 +1,5 @@
 --main options
-%options ACTION, AN=JavaAction.java, GP=java, 
+%options ACTION, AN=JavaAction.java, GP=java,
 %options FILE-PREFIX=java, ESCAPE=$, PREFIX=TokenName, OUTPUT-SIZE=125 ,
 %options NOGOTO-DEFAULT, SINGLE-PRODUCTIONS, LALR=1 , TABLE, 
 
@@ -42,13 +42,13 @@ $Terminals
 
 	Identifier
 
-	abstract assert boolean break byte case catch char class 
-	continue const default do double else enum extends false final finally float
+	abstract assert boolean break case catch char class
+	continue default do double else enum extends false final finally float
 	for goto if implements import instanceof int
-	interface long native new non-sealed null package private
-	protected public return short static strictfp super switch
+	interface long new non-sealed null package private
+	protected public return static strictfp super switch
 	synchronized this throw throws transient true try void
-	volatile while module open requires transitive exports opens to uses provides with withstmt in pyjavatuple not yieldr
+    while module open requires transitive exports opens to uses provides with withstmt in pyjavatuple not yieldr nonlocal
 
 	IntegerLiteral
 	LongLiteral
@@ -262,8 +262,6 @@ NumericType -> FloatingPointType
 
 PrimitiveType -> TypeAnnotationsopt 'boolean'
 PrimitiveType -> TypeAnnotationsopt 'void'
-IntegralType -> 'byte'
-IntegralType -> 'short'
 IntegralType -> 'int'
 IntegralType -> 'long'
 IntegralType -> 'char'
@@ -672,12 +670,10 @@ Modifier -> 'private'
 Modifier -> 'static'
 Modifier -> 'abstract'
 Modifier -> 'final'
-Modifier -> 'native'
 Modifier -> 'non-sealed'
 Modifier -> RestrictedIdentifiersealed
 Modifier -> 'synchronized'
 Modifier -> 'transient'
-Modifier -> 'volatile'
 Modifier -> 'strictfp'
 Modifier ::= Annotation
 /.$putCase consumeAnnotationAsModifier(); $break ./
@@ -1391,6 +1387,7 @@ StatementWithoutTrailingSubstatement -> TryStatement
 StatementWithoutTrailingSubstatement -> TryStatementWithResources
 StatementWithoutTrailingSubstatement -> YieldStatement
 StatementWithoutTrailingSubstatement -> YieldReturnStatement
+StatementWithoutTrailingSubstatement -> NonLocalStatement
 /:$readableName Statement:/
 
 EmptyStatement ::= ';'
@@ -1590,6 +1587,12 @@ ReturnStatement ::= 'return' Expressionopt ';'
 YieldReturnStatement ::= 'yieldr' Expressionopt ';'
 /.$putCase consumeStatementYieldReturn() ; $break ./
 /:$readableName YieldReturnStatement:/
+
+
+NonLocalStatement ::= 'nonlocal' Expressionopt ';'
+/.$putCase consumeStatementNonLocal() ; $break ./
+/:$readableName NonLocalStatement:/
+
 
 ThrowStatement ::= 'throw' Expression ';'
 /.$putCase consumeStatementThrow(); $break ./

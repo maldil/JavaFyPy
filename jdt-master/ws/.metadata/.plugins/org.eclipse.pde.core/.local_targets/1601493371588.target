@@ -4,7 +4,8 @@
 	<locations>
 		<location xmlns:targlets="http://www.eclipse.org/oomph/targlets/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Modular Target" type="Targlet">
   
-			<targlet activeRepositoryList="2020-12" name="Eclipse Platform" xsi:type="targlets:Targlet">
+			<targlet activeRepositoryList="2021-03" name="Eclipse Platform" xsi:type="targlets:Targlet">
+    
     
     
     
@@ -27,9 +28,13 @@
     
     
 				<repositoryList name="None"/>
+				<repositoryList name="2021-03">
+      
+					<repository url="http://download.eclipse.org/eclipse/updates/4.19-I-builds"/>
+				</repositoryList>
 				<repositoryList name="2020-12">
       
-					<repository url="http://download.eclipse.org/eclipse/updates/4.18-I-builds"/>
+					<repository url="http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800"/>
 				</repositoryList>
 				<repositoryList name="2020-09">
       
@@ -108,7 +113,7 @@
 					<repository url="http://download.eclipse.org/eclipse/updates/3.5/R-3.5.2-201002111343"/>
 				</repositoryList>
 			</targlet>
-			<targlet activeRepositoryList="2020-12" name="JDT Core" xsi:type="targlets:Targlet">
+			<targlet activeRepositoryList="2021-03" name="JDT Core" xsi:type="targlets:Targlet">
     
     
     
@@ -118,7 +123,7 @@
 				<requirement name="org.eclipse.jdt.core.ecj.validation.plain.project"/>
 				<sourceLocator rootFolder="/Users/malinda/Documents/Research_Topic_2/eclips_workspace_cpat_new/jdt-master/git/eclipse.jdt.core"/>
 			</targlet>
-			<targlet activeRepositoryList="2020-12" name="JDT Core Test Binaries" xsi:type="targlets:Targlet">
+			<targlet activeRepositoryList="2021-03" name="JDT Core Test Binaries" xsi:type="targlets:Targlet">
     
     
 				<requirement name="org.eclipse.jdt.core.tests.binaries"/>

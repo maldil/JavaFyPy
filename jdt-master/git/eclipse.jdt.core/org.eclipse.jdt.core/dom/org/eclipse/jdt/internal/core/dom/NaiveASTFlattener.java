@@ -2182,6 +2182,18 @@ public class NaiveASTFlattener extends ASTVisitor {
 		return false;
 	}
 
+	@Override
+	public boolean visit(PyNonLocalStatement node) {
+		printIndent();
+		this.buffer.append("nonlocal");//$NON-NLS-1$
+		if (node.getExpression() != null) {
+			this.buffer.append(" ");//$NON-NLS-1$
+			node.getExpression().accept(this);
+		}
+		this.buffer.append(";\n");//$NON-NLS-1$
+		return false;
+	}
+
 	/**
 	 * @deprecated
 	 */

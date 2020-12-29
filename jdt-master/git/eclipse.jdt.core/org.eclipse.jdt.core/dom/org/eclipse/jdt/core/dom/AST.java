@@ -3184,6 +3184,8 @@ public final class AST {
 	 * a JLS2 AST
 	 * @since 3.1
 	 */
+	public PyNonLocalStatement newNonLocal () {return new PyNonLocalStatement(this);}
+
 	public PyWithStatement newPyWithStatement () {return new PyWithStatement(this);}
 
 	public PyGenerator newPyGenerator(){return new PyGenerator(this);}

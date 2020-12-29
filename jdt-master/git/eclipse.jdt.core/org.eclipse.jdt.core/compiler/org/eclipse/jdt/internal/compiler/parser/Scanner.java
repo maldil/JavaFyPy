@@ -3553,11 +3553,11 @@ private int internalScanIdentifierOrKeyword(int index, int length, char[] data) 
 			}
 		case 'b' : //boolean break byte
 			switch (length) {
-				case 4 :
-					if ((data[++index] == 'y') && (data[++index] == 't') && (data[++index] == 'e'))
-						return TokenNamebyte;
-					else
-						return TokenNameIdentifier;
+//				case 4 :
+//					if ((data[++index] == 'y') && (data[++index] == 't') && (data[++index] == 'e'))
+//						return TokenNamebyte;
+//					else
+//						return TokenNameIdentifier;
 				case 5 :
 					if ((data[++index] == 'r')
 						&& (data[++index] == 'e')
@@ -3607,11 +3607,11 @@ private int internalScanIdentifierOrKeyword(int index, int length, char[] data) 
 								return TokenNameclass;
 							else
 								return TokenNameIdentifier;
-						else if ((data[index] == 'o')
-							&& (data[++index] == 'n')
-							&& (data[++index] == 's')
-							&& (data[++index] == 't'))
-							return TokenNameconst; //const is not used in java ???????
+//						else if ((data[index] == 'o')
+//							&& (data[++index] == 'n')
+//							&& (data[++index] == 's')
+//							&& (data[++index] == 't'))
+//							return TokenNameconst; //const is not used in java ???????
 						else
 							return TokenNameIdentifier;
 				case 8 :
@@ -3884,13 +3884,24 @@ private int internalScanIdentifierOrKeyword(int index, int length, char[] data) 
 						return TokenNamenull;
 					else
 						return TokenNameIdentifier;
-				case 6 :
-					if ((data[++index] == 'a')
-						&& (data[++index] == 't')
-						&& (data[++index] == 'i')
-						&& (data[++index] == 'v')
-						&& (data[++index] == 'e')) {
-						return TokenNamenative;
+//				case 6 :
+//					if ((data[++index] == 'a')
+//						&& (data[++index] == 't')
+//						&& (data[++index] == 'i')
+//						&& (data[++index] == 'v')
+//						&& (data[++index] == 'e')) {
+//						return TokenNamenative;
+//					} else
+//						return TokenNameIdentifier;
+				case 8:
+					if ((data[++index] == 'o')
+							&& (data[++index] == 'n')
+							&& (data[++index] == 'l')
+							&& (data[++index] == 'o')
+							&& (data[++index] == 'c')
+							&& (data[++index] == 'a')
+							&& (data[++index] == 'l')) {
+						return TokenNamenonlocal;
 					} else
 						return TokenNameIdentifier;
 				default :
@@ -4033,13 +4044,13 @@ private int internalScanIdentifierOrKeyword(int index, int length, char[] data) 
 		case 's' : //short static super switch synchronized strictfp
 			switch (length) {
 				case 5 :
-					if (data[++index] == 'h')
-						if ((data[++index] == 'o') && (data[++index] == 'r') && (data[++index] == 't'))
-							return TokenNameshort;
-						else
-							return TokenNameIdentifier;
-					else
-						if ((data[index] == 'u')
+//					if (data[++index] == 'h')
+//						if ((data[++index] == 'o') && (data[++index] == 'r') && (data[++index] == 't'))
+//							return TokenNameshort;
+//						else
+//							return TokenNameIdentifier;
+//					else
+						if ((data[++index] == 'u')
 							&& (data[++index] == 'p')
 							&& (data[++index] == 'e')
 							&& (data[++index] == 'r'))
@@ -4187,17 +4198,17 @@ private int internalScanIdentifierOrKeyword(int index, int length, char[] data) 
 						return TokenNamevoid;
 					else
 						return TokenNameIdentifier;
-				case 8 :
-					if ((data[++index] == 'o')
-						&& (data[++index] == 'l')
-						&& (data[++index] == 'a')
-						&& (data[++index] == 't')
-						&& (data[++index] == 'i')
-						&& (data[++index] == 'l')
-						&& (data[++index] == 'e')) {
-						return TokenNamevolatile;
-					} else
-						return TokenNameIdentifier;
+//				case 8 :
+//					if ((data[++index] == 'o')
+//						&& (data[++index] == 'l')
+//						&& (data[++index] == 'a')
+//						&& (data[++index] == 't')
+//						&& (data[++index] == 'i')
+//						&& (data[++index] == 'l')
+//						&& (data[++index] == 'e')) {
+//						return TokenNamevolatile;
+//					} else
+//						return TokenNameIdentifier;
 
 				default :
 					return TokenNameIdentifier;
@@ -4248,12 +4259,19 @@ private int internalScanIdentifierOrKeyword(int index, int length, char[] data) 
 						&& (data[++index] == 'l')
 						&& (data[++index] == 'd'))
 						return disambiguatedRestrictedIdentifierYield(TokenNameRestrictedIdentifierYield); //Malinda Java
-					if ((data[index] == 'i')
+					else{
+						return TokenNameIdentifier;
+					}
+				case 6:
+					if ((data[++index] == 'i')
 							&& (data[++index] == 'e')
 							&& (data[++index] == 'l')
 							&& (data[++index] == 'd')
 							&& (data[++index] == 'r'))
 						return TokenNameyieldr;
+					else{
+						return TokenNameIdentifier;
+					}
 					//$FALL-THROUGH$
 				default :
 					return TokenNameIdentifier;
@@ -4693,8 +4711,8 @@ public String toStringAction(int act) {
 			return "boolean"; //$NON-NLS-1$
 		case TokenNamebreak :
 			return "break"; //$NON-NLS-1$
-		case TokenNamebyte :
-			return "byte"; //$NON-NLS-1$
+//		case TokenNamebyte :
+//			return "byte"; //$NON-NLS-1$
 		case TokenNamecase :
 			return "case"; //$NON-NLS-1$
 		case TokenNamecatch :
@@ -4739,8 +4757,8 @@ public String toStringAction(int act) {
 			return "interface"; //$NON-NLS-1$
 		case TokenNamelong :
 			return "long"; //$NON-NLS-1$
-		case TokenNamenative :
-			return "native"; //$NON-NLS-1$
+//		case TokenNamenative :
+//			return "native"; //$NON-NLS-1$
 		case TokenNamenew :
 			return "new"; //$NON-NLS-1$
 		case TokenNamenon_sealed:
@@ -4759,12 +4777,14 @@ public String toStringAction(int act) {
 			return "public"; //$NON-NLS-1$
 		case TokenNamereturn :
 			return "return"; //$NON-NLS-1$
+		case TokenNamenonlocal:
+			return "nonlocal";
 		case TokenNameyieldr:
-			return "yield";
+			return "yieldr";
 		case TokenNameRestrictedIdentifiersealed:
 			return "sealed"; //$NON-NLS-1$
-		case TokenNameshort :
-			return "short"; //$NON-NLS-1$
+//		case TokenNameshort :
+//			return "short"; //$NON-NLS-1$
 		case TokenNamestatic :
 			return "static"; //$NON-NLS-1$
 		case TokenNamesuper :
@@ -4787,8 +4807,8 @@ public String toStringAction(int act) {
 			return "try"; //$NON-NLS-1$
 		case TokenNamevoid :
 			return "void"; //$NON-NLS-1$
-		case TokenNamevolatile :
-			return "volatile"; //$NON-NLS-1$
+//		case TokenNamevolatile :
+//			return "volatile"; //$NON-NLS-1$
 		case TokenNamewhile :
 			return "while"; //$NON-NLS-1$
 		case TokenNamewithstmt:
@@ -4974,7 +4994,7 @@ public static boolean isKeyword(int token) {
 	switch(token) {
 		case TerminalTokens.TokenNameabstract:
 		case TerminalTokens.TokenNameassert:
-		case TerminalTokens.TokenNamebyte:
+//		case TerminalTokens.TokenNamebyte:
 		case TerminalTokens.TokenNamebreak:
 		case TerminalTokens.TokenNameboolean:
 		case TerminalTokens.TokenNamecase:
@@ -5002,13 +5022,13 @@ public static boolean isKeyword(int token) {
 		case TerminalTokens.TokenNamenew:
 		case TerminalTokens.TokenNamenon_sealed:
 		case TerminalTokens.TokenNamenull:
-		case TerminalTokens.TokenNamenative:
+//		case TerminalTokens.TokenNamenative:
 		case TerminalTokens.TokenNamepublic:
 		case TerminalTokens.TokenNamepackage:
 		case TerminalTokens.TokenNameprivate:
 		case TerminalTokens.TokenNameprotected:
 		case TerminalTokens.TokenNamereturn:
-		case TerminalTokens.TokenNameshort:
+//		case TerminalTokens.TokenNameshort:
 		case TerminalTokens.TokenNamesuper:
 		case TerminalTokens.TokenNamestatic:
 		case TerminalTokens.TokenNameswitch:
@@ -5021,11 +5041,12 @@ public static boolean isKeyword(int token) {
 		case TerminalTokens.TokenNamethrows:
 		case TerminalTokens.TokenNametransient:
 		case TerminalTokens.TokenNamevoid:
-		case TerminalTokens.TokenNamevolatile:
+//		case TerminalTokens.TokenNamevolatile:
 		case TerminalTokens.TokenNamewhile:
 		case TerminalTokens.TokenNamewithstmt:
 		case TerminalTokens.TokenNamein:
 		case TerminalTokens.TokenNameyieldr:
+		case TerminalTokens.TokenNamenonlocal:
 			return true;
 		case TerminalTokens.TokenNameRestrictedIdentifierYield:
 		case TerminalTokens.TokenNameRestrictedIdentifierrecord:
@@ -5792,7 +5813,7 @@ public int fastForward(Statement unused) {
 			case TokenNameassert:
 			case TokenNameboolean:
 			case TokenNamebreak:
-			case TokenNamebyte:
+//			case TokenNamebyte:
 			case TokenNamecase:
 			case TokenNamechar:
 			case TokenNameclass:
@@ -5809,7 +5830,7 @@ public int fastForward(Statement unused) {
 			case TokenNameint:
 			case TokenNameinterface:
 			case TokenNamelong:
-			case TokenNamenative:
+//			case TokenNamenative:
 			case TokenNamenew:
 			case TokenNamenon_sealed:
 			case TokenNamenull:
@@ -5819,7 +5840,8 @@ public int fastForward(Statement unused) {
 			case TokenNameRestrictedIdentifiersealed:
 			case TokenNamereturn:
 			case TokenNameyieldr:
-			case TokenNameshort:
+			case TokenNamenonlocal:
+//			case TokenNameshort:
 			case TokenNamestatic:
 			case TokenNamestrictfp:
 			case TokenNamesuper:
@@ -5831,7 +5853,7 @@ public int fastForward(Statement unused) {
 			case TokenNametrue:
 			case TokenNametry:
 			case TokenNamevoid:
-			case TokenNamevolatile:
+//			case TokenNamevolatile:
 			case TokenNamewhile:
 			case TokenNamewithstmt:
 			case TokenNameIntegerLiteral: // ??!

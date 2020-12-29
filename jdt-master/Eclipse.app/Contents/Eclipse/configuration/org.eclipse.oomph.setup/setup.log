@@ -2058,3 +2058,1846 @@
 [2020-09-30 12:16:19] Performing Working Sets (JDT Core Tests)
 [2020-09-30 12:16:20] Performing Working Sets (JDT Core Test Binaries)
 [2020-09-30 12:16:20] 
+[2020-12-25 18:34:20] Executing startup tasks
+[2020-12-25 18:34:20] Java(TM) SE Runtime Environment 13.0.1+9
+[2020-12-25 18:34:20] Product org.eclipse.products.epp.package.java.2020-06
+[2020-12-25 18:34:20] Workspace /Users/malinda/Documents/Research_Topic_2/eclips_workspace_cpat_new/jdt-master/ws
+[2020-12-25 18:34:20] Project org.eclipse.jdt.core.master
+[2020-12-25 18:34:20] Project org.eclipse.jdt.core.tests.master
+[2020-12-25 18:34:20] Project org.eclipse.jdt.core.testbinaries.master
+[2020-12-25 18:34:20] Bundle org.eclipse.oomph.setup 1.18.0.v20200820-0414, build=4821, branch=9bc46599ffa5e6ffd3e2d2122913fe40d711f2f5
+[2020-12-25 18:34:20] Bundle org.eclipse.oomph.setup.core 1.18.0.v20200624-1156, build=4747, branch=6100b2bcb07b989fbc86c13817ea48e979f9a7be
+[2020-12-25 18:34:20] Bundle org.eclipse.oomph.setup.git 1.18.0.v20200624-1156, build=4747, branch=6100b2bcb07b989fbc86c13817ea48e979f9a7be
+[2020-12-25 18:34:20] Bundle org.eclipse.oomph.setup.jdt 1.16.0.v20200624-1156, build=4747, branch=6100b2bcb07b989fbc86c13817ea48e979f9a7be
+[2020-12-25 18:34:20] Bundle org.eclipse.oomph.setup.p2 1.16.0.v20200814-1205, build=4821, branch=9bc46599ffa5e6ffd3e2d2122913fe40d711f2f5
+[2020-12-25 18:34:20] Bundle org.eclipse.oomph.setup.pde 1.12.0.v20200624-1156, build=4747, branch=6100b2bcb07b989fbc86c13817ea48e979f9a7be
+[2020-12-25 18:34:20] Bundle org.eclipse.oomph.setup.targlets 1.13.0.v20200624-1156, build=4747, branch=6100b2bcb07b989fbc86c13817ea48e979f9a7be
+[2020-12-25 18:34:20] Bundle org.eclipse.oomph.setup.workingsets 1.13.0.v20200815-0620, build=4821, branch=9bc46599ffa5e6ffd3e2d2122913fe40d711f2f5
+[2020-12-25 18:34:20] Performing Targlets Modular API Baseline Target (Eclipse Platform + JDT)
+[2020-12-25 18:34:20] Repository http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800
+[2020-12-25 18:34:20] Offline = false
+[2020-12-25 18:34:20] Mirrors = true
+[2020-12-25 18:34:20] Include All Platforms = false
+[2020-12-25 18:34:20] Include All Requirements = true
+[2020-12-25 18:34:20] Include Binary Equivalents = true
+[2020-12-25 18:34:20] Include Sources = false
+[2020-12-25 18:34:22] Calculating requirements and dependencies.
+[2020-12-25 18:34:22] Computing prerequisite plan
+[2020-12-25 18:34:23] Fetching artifacts.xml.xz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/ (112.18kB)
+[2020-12-25 18:34:23] Collecting 82 artifacts from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800
+[2020-12-25 18:34:24] Downloading org.eclipse.platform_root
+[2020-12-25 18:34:24] Downloading org.eclipse.e4.core.commands
+[2020-12-25 18:34:24] Downloading org.eclipse.equinox.p2.rcp.feature
+[2020-12-25 18:34:24] Downloading org.eclipse.equinox.p2.extras.feature
+[2020-12-25 18:34:24] Downloading org.eclipse.equinox.executable_root.cocoa.macosx.x86_64
+[2020-12-25 18:34:24] Downloading org.eclipse.equinox.p2.user.ui
+[2020-12-25 18:34:24] Downloading org.eclipse.equinox.p2.console
+[2020-12-25 18:34:24] Downloading org.eclipse.rcp
+[2020-12-25 18:34:24] Downloading org.eclipse.swt
+[2020-12-25 18:34:24] Downloading org.eclipse.pde
+[2020-12-25 18:34:24] Downloading org.eclipse.rcp
+[2020-12-25 18:34:24] Fetching org.eclipse.platform_root_4.18.0.v20201202-1800 from https://mirrors.xmission.com/eclipse/eclipse/updates/4.18/R-4.18-202012021800/binary/ (196B)
+[2020-12-25 18:34:24] Downloading org.eclipse.help
+[2020-12-25 18:34:24] Fetching org.eclipse.pde_3.14.600.v20201202-1800.jar from https://ftp.osuosl.org/pub/eclipse/eclipse/updates/4.18/R-4.18-202012021800/features/ (19.44kB)
+[2020-12-25 18:34:24] Fetching org.eclipse.equinox.p2.rcp.feature_1.4.1000.v20201106-1246.jar from https://eclipse.mirror.rafal.ca/eclipse/updates/4.18/R-4.18-202012021800/features/ (19.03kB)
+[2020-12-25 18:34:24] Fetching org.eclipse.rcp_4.18.0.v20201202-1800.jar from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/features/ (19.09kB)
+[2020-12-25 18:34:24] Fetching org.eclipse.equinox.p2.extras.feature_1.4.1000.v20201106-1246.jar from https://mirror.umd.edu/eclipse/eclipse/updates/4.18/R-4.18-202012021800/features/ (19.11kB)
+[2020-12-25 18:34:24] Fetching org.eclipse.equinox.p2.rcp.feature_1.4.1000.v20201106-1246.jar from https://eclipse.mirror.rafal.ca/eclipse/updates/4.18/R-4.18-202012021800/features/ (19.03kB)
+[2020-12-25 18:34:24] Fetching org.eclipse.pde_3.14.600.v20201202-1800.jar from https://ftp.osuosl.org/pub/eclipse/eclipse/updates/4.18/R-4.18-202012021800/features/ (19.44kB)
+[2020-12-25 18:34:24] Fetching org.eclipse.rcp_4.18.0.v20201202-1800.jar.pack.gz from https://eclipse.mirror.liteserver.nl/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (9.4kB)
+[2020-12-25 18:34:24] Downloading org.eclipse.equinox.p2.core.feature
+[2020-12-25 18:34:24] Fetching org.eclipse.equinox.p2.console_1.1.400.v20201106-0859.jar.pack.gz from https://mirrors.dotsrc.org/eclipse//eclipse/updates/4.18/R-4.18-202012021800/plugins/ (17.96kB)
+[2020-12-25 18:34:25] Downloading org.eclipse.jdt
+[2020-12-25 18:34:25] Downloading org.eclipse.platform
+[2020-12-25 18:34:25] Downloading org.eclipse.e4.rcp
+[2020-12-25 18:34:25] Downloading org.eclipse.jdt.junit.runtime
+[2020-12-25 18:34:25] Downloading org.eclipse.rcp_root
+[2020-12-25 18:34:25] Fetching org.eclipse.platform_4.18.0.v20201202-1800.jar from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/features/ (20.57kB)
+[2020-12-25 18:34:25] Fetching org.eclipse.jdt_3.18.600.v20201202-1800.jar from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/features/ (19.72kB)
+[2020-12-25 18:34:25] Fetching org.eclipse.equinox.p2.core.feature_1.6.800.v20201106-1246.jar from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/features/ (19.66kB)
+[2020-12-25 18:34:25] Fetching org.eclipse.e4.rcp_4.18.0.v20201202-1103.jar from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/features/ (21.03kB)
+[2020-12-25 18:34:25] Fetching org.eclipse.equinox.p2.core.feature_1.6.800.v20201106-1246.jar from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/features/ (19.66kB)
+[2020-12-25 18:34:25] Fetching org.eclipse.equinox.p2.user.ui_2.4.1000.v20201106-1246.jar from https://mirror.csclub.uwaterloo.ca/eclipse/eclipse/updates/4.18/R-4.18-202012021800/features/ (18.9kB)
+[2020-12-25 18:34:25] Fetching org.eclipse.rcp_root_4.18.0.v20201202-1800 from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/binary/ (25.08kB)
+[2020-12-25 18:34:25] Fetching org.eclipse.help_2.3.400.v20201202-1800.jar from https://rhlx01.hs-esslingen.de/pub/Mirrors/eclipse/eclipse/updates/4.18/R-4.18-202012021800/features/ (19.54kB)
+[2020-12-25 18:34:25] Downloading org.eclipse.jface.notifications
+[2020-12-25 18:34:25] Downloading org.eclipse.pde.ds.core
+[2020-12-25 18:34:25] Downloading org.eclipse.e4.ui.dialogs
+[2020-12-25 18:34:25] Downloading org.eclipse.jdt
+[2020-12-25 18:34:25] Downloading org.eclipse.jetty.continuation
+[2020-12-25 18:34:25] Fetching org.eclipse.swt_3.115.100.v20201202-1103.jar.pack.gz from https://ftp.halifax.rwth-aachen.de/eclipse/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (16.04kB)
+[2020-12-25 18:34:25] Downloading org.eclipse.equinox.p2.operations
+[2020-12-25 18:34:25] Downloading org.eclipse.core.externaltools
+[2020-12-25 18:34:25] Fetching org.eclipse.pde.ds.core_1.2.100.v20201105-2204.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (25.93kB)
+[2020-12-25 18:34:25] Fetching org.eclipse.equinox.p2.operations_2.5.1000.v20201106-1246.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (31.94kB)
+[2020-12-25 18:34:25] Fetching org.eclipse.core.externaltools_1.1.800.v20201105-0600.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (20.85kB)
+[2020-12-25 18:34:25] Downloading org.eclipse.e4.ui.bindings
+[2020-12-25 18:34:25] Fetching org.eclipse.jetty.continuation_9.4.35.v20201120.jar from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (31.8kB)
+[2020-12-25 18:34:25] Fetching org.eclipse.e4.ui.bindings_0.13.0.v20201119-1132.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (23.02kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.e4.ui.dialogs_1.2.100.v20201109-2317.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (27.64kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.jface.notifications_0.2.100.v20201130-1828.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (14.74kB)
+[2020-12-25 18:34:26] Downloading org.eclipse.urischeme
+[2020-12-25 18:34:26] Fetching org.eclipse.jdt_3.18.600.v20201202-1800.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (29.44kB)
+[2020-12-25 18:34:26] Downloading org.eclipse.pde.launching
+[2020-12-25 18:34:26] Downloading org.eclipse.ui.themes
+[2020-12-25 18:34:26] Fetching org.eclipse.jdt.junit.runtime_3.5.400.v20201120-2059.jar.pack.gz from https://ftp.acc.umu.se/mirror/eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (24.63kB)
+[2020-12-25 18:34:26] Downloading org.eclipse.ui.externaltools
+[2020-12-25 18:34:26] Downloading org.eclipse.jdt.junit.core
+[2020-12-25 18:34:26] Fetching org.eclipse.jdt.junit.runtime_3.5.400.v20201120-2059.jar.pack.gz from https://ftp.acc.umu.se/mirror/eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (24.63kB)
+[2020-12-25 18:34:26] Downloading org.eclipse.pde
+[2020-12-25 18:34:26] Downloading org.eclipse.jetty.util.ajax
+[2020-12-25 18:34:26] Downloading org.eclipse.equinox.http.servlet
+[2020-12-25 18:34:26] Fetching org.eclipse.urischeme_1.1.200.v20201104-0938.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (23.69kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.ui.externaltools_3.4.900.v20201105-0600.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (65.62kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.urischeme_1.1.200.v20201104-0938.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (23.69kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.ui.themes_1.2.1200.v20201112-1139.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (30.26kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.pde.launching_3.9.100.v20201103-0836.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (51.52kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.jdt.junit.core_3.10.900.v20201120-2059.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (65.64kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.pde_3.13.1300.v20201202-1800.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (41.27kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.equinox.http.servlet_1.6.700.v20201109-1600.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (76.75kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.jetty.util.ajax_9.4.35.v20201120.jar from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (72.58kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.equinox.http.servlet_1.6.700.v20201109-1600.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (76.75kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.pde_3.13.1300.v20201202-1800.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (41.27kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.jetty.util.ajax_9.4.35.v20201120.jar from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (72.58kB)
+[2020-12-25 18:34:26] Downloading org.eclipse.e4.ui.workbench
+[2020-12-25 18:34:26] Downloading org.eclipse.e4.ui.workbench.renderers.swt
+[2020-12-25 18:34:26] Downloading org.eclipse.pde.ua.core
+[2020-12-25 18:34:26] Downloading org.eclipse.e4.ui.workbench.addons.swt
+[2020-12-25 18:34:26] Downloading org.eclipse.jetty.security
+[2020-12-25 18:34:26] Downloading org.eclipse.pde.ua.ui
+[2020-12-25 18:34:26] Downloading org.eclipse.e4.ui.workbench.swt
+[2020-12-25 18:34:26] Fetching org.eclipse.e4.core.commands_0.13.0.v20201119-1132.jar.pack.gz from https://mirror.dkm.cz/eclipse/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (13.78kB)
+[2020-12-25 18:34:26] Downloading org.eclipse.jdt.doc.user
+[2020-12-25 18:34:26] Fetching org.eclipse.jetty.security_9.4.35.v20201120.jar from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (126.09kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.e4.ui.workbench_1.12.0.v20201119-1132.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (84.41kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.pde.ua.ui_1.2.100.v20201105-1530.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (141.01kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.e4.ui.workbench.swt_0.15.0.v20201103-0952.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (62.44kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.pde.ua.core_1.2.100.v20201105-1530.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (33.06kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.e4.ui.workbench.addons.swt_1.4.0.v20201119-1132.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (49.8kB)
+[2020-12-25 18:34:26] Downloading org.eclipse.platform.doc.user
+[2020-12-25 18:34:26] Downloading org.eclipse.jdt.core
+[2020-12-25 18:34:26] Fetching org.eclipse.e4.ui.workbench.renderers.swt_0.15.0.v20201125-0918.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (94.41kB)
+[2020-12-25 18:34:26] Downloading org.eclipse.pde.doc.user
+[2020-12-25 18:34:26] Fetching org.eclipse.jdt.core_3.24.0.v20201123-0742.jar from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (6.89MB)
+[2020-12-25 18:34:26] Downloading org.eclipse.jdt.ui
+[2020-12-25 18:34:26] Downloading org.eclipse.ui.workbench
+[2020-12-25 18:34:26] Fetching org.eclipse.pde.doc.user_3.14.1000.v20201202-1701.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (6.59MB)
+[2020-12-25 18:34:26] Downloading org.apache.ant
+[2020-12-25 18:34:26] Fetching org.eclipse.pde.doc.user_3.14.1000.v20201202-1701.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (6.59MB)
+[2020-12-25 18:34:26] Downloading org.eclipse.swt.cocoa.macosx.x86_64
+[2020-12-25 18:34:26] Fetching org.apache.ant_1.10.9.v20201106-1946.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (2.85MB)
+[2020-12-25 18:34:26] Fetching org.eclipse.jdt.ui_3.22.0.v20201121-1451.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (3.92MB)
+[2020-12-25 18:34:26] Downloading org.eclipse.jdt.debug.ui
+[2020-12-25 18:34:26] Fetching org.eclipse.jdt.ui_3.22.0.v20201121-1451.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (3.92MB)
+[2020-12-25 18:34:26] Fetching org.eclipse.swt.cocoa.macosx.x86_64_3.115.100.v20201202-1103.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (861.66kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.jdt.doc.user_3.15.900.v20201201-1641.jar.pack.gz from https://mirror.umd.edu/eclipse/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (9.65MB)
+[2020-12-25 18:34:26] Downloading org.eclipse.jdt.core.manipulation
+[2020-12-25 18:34:26] Fetching org.eclipse.jdt.debug.ui_3.12.100.v20201118-1524.jar from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (1.67MB)
+[2020-12-25 18:34:26] Fetching org.eclipse.ui.workbench_3.122.0.v20201122-1345.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (961.46kB)
+[2020-12-25 18:34:26] Fetching org.eclipse.jdt.core.manipulation_1.14.200.v20201124-1435.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (518.04kB)
+[2020-12-25 18:34:27] Fetching org.eclipse.platform.doc.user_4.18.0.v20201202-1459.jar.pack.gz from https://mirror.umd.edu/eclipse/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (6.62MB)
+[2020-12-25 18:34:27] Fetching org.eclipse.jdt.core_3.24.0.v20201123-0742.jar from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/
+[2020-12-25 18:34:27] Fetching org.eclipse.pde.doc.user_3.14.1000.v20201202-1701.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/
+[2020-12-25 18:34:27] Fetching org.apache.ant_1.10.9.v20201106-1946.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/
+[2020-12-25 18:34:27] Fetching org.eclipse.jdt.ui_3.22.0.v20201121-1451.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/
+[2020-12-25 18:34:27] Fetching org.eclipse.jdt.doc.user_3.15.900.v20201201-1641.jar.pack.gz from https://mirror.umd.edu/eclipse/eclipse/updates/4.18/R-4.18-202012021800/plugins/
+[2020-12-25 18:34:27] Fetching org.eclipse.jdt.debug.ui_3.12.100.v20201118-1524.jar from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/
+[2020-12-25 18:34:28] Fetching org.eclipse.platform.doc.user_4.18.0.v20201202-1459.jar.pack.gz from https://mirror.umd.edu/eclipse/eclipse/updates/4.18/R-4.18-202012021800/plugins/
+[2020-12-25 18:34:28] Downloading org.eclipse.pde.ui
+[2020-12-25 18:34:28] Downloading org.eclipse.pde.core
+[2020-12-25 18:34:28] Fetching org.eclipse.pde.ui_3.12.100.v20201110-1552.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (1.45MB)
+[2020-12-25 18:34:28] Fetching org.eclipse.pde.core_3.14.100.v20201116-1221.jar from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (1.33MB)
+[2020-12-25 18:34:28] Downloading org.eclipse.jface.text
+[2020-12-25 18:34:28] Fetching org.eclipse.jface.text_3.16.500.v20201112-1545.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (316.84kB)
+[2020-12-25 18:34:29] Downloading org.eclipse.debug.ui
+[2020-12-25 18:34:29] Downloading org.eclipse.ui.ide
+[2020-12-25 18:34:29] Fetching org.eclipse.debug.ui_3.14.700.v20201123-0650.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (1,019kB)
+[2020-12-25 18:34:29] Fetching org.eclipse.pde.ui_3.12.100.v20201110-1552.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/
+[2020-12-25 18:34:29] Fetching org.eclipse.pde.core_3.14.100.v20201116-1221.jar from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/
+[2020-12-25 18:34:29] Downloading org.eclipse.pde.api.tools
+[2020-12-25 18:34:29] Downloading org.eclipse.jdt.debug
+[2020-12-25 18:34:29] Fetching org.eclipse.ui.ide_3.18.0.v20201119-1132.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (949.75kB)
+[2020-12-25 18:34:29] Fetching org.eclipse.jdt.debug_3.17.0.v20201117-1145.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (900.98kB)
+[2020-12-25 18:34:29] Fetching org.eclipse.pde.api.tools_1.2.100.v20201112-0408.jar from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (927.67kB)
+[2020-12-25 18:34:29] Downloading org.eclipse.core.resources
+[2020-12-25 18:34:30] Fetching org.eclipse.core.resources_3.13.900.v20201105-1507.jar from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (875.9kB)
+[2020-12-25 18:34:30] Downloading org.eclipse.jetty.server
+[2020-12-25 18:34:30] Downloading org.eclipse.help.webapp
+[2020-12-25 18:34:30] Downloading org.eclipse.swt.browser.chromium.cocoa.macosx.x86_64
+[2020-12-25 18:34:31] Downloading org.eclipse.jetty.util
+[2020-12-25 18:34:31] Fetching org.eclipse.jetty.server_9.4.35.v20201120.jar from https://mirror.umd.edu/eclipse/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (723.38kB)
+[2020-12-25 18:34:31] Downloading org.eclipse.pde.api.tools.ui
+[2020-12-25 18:34:31] Fetching org.eclipse.help.webapp_3.10.100.v20201130-2122.jar.pack.gz from https://mirror.umd.edu/eclipse/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (308.22kB)
+[2020-12-25 18:34:31] Fetching org.eclipse.jetty.util_9.4.35.v20201120.jar from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (585.96kB)
+[2020-12-25 18:34:31] Fetching org.eclipse.swt.browser.chromium.cocoa.macosx.x86_64_3.115.100.v20201202-1103.jar.pack.gz from https://mirror.umd.edu/eclipse/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (651.66kB)
+[2020-12-25 18:34:31] Downloading org.eclipse.pde.build
+[2020-12-25 18:34:31] Fetching org.eclipse.pde.api.tools.ui_1.2.100.v20201112-0408.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (206.98kB)
+[2020-12-25 18:34:31] Fetching org.eclipse.pde.build_3.10.900.v20201111-1557.jar from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (478.05kB)
+[2020-12-25 18:34:31] Downloading org.eclipse.ant.ui
+[2020-12-25 18:34:31] Downloading org.eclipse.platform
+[2020-12-25 18:34:31] Downloading org.eclipse.debug.core
+[2020-12-25 18:34:31] Downloading org.eclipse.jface
+[2020-12-25 18:34:31] Fetching org.eclipse.ant.ui_3.7.1000.v20201116-1127.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (475.54kB)
+[2020-12-25 18:34:32] Fetching org.eclipse.platform_4.18.0.v20201202-1800.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (425.09kB)
+[2020-12-25 18:34:32] Downloading org.eclipse.ui
+[2020-12-25 18:34:32] Fetching org.eclipse.debug.core_3.17.0.v20201109-1948.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (125.99kB)
+[2020-12-25 18:34:32] Fetching org.eclipse.jface_3.22.0.v20201106-0834.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (361.85kB)
+[2020-12-25 18:34:32] Downloading org.eclipse.ui.intro
+[2020-12-25 18:34:32] Downloading org.eclipse.jdt.launching
+[2020-12-25 18:34:32] Downloading org.eclipse.ui.workbench.texteditor
+[2020-12-25 18:34:32] Fetching org.eclipse.ui.workbench.texteditor_3.15.100.v20201116-1727.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (239.2kB)
+[2020-12-25 18:34:32] Fetching org.eclipse.ui_3.118.100.v20201123-0719.jar.pack.gz from https://mirror.umd.edu/eclipse/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (339.74kB)
+[2020-12-25 18:34:32] Downloading org.eclipse.jdt.junit
+[2020-12-25 18:34:32] Downloading org.eclipse.jetty.http
+[2020-12-25 18:34:32] Fetching org.eclipse.jdt.junit_3.11.1000.v20201120-2059.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (232.06kB)
+[2020-12-25 18:34:32] Fetching org.eclipse.jetty.http_9.4.35.v20201120.jar from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (225.11kB)
+[2020-12-25 18:34:32] Fetching org.eclipse.ui.intro_3.6.0.v20201120-1551.jar.pack.gz from https://mirror.umd.edu/eclipse/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (141.91kB)
+[2020-12-25 18:34:32] Downloading org.eclipse.pde.runtime
+[2020-12-25 18:34:32] Fetching org.eclipse.jdt.launching_3.19.0.v20201106-0848.jar.pack.gz from https://mirror.umd.edu/eclipse/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (282.53kB)
+[2020-12-25 18:34:32] Fetching org.eclipse.pde.runtime_3.7.0.v20201109-0850.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (113.33kB)
+[2020-12-25 18:34:32] Downloading org.eclipse.search
+[2020-12-25 18:34:32] Downloading org.eclipse.e4.ui.css.swt
+[2020-12-25 18:34:32] Fetching org.eclipse.e4.ui.css.swt_0.14.0.v20201103-0952.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (65.7kB)
+[2020-12-25 18:34:32] Fetching org.eclipse.search_3.12.100.v20201116-1027.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (214.49kB)
+[2020-12-25 18:34:32] Downloading org.eclipse.equinox.registry
+[2020-12-25 18:34:32] Fetching org.eclipse.equinox.registry_3.10.0.v20201107-1818.jar.pack.gz from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (77.18kB)
+[2020-12-25 18:34:32] Downloading org.eclipse.jetty.io
+[2020-12-25 18:34:32] Fetching org.eclipse.jetty.io_9.4.35.v20201120.jar from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (175.32kB)
+[2020-12-25 18:34:32] Downloading org.eclipse.help.base
+[2020-12-25 18:34:32] Downloading org.eclipse.jetty.servlet
+[2020-12-25 18:34:33] Fetching org.eclipse.help.base_4.3.100.v20201202-1800.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (164.03kB)
+[2020-12-25 18:34:33] Fetching org.eclipse.jetty.servlet_9.4.35.v20201120.jar from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/plugins/ (154.19kB)
+[2020-12-25 18:34:34] Mirrored 9 artifacts from https://mirror.umd.edu/eclipse/eclipse/updates/4.18/R-4.18-202012021800/ at 1,177kb/s
+[2020-12-25 18:34:34] Mirrored 25 artifacts from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/ at 1,133kb/s
+[2020-12-25 18:34:34] Mirrored 37 artifacts from https://downloads.yoctoproject.org/eclipse-full/eclipse/updates/4.18/R-4.18-202012021800/ at 782kb/s
+[2020-12-25 18:34:34] Mirrored 1 artifacts from https://ftp.osuosl.org/pub/eclipse/eclipse/updates/4.18/R-4.18-202012021800/ at 24kb/s
+[2020-12-25 18:34:34] Mirrored 1 artifacts from https://eclipse.mirror.rafal.ca/eclipse/updates/4.18/R-4.18-202012021800/ at 22kb/s
+[2020-12-25 18:34:34] Mirrored 1 artifacts from https://ftp.acc.umu.se/mirror/eclipse.org/eclipse/updates/4.18/R-4.18-202012021800/ at 21kb/s
+[2020-12-25 18:34:34] Mirrored 1 artifacts from https://mirrors.dotsrc.org/eclipse//eclipse/updates/4.18/R-4.18-202012021800/ at 20kb/s
+[2020-12-25 18:34:34] Mirrored 1 artifacts from https://rhlx01.hs-esslingen.de/pub/Mirrors/eclipse/eclipse/updates/4.18/R-4.18-202012021800/ at 18kb/s
+[2020-12-25 18:34:34] Mirrored 1 artifacts from https://mirror.csclub.uwaterloo.ca/eclipse/eclipse/updates/4.18/R-4.18-202012021800/ at 13kb/s
+[2020-12-25 18:34:34] Mirrored 1 artifacts from https://eclipse.mirror.liteserver.nl/eclipse/updates/4.18/R-4.18-202012021800/ at 10kb/s
+[2020-12-25 18:34:34] Mirrored 1 artifacts from https://ftp.halifax.rwth-aachen.de/eclipse/eclipse/updates/4.18/R-4.18-202012021800/ at 9kb/s
+[2020-12-25 18:34:34] Mirrored 1 artifacts from https://mirror.dkm.cz/eclipse/eclipse/updates/4.18/R-4.18-202012021800/ at 5kb/s
+[2020-12-25 18:34:34] Mirrored 1 artifacts from https://mirrors.xmission.com/eclipse/eclipse/updates/4.18/R-4.18-202012021800/ at 0kb/s
+[2020-12-25 18:34:34] Collected 82 artifacts for http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800 in 10.875s
+[2020-12-25 18:34:34] Installing a.jre.javase [16.0.0]
+[2020-12-25 18:34:34] Installing com.ibm.icu [67.1.0.v20200706-1749]
+[2020-12-25 18:34:34] Installing com.jcraft.jsch [0.1.55.v20190404-1902]
+[2020-12-25 18:34:34] Installing com.sun.el [2.2.0.v201303151357]
+[2020-12-25 18:34:34] Installing com.sun.jna [4.5.1.v20190425-1842]
+[2020-12-25 18:34:34] Installing com.sun.jna.platform [4.5.1.v20190425-1842]
+[2020-12-25 18:34:34] Installing javax.annotation [1.3.5.v20200909-1856]
+[2020-12-25 18:34:34] Installing javax.el [2.2.0.v201303151357]
+[2020-12-25 18:34:34] Installing javax.inject [1.0.0.v20091030]
+[2020-12-25 18:34:34] Installing javax.servlet [3.1.0.v201410161800]
+[2020-12-25 18:34:34] Installing javax.servlet.jsp [2.2.0.v201112011158]
+[2020-12-25 18:34:34] Installing org.apache.ant [1.10.9.v20201106-1946]
+[2020-12-25 18:34:34] Installing org.apache.batik.constants [1.13.0.v20200622-2037]
+[2020-12-25 18:34:34] Installing org.apache.batik.css [1.13.0.v20200622-2037]
+[2020-12-25 18:34:34] Installing org.apache.batik.i18n [1.13.0.v20200622-2037]
+[2020-12-25 18:34:34] Installing org.apache.batik.util [1.13.0.v20200622-2037]
+[2020-12-25 18:34:34] Installing org.apache.commons.codec [1.14.0.v20200818-1422]
+[2020-12-25 18:34:34] Installing org.apache.commons.io [2.6.0.v20190123-2029]
+[2020-12-25 18:34:34] Installing org.apache.commons.jxpath [1.3.0.v200911051830]
+[2020-12-25 18:34:34] Installing org.apache.commons.logging [1.2.0.v20180409-1502]
+[2020-12-25 18:34:34] Installing org.apache.felix.gogo.command [1.1.0.v20201023-1558]
+[2020-12-25 18:34:34] Installing org.apache.felix.gogo.runtime [1.1.2.v20201023-1558]
+[2020-12-25 18:34:34] Installing org.apache.felix.gogo.shell [1.1.2.v20201023-1558]
+[2020-12-25 18:34:34] Installing org.apache.felix.scr [2.1.24.v20200924-1939]
+[2020-12-25 18:34:34] Installing org.apache.httpcomponents.httpclient [4.5.10.v20200830-2311]
+[2020-12-25 18:34:34] Installing org.apache.httpcomponents.httpcore [4.4.12.v20200108-1212]
+[2020-12-25 18:34:34] Installing org.apache.jasper.glassfish [2.2.2.v201501141630]
+[2020-12-25 18:34:34] Installing org.apache.lucene.analyzers-common [8.4.1.v20200122-1459]
+[2020-12-25 18:34:34] Installing org.apache.lucene.analyzers-smartcn [8.4.1.v20200122-1459]
+[2020-12-25 18:34:34] Installing org.apache.lucene.core [8.4.1.v20200122-1459]
+[2020-12-25 18:34:34] Installing org.apache.xmlgraphics [2.4.0.v20200622-2037]
+[2020-12-25 18:34:34] Installing org.apiguardian [1.1.0.v20190826-0900]
+[2020-12-25 18:34:34] Installing org.eclipse.ant.core [3.5.800.v20200608-1251]
+[2020-12-25 18:34:34] Installing org.eclipse.ant.launching [1.2.1000.v20200610-1458]
+[2020-12-25 18:34:34] Installing org.eclipse.ant.ui [3.7.1000.v20201116-1127]
+[2020-12-25 18:34:34] Installing org.eclipse.compare [3.7.1200.v20201020-1107]
+[2020-12-25 18:34:34] Installing org.eclipse.compare.core [3.6.1000.v20201020-1107]
+[2020-12-25 18:34:34] Installing org.eclipse.core.commands [3.9.800.v20201021-1339]
+[2020-12-25 18:34:34] Installing org.eclipse.core.contenttype [3.7.800.v20200724-0804]
+[2020-12-25 18:34:34] Installing org.eclipse.core.databinding [1.10.100.v20200926-1123]
+[2020-12-25 18:34:34] Installing org.eclipse.core.databinding.beans [1.7.100.v20201021-1339]
+[2020-12-25 18:34:34] Installing org.eclipse.core.databinding.observable [1.10.0.v20200730-0848]
+[2020-12-25 18:34:34] Installing org.eclipse.core.databinding.property [1.8.100.v20200619-0651]
+[2020-12-25 18:34:34] Installing org.eclipse.core.expressions [3.7.0.v20200720-1126]
+[2020-12-25 18:34:34] Installing org.eclipse.core.externaltools [1.1.800.v20201105-0600]
+[2020-12-25 18:34:34] Installing org.eclipse.core.filebuffers [3.6.1100.v20201029-1159]
+[2020-12-25 18:34:34] Installing org.eclipse.core.filesystem [1.7.700.v20200110-1734]
+[2020-12-25 18:34:34] Installing org.eclipse.core.filesystem.macosx [1.3.200.v20190903-0945]
+[2020-12-25 18:34:34] Installing org.eclipse.core.jobs [3.10.1000.v20200909-1312]
+[2020-12-25 18:34:34] Installing org.eclipse.core.net [1.3.1000.v20200715-0827]
+[2020-12-25 18:34:34] Installing org.eclipse.core.resources [3.13.900.v20201105-1507]
+[2020-12-25 18:34:34] Installing org.eclipse.core.runtime [3.20.0.v20201027-1526]
+[2020-12-25 18:34:34] Installing org.eclipse.core.variables [3.4.800.v20200120-1101]
+[2020-12-25 18:34:34] Installing org.eclipse.debug.core [3.17.0.v20201109-1948]
+[2020-12-25 18:34:34] Installing org.eclipse.debug.ui [3.14.700.v20201123-0650]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.core.commands [0.13.0.v20201119-1132]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.core.contexts [1.8.400.v20191217-1710]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.core.di [1.7.600.v20200428-0912]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.core.di.annotations [1.6.600.v20191216-2352]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.core.di.extensions [0.16.0.v20200507-0938]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.core.di.extensions.supplier [0.15.700.v20200622-1247]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.core.services [2.2.500.v20200928-2213]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.emf.xpath [0.2.800.v20200609-0849]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.rcp.feature.group [4.18.0.v20201202-1103]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.rcp.feature.jar [4.18.0.v20201202-1103]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.ui.bindings [0.13.0.v20201119-1132]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.ui.css.core [0.13.0.v20201015-0653]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.ui.css.swt [0.14.0.v20201103-0952]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.ui.css.swt.theme [0.13.0.v20201026-1147]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.ui.di [1.2.900.v20201021-1339]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.ui.dialogs [1.2.100.v20201109-2317]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.ui.ide [3.15.100.v20200323-2111]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.ui.model.workbench [2.1.900.v20201014-0742]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.ui.services [1.4.0.v20201014-0944]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.ui.widgets [1.2.800.v20201021-1339]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.ui.workbench [1.12.0.v20201119-1132]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.ui.workbench.addons.swt [1.4.0.v20201119-1132]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.ui.workbench.renderers.swt [0.15.0.v20201125-0918]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.ui.workbench.renderers.swt.cocoa [0.12.600.v20200416-0656]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.ui.workbench.swt [0.15.0.v20201103-0952]
+[2020-12-25 18:34:34] Installing org.eclipse.e4.ui.workbench3 [0.15.500.v20201021-1339]
+[2020-12-25 18:34:34] Installing org.eclipse.ecf [3.9.101.v20201027-0547]
+[2020-12-25 18:34:34] Installing org.eclipse.ecf.core.feature.feature.group [1.5.701.v20201027-0550]
+[2020-12-25 18:34:34] Installing org.eclipse.ecf.core.feature.feature.jar [1.5.701.v20201027-0550]
+[2020-12-25 18:34:34] Installing org.eclipse.ecf.core.ssl.feature.feature.group [1.1.500.v20200812-2314]
+[2020-12-25 18:34:34] Installing org.eclipse.ecf.core.ssl.feature.feature.jar [1.1.500.v20200812-2314]
+[2020-12-25 18:34:34] Installing org.eclipse.ecf.filetransfer [5.1.101.v20201025-2315]
+[2020-12-25 18:34:34] Installing org.eclipse.ecf.filetransfer.feature.feature.group [3.14.1702.v20201025-2315]
+[2020-12-25 18:34:34] Installing org.eclipse.ecf.filetransfer.feature.feature.jar [3.14.1702.v20201025-2315]
+[2020-12-25 18:34:34] Installing org.eclipse.ecf.filetransfer.httpclient45.feature.feature.group [1.0.702.v20201025-2303]
+[2020-12-25 18:34:34] Installing org.eclipse.ecf.filetransfer.httpclient45.feature.feature.jar [1.0.702.v20201025-2303]
+[2020-12-25 18:34:34] Installing org.eclipse.ecf.filetransfer.ssl.feature.feature.group [1.1.400.v20200812-2314]
+[2020-12-25 18:34:34] Installing org.eclipse.ecf.filetransfer.ssl.feature.feature.jar [1.1.400.v20200812-2314]
+[2020-12-25 18:34:34] Installing org.eclipse.ecf.identity [3.9.401.v20201027-0550]
+[2020-12-25 18:34:34] Installing org.eclipse.ecf.provider.filetransfer [3.2.601.v20201025-0700]
+[2020-12-25 18:34:34] Installing org.eclipse.ecf.provider.filetransfer.httpclient45 [1.0.301.v20201025-0700]
+[2020-12-25 18:34:34] Installing org.eclipse.ecf.provider.filetransfer.ssl [1.0.200.v20200611-1836]
+[2020-12-25 18:34:34] Installing org.eclipse.ecf.ssl [1.2.400.v20200611-2220]
+[2020-12-25 18:34:34] Installing org.eclipse.emf.common [2.21.0.v20200917-1439]
+[2020-12-25 18:34:34] Installing org.eclipse.emf.common.feature.group [2.21.0.v20200917-1439]
+[2020-12-25 18:34:34] Installing org.eclipse.emf.common.feature.jar [2.21.0.v20200917-1439]
+[2020-12-25 18:34:34] Installing org.eclipse.emf.ecore [2.23.0.v20200630-0516]
+[2020-12-25 18:34:34] Installing org.eclipse.emf.ecore.change [2.14.0.v20190528-0725]
+[2020-12-25 18:34:34] Installing org.eclipse.emf.ecore.feature.group [2.23.0.v20200630-0516]
+[2020-12-25 18:34:34] Installing org.eclipse.emf.ecore.feature.jar [2.23.0.v20200630-0516]
+[2020-12-25 18:34:34] Installing org.eclipse.emf.ecore.xmi [2.16.0.v20190528-0725]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.app [1.5.0.v20200717-0620]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.bidi [1.3.0.v20200612-1624]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.common [3.14.0.v20201102-2053]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.concurrent [1.1.500.v20200106-1437]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.console [1.4.200.v20200828-1034]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.event [1.5.500.v20200616-0800]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.executable.feature.group [3.8.1000.v20200915-1508]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.executable.feature.jar [3.8.1000.v20200915-1508]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.executable_root.cocoa.macosx.x86_64 [3.8.1000.v20200915-1508]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.frameworkadmin [2.1.400.v20191002-0702]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.frameworkadmin.equinox [1.1.400.v20200319-1546]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.http.jetty [3.7.500.v20200915-1207]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.http.registry [1.2.0.v20200614-1851]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.http.servlet [1.6.700.v20201109-1600]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.jsp.jasper [1.1.500.v20200422-1833]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.jsp.jasper.registry [1.1.400.v20200422-1833]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.launcher [1.6.0.v20200915-1508]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.launcher.cocoa.macosx.x86_64 [1.2.0.v20200915-1442]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.artifact.repository [1.3.500.v20200406-2025]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.console [1.1.400.v20201106-0859]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.core [2.6.300.v20200211-1504]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.core.feature.feature.group [1.6.800.v20201106-1246]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.core.feature.feature.jar [1.6.800.v20201106-1246]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.director [2.4.700.v20200511-1530]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.director.app [1.1.600.v20200511-1530]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.directorywatcher [1.2.500.v20191211-1631]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.engine [2.6.700.v20200511-1530]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.extensionlocation [1.3.400.v20191213-1911]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.extras.feature.feature.group [1.4.1000.v20201106-1246]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.extras.feature.feature.jar [1.4.1000.v20201106-1246]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.garbagecollector [1.1.400.v20200221-1022]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.jarprocessor [1.1.700.v20200904-1601]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.metadata [2.5.100.v20200908-1020]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.metadata.repository [1.3.400.v20191211-1528]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.operations [2.5.1000.v20201106-1246]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.publisher [1.5.400.v20200511-1530]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.publisher.eclipse [1.3.700.v20200828-0839]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.rcp.feature.feature.group [1.4.1000.v20201106-1246]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.rcp.feature.feature.jar [1.4.1000.v20201106-1246]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.reconciler.dropins [1.3.400.v20200511-1530]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.repository [2.5.0.v20201013-0853]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.repository.tools [2.2.500.v20200110-2121]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.touchpoint.eclipse [2.2.700.v20200813-0739]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.touchpoint.natives [1.3.600.v20200511-1530]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.transport.ecf [1.3.0.v20201012-1345]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.ui [2.6.100.v20200731-1005]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.ui.importexport [1.2.600.v20201015-1002]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.ui.sdk [1.1.700.v20200731-1005]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.ui.sdk.scheduler [1.5.0.v20201012-1421]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.updatechecker [1.2.300.v20200222-1600]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.updatesite [1.1.400.v20200511-1530]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.user.ui.feature.group [2.4.1000.v20201106-1246]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.p2.user.ui.feature.jar [2.4.1000.v20201106-1246]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.preferences [3.8.100.v20201102-2042]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.registry [3.10.0.v20201107-1818]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.security [1.3.500.v20200114-1637]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.security.macosx [1.101.200.v20190903-0934]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.security.ui [1.2.700.v20200807-1518]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.simpleconfigurator [1.3.600.v20200721-1308]
+[2020-12-25 18:34:34] Installing org.eclipse.equinox.simpleconfigurator.manipulator [2.1.500.v20200211-1505]
+[2020-12-25 18:34:34] Installing org.eclipse.help [3.8.800.v20200525-0755]
+[2020-12-25 18:34:34] Installing org.eclipse.help.base [4.3.100.v20201202-1800]
+[2020-12-25 18:34:34] Installing org.eclipse.help.feature.group [2.3.400.v20201202-1800]
+[2020-12-25 18:34:34] Installing org.eclipse.help.feature.jar [2.3.400.v20201202-1800]
+[2020-12-25 18:34:34] Installing org.eclipse.help.ui [4.2.100.v20200923-2139]
+[2020-12-25 18:34:34] Installing org.eclipse.help.webapp [3.10.100.v20201130-2122]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt [3.18.600.v20201202-1800]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.annotation [1.1.500.v20200407-1355]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.apt.core [3.6.800.v20200916-0645]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.apt.pluggable.core [1.2.500.v20200322-1447]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.apt.ui [3.6.500.v20200828-1336]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.compiler.apt [1.3.1200.v20200916-0645]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.compiler.tool [1.2.1100.v20200916-0645]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.core [3.24.0.v20201123-0742]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.core.formatterapp [1.0.0.v20200119-0748]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.core.manipulation [1.14.200.v20201124-1435]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.debug [3.17.0.v20201117-1145]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.debug.ui [3.12.100.v20201118-1524]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.doc.user [3.15.900.v20201201-1641]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.feature.group [3.18.600.v20201202-1800]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.feature.jar [3.18.600.v20201202-1800]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.junit [3.11.1000.v20201120-2059]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.junit.core [3.10.900.v20201120-2059]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.junit.runtime [3.5.400.v20201120-2059]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.junit4.runtime [1.1.1400.v20200917-1125]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.junit5.runtime [1.0.1100.v20200928-0432]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.launching [3.19.0.v20201106-0848]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.launching.macosx [3.4.500.v20200116-2251]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.launching.ui.macosx [1.2.600.v20200204-1737]
+[2020-12-25 18:34:34] Installing org.eclipse.jdt.ui [3.22.0.v20201121-1451]
+[2020-12-25 18:34:34] Installing org.eclipse.jetty.continuation [9.4.35.v20201120]
+[2020-12-25 18:34:34] Installing org.eclipse.jetty.http [9.4.35.v20201120]
+[2020-12-25 18:34:34] Installing org.eclipse.jetty.io [9.4.35.v20201120]
+[2020-12-25 18:34:34] Installing org.eclipse.jetty.security [9.4.35.v20201120]
+[2020-12-25 18:34:34] Installing org.eclipse.jetty.server [9.4.35.v20201120]
+[2020-12-25 18:34:34] Installing org.eclipse.jetty.servlet [9.4.35.v20201120]
+[2020-12-25 18:34:34] Installing org.eclipse.jetty.util [9.4.35.v20201120]
+[2020-12-25 18:34:34] Installing org.eclipse.jetty.util.ajax [9.4.35.v20201120]
+[2020-12-25 18:34:34] Installing org.eclipse.jface [3.22.0.v20201106-0834]
+[2020-12-25 18:34:34] Installing org.eclipse.jface.databinding [1.12.100.v20201014-0742]
+[2020-12-25 18:34:34] Installing org.eclipse.jface.notifications [0.2.100.v20201130-1828]
+[2020-12-25 18:34:34] Installing org.eclipse.jface.text [3.16.500.v20201112-1545]
+[2020-12-25 18:34:34] Installing org.eclipse.jsch.core [1.3.900.v20200422-1935]
+[2020-12-25 18:34:34] Installing org.eclipse.jsch.ui [1.3.1100.v20200916-0731]
+[2020-12-25 18:34:34] Installing org.eclipse.ltk.core.refactoring [3.11.200.v20201027-1753]
+[2020-12-25 18:34:34] Installing org.eclipse.ltk.ui.refactoring [3.11.200.v20201025-2022]
+[2020-12-25 18:34:34] Installing org.eclipse.osgi [3.16.100.v20201030-1916]
+[2020-12-25 18:34:34] Installing org.eclipse.osgi.compatibility.state [1.2.200.v20200915-2015]
+[2020-12-25 18:34:34] Installing org.eclipse.osgi.services [3.9.0.v20200511-1725]
+[2020-12-25 18:34:34] Installing org.eclipse.osgi.util [3.5.300.v20190708-1141]
+[2020-12-25 18:34:34] Installing org.eclipse.pde [3.13.1300.v20201202-1800]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.api.tools [1.2.100.v20201112-0408]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.api.tools.annotations [1.1.400.v20190929-1236]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.api.tools.ui [1.2.100.v20201112-0408]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.build [3.10.900.v20201111-1557]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.core [3.14.100.v20201116-1221]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.doc.user [3.14.1000.v20201202-1701]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.ds.annotations [1.2.0.v20200813-0526]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.ds.core [1.2.100.v20201105-2204]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.ds.lib [1.1.400.v20191119-0943]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.ds.ui [1.2.0.v20200813-0954]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.ds1_2.lib [1.0.400.v20191119-0943]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.feature.group [3.14.600.v20201202-1800]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.feature.jar [3.14.600.v20201202-1800]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.genericeditor.extension [1.1.0.v20200828-0858]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.junit.runtime [3.5.900.v20200810-0835]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.launching [3.9.100.v20201103-0836]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.runtime [3.7.0.v20201109-0850]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.ua.core [1.2.100.v20201105-1530]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.ua.ui [1.2.100.v20201105-1530]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.ui [3.12.100.v20201110-1552]
+[2020-12-25 18:34:34] Installing org.eclipse.pde.ui.templates [3.7.100.v20200926-1009]
+[2020-12-25 18:34:34] Installing org.eclipse.platform [4.18.0.v20201202-1800]
+[2020-12-25 18:34:34] Installing org.eclipse.platform.doc.user [4.18.0.v20201202-1459]
+[2020-12-25 18:34:34] Installing org.eclipse.platform.feature.group [4.18.0.v20201202-1800]
+[2020-12-25 18:34:34] Installing org.eclipse.platform.feature.jar [4.18.0.v20201202-1800]
+[2020-12-25 18:34:34] Installing org.eclipse.platform_root [4.18.0.v20201202-1800]
+[2020-12-25 18:34:34] Installing org.eclipse.rcp [4.18.0.v20201202-1800]
+[2020-12-25 18:34:34] Installing org.eclipse.rcp.feature.group [4.18.0.v20201202-1800]
+[2020-12-25 18:34:34] Installing org.eclipse.rcp.feature.jar [4.18.0.v20201202-1800]
+[2020-12-25 18:34:34] Installing org.eclipse.rcp_root [4.18.0.v20201202-1800]
+[2020-12-25 18:34:34] Installing org.eclipse.search [3.12.100.v20201116-1027]
+[2020-12-25 18:34:34] Installing org.eclipse.swt [3.115.100.v20201202-1103]
+[2020-12-25 18:34:34] Installing org.eclipse.swt.browser.chromium.cocoa.macosx.x86_64 [3.115.100.v20201202-1103]
+[2020-12-25 18:34:34] Installing org.eclipse.swt.cocoa.macosx.x86_64 [3.115.100.v20201202-1103]
+[2020-12-25 18:34:34] Installing org.eclipse.team.core [3.8.1100.v20200806-0621]
+[2020-12-25 18:34:34] Installing org.eclipse.team.genericeditor.diff.extension [1.0.600.v20200212-1524]
+[2020-12-25 18:34:34] Installing org.eclipse.team.ui [3.8.1100.v20200916-0836]
+[2020-12-25 18:34:34] Installing org.eclipse.text [3.10.400.v20200925-0557]
+[2020-12-25 18:34:34] Installing org.eclipse.text.quicksearch [1.0.400.v20201026-1722]
+[2020-12-25 18:34:34] Installing org.eclipse.tools.layout.spy [1.0.600.v20200608-0818]
+[2020-12-25 18:34:34] Installing org.eclipse.ui [3.118.100.v20201123-0719]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.browser [3.6.1000.v20200910-0548]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.cheatsheets [3.7.100.v20200915-1059]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.cocoa [1.2.400.v20191217-1850]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.console [3.10.0.v20201021-1231]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.editors [3.13.400.v20200923-1238]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.externaltools [3.4.900.v20201105-0600]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.forms [3.11.0.v20201025-0656]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.genericeditor [1.1.900.v20200910-2030]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.ide [3.18.0.v20201119-1132]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.ide.application [1.3.900.v20201102-2031]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.intro [3.6.0.v20201120-1551]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.intro.quicklinks [1.1.0.v20200724-0708]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.intro.universal [3.4.0.v20200805-1259]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.monitoring [1.1.900.v20200907-0838]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.navigator [3.9.500.v20201021-1339]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.navigator.resources [3.7.500.v20201021-1339]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.net [1.3.800.v20200422-1935]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.themes [1.2.1200.v20201112-1139]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.trace [1.1.800.v20200106-1301]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.views [3.10.500.v20201021-1339]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.views.log [1.2.1300.v20200926-2205]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.views.properties.tabbed [3.9.0.v20201026-0739]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.workbench [3.122.0.v20201122-1345]
+[2020-12-25 18:34:34] Installing org.eclipse.ui.workbench.texteditor [3.15.100.v20201116-1727]
+[2020-12-25 18:34:34] Installing org.eclipse.update.configurator [3.4.700.v20200907-1237]
+[2020-12-25 18:34:34] Installing org.eclipse.urischeme [1.1.200.v20201104-0938]
+[2020-12-25 18:34:34] Installing org.hamcrest.core [1.3.0.v20180420-1519]
+[2020-12-25 18:34:34] Installing org.junit [4.13.0.v20200204-1500]
+[2020-12-25 18:34:34] Installing org.junit.jupiter.api [5.7.0.v20201026-1537]
+[2020-12-25 18:34:34] Installing org.junit.jupiter.engine [5.7.0.v20201026-1537]
+[2020-12-25 18:34:34] Installing org.junit.jupiter.migrationsupport [5.7.0.v20201026-1537]
+[2020-12-25 18:34:34] Installing org.junit.jupiter.params [5.7.0.v20201026-1537]
+[2020-12-25 18:34:34] Installing org.junit.platform.commons [1.7.0.v20201026-1537]
+[2020-12-25 18:34:34] Installing org.junit.platform.engine [1.7.0.v20201026-1537]
+[2020-12-25 18:34:34] Installing org.junit.platform.launcher [1.7.0.v20201026-1537]
+[2020-12-25 18:34:34] Installing org.junit.platform.runner [1.7.0.v20201026-1537]
+[2020-12-25 18:34:34] Installing org.junit.platform.suite.api [1.7.0.v20201026-1537]
+[2020-12-25 18:34:34] Installing org.junit.vintage.engine [5.7.0.v20201026-1537]
+[2020-12-25 18:34:34] Installing org.objectweb.asm [9.0.0.v20201001-1419]
+[2020-12-25 18:34:34] Installing org.objectweb.asm.tree [9.0.0.v20201001-1419]
+[2020-12-25 18:34:34] Installing org.opentest4j [1.2.0.v20190826-0900]
+[2020-12-25 18:34:34] Installing org.sat4j.core [2.3.5.v201308161310]
+[2020-12-25 18:34:34] Installing org.sat4j.pb [2.3.5.v201404071733]
+[2020-12-25 18:34:34] Installing org.tukaani.xz [1.8.0.v20180207-1613]
+[2020-12-25 18:34:34] Installing org.w3c.css.sac [1.3.1.v200903091627]
+[2020-12-25 18:34:34] Installing org.w3c.dom.events [3.0.0.draft20060413_v201105210656]
+[2020-12-25 18:34:34] Installing org.w3c.dom.smil [1.0.1.v200903091627]
+[2020-12-25 18:34:34] Installing org.w3c.dom.svg [1.1.0.v201011041433]
+[2020-12-25 18:34:34] Collecting 3 artifacts from http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800
+[2020-12-25 18:34:34] Downloading org.eclipse.platform_root
+[2020-12-25 18:34:34] Downloading org.eclipse.equinox.executable_root.cocoa.macosx.x86_64
+[2020-12-25 18:34:34] Downloading org.eclipse.rcp_root
+[2020-12-25 18:34:34] Fetching org.eclipse.platform_root_4.18.0.v20201202-1800 from https://mirror.umd.edu/eclipse/eclipse/updates/4.18/R-4.18-202012021800/binary/ (196B)
+[2020-12-25 18:34:35] Fetching org.eclipse.rcp_root_4.18.0.v20201202-1800 from https://mirror.umd.edu/eclipse/eclipse/updates/4.18/R-4.18-202012021800/binary/ (25.08kB)
+[2020-12-25 18:34:35] Mirrored 2 artifacts from https://mirror.umd.edu/eclipse/eclipse/updates/4.18/R-4.18-202012021800/ at 27kb/s
+[2020-12-25 18:34:35] Collected 3 artifacts for http://download.eclipse.org/eclipse/updates/4.18/R-4.18-202012021800 in 0.618s
+[2020-12-25 18:34:35] Preparing to commit the provisioning operation.
+[2020-12-25 18:34:35] Committing the provisioning operation.
+[2020-12-25 18:34:35] Sending ProfileUpdateSucceededEvent[source=Modular API Baseline Target, profile=_Users_malinda_Documents_Research_Topic_2_eclips_workspace_cpat_new_jdt-master_ws-6a01c69cd18a1cdec3526ff1a91f530006f15026] to PomArtifactUpdater
+[2020-12-25 18:34:35] Sending ProfileUpdateSucceededEvent[source=Modular API Baseline Target, profile=_Users_malinda_Documents_Research_Topic_2_eclips_workspace_cpat_new_jdt-master_ws-6a01c69cd18a1cdec3526ff1a91f530006f15026] to PomModulesUpdater
+[2020-12-25 18:34:35] Sending ProfileUpdateSucceededEvent[source=Modular API Baseline Target, profile=_Users_malinda_Documents_Research_Topic_2_eclips_workspace_cpat_new_jdt-master_ws-6a01c69cd18a1cdec3526ff1a91f530006f15026] to TargetDefinitionGenerator
+[2020-12-25 18:34:35] Targlet container profile update completed
+[2020-12-25 18:34:35] Performing API Baseline from Target Modular API Baseline, activate
+[2020-12-25 18:34:35] Removing existing baseline.
+[2020-12-25 18:34:35] Creating new baseline from target Modular API Baseline Target
+[2020-12-25 18:34:36] Calculating requirements and dependencies.
+[2020-12-25 18:34:36] Computing prerequisite plan
+[2020-12-25 18:34:36] Collecting 3 artifacts from http://download.eclipse.org/eclipse/updates/4.17/R-4.17-202009021800
+[2020-12-25 18:34:36] Downloading org.eclipse.platform_root
+[2020-12-25 18:34:36] Downloading org.eclipse.equinox.executable_root.cocoa.macosx.x86_64
+[2020-12-25 18:34:36] Downloading org.eclipse.rcp_root
+[2020-12-25 18:34:36] Collected 3 artifacts for http://download.eclipse.org/eclipse/updates/4.17/R-4.17-202009021800 in 0.105s
+[2020-12-25 18:34:36] Installing a.jre.javase [15.0.0]
+[2020-12-25 18:34:36] Installing com.ibm.icu [67.1.0.v20200706-1749]
+[2020-12-25 18:34:36] Installing com.jcraft.jsch [0.1.55.v20190404-1902]
+[2020-12-25 18:34:36] Installing com.sun.el [2.2.0.v201303151357]
+[2020-12-25 18:34:36] Installing com.sun.jna [4.5.1.v20190425-1842]
+[2020-12-25 18:34:36] Installing com.sun.jna.platform [4.5.1.v20190425-1842]
+[2020-12-25 18:34:36] Installing javax.annotation [1.3.5.v20200504-1837]
+[2020-12-25 18:34:36] Installing javax.el [2.2.0.v201303151357]
+[2020-12-25 18:34:36] Installing javax.inject [1.0.0.v20091030]
+[2020-12-25 18:34:36] Installing javax.servlet [3.1.0.v201410161800]
+[2020-12-25 18:34:36] Installing javax.servlet.jsp [2.2.0.v201112011158]
+[2020-12-25 18:34:36] Installing org.apache.ant [1.10.8.v20200515-1239]
+[2020-12-25 18:34:36] Installing org.apache.batik.constants [1.13.0.v20200622-2037]
+[2020-12-25 18:34:36] Installing org.apache.batik.css [1.13.0.v20200622-2037]
+[2020-12-25 18:34:36] Installing org.apache.batik.i18n [1.13.0.v20200622-2037]
+[2020-12-25 18:34:36] Installing org.apache.batik.util [1.13.0.v20200622-2037]
+[2020-12-25 18:34:36] Installing org.apache.commons.codec [1.13.0.v20200108-0001]
+[2020-12-25 18:34:36] Installing org.apache.commons.io [2.6.0.v20190123-2029]
+[2020-12-25 18:34:36] Installing org.apache.commons.jxpath [1.3.0.v200911051830]
+[2020-12-25 18:34:36] Installing org.apache.commons.logging [1.2.0.v20180409-1502]
+[2020-12-25 18:34:36] Installing org.apache.felix.gogo.command [1.0.2.v20170914-1324]
+[2020-12-25 18:34:36] Installing org.apache.felix.gogo.runtime [1.1.0.v20180713-1646]
+[2020-12-25 18:34:36] Installing org.apache.felix.gogo.shell [1.1.0.v20180713-1646]
+[2020-12-25 18:34:36] Installing org.apache.felix.scr [2.1.16.v20200110-1820]
+[2020-12-25 18:34:36] Installing org.apache.httpcomponents.httpclient [4.5.10.v20200114-1512]
+[2020-12-25 18:34:36] Installing org.apache.httpcomponents.httpcore [4.4.12.v20200108-1212]
+[2020-12-25 18:34:36] Installing org.apache.jasper.glassfish [2.2.2.v201501141630]
+[2020-12-25 18:34:36] Installing org.apache.lucene.analyzers-common [8.4.1.v20200122-1459]
+[2020-12-25 18:34:36] Installing org.apache.lucene.analyzers-smartcn [8.4.1.v20200122-1459]
+[2020-12-25 18:34:36] Installing org.apache.lucene.core [8.4.1.v20200122-1459]
+[2020-12-25 18:34:36] Installing org.apache.xmlgraphics [2.4.0.v20200622-2037]
+[2020-12-25 18:34:36] Installing org.apiguardian [1.1.0.v20190826-0900]
+[2020-12-25 18:34:36] Installing org.eclipse.ant.core [3.5.800.v20200608-1251]
+[2020-12-25 18:34:36] Installing org.eclipse.ant.launching [1.2.1000.v20200610-1458]
+[2020-12-25 18:34:36] Installing org.eclipse.ant.ui [3.7.900.v20200724-1008]
+[2020-12-25 18:34:36] Installing org.eclipse.compare [3.7.1100.v20200611-0145]
+[2020-12-25 18:34:36] Installing org.eclipse.compare.core [3.6.900.v20200412-2017]
+[2020-12-25 18:34:36] Installing org.eclipse.core.commands [3.9.700.v20191217-1850]
+[2020-12-25 18:34:36] Installing org.eclipse.core.contenttype [3.7.800.v20200724-0804]
+[2020-12-25 18:34:36] Installing org.eclipse.core.databinding [1.10.0.v20200815-1752]
+[2020-12-25 18:34:36] Installing org.eclipse.core.databinding.beans [1.7.0.v20200717-1533]
+[2020-12-25 18:34:36] Installing org.eclipse.core.databinding.observable [1.10.0.v20200730-0848]
+[2020-12-25 18:34:36] Installing org.eclipse.core.databinding.property [1.8.100.v20200619-0651]
+[2020-12-25 18:34:36] Installing org.eclipse.core.expressions [3.7.0.v20200720-1126]
+[2020-12-25 18:34:36] Installing org.eclipse.core.externaltools [1.1.700.v20200416-1310]
+[2020-12-25 18:34:36] Installing org.eclipse.core.filebuffers [3.6.1000.v20200409-1035]
+[2020-12-25 18:34:36] Installing org.eclipse.core.filesystem [1.7.700.v20200110-1734]
+[2020-12-25 18:34:36] Installing org.eclipse.core.filesystem.macosx [1.3.200.v20190903-0945]
+[2020-12-25 18:34:36] Installing org.eclipse.core.jobs [3.10.800.v20200421-0950]
+[2020-12-25 18:34:36] Installing org.eclipse.core.net [1.3.1000.v20200715-0827]
+[2020-12-25 18:34:36] Installing org.eclipse.core.resources [3.13.800.v20200706-2152]
+[2020-12-25 18:34:36] Installing org.eclipse.core.runtime [3.19.0.v20200724-1004]
+[2020-12-25 18:34:36] Installing org.eclipse.core.variables [3.4.800.v20200120-1101]
+[2020-12-25 18:34:36] Installing org.eclipse.debug.core [3.16.0.v20200828-0817]
+[2020-12-25 18:34:36] Installing org.eclipse.debug.ui [3.14.600.v20200828-0817]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.core.commands [0.12.900.v20200110-1732]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.core.contexts [1.8.400.v20191217-1710]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.core.di [1.7.600.v20200428-0912]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.core.di.annotations [1.6.600.v20191216-2352]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.core.di.extensions [0.16.0.v20200507-0938]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.core.di.extensions.supplier [0.15.700.v20200622-1247]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.core.services [2.2.400.v20200622-1247]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.emf.xpath [0.2.800.v20200609-0849]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.rcp.feature.group [4.17.0.v20200831-1002]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.rcp.feature.jar [4.17.0.v20200831-1002]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.ui.bindings [0.12.900.v20200513-0930]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.ui.css.core [0.12.1300.v20200615-1701]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.ui.css.swt [0.13.1100.v20200819-0632]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.ui.css.swt.theme [0.12.700.v20200527-0719]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.ui.di [1.2.800.v20200128-0855]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.ui.dialogs [1.2.0.v20200807-0944]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.ui.ide [3.15.100.v20200323-2111]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.ui.model.workbench [2.1.800.v20200828-0938]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.ui.services [1.3.700.v20190930-1643]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.ui.widgets [1.2.700.v20191222-1048]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.ui.workbench [1.11.400.v20200828-0938]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.ui.workbench.addons.swt [1.3.1100.v20200703-0611]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.ui.workbench.renderers.swt [0.14.1300.v20200829-1411]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.ui.workbench.renderers.swt.cocoa [0.12.600.v20200416-0656]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.ui.workbench.swt [0.14.1100.v20200619-0644]
+[2020-12-25 18:34:36] Installing org.eclipse.e4.ui.workbench3 [0.15.400.v20191216-0805]
+[2020-12-25 18:34:36] Installing org.eclipse.ecf [3.9.100.v20200611-2221]
+[2020-12-25 18:34:36] Installing org.eclipse.ecf.core.feature.feature.group [1.5.700.v20200812-2314]
+[2020-12-25 18:34:36] Installing org.eclipse.ecf.core.feature.feature.jar [1.5.700.v20200812-2314]
+[2020-12-25 18:34:36] Installing org.eclipse.ecf.core.ssl.feature.feature.group [1.1.500.v20200812-2314]
+[2020-12-25 18:34:36] Installing org.eclipse.ecf.core.ssl.feature.feature.jar [1.1.500.v20200812-2314]
+[2020-12-25 18:34:36] Installing org.eclipse.ecf.filetransfer [5.1.100.v20200611-2221]
+[2020-12-25 18:34:36] Installing org.eclipse.ecf.filetransfer.feature.feature.group [3.14.1400.v20200812-2314]
+[2020-12-25 18:34:36] Installing org.eclipse.ecf.filetransfer.feature.feature.jar [3.14.1400.v20200812-2314]
+[2020-12-25 18:34:36] Installing org.eclipse.ecf.filetransfer.httpclient45.feature.feature.group [1.0.600.v20200816-1842]
+[2020-12-25 18:34:36] Installing org.eclipse.ecf.filetransfer.httpclient45.feature.feature.jar [1.0.600.v20200816-1842]
+[2020-12-25 18:34:36] Installing org.eclipse.ecf.filetransfer.ssl.feature.feature.group [1.1.400.v20200812-2314]
+[2020-12-25 18:34:36] Installing org.eclipse.ecf.filetransfer.ssl.feature.feature.jar [1.1.400.v20200812-2314]
+[2020-12-25 18:34:36] Installing org.eclipse.ecf.identity [3.9.400.v20200611-2221]
+[2020-12-25 18:34:36] Installing org.eclipse.ecf.provider.filetransfer [3.2.600.v20200611-2221]
+[2020-12-25 18:34:36] Installing org.eclipse.ecf.provider.filetransfer.httpclient45 [1.0.300.v20200611-1836]
+[2020-12-25 18:34:36] Installing org.eclipse.ecf.provider.filetransfer.ssl [1.0.200.v20200611-1836]
+[2020-12-25 18:34:36] Installing org.eclipse.ecf.ssl [1.2.400.v20200611-2220]
+[2020-12-25 18:34:36] Installing org.eclipse.emf.common [2.20.0.v20200822-0801]
+[2020-12-25 18:34:36] Installing org.eclipse.emf.common.feature.group [2.20.0.v20200822-0801]
+[2020-12-25 18:34:36] Installing org.eclipse.emf.common.feature.jar [2.20.0.v20200822-0801]
+[2020-12-25 18:34:36] Installing org.eclipse.emf.ecore [2.23.0.v20200630-0516]
+[2020-12-25 18:34:36] Installing org.eclipse.emf.ecore.change [2.14.0.v20190528-0725]
+[2020-12-25 18:34:36] Installing org.eclipse.emf.ecore.feature.group [2.23.0.v20200630-0516]
+[2020-12-25 18:34:36] Installing org.eclipse.emf.ecore.feature.jar [2.23.0.v20200630-0516]
+[2020-12-25 18:34:36] Installing org.eclipse.emf.ecore.xmi [2.16.0.v20190528-0725]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.app [1.5.0.v20200717-0620]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.bidi [1.3.0.v20200612-1624]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.common [3.13.0.v20200828-1034]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.concurrent [1.1.500.v20200106-1437]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.console [1.4.200.v20200828-1034]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.event [1.5.500.v20200616-0800]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.executable.feature.group [3.8.900.v20200819-0940]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.executable.feature.jar [3.8.900.v20200819-0940]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.executable_root.cocoa.macosx.x86_64 [3.8.900.v20200819-0940]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.frameworkadmin [2.1.400.v20191002-0702]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.frameworkadmin.equinox [1.1.400.v20200319-1546]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.http.jetty [3.7.400.v20200123-1333]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.http.registry [1.2.0.v20200614-1851]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.http.servlet [1.6.600.v20200707-1543]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.jsp.jasper [1.1.500.v20200422-1833]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.jsp.jasper.registry [1.1.400.v20200422-1833]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.launcher [1.5.800.v20200727-1323]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.launcher.cocoa.macosx.x86_64 [1.1.1300.v20200819-0940]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.artifact.repository [1.3.500.v20200406-2025]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.console [1.1.300.v20191014-1219]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.core [2.6.300.v20200211-1504]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.core.feature.feature.group [1.6.700.v20200813-0739]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.core.feature.feature.jar [1.6.700.v20200813-0739]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.director [2.4.700.v20200511-1530]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.director.app [1.1.600.v20200511-1530]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.directorywatcher [1.2.500.v20191211-1631]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.engine [2.6.700.v20200511-1530]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.extensionlocation [1.3.400.v20191213-1911]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.extras.feature.feature.group [1.4.900.v20200828-0839]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.extras.feature.feature.jar [1.4.900.v20200828-0839]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.garbagecollector [1.1.400.v20200221-1022]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.jarprocessor [1.1.600.v20200217-1130]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.metadata [2.5.0.v20200511-1530]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.metadata.repository [1.3.400.v20191211-1528]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.operations [2.5.900.v20200808-1311]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.publisher [1.5.400.v20200511-1530]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.publisher.eclipse [1.3.700.v20200828-0839]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.rcp.feature.feature.group [1.4.900.v20200813-0739]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.rcp.feature.feature.jar [1.4.900.v20200813-0739]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.reconciler.dropins [1.3.400.v20200511-1530]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.repository [2.4.800.v20200813-0739]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.repository.tools [2.2.500.v20200110-2121]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.touchpoint.eclipse [2.2.700.v20200813-0739]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.touchpoint.natives [1.3.600.v20200511-1530]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.transport.ecf [1.2.400.v20200123-2221]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.ui [2.6.100.v20200731-1005]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.ui.importexport [1.2.500.v20200731-1005]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.ui.sdk [1.1.700.v20200731-1005]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.ui.sdk.scheduler [1.4.800.v20200731-1005]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.updatechecker [1.2.300.v20200222-1600]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.updatesite [1.1.400.v20200511-1530]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.user.ui.feature.group [2.4.900.v20200828-0839]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.p2.user.ui.feature.jar [2.4.900.v20200828-0839]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.preferences [3.8.0.v20200422-1833]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.registry [3.9.0.v20200625-1425]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.security [1.3.500.v20200114-1637]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.security.macosx [1.101.200.v20190903-0934]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.security.ui [1.2.700.v20200807-1518]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.simpleconfigurator [1.3.600.v20200721-1308]
+[2020-12-25 18:34:36] Installing org.eclipse.equinox.simpleconfigurator.manipulator [2.1.500.v20200211-1505]
+[2020-12-25 18:34:36] Installing org.eclipse.help [3.8.800.v20200525-0755]
+[2020-12-25 18:34:36] Installing org.eclipse.help.base [4.3.0.v20200902-1800]
+[2020-12-25 18:34:36] Installing org.eclipse.help.feature.group [2.3.300.v20200902-1800]
+[2020-12-25 18:34:36] Installing org.eclipse.help.feature.jar [2.3.300.v20200902-1800]
+[2020-12-25 18:34:36] Installing org.eclipse.help.ui [4.2.0.v20200724-0708]
+[2020-12-25 18:34:36] Installing org.eclipse.help.webapp [3.10.0.v20200724-0708]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt [3.18.500.v20200902-1800]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.annotation [1.1.500.v20200407-1355]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.apt.core [3.6.700.v20200828-0941]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.apt.pluggable.core [1.2.500.v20200322-1447]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.apt.ui [3.6.500.v20200828-1336]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.compiler.apt [1.3.1100.v20200828-0941]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.compiler.tool [1.2.1000.v20200828-0941]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.core [3.23.0.v20200828-0941]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.core.formatterapp [1.0.0.v20200119-0748]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.core.manipulation [1.14.100.v20200817-2001]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.debug [3.16.0.v20200828-0821]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.debug.ui [3.12.0.v20200828-0821]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.doc.user [3.15.800.v20200828-1432]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.feature.group [3.18.500.v20200902-1800]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.feature.jar [3.18.500.v20200902-1800]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.junit [3.11.900.v20200828-0853]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.junit.core [3.10.800.v20200817-1957]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.junit.runtime [3.5.300.v20200720-0748]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.junit4.runtime [1.1.1300.v20200720-0748]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.junit5.runtime [1.0.1000.v20200720-0748]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.launching [3.18.0.v20200824-1854]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.launching.macosx [3.4.500.v20200116-2251]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.launching.ui.macosx [1.2.600.v20200204-1737]
+[2020-12-25 18:34:36] Installing org.eclipse.jdt.ui [3.21.200.v20200828-0853]
+[2020-12-25 18:34:36] Installing org.eclipse.jetty.continuation [9.4.31.v20200723]
+[2020-12-25 18:34:36] Installing org.eclipse.jetty.http [9.4.31.v20200723]
+[2020-12-25 18:34:36] Installing org.eclipse.jetty.io [9.4.31.v20200723]
+[2020-12-25 18:34:36] Installing org.eclipse.jetty.security [9.4.31.v20200723]
+[2020-12-25 18:34:36] Installing org.eclipse.jetty.server [9.4.31.v20200723]
+[2020-12-25 18:34:36] Installing org.eclipse.jetty.servlet [9.4.31.v20200723]
+[2020-12-25 18:34:36] Installing org.eclipse.jetty.util [9.4.31.v20200723]
+[2020-12-25 18:34:36] Installing org.eclipse.jface [3.21.0.v20200821-1458]
+[2020-12-25 18:34:36] Installing org.eclipse.jface.databinding [1.12.0.v20200717-1533]
+[2020-12-25 18:34:36] Installing org.eclipse.jface.notifications [0.2.0.v20200810-0826]
+[2020-12-25 18:34:36] Installing org.eclipse.jface.text [3.16.400.v20200807-0831]
+[2020-12-25 18:34:36] Installing org.eclipse.jsch.core [1.3.900.v20200422-1935]
+[2020-12-25 18:34:36] Installing org.eclipse.jsch.ui [1.3.1000.v20200610-0847]
+[2020-12-25 18:34:36] Installing org.eclipse.ltk.core.refactoring [3.11.100.v20200720-0748]
+[2020-12-25 18:34:36] Installing org.eclipse.ltk.ui.refactoring [3.11.100.v20200817-1715]
+[2020-12-25 18:34:36] Installing org.eclipse.osgi [3.16.0.v20200828-0759]
+[2020-12-25 18:34:36] Installing org.eclipse.osgi.compatibility.state [1.2.100.v20200811-1344]
+[2020-12-25 18:34:36] Installing org.eclipse.osgi.services [3.9.0.v20200511-1725]
+[2020-12-25 18:34:36] Installing org.eclipse.osgi.util [3.5.300.v20190708-1141]
+[2020-12-25 18:34:36] Installing org.eclipse.pde [3.13.1200.v20200902-1800]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.api.tools [1.2.0.v20200813-0522]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.api.tools.annotations [1.1.400.v20190929-1236]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.api.tools.ui [1.2.0.v20200813-0523]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.build [3.10.800.v20200410-1419]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.core [3.14.0.v20200817-1143]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.doc.user [3.14.900.v20200902-1022]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.ds.annotations [1.2.0.v20200813-0526]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.ds.core [1.2.0.v20200813-0526]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.ds.lib [1.1.400.v20191119-0943]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.ds.ui [1.2.0.v20200813-0954]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.ds1_2.lib [1.0.400.v20191119-0943]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.feature.group [3.14.500.v20200902-1800]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.feature.jar [3.14.500.v20200902-1800]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.genericeditor.extension [1.1.0.v20200828-0858]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.junit.runtime [3.5.900.v20200810-0835]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.launching [3.9.0.v20200812-1037]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.runtime [3.6.900.v20200612-1330]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.ua.core [1.2.0.v20200813-0518]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.ua.ui [1.2.0.v20200813-0519]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.ui [3.12.0.v20200824-1258]
+[2020-12-25 18:34:36] Installing org.eclipse.pde.ui.templates [3.7.0.v20200812-1812]
+[2020-12-25 18:34:36] Installing org.eclipse.platform [4.17.0.v20200902-1800]
+[2020-12-25 18:34:36] Installing org.eclipse.platform.doc.user [4.17.0.v20200831-0727]
+[2020-12-25 18:34:36] Installing org.eclipse.platform.feature.group [4.17.0.v20200902-1800]
+[2020-12-25 18:34:36] Installing org.eclipse.platform.feature.jar [4.17.0.v20200902-1800]
+[2020-12-25 18:34:36] Installing org.eclipse.platform_root [4.17.0.v20200902-1800]
+[2020-12-25 18:34:36] Installing org.eclipse.rcp [4.17.0.v20200902-1800]
+[2020-12-25 18:34:36] Installing org.eclipse.rcp.feature.group [4.17.0.v20200902-1800]
+[2020-12-25 18:34:36] Installing org.eclipse.rcp.feature.jar [4.17.0.v20200902-1800]
+[2020-12-25 18:34:36] Installing org.eclipse.rcp_root [4.17.0.v20200902-1800]
+[2020-12-25 18:34:36] Installing org.eclipse.search [3.12.0.v20200727-2017]
+[2020-12-25 18:34:36] Installing org.eclipse.swt [3.115.0.v20200831-1002]
+[2020-12-25 18:34:36] Installing org.eclipse.swt.browser.chromium.cocoa.macosx.x86_64 [3.115.0.v20200831-1002]
+[2020-12-25 18:34:36] Installing org.eclipse.swt.cocoa.macosx.x86_64 [3.115.0.v20200831-1002]
+[2020-12-25 18:34:36] Installing org.eclipse.team.core [3.8.1100.v20200806-0621]
+[2020-12-25 18:34:36] Installing org.eclipse.team.genericeditor.diff.extension [1.0.600.v20200212-1524]
+[2020-12-25 18:34:36] Installing org.eclipse.team.ui [3.8.1000.v20200806-0621]
+[2020-12-25 18:34:36] Installing org.eclipse.text [3.10.300.v20200807-0831]
+[2020-12-25 18:34:36] Installing org.eclipse.text.quicksearch [1.0.300.v20200519-2023]
+[2020-12-25 18:34:36] Installing org.eclipse.tools.layout.spy [1.0.600.v20200608-0818]
+[2020-12-25 18:34:36] Installing org.eclipse.ui [3.118.0.v20200807-0902]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.browser [3.6.900.v20200807-1330]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.cheatsheets [3.7.0.v20200805-2057]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.cocoa [1.2.400.v20191217-1850]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.console [3.9.300.v20200828-0817]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.editors [3.13.300.v20200812-2334]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.externaltools [3.4.800.v20200612-0848]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.forms [3.10.0.v20200727-0948]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.genericeditor [1.1.800.v20200828-1000]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.ide [3.17.200.v20200808-0622]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.ide.application [1.3.800.v20200713-0938]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.intro [3.5.1100.v20200828-0803]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.intro.quicklinks [1.1.0.v20200724-0708]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.intro.universal [3.4.0.v20200805-1259]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.monitoring [1.1.800.v20200820-1401]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.navigator [3.9.400.v20200723-2304]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.navigator.resources [3.7.400.v20200722-0751]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.net [1.3.800.v20200422-1935]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.themes [1.2.1100.v20200825-0757]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.trace [1.1.800.v20200106-1301]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.views [3.10.400.v20200611-1719]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.views.log [1.2.1200.v20200828-0938]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.views.properties.tabbed [3.8.1000.v20200609-0849]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.workbench [3.120.0.v20200829-1411]
+[2020-12-25 18:34:36] Installing org.eclipse.ui.workbench.texteditor [3.15.0.v20200812-2334]
+[2020-12-25 18:34:36] Installing org.eclipse.update.configurator [3.4.600.v20200422-1910]
+[2020-12-25 18:34:36] Installing org.eclipse.urischeme [1.1.100.v20200729-2048]
+[2020-12-25 18:34:36] Installing org.hamcrest.core [1.3.0.v20180420-1519]
+[2020-12-25 18:34:36] Installing org.junit [4.13.0.v20200204-1500]
+[2020-12-25 18:34:36] Installing org.junit.jupiter.api [5.6.0.v20200203-2009]
+[2020-12-25 18:34:36] Installing org.junit.jupiter.engine [5.6.0.v20200203-2009]
+[2020-12-25 18:34:36] Installing org.junit.jupiter.migrationsupport [5.6.0.v20200203-2009]
+[2020-12-25 18:34:36] Installing org.junit.jupiter.params [5.6.0.v20200203-2009]
+[2020-12-25 18:34:36] Installing org.junit.platform.commons [1.6.0.v20200203-2009]
+[2020-12-25 18:34:36] Installing org.junit.platform.engine [1.6.0.v20200203-2009]
+[2020-12-25 18:34:36] Installing org.junit.platform.launcher [1.6.0.v20200203-2009]
+[2020-12-25 18:34:36] Installing org.junit.platform.runner [1.6.0.v20200203-2009]
+[2020-12-25 18:34:36] Installing org.junit.platform.suite.api [1.6.0.v20200203-2009]
+[2020-12-25 18:34:36] Installing org.junit.vintage.engine [5.6.0.v20200203-2009]
+[2020-12-25 18:34:36] Installing org.objectweb.asm [8.0.1.v20200420-1007]
+[2020-12-25 18:34:36] Installing org.objectweb.asm.tree [8.0.1.v20200420-1007]
+[2020-12-25 18:34:36] Installing org.opentest4j [1.2.0.v20190826-0900]
+[2020-12-25 18:34:36] Installing org.sat4j.core [2.3.5.v201308161310]
+[2020-12-25 18:34:36] Installing org.sat4j.pb [2.3.5.v201404071733]
+[2020-12-25 18:34:36] Installing org.tukaani.xz [1.8.0.v20180207-1613]
+[2020-12-25 18:34:36] Installing org.w3c.css.sac [1.3.1.v200903091627]
+[2020-12-25 18:34:36] Installing org.w3c.dom.events [3.0.0.draft20060413_v201105210656]
+[2020-12-25 18:34:36] Installing org.w3c.dom.smil [1.0.1.v200903091627]
+[2020-12-25 18:34:36] Installing org.w3c.dom.svg [1.1.0.v201011041433]
+[2020-12-25 18:34:36] Collecting 3 artifacts from http://download.eclipse.org/eclipse/updates/4.17/R-4.17-202009021800
+[2020-12-25 18:34:36] Downloading org.eclipse.platform_root
+[2020-12-25 18:34:36] Downloading org.eclipse.equinox.executable_root.cocoa.macosx.x86_64
+[2020-12-25 18:34:36] Downloading org.eclipse.rcp_root
+[2020-12-25 18:34:36] Collected 3 artifacts for http://download.eclipse.org/eclipse/updates/4.17/R-4.17-202009021800 in 0.106s
+[2020-12-25 18:34:36] Preparing to commit the provisioning operation.
+[2020-12-25 18:34:36] Committing the provisioning operation.
+[2020-12-25 18:34:36] Sending ProfileUpdateSucceededEvent[source=Modular API Baseline Target, profile=_Users_malinda_Documents_Research_Topic_2_eclips_workspace_cpat_new_jdt-master_ws-913ee66ead9a2ebcce52bce062b07f8c34a3888a] to PomArtifactUpdater
+[2020-12-25 18:34:36] Sending ProfileUpdateSucceededEvent[source=Modular API Baseline Target, profile=_Users_malinda_Documents_Research_Topic_2_eclips_workspace_cpat_new_jdt-master_ws-913ee66ead9a2ebcce52bce062b07f8c34a3888a] to PomModulesUpdater
+[2020-12-25 18:34:36] Sending ProfileUpdateSucceededEvent[source=Modular API Baseline Target, profile=_Users_malinda_Documents_Research_Topic_2_eclips_workspace_cpat_new_jdt-master_ws-913ee66ead9a2ebcce52bce062b07f8c34a3888a] to TargetDefinitionGenerator
+[2020-12-25 18:34:36] Targlet container profile update completed
+[2020-12-25 18:34:37] Performing Targlets Modular Target (Eclipse Platform + JDT Core + JDT Core Test Binaries + JDT Core Tests + JDT Platform), activate
+[2020-12-25 18:34:37] Repository http://download.eclipse.org/eclipse/updates/4.19-I-builds
+[2020-12-25 18:34:37] Repository http://download.eclipse.org/cbi/updates/license
+[2020-12-25 18:34:37] Offline = false
+[2020-12-25 18:34:37] Mirrors = true
+[2020-12-25 18:34:37] Include All Platforms = false
+[2020-12-25 18:34:37] Include All Requirements = true
+[2020-12-25 18:34:37] Include Binary Equivalents = true
+[2020-12-25 18:34:37] Include Sources = true
+[2020-12-25 18:34:44] Calculating requirements and dependencies.
+[2020-12-25 18:34:44] Computing prerequisite plan
+[2020-12-25 18:34:44] Fetching compositeArtifacts.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/ (452B)
+[2020-12-25 18:34:45] Fetching artifacts.xml.xz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/ (110.39kB)
+[2020-12-25 18:34:45] Fetching artifacts.xml.xz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/ (110.62kB)
+[2020-12-25 18:34:46] Fetching artifacts.xml.xz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/ (110.38kB)
+[2020-12-25 18:34:47] Fetching artifacts.xml.xz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/ (110.33kB)
+[2020-12-25 18:34:47] Collecting 159 artifacts from http://download.eclipse.org/eclipse/updates/4.19-I-builds
+[2020-12-25 18:34:47] Downloading org.eclipse.ui.themes.source
+[2020-12-25 18:34:47] Downloading org.eclipse.jface.notifications.source
+[2020-12-25 18:34:47] Downloading org.eclipse.equinox.p2.extras.feature
+[2020-12-25 18:34:47] Downloading org.eclipse.equinox.p2.user.ui
+[2020-12-25 18:34:47] Downloading org.eclipse.equinox.p2.rcp.feature
+[2020-12-25 18:34:47] Downloading org.eclipse.ui.themes
+[2020-12-25 18:34:47] Downloading org.eclipse.equinox.p2.core.feature
+[2020-12-25 18:34:47] Downloading org.eclipse.e4.core.commands.source
+[2020-12-25 18:34:47] Downloading org.eclipse.equinox.p2.console.source
+[2020-12-25 18:34:47] Downloading org.eclipse.equinox.event.source
+[2020-12-25 18:34:48] Fetching org.eclipse.equinox.event.source_1.5.600.v20201208-1445.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (28.29kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.ui.themes.source_1.2.1300.v20201217-1730.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (7.36kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.ui.themes_1.2.1300.v20201217-1730.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (30.27kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.equinox.p2.console.source_1.1.400.v20201106-0859.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (19.92kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.jface.notifications.source_0.2.100.v20201130-1828.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (15.74kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.equinox.p2.core.feature_1.6.900.v20201214-0720.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/features/ (19.67kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.equinox.p2.user.ui_2.4.1100.v20201214-0720.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/features/ (18.9kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.equinox.p2.extras.feature_1.4.1100.v20201214-0720.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/features/ (19.11kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.e4.core.commands.source_0.13.0.v20201119-1132.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (21.58kB)
+[2020-12-25 18:34:48] Downloading org.eclipse.jetty.continuation.source
+[2020-12-25 18:34:48] Fetching org.eclipse.equinox.p2.rcp.feature_1.4.1100.v20201214-0720.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/features/ (19.02kB)
+[2020-12-25 18:34:48] Downloading org.eclipse.equinox.event
+[2020-12-25 18:34:48] Downloading org.eclipse.e4.ui.bindings.source
+[2020-12-25 18:34:48] Downloading org.eclipse.core.externaltools.source
+[2020-12-25 18:34:48] Downloading org.eclipse.e4.ui.dialogs.source
+[2020-12-25 18:34:48] Downloading org.eclipse.jetty.util.ajax.source
+[2020-12-25 18:34:48] Downloading org.eclipse.urischeme.source
+[2020-12-25 18:34:48] Downloading org.eclipse.equinox.security
+[2020-12-25 18:34:48] Downloading org.eclipse.jdt.junit.runtime.source
+[2020-12-25 18:34:48] Fetching org.eclipse.equinox.event_1.5.600.v20201208-1445.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (16.64kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.jetty.continuation.source_9.4.35.v20201120.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (32.75kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.equinox.event_1.5.600.v20201208-1445.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (16.64kB)
+[2020-12-25 18:34:48] Downloading org.eclipse.pde.ds.core.source
+[2020-12-25 18:34:48] Fetching org.eclipse.equinox.security_1.3.600.v20201207-2009.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (44.81kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.e4.ui.bindings.source_0.13.0.v20201119-1132.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (35.64kB)
+[2020-12-25 18:34:48] Downloading org.eclipse.pde.launching
+[2020-12-25 18:34:48] Fetching org.eclipse.e4.ui.dialogs.source_1.2.100.v20201109-2317.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (39.1kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.pde.ds.core.source_1.2.100.v20201105-2204.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (50.83kB)
+[2020-12-25 18:34:48] Downloading org.eclipse.jdt.junit.runtime
+[2020-12-25 18:34:48] Fetching org.eclipse.jetty.util.ajax.source_9.4.35.v20201120.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (43.07kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.jdt.junit.runtime.source_3.5.500.v20201218-0611.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (45.73kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.urischeme.source_1.1.200.v20201104-0938.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (44.34kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.core.externaltools.source_1.1.800.v20201105-0600.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (35.85kB)
+[2020-12-25 18:34:48] Downloading org.eclipse.pde.genericeditor.extension.source
+[2020-12-25 18:34:48] Fetching org.eclipse.pde.launching_3.9.200.v20201208-1742.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (51.57kB)
+[2020-12-25 18:34:48] Downloading org.eclipse.equinox.p2.operations.source
+[2020-12-25 18:34:48] Downloading org.eclipse.e4.ui.css.swt
+[2020-12-25 18:34:48] Fetching org.eclipse.jdt.junit.runtime_3.5.500.v20201218-0611.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (24.64kB)
+[2020-12-25 18:34:48] Downloading org.eclipse.equinox.http.servlet
+[2020-12-25 18:34:48] Downloading org.eclipse.ui.externaltools.source
+[2020-12-25 18:34:48] Downloading org.eclipse.pde.runtime.source
+[2020-12-25 18:34:48] Downloading org.eclipse.jdt.core.tests.builder
+[2020-12-25 18:34:48] Downloading org.eclipse.pde.genericeditor.extension
+[2020-12-25 18:34:48] Fetching org.eclipse.equinox.p2.operations.source_2.5.1000.v20201106-1246.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (64.21kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.pde.genericeditor.extension.source_1.1.100.v20201207-1622.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (63.34kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.equinox.http.servlet_1.6.800.v20201204-1648.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (76.59kB)
+[2020-12-25 18:34:48] Downloading org.eclipse.jetty.servlet.source
+[2020-12-25 18:34:48] Fetching org.eclipse.e4.ui.css.swt_0.14.100.v20201217-1340.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (65.63kB)
+[2020-12-25 18:34:48] Downloading org.eclipse.ui.genericeditor.source
+[2020-12-25 18:34:48] Fetching org.eclipse.pde.genericeditor.extension_1.1.100.v20201207-1622.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (32.81kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.pde.runtime.source_3.7.0.v20201109-0850.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (83.25kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.ui.externaltools.source_3.4.900.v20201105-0600.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (82.15kB)
+[2020-12-25 18:34:48] Downloading org.eclipse.pde.launching.source
+[2020-12-25 18:34:48] Fetching org.eclipse.jdt.core.tests.builder_3.10.1100.v20201119-0905.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (84.64kB)
+[2020-12-25 18:34:48] Downloading org.eclipse.e4.ui.workbench.swt.source
+[2020-12-25 18:34:48] Fetching org.eclipse.ui.genericeditor.source_1.2.0.v20201215-2102.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (88.48kB)
+[2020-12-25 18:34:48] Fetching org.eclipse.jetty.servlet.source_9.4.35.v20201120.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (88.14kB)
+[2020-12-25 18:34:48] Downloading org.eclipse.jetty.security.source
+[2020-12-25 18:34:48] Fetching org.eclipse.pde.launching.source_3.9.200.v20201208-1742.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (93.19kB)
+[2020-12-25 18:34:48] Downloading org.eclipse.jetty.io.source
+[2020-12-25 18:34:48] Fetching org.eclipse.pde.launching.source_3.9.200.v20201208-1742.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (93.19kB)
+[2020-12-25 18:34:48] Downloading org.eclipse.equinox.security.source
+[2020-12-25 18:34:48] Downloading org.eclipse.pde.ua.core.source
+[2020-12-25 18:34:48] Downloading org.eclipse.pde.ui.templates.source
+[2020-12-25 18:34:49] Fetching org.eclipse.e4.ui.workbench.swt.source_0.15.0.v20201103-0952.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (93.68kB)
+[2020-12-25 18:34:49] Downloading org.eclipse.ui.genericeditor
+[2020-12-25 18:34:49] Downloading org.eclipse.ui.console.source
+[2020-12-25 18:34:49] Downloading org.eclipse.jetty.http.source
+[2020-12-25 18:34:49] Downloading org.eclipse.e4.ui.workbench.renderers.swt.source
+[2020-12-25 18:34:49] Downloading org.eclipse.equinox.http.servlet.source
+[2020-12-25 18:34:49] Fetching org.eclipse.jetty.security.source_9.4.35.v20201120.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (94.16kB)
+[2020-12-25 18:34:49] Fetching org.eclipse.pde.ui.templates.source_3.7.200.v20201208-0953.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (107.52kB)
+[2020-12-25 18:34:49] Fetching org.eclipse.equinox.security.source_1.3.600.v20201207-2009.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (101.98kB)
+[2020-12-25 18:34:49] Fetching org.eclipse.pde.ua.core.source_1.2.100.v20201105-1530.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (104.83kB)
+[2020-12-25 18:34:49] Fetching org.eclipse.ui.genericeditor_1.2.0.v20201215-2102.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (49.47kB)
+[2020-12-25 18:34:49] Fetching org.eclipse.jetty.io.source_9.4.35.v20201120.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (99.16kB)
+[2020-12-25 18:34:49] Fetching org.eclipse.ui.console.source_3.10.100.v20201211-1511.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (136.96kB)
+[2020-12-25 18:34:49] Fetching org.eclipse.jetty.http.source_9.4.35.v20201120.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (137.55kB)
+[2020-12-25 18:34:49] Fetching org.eclipse.e4.ui.workbench.renderers.swt.source_0.15.0.v20201125-0918.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (139.58kB)
+[2020-12-25 18:34:49] Fetching org.eclipse.equinox.http.servlet.source_1.6.800.v20201204-1648.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (140.84kB)
+[2020-12-25 18:34:50] Downloading org.eclipse.ui.source
+[2020-12-25 18:34:50] Downloading org.eclipse.e4.ui.css.swt.source
+[2020-12-25 18:34:50] Downloading org.eclipse.jdt.core.tests.model
+[2020-12-25 18:34:50] Downloading org.eclipse.platform.doc.user
+[2020-12-25 18:34:50] Downloading org.eclipse.pde.doc.user
+[2020-12-25 18:34:50] Downloading org.eclipse.jdt.core.tests.compiler
+[2020-12-25 18:34:50] Downloading org.eclipse.debug.ui
+[2020-12-25 18:34:50] Fetching org.eclipse.ui.source_3.118.100.v20201123-0719.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (145.52kB)
+[2020-12-25 18:34:50] Downloading org.eclipse.ui.workbench.source
+[2020-12-25 18:34:50] Downloading org.apache.ant.source
+[2020-12-25 18:34:50] Fetching org.eclipse.e4.ui.css.swt.source_0.14.100.v20201217-1340.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (163.68kB)
+[2020-12-25 18:34:50] Fetching org.eclipse.platform.doc.user_4.19.0.v20201221-0809.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (6.62MB)
+[2020-12-25 18:34:50] Fetching org.eclipse.jdt.core.tests.model_3.10.1400.v20201123-0742.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (10.01MB)
+[2020-12-25 18:34:50] Fetching org.eclipse.pde.doc.user_3.14.1100.v20201221-0916.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (6.58MB)
+[2020-12-25 18:34:50] Fetching org.eclipse.jdt.core.tests.compiler_3.12.1500.v20201214-0706.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (3.04MB)
+[2020-12-25 18:34:50] Fetching org.eclipse.debug.ui_3.14.800.v20201210-1136.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (1,020.29kB)
+[2020-12-25 18:34:50] Fetching org.eclipse.ui.workbench.source_3.122.100.v20201218-0007.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (2.47MB)
+[2020-12-25 18:34:50] Fetching org.apache.ant.source_1.10.9.v20201106-1946.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (2.43MB)
+[2020-12-25 18:34:50] Downloading org.eclipse.ui.ide
+[2020-12-25 18:34:50] Fetching org.eclipse.ui.ide_3.18.100.v20201217-1657.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (950.26kB)
+[2020-12-25 18:34:50] Downloading org.eclipse.debug.ui.source
+[2020-12-25 18:34:51] Fetching org.eclipse.debug.ui.source_3.14.800.v20201210-1136.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (1.67MB)
+[2020-12-25 18:34:51] Downloading org.eclipse.jdt.debug.ui
+[2020-12-25 18:34:51] Fetching org.eclipse.jdt.debug.ui_3.12.200.v20201221-0831.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (1.67MB)
+[2020-12-25 18:34:51] Fetching org.eclipse.platform.doc.user_4.19.0.v20201221-0809.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/
+[2020-12-25 18:34:51] Fetching org.eclipse.jdt.core.tests.model_3.10.1400.v20201123-0742.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/
+[2020-12-25 18:34:51] Fetching org.eclipse.debug.ui_3.14.800.v20201210-1136.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/
+[2020-12-25 18:34:51] Fetching org.eclipse.pde.doc.user_3.14.1100.v20201221-0916.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/
+[2020-12-25 18:34:51] Fetching org.eclipse.jdt.core.tests.compiler_3.12.1500.v20201214-0706.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/
+[2020-12-25 18:34:51] Fetching org.eclipse.ui.workbench.source_3.122.100.v20201218-0007.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/
+[2020-12-25 18:34:51] Fetching org.apache.ant.source_1.10.9.v20201106-1946.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/
+[2020-12-25 18:34:51] Fetching org.eclipse.ui.ide_3.18.100.v20201217-1657.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/
+[2020-12-25 18:34:52] Fetching org.eclipse.debug.ui.source_3.14.800.v20201210-1136.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/
+[2020-12-25 18:34:52] Fetching org.eclipse.jdt.debug.ui_3.12.200.v20201221-0831.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/
+[2020-12-25 18:34:52] Downloading org.eclipse.ui.ide.source
+[2020-12-25 18:34:52] Fetching org.eclipse.ui.ide.source_3.18.100.v20201217-1657.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (1.25MB)
+[2020-12-25 18:34:52] Downloading org.eclipse.osgi.source
+[2020-12-25 18:34:52] Downloading org.eclipse.jface.text
+[2020-12-25 18:34:53] Fetching org.eclipse.osgi.source_3.16.200.v20201209-1827.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (1.13MB)
+[2020-12-25 18:34:53] Fetching org.eclipse.jface.text_3.16.600.v20201212-1218.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (316.91kB)
+[2020-12-25 18:34:53] Downloading org.eclipse.jface.source
+[2020-12-25 18:34:53] Downloading org.eclipse.ui.workbench
+[2020-12-25 18:34:53] Fetching org.eclipse.jface.source_3.22.0.v20201106-0834.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (1,022.85kB)
+[2020-12-25 18:34:53] Fetching org.eclipse.ui.workbench_3.122.100.v20201218-0007.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (960.28kB)
+[2020-12-25 18:34:53] Fetching org.eclipse.ui.ide.source_3.18.100.v20201217-1657.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/
+[2020-12-25 18:34:53] Downloading org.eclipse.pde.api.tools
+[2020-12-25 18:34:53] Downloading org.eclipse.jdt.debug
+[2020-12-25 18:34:54] Fetching org.eclipse.pde.api.tools_1.2.200.v20201217-0908.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (929.18kB)
+[2020-12-25 18:34:54] Downloading org.eclipse.jdt.debug.ui.source
+[2020-12-25 18:34:54] Fetching org.eclipse.jdt.debug_3.17.100.v20201218-0355.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (900.9kB)
+[2020-12-25 18:34:54] Fetching org.eclipse.osgi.source_3.16.200.v20201209-1827.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/
+[2020-12-25 18:34:54] Fetching org.eclipse.jdt.debug.ui.source_3.12.200.v20201221-0831.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (842.88kB)
+[2020-12-25 18:34:54] Downloading org.eclipse.jface.text.source
+[2020-12-25 18:34:54] Downloading org.eclipse.core.resources.source
+[2020-12-25 18:34:54] Fetching org.eclipse.jface.text.source_3.16.600.v20201212-1218.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (808.42kB)
+[2020-12-25 18:34:54] Fetching org.eclipse.core.resources.source_3.13.900.v20201105-1507.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (797.81kB)
+[2020-12-25 18:34:54] Downloading org.eclipse.jdt.debug.source
+[2020-12-25 18:34:55] Downloading org.eclipse.pde.api.tools.source
+[2020-12-25 18:34:55] Fetching org.eclipse.jdt.debug.source_3.17.100.v20201218-0355.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (764.4kB)
+[2020-12-25 18:34:55] Downloading org.eclipse.ui.workbench.texteditor
+[2020-12-25 18:34:55] Downloading org.eclipse.ant.ui.source
+[2020-12-25 18:34:55] Fetching org.eclipse.pde.api.tools.source_1.2.200.v20201217-0908.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (653.76kB)
+[2020-12-25 18:34:55] Downloading org.eclipse.pde.api.tools.ui
+[2020-12-25 18:34:55] Fetching org.eclipse.ui.workbench.texteditor_3.15.200.v20201211-1542.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (239.14kB)
+[2020-12-25 18:34:55] Downloading org.eclipse.osgi
+[2020-12-25 18:34:55] Fetching org.eclipse.ant.ui.source_3.7.1000.v20201116-1127.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (610.09kB)
+[2020-12-25 18:34:55] Downloading org.eclipse.jetty.server.source
+[2020-12-25 18:34:55] Fetching org.eclipse.pde.api.tools.ui_1.2.200.v20201216-0752.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (207.42kB)
+[2020-12-25 18:34:55] Downloading org.eclipse.ui.workbench.texteditor.source
+[2020-12-25 18:34:55] Fetching org.eclipse.osgi_3.16.200.v20201209-1827.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (469.32kB)
+[2020-12-25 18:34:55] Downloading org.eclipse.compare.source
+[2020-12-25 18:34:55] Fetching org.eclipse.jetty.server.source_9.4.35.v20201120.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (443.53kB)
+[2020-12-25 18:34:55] Downloading org.eclipse.jetty.util.source
+[2020-12-25 18:34:56] Fetching org.eclipse.ui.workbench.texteditor.source_3.15.200.v20201211-1542.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (428.74kB)
+[2020-12-25 18:34:56] Fetching org.eclipse.compare.source_3.7.1300.v20201208-1638.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (423.87kB)
+[2020-12-25 18:34:56] Fetching org.eclipse.jetty.util.source_9.4.35.v20201120.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (391.7kB)
+[2020-12-25 18:34:56] Downloading org.eclipse.pde.ui.templates
+[2020-12-25 18:34:56] Downloading org.eclipse.jdt.launching.source
+[2020-12-25 18:34:56] Downloading org.eclipse.ui.editors.source
+[2020-12-25 18:34:56] Fetching org.eclipse.jdt.launching.source_3.19.100.v20201209-0359.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (350.85kB)
+[2020-12-25 18:34:56] Downloading org.eclipse.pde.build.source
+[2020-12-25 18:34:56] Downloading org.eclipse.compare
+[2020-12-25 18:34:56] Fetching org.eclipse.pde.ui.templates_3.7.200.v20201208-0953.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (377.36kB)
+[2020-12-25 18:34:56] Fetching org.eclipse.ui.editors.source_3.14.0.v20201216-1149.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (329.96kB)
+[2020-12-25 18:34:56] Fetching org.eclipse.pde.build.source_3.10.900.v20201111-1557.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (319.62kB)
+[2020-12-25 18:34:56] Downloading org.eclipse.search.source
+[2020-12-25 18:34:56] Fetching org.eclipse.compare_3.7.1300.v20201208-1638.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (306.57kB)
+[2020-12-25 18:34:56] Downloading org.eclipse.jdt.launching
+[2020-12-25 18:34:56] Downloading org.eclipse.pde.ua.ui.source
+[2020-12-25 18:34:56] Downloading org.eclipse.ui.intro.source
+[2020-12-25 18:34:56] Fetching org.eclipse.search.source_3.12.100.v20201116-1027.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (298.16kB)
+[2020-12-25 18:34:56] Downloading org.eclipse.pde.api.tools.ui.source
+[2020-12-25 18:34:56] Fetching org.eclipse.pde.ua.ui.source_1.2.100.v20201105-1530.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (272.56kB)
+[2020-12-25 18:34:56] Fetching org.eclipse.jdt.launching_3.19.100.v20201209-0359.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (282.41kB)
+[2020-12-25 18:34:56] Fetching org.eclipse.ui.intro.source_3.6.0.v20201120-1551.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (253.75kB)
+[2020-12-25 18:34:56] Downloading org.eclipse.ui.console
+[2020-12-25 18:34:56] Fetching org.eclipse.pde.api.tools.ui.source_1.2.200.v20201216-0752.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (251.99kB)
+[2020-12-25 18:34:56] Downloading org.eclipse.ui.editors
+[2020-12-25 18:34:57] Downloading org.eclipse.help.webapp.source
+[2020-12-25 18:34:57] Fetching org.eclipse.ui.console_3.10.100.v20201211-1511.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (84.58kB)
+[2020-12-25 18:34:57] Downloading org.eclipse.equinox.registry.source
+[2020-12-25 18:34:57] Fetching org.eclipse.ui.editors_3.14.0.v20201216-1149.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (200.86kB)
+[2020-12-25 18:34:57] Fetching org.eclipse.equinox.registry.source_3.10.0.v20201107-1818.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (176.16kB)
+[2020-12-25 18:34:57] Fetching org.eclipse.help.webapp.source_3.10.100.v20201130-2122.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/plugins/ (198.24kB)
+[2020-12-25 18:35:01] Downloading org.eclipse.e4.ui.di
+[2020-12-25 18:35:01] Downloading org.eclipse.e4.ui.workbench.addons.swt.source
+[2020-12-25 18:35:01] Downloading org.eclipse.ui.browser.source
+[2020-12-25 18:35:01] Downloading org.eclipse.ui.navigator.resources.source
+[2020-12-25 18:35:01] Downloading org.eclipse.ui.navigator
+[2020-12-25 18:35:01] Downloading org.eclipse.e4.ui.workbench.addons.swt
+[2020-12-25 18:35:01] Downloading org.eclipse.e4.ui.di.source
+[2020-12-25 18:35:01] Downloading org.eclipse.ui.navigator.resources
+[2020-12-25 18:35:01] Downloading org.eclipse.ui.forms
+[2020-12-25 18:35:01] Downloading org.eclipse.jdt.junit.core.source
+[2020-12-25 18:35:02] Fetching org.eclipse.jdt.junit.core.source_3.10.1000.v20201221-0929.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (113.7kB)
+[2020-12-25 18:35:02] Fetching org.eclipse.e4.ui.workbench.addons.swt_1.4.100.v20201221-2332.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (49.78kB)
+[2020-12-25 18:35:02] Fetching org.eclipse.e4.ui.di_1.2.1000.v20201222-1825.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (9.74kB)
+[2020-12-25 18:35:02] Fetching org.eclipse.ui.navigator.resources_3.7.600.v20201222-1604.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (70.54kB)
+[2020-12-25 18:35:02] Fetching org.eclipse.ui.forms_3.11.100.v20201222-1604.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (123kB)
+[2020-12-25 18:35:02] Fetching org.eclipse.e4.ui.di.source_1.2.1000.v20201222-1825.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (16.2kB)
+[2020-12-25 18:35:02] Fetching org.eclipse.ui.forms_3.11.100.v20201222-1604.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (123kB)
+[2020-12-25 18:35:02] Fetching org.eclipse.e4.ui.di.source_1.2.1000.v20201222-1825.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (16.2kB)
+[2020-12-25 18:35:02] Fetching org.eclipse.ui.navigator_3.9.600.v20201222-1604.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (131.04kB)
+[2020-12-25 18:35:02] Fetching org.eclipse.ui.navigator.resources.source_3.7.600.v20201222-1604.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (102.48kB)
+[2020-12-25 18:35:02] Fetching org.eclipse.e4.ui.workbench.addons.swt.source_1.4.100.v20201221-2332.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (77.5kB)
+[2020-12-25 18:35:02] Fetching org.eclipse.ui.browser.source_3.6.1100.v20201222-1604.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (95.87kB)
+[2020-12-25 18:35:02] Downloading org.eclipse.pde.core
+[2020-12-25 18:35:02] Downloading org.eclipse.pde.core.source
+[2020-12-25 18:35:02] Downloading org.eclipse.ltk.ui.refactoring
+[2020-12-25 18:35:02] Downloading org.eclipse.debug.core.source
+[2020-12-25 18:35:02] Fetching org.eclipse.pde.core_3.14.200.v20201222-1545.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (1.34MB)
+[2020-12-25 18:35:02] Downloading org.eclipse.e4.ui.model.workbench
+[2020-12-25 18:35:02] Downloading org.eclipse.debug.core
+[2020-12-25 18:35:02] Fetching org.eclipse.pde.core.source_3.14.200.v20201222-1545.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (1,006.87kB)
+[2020-12-25 18:35:02] Downloading org.eclipse.e4.ui.model.workbench.source
+[2020-12-25 18:35:02] Fetching org.eclipse.ltk.ui.refactoring_3.11.300.v20201221-0929.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (177.02kB)
+[2020-12-25 18:35:02] Downloading org.eclipse.ltk.core.refactoring
+[2020-12-25 18:35:02] Fetching org.eclipse.debug.core.source_3.17.100.v20201222-0517.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (402.87kB)
+[2020-12-25 18:35:02] Fetching org.eclipse.ltk.core.refactoring_3.11.300.v20201221-0929.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (105.59kB)
+[2020-12-25 18:35:02] Fetching org.eclipse.e4.ui.model.workbench_2.1.1000.v20201221-2332.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (110.33kB)
+[2020-12-25 18:35:02] Fetching org.eclipse.ltk.core.refactoring_3.11.300.v20201221-0929.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (105.59kB)
+[2020-12-25 18:35:02] Fetching org.eclipse.e4.ui.model.workbench_2.1.1000.v20201221-2332.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (110.33kB)
+[2020-12-25 18:35:02] Fetching org.eclipse.e4.ui.model.workbench.source_2.1.1000.v20201221-2332.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (376.07kB)
+[2020-12-25 18:35:02] Downloading org.eclipse.ui.navigator.source
+[2020-12-25 18:35:02] Fetching org.eclipse.debug.core_3.17.100.v20201222-0517.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (125.87kB)
+[2020-12-25 18:35:02] Downloading org.eclipse.ltk.core.refactoring.source
+[2020-12-25 18:35:02] Fetching org.eclipse.ui.navigator.source_3.9.600.v20201222-1604.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (308.96kB)
+[2020-12-25 18:35:02] Fetching org.eclipse.ltk.core.refactoring.source_3.11.300.v20201221-0929.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (295.12kB)
+[2020-12-25 18:35:02] Downloading org.eclipse.jface.databinding
+[2020-12-25 18:35:02] Downloading org.eclipse.ltk.ui.refactoring.source
+[2020-12-25 18:35:02] Downloading org.eclipse.e4.ui.workbench
+[2020-12-25 18:35:02] Downloading org.eclipse.jdt.junit
+[2020-12-25 18:35:02] Downloading org.eclipse.jface.databinding.source
+[2020-12-25 18:35:02] Downloading org.eclipse.ui.forms.source
+[2020-12-25 18:35:02] Downloading org.eclipse.ui.browser
+[2020-12-25 18:35:03] Downloading org.eclipse.jdt.junit.source
+[2020-12-25 18:35:03] Downloading org.eclipse.jdt.junit.core
+[2020-12-25 18:35:03] Downloading org.eclipse.e4.ui.workbench.source
+[2020-12-25 18:35:03] Fetching org.eclipse.ltk.ui.refactoring.source_3.11.300.v20201221-0929.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (251.14kB)
+[2020-12-25 18:35:03] Fetching org.eclipse.e4.ui.workbench_1.12.100.v20201221-2332.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (84.41kB)
+[2020-12-25 18:35:03] Fetching org.eclipse.jface.databinding.source_1.12.200.v20201222-1604.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (230.28kB)
+[2020-12-25 18:35:03] Fetching org.eclipse.jface.databinding_1.12.200.v20201222-1604.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (77.44kB)
+[2020-12-25 18:35:03] Fetching org.eclipse.jdt.junit_3.11.1100.v20201221-0929.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (232.01kB)
+[2020-12-25 18:35:03] Fetching org.eclipse.ui.forms.source_3.11.100.v20201222-1604.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (217.7kB)
+[2020-12-25 18:35:03] Fetching org.eclipse.ui.browser_3.6.1100.v20201222-1604.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (97.82kB)
+[2020-12-25 18:35:03] Fetching org.eclipse.jface.databinding_1.12.200.v20201222-1604.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (77.44kB)
+[2020-12-25 18:35:03] Fetching org.eclipse.ui.forms.source_3.11.100.v20201222-1604.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (217.7kB)
+[2020-12-25 18:35:03] Fetching org.eclipse.jdt.junit_3.11.1100.v20201221-0929.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (232.01kB)
+[2020-12-25 18:35:03] Fetching org.eclipse.ui.browser_3.6.1100.v20201222-1604.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (97.82kB)
+[2020-12-25 18:35:03] Fetching org.eclipse.jdt.junit.source_3.11.1100.v20201221-0929.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (198.16kB)
+[2020-12-25 18:35:03] Fetching org.eclipse.jdt.junit.core_3.10.1000.v20201221-0929.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (65.58kB)
+[2020-12-25 18:35:03] Fetching org.eclipse.e4.ui.workbench.source_1.12.100.v20201221-2332.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/plugins/ (163.82kB)
+[2020-12-25 18:35:03] Downloading org.eclipse.equinox.executable_root.cocoa.macosx.x86_64
+[2020-12-25 18:35:03] Downloading org.eclipse.ui.views.properties.tabbed.source
+[2020-12-25 18:35:03] Downloading org.eclipse.jdt.ui.source
+[2020-12-25 18:35:03] Downloading org.eclipse.ui.views.log.source
+[2020-12-25 18:35:03] Downloading org.eclipse.equinox.launcher.cocoa.macosx.x86_64
+[2020-12-25 18:35:03] Downloading org.eclipse.ui.views.source
+[2020-12-25 18:35:03] Downloading org.eclipse.equinox.launcher
+[2020-12-25 18:35:03] Downloading org.eclipse.ui.views
+[2020-12-25 18:35:03] Downloading org.eclipse.equinox.launcher.source
+[2020-12-25 18:35:03] Downloading org.eclipse.ui.views.properties.tabbed
+[2020-12-25 18:35:04] Fetching org.eclipse.equinox.launcher_1.6.100.v20201223-0822.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/ (29.99kB)
+[2020-12-25 18:35:04] Fetching org.eclipse.equinox.launcher.source_1.6.100.v20201223-0822.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/ (43.68kB)
+[2020-12-25 18:35:04] Fetching org.eclipse.equinox.executable_root.cocoa.macosx.x86_64_3.8.1100.v20201223-0857 from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/binary/ (1.46kB)
+[2020-12-25 18:35:04] Fetching org.eclipse.ui.views.properties.tabbed_3.9.100.v20201223-1348.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/ (40.42kB)
+[2020-12-25 18:35:04] Fetching org.eclipse.ui.views.properties.tabbed_3.9.100.v20201223-1348.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/ (40.42kB)
+[2020-12-25 18:35:04] Fetching org.eclipse.ui.views.properties.tabbed.source_3.9.100.v20201223-1348.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/ (82.81kB)
+[2020-12-25 18:35:04] Fetching org.eclipse.ui.views.log.source_1.2.1400.v20201223-1348.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/ (59.71kB)
+[2020-12-25 18:35:04] Fetching org.eclipse.jdt.ui.source_3.22.100.v20201222-1738.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/ (5.32MB)
+[2020-12-25 18:35:04] Fetching org.eclipse.ui.views_3.10.600.v20201223-1348.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/ (48.2kB)
+[2020-12-25 18:35:04] Fetching org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.2.100.v20201223-0857.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/ (6.96kB)
+[2020-12-25 18:35:04] Fetching org.eclipse.ui.views_3.10.600.v20201223-1348.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/ (48.2kB)
+[2020-12-25 18:35:04] Downloading org.eclipse.jdt.ui
+[2020-12-25 18:35:04] Downloading org.eclipse.pde.ui.source
+[2020-12-25 18:35:04] Fetching org.eclipse.ui.views.source_3.10.600.v20201223-1348.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/ (80.28kB)
+[2020-12-25 18:35:04] Downloading org.eclipse.jdt.core.manipulation
+[2020-12-25 18:35:04] Downloading org.eclipse.pde.ui
+[2020-12-25 18:35:04] Downloading org.eclipse.jdt.core.manipulation.source
+[2020-12-25 18:35:04] Downloading org.eclipse.equinox.executable
+[2020-12-25 18:35:04] Downloading org.eclipse.ui.views.log
+[2020-12-25 18:35:04] Fetching org.eclipse.pde.ui.source_3.13.0.v20201223-1005.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/ (2.06MB)
+[2020-12-25 18:35:04] Fetching org.eclipse.jdt.ui_3.22.100.v20201222-1738.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/ (3.92MB)
+[2020-12-25 18:35:04] Fetching org.eclipse.pde.ui.source_3.13.0.v20201223-1005.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/ (2.06MB)
+[2020-12-25 18:35:04] Fetching org.eclipse.jdt.core.manipulation.source_1.14.300.v20201222-1738.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/ (1.02MB)
+[2020-12-25 18:35:04] Fetching org.eclipse.ui.views.log_1.2.1400.v20201223-1348.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/ (84.87kB)
+[2020-12-25 18:35:04] Fetching org.eclipse.jdt.core.manipulation_1.14.300.v20201222-1738.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/ (517.66kB)
+[2020-12-25 18:35:04] Fetching org.eclipse.equinox.executable_3.8.1100.v20201223-0857.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/features/ (271.66kB)
+[2020-12-25 18:35:04] Fetching org.eclipse.pde.ui_3.13.0.v20201223-1005.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/ (1.45MB)
+[2020-12-25 18:35:05] Fetching org.eclipse.jdt.ui.source_3.22.100.v20201222-1738.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/
+[2020-12-25 18:35:05] Fetching org.eclipse.jdt.ui_3.22.100.v20201222-1738.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/plugins/
+[2020-12-25 18:35:10] Downloading org.eclipse.platform_root
+[2020-12-25 18:35:10] Downloading org.eclipse.e4.rcp
+[2020-12-25 18:35:10] Downloading org.eclipse.platform
+[2020-12-25 18:35:10] Downloading org.eclipse.help
+[2020-12-25 18:35:10] Downloading org.eclipse.jdt
+[2020-12-25 18:35:10] Downloading org.eclipse.pde
+[2020-12-25 18:35:10] Downloading org.eclipse.swt
+[2020-12-25 18:35:10] Downloading org.eclipse.rcp
+[2020-12-25 18:35:10] Downloading org.eclipse.platform.source
+[2020-12-25 18:35:10] Downloading org.eclipse.rcp
+[2020-12-25 18:35:10] Fetching org.eclipse.platform_root_4.19.0.v20201224-2308 from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/binary/ (196B)
+[2020-12-25 18:35:10] Fetching org.eclipse.pde_3.14.700.v20201224-1800.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/features/ (19.45kB)
+[2020-12-25 18:35:10] Fetching org.eclipse.rcp_4.19.0.v20201224-2308.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/features/ (19.09kB)
+[2020-12-25 18:35:10] Fetching org.eclipse.platform.source_4.19.0.v20201224-1800.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/ (10.65kB)
+[2020-12-25 18:35:10] Fetching org.eclipse.e4.rcp_4.19.0.v20201224-2308.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/features/ (21.04kB)
+[2020-12-25 18:35:10] Fetching org.eclipse.jdt_3.18.700.v20201224-1921.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/features/ (19.72kB)
+[2020-12-25 18:35:10] Fetching org.eclipse.platform_4.19.0.v20201224-2308.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/features/ (20.58kB)
+[2020-12-25 18:35:10] Fetching org.eclipse.help_2.3.500.v20201224-1800.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/features/ (19.54kB)
+[2020-12-25 18:35:10] Fetching org.eclipse.rcp_4.19.0.v20201224-1800.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/ (9.41kB)
+[2020-12-25 18:35:10] Downloading org.eclipse.rcp_root
+[2020-12-25 18:35:10] Fetching org.eclipse.swt_3.115.200.v20201224-2308.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/ (16.04kB)
+[2020-12-25 18:35:10] Downloading org.eclipse.jdt
+[2020-12-25 18:35:10] Fetching org.eclipse.jdt_3.18.700.v20201224-1800.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/ (29.44kB)
+[2020-12-25 18:35:10] Downloading org.eclipse.swt.browser.chromium.cocoa.macosx.x86_64.source
+[2020-12-25 18:35:10] Downloading org.eclipse.pde
+[2020-12-25 18:35:10] Downloading org.eclipse.jdt.core
+[2020-12-25 18:35:10] Fetching org.eclipse.rcp_root_4.19.0.v20201224-2308 from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/binary/ (25.08kB)
+[2020-12-25 18:35:10] Downloading org.eclipse.jdt.core.source
+[2020-12-25 18:35:10] Downloading org.eclipse.swt.cocoa.macosx.x86_64.source
+[2020-12-25 18:35:10] Downloading org.eclipse.swt.cocoa.macosx.x86_64
+[2020-12-25 18:35:10] Downloading org.eclipse.swt.browser.chromium.cocoa.macosx.x86_64
+[2020-12-25 18:35:10] Downloading org.eclipse.platform
+[2020-12-25 18:35:10] Downloading org.eclipse.help.base.source
+[2020-12-25 18:35:10] Fetching org.eclipse.jdt.core.source_3.24.100.v20201224-1921.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/ (5.19MB)
+[2020-12-25 18:35:10] Downloading org.eclipse.help.base
+[2020-12-25 18:35:11] Fetching org.eclipse.swt.browser.chromium.cocoa.macosx.x86_64.source_3.115.200.v20201224-2308.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/ (66.31kB)
+[2020-12-25 18:35:11] Fetching org.eclipse.jdt.core_3.24.100.v20201224-1921.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/ (6.89MB)
+[2020-12-25 18:35:11] Fetching org.eclipse.swt.cocoa.macosx.x86_64.source_3.115.200.v20201224-2308.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/ (1.63MB)
+[2020-12-25 18:35:11] Fetching org.eclipse.help.base.source_4.3.200.v20201224-1800.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/ (306.84kB)
+[2020-12-25 18:35:11] Fetching org.eclipse.swt.cocoa.macosx.x86_64_3.115.200.v20201224-2308.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/ (836.09kB)
+[2020-12-25 18:35:11] Fetching org.eclipse.swt.browser.chromium.cocoa.macosx.x86_64_3.115.200.v20201224-2308.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/ (651.67kB)
+[2020-12-25 18:35:11] Fetching org.eclipse.swt.cocoa.macosx.x86_64.source_3.115.200.v20201224-2308.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/ (1.63MB)
+[2020-12-25 18:35:11] Fetching org.eclipse.swt.cocoa.macosx.x86_64_3.115.200.v20201224-2308.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/ (836.09kB)
+[2020-12-25 18:35:11] Fetching org.eclipse.help.base.source_4.3.200.v20201224-1800.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/ (306.84kB)
+[2020-12-25 18:35:11] Fetching org.eclipse.jdt.core_3.24.100.v20201224-1921.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/ (6.89MB)
+[2020-12-25 18:35:11] Fetching org.eclipse.swt.browser.chromium.cocoa.macosx.x86_64_3.115.200.v20201224-2308.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/ (651.67kB)
+[2020-12-25 18:35:11] Fetching org.eclipse.pde_3.13.1400.v20201224-1800.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/ (41.27kB)
+[2020-12-25 18:35:11] Fetching org.eclipse.help.base_4.3.200.v20201224-1800.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/ (164.1kB)
+[2020-12-25 18:35:11] Fetching org.eclipse.platform_4.19.0.v20201224-1800.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/ (425.02kB)
+[2020-12-25 18:35:12] Fetching org.eclipse.jdt.core.source_3.24.100.v20201224-1921.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/
+[2020-12-25 18:35:12] Fetching org.eclipse.jdt.core_3.24.100.v20201224-1921.jar from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/
+[2020-12-25 18:35:12] Fetching org.eclipse.help.base_4.3.200.v20201224-1800.jar.pack.gz from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/plugins/
+[2020-12-25 18:35:20] Mirrored 90 artifacts from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201221-1800/ at 709kb/s
+[2020-12-25 18:35:20] Mirrored 30 artifacts from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201222-1800/ at 440kb/s
+[2020-12-25 18:35:20] Mirrored 17 artifacts from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/ at 1,272kb/s
+[2020-12-25 18:35:20] Mirrored 22 artifacts from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/ at 794kb/s
+[2020-12-25 18:35:20] Collected 159 artifacts for http://download.eclipse.org/eclipse/updates/4.19-I-builds in 32.304s
+[2020-12-25 18:35:20] Installing a.jre.javase [16.0.0]
+[2020-12-25 18:35:20] Installing com.ibm.icu [67.1.0.v20200706-1749]
+[2020-12-25 18:35:20] Installing com.jcraft.jsch [0.1.55.v20190404-1902]
+[2020-12-25 18:35:20] Installing com.sun.el [2.2.0.v201303151357]
+[2020-12-25 18:35:20] Installing com.sun.jna [4.5.1.v20190425-1842]
+[2020-12-25 18:35:20] Installing com.sun.jna.platform [4.5.1.v20190425-1842]
+[2020-12-25 18:35:20] Installing javax.annotation [1.3.5.v20200909-1856]
+[2020-12-25 18:35:20] Installing javax.el [2.2.0.v201303151357]
+[2020-12-25 18:35:20] Installing javax.inject [1.0.0.v20091030]
+[2020-12-25 18:35:20] Installing javax.servlet [3.1.0.v201410161800]
+[2020-12-25 18:35:20] Installing javax.servlet.jsp [2.2.0.v201112011158]
+[2020-12-25 18:35:20] Installing org.apache.ant [1.10.9.v20201106-1946]
+[2020-12-25 18:35:20] Installing org.apache.batik.constants [1.13.0.v20200622-2037]
+[2020-12-25 18:35:20] Installing org.apache.batik.css [1.13.0.v20200622-2037]
+[2020-12-25 18:35:20] Installing org.apache.batik.i18n [1.13.0.v20200622-2037]
+[2020-12-25 18:35:20] Installing org.apache.batik.util [1.13.0.v20200622-2037]
+[2020-12-25 18:35:20] Installing org.apache.commons.codec [1.14.0.v20200818-1422]
+[2020-12-25 18:35:20] Installing org.apache.commons.io [2.6.0.v20190123-2029]
+[2020-12-25 18:35:20] Installing org.apache.commons.jxpath [1.3.0.v200911051830]
+[2020-12-25 18:35:20] Installing org.apache.commons.logging [1.2.0.v20180409-1502]
+[2020-12-25 18:35:20] Installing org.apache.felix.gogo.command [1.1.0.v20201023-1558]
+[2020-12-25 18:35:20] Installing org.apache.felix.gogo.runtime [1.1.2.v20201023-1558]
+[2020-12-25 18:35:20] Installing org.apache.felix.gogo.shell [1.1.2.v20201023-1558]
+[2020-12-25 18:35:20] Installing org.apache.felix.scr [2.1.24.v20200924-1939]
+[2020-12-25 18:35:20] Installing org.apache.httpcomponents.httpclient [4.5.10.v20200830-2311]
+[2020-12-25 18:35:20] Installing org.apache.httpcomponents.httpcore [4.4.12.v20200108-1212]
+[2020-12-25 18:35:20] Installing org.apache.jasper.glassfish [2.2.2.v201501141630]
+[2020-12-25 18:35:20] Installing org.apache.lucene.analyzers-common [8.4.1.v20200122-1459]
+[2020-12-25 18:35:20] Installing org.apache.lucene.analyzers-smartcn [8.4.1.v20200122-1459]
+[2020-12-25 18:35:20] Installing org.apache.lucene.core [8.4.1.v20200122-1459]
+[2020-12-25 18:35:20] Installing org.apache.xmlgraphics [2.4.0.v20200622-2037]
+[2020-12-25 18:35:20] Installing org.apiguardian [1.1.0.v20190826-0900]
+[2020-12-25 18:35:20] Installing org.eclipse.ant.core [3.5.800.v20200608-1251]
+[2020-12-25 18:35:20] Installing org.eclipse.ant.launching [1.2.1000.v20200610-1458]
+[2020-12-25 18:35:20] Installing org.eclipse.ant.ui [3.7.1000.v20201116-1127]
+[2020-12-25 18:35:20] Installing org.eclipse.compare [3.7.1300.v20201208-1638]
+[2020-12-25 18:35:20] Installing org.eclipse.compare.core [3.6.1000.v20201020-1107]
+[2020-12-25 18:35:20] Installing org.eclipse.core.commands [3.9.800.v20201021-1339]
+[2020-12-25 18:35:20] Installing org.eclipse.core.contenttype [3.7.800.v20200724-0804]
+[2020-12-25 18:35:20] Installing org.eclipse.core.databinding [1.10.100.v20200926-1123]
+[2020-12-25 18:35:20] Installing org.eclipse.core.databinding.beans [1.7.100.v20201021-1339]
+[2020-12-25 18:35:20] Installing org.eclipse.core.databinding.observable [1.10.0.v20200730-0848]
+[2020-12-25 18:35:20] Installing org.eclipse.core.databinding.property [1.8.100.v20200619-0651]
+[2020-12-25 18:35:20] Installing org.eclipse.core.expressions [3.7.0.v20200720-1126]
+[2020-12-25 18:35:20] Installing org.eclipse.core.externaltools [1.1.800.v20201105-0600]
+[2020-12-25 18:35:20] Installing org.eclipse.core.filebuffers [3.6.1100.v20201029-1159]
+[2020-12-25 18:35:20] Installing org.eclipse.core.filesystem [1.7.700.v20200110-1734]
+[2020-12-25 18:35:20] Installing org.eclipse.core.filesystem.macosx [1.3.200.v20190903-0945]
+[2020-12-25 18:35:20] Installing org.eclipse.core.jobs [3.10.1000.v20200909-1312]
+[2020-12-25 18:35:20] Installing org.eclipse.core.net [1.3.1000.v20200715-0827]
+[2020-12-25 18:35:20] Installing org.eclipse.core.resources [3.13.900.v20201105-1507]
+[2020-12-25 18:35:20] Installing org.eclipse.core.runtime [3.20.0.v20201027-1526]
+[2020-12-25 18:35:20] Installing org.eclipse.core.variables [3.4.800.v20200120-1101]
+[2020-12-25 18:35:20] Installing org.eclipse.debug.core [3.17.100.v20201222-0517]
+[2020-12-25 18:35:20] Installing org.eclipse.debug.ui [3.14.800.v20201210-1136]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.core.commands [0.13.0.v20201119-1132]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.core.contexts [1.8.400.v20191217-1710]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.core.di [1.7.600.v20200428-0912]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.core.di.annotations [1.6.600.v20191216-2352]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.core.di.extensions [0.16.0.v20200507-0938]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.core.di.extensions.supplier [0.15.700.v20200622-1247]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.core.services [2.2.500.v20200928-2213]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.emf.xpath [0.2.800.v20200609-0849]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.rcp.feature.group [4.19.0.v20201224-2308]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.rcp.feature.jar [4.19.0.v20201224-2308]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.bindings [0.13.0.v20201119-1132]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.css.core [0.13.0.v20201015-0653]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.css.swt [0.14.100.v20201217-1340]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.css.swt.theme [0.13.0.v20201026-1147]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.di [1.2.1000.v20201222-1825]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.dialogs [1.2.100.v20201109-2317]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.ide [3.15.100.v20200323-2111]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.model.workbench [2.1.1000.v20201221-2332]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.services [1.4.0.v20201014-0944]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.widgets [1.2.800.v20201021-1339]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.workbench [1.12.100.v20201221-2332]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.workbench.addons.swt [1.4.100.v20201221-2332]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.workbench.renderers.swt [0.15.0.v20201125-0918]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.workbench.renderers.swt.cocoa [0.12.600.v20200416-0656]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.workbench.swt [0.15.0.v20201103-0952]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.workbench3 [0.15.500.v20201021-1339]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf [3.9.101.v20201027-0547]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.core.feature.feature.group [1.5.701.v20201027-0550]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.core.feature.feature.jar [1.5.701.v20201027-0550]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.core.ssl.feature.feature.group [1.1.500.v20200812-2314]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.core.ssl.feature.feature.jar [1.1.500.v20200812-2314]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.filetransfer [5.1.101.v20201025-2315]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.filetransfer.feature.feature.group [3.14.1702.v20201025-2315]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.filetransfer.feature.feature.jar [3.14.1702.v20201025-2315]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.filetransfer.httpclient45.feature.feature.group [1.0.702.v20201025-2303]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.filetransfer.httpclient45.feature.feature.jar [1.0.702.v20201025-2303]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.filetransfer.ssl.feature.feature.group [1.1.400.v20200812-2314]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.filetransfer.ssl.feature.feature.jar [1.1.400.v20200812-2314]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.identity [3.9.401.v20201027-0550]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.provider.filetransfer [3.2.601.v20201025-0700]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.provider.filetransfer.httpclient45 [1.0.301.v20201025-0700]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.provider.filetransfer.ssl [1.0.200.v20200611-1836]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.ssl [1.2.400.v20200611-2220]
+[2020-12-25 18:35:20] Installing org.eclipse.emf.common [2.21.0.v20200917-1439]
+[2020-12-25 18:35:20] Installing org.eclipse.emf.common.feature.group [2.21.0.v20200917-1439]
+[2020-12-25 18:35:20] Installing org.eclipse.emf.common.feature.jar [2.21.0.v20200917-1439]
+[2020-12-25 18:35:20] Installing org.eclipse.emf.ecore [2.23.0.v20200630-0516]
+[2020-12-25 18:35:20] Installing org.eclipse.emf.ecore.change [2.14.0.v20190528-0725]
+[2020-12-25 18:35:20] Installing org.eclipse.emf.ecore.feature.group [2.23.0.v20200630-0516]
+[2020-12-25 18:35:20] Installing org.eclipse.emf.ecore.feature.jar [2.23.0.v20200630-0516]
+[2020-12-25 18:35:20] Installing org.eclipse.emf.ecore.xmi [2.16.0.v20190528-0725]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.app [1.5.0.v20200717-0620]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.bidi [1.3.0.v20200612-1624]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.common [3.14.0.v20201102-2053]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.concurrent [1.1.500.v20200106-1437]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.console [1.4.200.v20200828-1034]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.event [1.5.600.v20201208-1445]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.executable.feature.group [3.8.1100.v20201223-0857]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.executable.feature.jar [3.8.1100.v20201223-0857]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.executable_root.cocoa.macosx.x86_64 [3.8.1100.v20201223-0857]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.frameworkadmin [2.1.400.v20191002-0702]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.frameworkadmin.equinox [1.1.400.v20200319-1546]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.http.jetty [3.7.500.v20200915-1207]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.http.registry [1.2.0.v20200614-1851]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.http.servlet [1.6.800.v20201204-1648]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.jsp.jasper [1.1.500.v20200422-1833]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.jsp.jasper.registry [1.1.400.v20200422-1833]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.launcher [1.6.100.v20201223-0822]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.launcher.cocoa.macosx.x86_64 [1.2.100.v20201223-0857]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.artifact.repository [1.3.500.v20200406-2025]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.console [1.1.400.v20201106-0859]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.core [2.6.300.v20200211-1504]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.core.feature.feature.group [1.6.900.v20201214-0720]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.core.feature.feature.jar [1.6.900.v20201214-0720]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.director [2.4.700.v20200511-1530]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.director.app [1.1.600.v20200511-1530]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.directorywatcher [1.2.500.v20191211-1631]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.engine [2.6.700.v20200511-1530]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.extensionlocation [1.3.400.v20191213-1911]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.extras.feature.feature.group [1.4.1100.v20201214-0720]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.extras.feature.feature.jar [1.4.1100.v20201214-0720]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.garbagecollector [1.1.400.v20200221-1022]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.jarprocessor [1.1.700.v20200904-1601]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.metadata [2.5.100.v20200908-1020]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.metadata.repository [1.3.400.v20191211-1528]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.operations [2.5.1000.v20201106-1246]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.publisher [1.5.400.v20200511-1530]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.publisher.eclipse [1.3.700.v20200828-0839]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.rcp.feature.feature.group [1.4.1100.v20201214-0720]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.rcp.feature.feature.jar [1.4.1100.v20201214-0720]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.reconciler.dropins [1.3.400.v20200511-1530]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.repository [2.5.0.v20201013-0853]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.repository.tools [2.2.500.v20200110-2121]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.touchpoint.eclipse [2.2.700.v20200813-0739]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.touchpoint.natives [1.3.600.v20200511-1530]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.transport.ecf [1.3.0.v20201012-1345]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.ui [2.6.100.v20200731-1005]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.ui.importexport [1.2.600.v20201015-1002]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.ui.sdk [1.1.700.v20200731-1005]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.ui.sdk.scheduler [1.5.0.v20201012-1421]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.updatechecker [1.2.300.v20200222-1600]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.updatesite [1.1.400.v20200511-1530]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.user.ui.feature.group [2.4.1100.v20201214-0720]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.user.ui.feature.jar [2.4.1100.v20201214-0720]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.preferences [3.8.100.v20201102-2042]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.registry [3.10.0.v20201107-1818]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.security [1.3.600.v20201207-2009]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.security.macosx [1.101.200.v20190903-0934]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.security.ui [1.2.700.v20200807-1518]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.simpleconfigurator [1.3.600.v20200721-1308]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.simpleconfigurator.manipulator [2.1.500.v20200211-1505]
+[2020-12-25 18:35:20] Installing org.eclipse.help [3.8.800.v20200525-0755]
+[2020-12-25 18:35:20] Installing org.eclipse.help.base [4.3.200.v20201224-1800]
+[2020-12-25 18:35:20] Installing org.eclipse.help.feature.group [2.3.500.v20201224-1800]
+[2020-12-25 18:35:20] Installing org.eclipse.help.feature.jar [2.3.500.v20201224-1800]
+[2020-12-25 18:35:20] Installing org.eclipse.help.ui [4.2.100.v20200923-2139]
+[2020-12-25 18:35:20] Installing org.eclipse.help.webapp [3.10.100.v20201130-2122]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt [3.18.700.v20201224-1800]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.annotation [1.1.500.v20200407-1355]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.apt.core [3.6.800.v20200916-0645]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.apt.pluggable.core [1.2.500.v20200322-1447]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.apt.pluggable.tests [3.4.900.v20200820-0620]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.apt.tests [3.4.800.v20200916-0645]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.apt.ui [3.6.500.v20200828-1336]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.compiler.apt [1.3.1200.v20200916-0645]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.compiler.apt.tests [1.1.1400.v20200916-0645]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.compiler.tool [1.2.1100.v20200916-0645]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.compiler.tool.tests [1.2.900.v20201225-183437]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.core [3.24.100.v20201224-1921]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.core.ecj.validation.plain.project [1.0.0.v20201225-183437]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.core.formatterapp [1.0.0.v20200119-0748]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.core.internal.tools [1.0.100.v20201225-183437]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.core.manipulation [1.14.300.v20201222-1738]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.core.tests.binaries [1.0.200.v20201225-183437]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.core.tests.builder [3.10.1100.v20201119-0905]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.core.tests.compiler [3.12.1500.v20201214-0706]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.core.tests.model [3.10.1400.v20201123-0742]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.core.tests.performance [3.10.800.v20201225-183437]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.debug [3.17.100.v20201218-0355]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.debug.ui [3.12.200.v20201221-0831]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.doc.user [3.15.900.v20201201-1641]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.feature.group [3.18.700.v20201224-1921]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.feature.jar [3.18.700.v20201224-1921]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.junit [3.11.1100.v20201221-0929]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.junit.core [3.10.1000.v20201221-0929]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.junit.runtime [3.5.500.v20201218-0611]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.junit4.runtime [1.1.1400.v20200917-1125]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.junit5.runtime [1.0.1100.v20200928-0432]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.launching [3.19.100.v20201209-0359]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.launching.macosx [3.4.500.v20200116-2251]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.launching.ui.macosx [1.2.600.v20200204-1737]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.ui [3.22.100.v20201222-1738]
+[2020-12-25 18:35:20] Installing org.eclipse.jetty.continuation [9.4.35.v20201120]
+[2020-12-25 18:35:20] Installing org.eclipse.jetty.http [9.4.35.v20201120]
+[2020-12-25 18:35:20] Installing org.eclipse.jetty.io [9.4.35.v20201120]
+[2020-12-25 18:35:20] Installing org.eclipse.jetty.security [9.4.35.v20201120]
+[2020-12-25 18:35:20] Installing org.eclipse.jetty.server [9.4.35.v20201120]
+[2020-12-25 18:35:20] Installing org.eclipse.jetty.servlet [9.4.35.v20201120]
+[2020-12-25 18:35:20] Installing org.eclipse.jetty.util [9.4.35.v20201120]
+[2020-12-25 18:35:20] Installing org.eclipse.jetty.util.ajax [9.4.35.v20201120]
+[2020-12-25 18:35:20] Installing org.eclipse.jface [3.22.0.v20201106-0834]
+[2020-12-25 18:35:20] Installing org.eclipse.jface.databinding [1.12.200.v20201222-1604]
+[2020-12-25 18:35:20] Installing org.eclipse.jface.notifications [0.2.100.v20201130-1828]
+[2020-12-25 18:35:20] Installing org.eclipse.jface.text [3.16.600.v20201212-1218]
+[2020-12-25 18:35:20] Installing org.eclipse.jsch.core [1.3.900.v20200422-1935]
+[2020-12-25 18:35:20] Installing org.eclipse.jsch.ui [1.3.1100.v20200916-0731]
+[2020-12-25 18:35:20] Installing org.eclipse.ltk.core.refactoring [3.11.300.v20201221-0929]
+[2020-12-25 18:35:20] Installing org.eclipse.ltk.ui.refactoring [3.11.300.v20201221-0929]
+[2020-12-25 18:35:20] Installing org.eclipse.osgi [3.16.200.v20201209-1827]
+[2020-12-25 18:35:20] Installing org.eclipse.osgi.compatibility.state [1.2.200.v20200915-2015]
+[2020-12-25 18:35:20] Installing org.eclipse.osgi.services [3.9.0.v20200511-1725]
+[2020-12-25 18:35:20] Installing org.eclipse.osgi.util [3.5.300.v20190708-1141]
+[2020-12-25 18:35:20] Installing org.eclipse.pde [3.13.1400.v20201224-1800]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.api.tools [1.2.200.v20201217-0908]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.api.tools.annotations [1.1.400.v20190929-1236]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.api.tools.ui [1.2.200.v20201216-0752]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.build [3.10.900.v20201111-1557]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.core [3.14.200.v20201222-1545]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.doc.user [3.14.1100.v20201221-0916]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.ds.annotations [1.2.0.v20200813-0526]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.ds.core [1.2.100.v20201105-2204]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.ds.lib [1.1.400.v20191119-0943]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.ds.ui [1.2.0.v20200813-0954]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.ds1_2.lib [1.0.400.v20191119-0943]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.feature.group [3.14.700.v20201224-1800]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.feature.jar [3.14.700.v20201224-1800]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.genericeditor.extension [1.1.100.v20201207-1622]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.junit.runtime [3.5.900.v20200810-0835]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.launching [3.9.200.v20201208-1742]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.runtime [3.7.0.v20201109-0850]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.ua.core [1.2.100.v20201105-1530]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.ua.ui [1.2.100.v20201105-1530]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.ui [3.13.0.v20201223-1005]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.ui.templates [3.7.200.v20201208-0953]
+[2020-12-25 18:35:20] Installing org.eclipse.platform [4.19.0.v20201224-1800]
+[2020-12-25 18:35:20] Installing org.eclipse.platform.doc.user [4.19.0.v20201221-0809]
+[2020-12-25 18:35:20] Installing org.eclipse.platform.feature.group [4.19.0.v20201224-2308]
+[2020-12-25 18:35:20] Installing org.eclipse.platform.feature.jar [4.19.0.v20201224-2308]
+[2020-12-25 18:35:20] Installing org.eclipse.platform_root [4.19.0.v20201224-2308]
+[2020-12-25 18:35:20] Installing org.eclipse.rcp [4.19.0.v20201224-1800]
+[2020-12-25 18:35:20] Installing org.eclipse.rcp.feature.group [4.19.0.v20201224-2308]
+[2020-12-25 18:35:20] Installing org.eclipse.rcp.feature.jar [4.19.0.v20201224-2308]
+[2020-12-25 18:35:20] Installing org.eclipse.rcp_root [4.19.0.v20201224-2308]
+[2020-12-25 18:35:20] Installing org.eclipse.search [3.12.100.v20201116-1027]
+[2020-12-25 18:35:20] Installing org.eclipse.swt [3.115.200.v20201224-2308]
+[2020-12-25 18:35:20] Installing org.eclipse.swt.browser.chromium.cocoa.macosx.x86_64 [3.115.200.v20201224-2308]
+[2020-12-25 18:35:20] Installing org.eclipse.swt.cocoa.macosx.x86_64 [3.115.200.v20201224-2308]
+[2020-12-25 18:35:20] Installing org.eclipse.team.core [3.8.1100.v20200806-0621]
+[2020-12-25 18:35:20] Installing org.eclipse.team.genericeditor.diff.extension [1.0.600.v20200212-1524]
+[2020-12-25 18:35:20] Installing org.eclipse.team.ui [3.8.1100.v20200916-0836]
+[2020-12-25 18:35:20] Installing org.eclipse.test.performance [3.17.0.v20200923-1857]
+[2020-12-25 18:35:20] Installing org.eclipse.text [3.10.400.v20200925-0557]
+[2020-12-25 18:35:20] Installing org.eclipse.text.quicksearch [1.0.400.v20201026-1722]
+[2020-12-25 18:35:20] Installing org.eclipse.tools.layout.spy [1.0.600.v20200608-0818]
+[2020-12-25 18:35:20] Installing org.eclipse.ui [3.118.100.v20201123-0719]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.browser [3.6.1100.v20201222-1604]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.cheatsheets [3.7.100.v20200915-1059]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.cocoa [1.2.400.v20191217-1850]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.console [3.10.100.v20201211-1511]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.editors [3.14.0.v20201216-1149]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.externaltools [3.4.900.v20201105-0600]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.forms [3.11.100.v20201222-1604]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.genericeditor [1.2.0.v20201215-2102]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.ide [3.18.100.v20201217-1657]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.ide.application [1.3.900.v20201102-2031]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.intro [3.6.0.v20201120-1551]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.intro.quicklinks [1.1.0.v20200724-0708]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.intro.universal [3.4.0.v20200805-1259]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.monitoring [1.1.900.v20200907-0838]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.navigator [3.9.600.v20201222-1604]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.navigator.resources [3.7.600.v20201222-1604]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.net [1.3.800.v20200422-1935]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.themes [1.2.1300.v20201217-1730]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.trace [1.1.800.v20200106-1301]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.views [3.10.600.v20201223-1348]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.views.log [1.2.1400.v20201223-1348]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.views.properties.tabbed [3.9.100.v20201223-1348]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.workbench [3.122.100.v20201218-0007]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.workbench.texteditor [3.15.200.v20201211-1542]
+[2020-12-25 18:35:20] Installing org.eclipse.update.configurator [3.4.700.v20200907-1237]
+[2020-12-25 18:35:20] Installing org.eclipse.urischeme [1.1.200.v20201104-0938]
+[2020-12-25 18:35:20] Installing org.hamcrest.core [1.3.0.v20180420-1519]
+[2020-12-25 18:35:20] Installing org.junit [4.13.0.v20200204-1500]
+[2020-12-25 18:35:20] Installing org.junit.jupiter.api [5.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing org.junit.jupiter.engine [5.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing org.junit.jupiter.migrationsupport [5.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing org.junit.jupiter.params [5.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing org.junit.platform.commons [1.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing org.junit.platform.engine [1.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing org.junit.platform.launcher [1.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing org.junit.platform.runner [1.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing org.junit.platform.suite.api [1.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing org.junit.vintage.engine [5.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing org.objectweb.asm [9.0.0.v20201001-1419]
+[2020-12-25 18:35:20] Installing org.objectweb.asm.tree [9.0.0.v20201001-1419]
+[2020-12-25 18:35:20] Installing org.opentest4j [1.2.0.v20190826-0900]
+[2020-12-25 18:35:20] Installing org.sat4j.core [2.3.5.v201308161310]
+[2020-12-25 18:35:20] Installing org.sat4j.pb [2.3.5.v201404071733]
+[2020-12-25 18:35:20] Installing org.tukaani.xz [1.8.0.v20180207-1613]
+[2020-12-25 18:35:20] Installing org.w3c.css.sac [1.3.1.v200903091627]
+[2020-12-25 18:35:20] Installing org.w3c.dom.events [3.0.0.draft20060413_v201105210656]
+[2020-12-25 18:35:20] Installing org.w3c.dom.smil [1.0.1.v200903091627]
+[2020-12-25 18:35:20] Installing org.w3c.dom.svg [1.1.0.v201011041433]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.workbench.renderers.swt.cocoa.source [0.12.600.v20200416-0656]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.core.di.source [1.7.600.v20200428-0912]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.core.manipulation.source [1.14.300.v20201222-1738]
+[2020-12-25 18:35:20] Installing org.junit.source [4.13.0.v20200204-1500]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.frameworkadmin.source [2.1.400.v20191002-0702]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.browser.source [3.6.1100.v20201222-1604]
+[2020-12-25 18:35:20] Installing org.eclipse.text.quicksearch.source [1.0.400.v20201026-1722]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.junit.core.source [3.10.1000.v20201221-0929]
+[2020-12-25 18:35:20] Installing org.eclipse.core.expressions.source [3.7.0.v20200720-1126]
+[2020-12-25 18:35:20] Installing org.junit.platform.runner.source [1.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing org.w3c.dom.events.source [3.0.0.draft20060413_v201105210656]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.ui.templates.source [3.7.200.v20201208-0953]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.registry.source [3.10.0.v20201107-1818]
+[2020-12-25 18:35:20] Installing org.eclipse.jetty.http.source [9.4.35.v20201120]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.security.ui.source [1.2.700.v20200807-1518]
+[2020-12-25 18:35:20] Installing org.objectweb.asm.source [9.0.0.v20201001-1419]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.views.properties.tabbed.source [3.9.100.v20201223-1348]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.console.source [1.4.200.v20200828-1034]
+[2020-12-25 18:35:20] Installing javax.inject.source [1.0.0.v20091030]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.api.tools.ui.source [1.2.200.v20201216-0752]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.navigator.source [3.9.600.v20201222-1604]
+[2020-12-25 18:35:20] Installing org.apache.commons.logging.source [1.2.0.v20180409-1502]
+[2020-12-25 18:35:20] Installing org.eclipse.search.source [3.12.100.v20201116-1027]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.jsp.jasper.source [1.1.500.v20200422-1833]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.genericeditor.source [1.2.0.v20201215-2102]
+[2020-12-25 18:35:20] Installing org.eclipse.jetty.io.source [9.4.35.v20201120]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.ds.core.source [1.2.100.v20201105-2204]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.metadata.repository.source [1.3.400.v20191211-1528]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.junit.runtime.source [3.5.900.v20200810-0835]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.compiler.tool.source [1.2.1100.v20200916-0645]
+[2020-12-25 18:35:20] Installing org.eclipse.core.net.source [1.3.1000.v20200715-0827]
+[2020-12-25 18:35:20] Installing org.eclipse.jface.source [3.22.0.v20201106-0834]
+[2020-12-25 18:35:20] Installing javax.el.source [2.2.0.v201303151357]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.provider.filetransfer.ssl.source [1.0.200.v20200611-1836]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.source [3.9.101.v20201027-0547]
+[2020-12-25 18:35:20] Installing org.eclipse.jface.text.source [3.16.600.v20201212-1218]
+[2020-12-25 18:35:20] Installing org.eclipse.platform.source [4.19.0.v20201224-1800]
+[2020-12-25 18:35:20] Installing org.eclipse.ant.ui.source [3.7.1000.v20201116-1127]
+[2020-12-25 18:35:20] Installing javax.annotation.source [1.3.5.v20200909-1856]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.ide.source [3.15.100.v20200323-2111]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.ui.source [2.6.100.v20200731-1005]
+[2020-12-25 18:35:20] Installing org.eclipse.core.runtime.source [3.20.0.v20201027-1526]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.engine.source [2.6.700.v20200511-1530]
+[2020-12-25 18:35:20] Installing org.eclipse.core.variables.source [3.4.800.v20200120-1101]
+[2020-12-25 18:35:20] Installing org.eclipse.core.filebuffers.source [3.6.1100.v20201029-1159]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.jarprocessor.source [1.1.700.v20200904-1601]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.source [3.118.100.v20201123-0719]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.garbagecollector.source [1.1.400.v20200221-1022]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.event.source [1.5.600.v20201208-1445]
+[2020-12-25 18:35:20] Installing org.eclipse.core.contenttype.source [3.7.800.v20200724-0804]
+[2020-12-25 18:35:20] Installing org.apache.httpcomponents.httpclient.source [4.5.10.v20200830-2311]
+[2020-12-25 18:35:20] Installing org.eclipse.core.commands.source [3.9.800.v20201021-1339]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.themes.source [1.2.1300.v20201217-1730]
+[2020-12-25 18:35:20] Installing org.eclipse.core.filesystem.source [1.7.700.v20200110-1734]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.core.di.annotations.source [1.6.600.v20191216-2352]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.core.di.extensions.source [0.16.0.v20200507-0938]
+[2020-12-25 18:35:20] Installing org.junit.jupiter.params.source [5.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing org.apache.batik.i18n.source [1.13.0.v20200622-2037]
+[2020-12-25 18:35:20] Installing org.eclipse.debug.core.source [3.17.100.v20201222-0517]
+[2020-12-25 18:35:20] Installing org.eclipse.core.databinding.beans.source [1.7.100.v20201021-1339]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.annotation.source [1.1.500.v20200407-1355]
+[2020-12-25 18:35:20] Installing org.eclipse.emf.common.source [2.21.0.v20200917-1439]
+[2020-12-25 18:35:20] Installing org.junit.platform.commons.source [1.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing org.apache.commons.jxpath.source [1.3.0.v200911051830]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.updatesite.source [1.1.400.v20200511-1530]
+[2020-12-25 18:35:20] Installing org.apache.ant.source [1.10.9.v20201106-1946]
+[2020-12-25 18:35:20] Installing org.apache.lucene.core.source [8.4.1.v20200122-1459]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.core.services.source [2.2.500.v20200928-2213]
+[2020-12-25 18:35:20] Installing org.eclipse.emf.ecore.source [2.23.0.v20200630-0516]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.ds.ui.source [1.2.0.v20200813-0954]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.touchpoint.natives.source [1.3.600.v20200511-1530]
+[2020-12-25 18:35:20] Installing org.objectweb.asm.tree.source [9.0.0.v20201001-1419]
+[2020-12-25 18:35:20] Installing org.w3c.css.sac.source [1.3.1.v200903091627]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.editors.source [3.14.0.v20201216-1149]
+[2020-12-25 18:35:20] Installing org.eclipse.core.resources.source [3.13.900.v20201105-1507]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.intro.universal.source [3.4.0.v20200805-1259]
+[2020-12-25 18:35:20] Installing org.apache.batik.util.source [1.13.0.v20200622-2037]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.transport.ecf.source [1.3.0.v20201012-1345]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.metadata.source [2.5.100.v20200908-1020]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.workbench3.source [0.15.500.v20201021-1339]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.apt.core.source [3.6.800.v20200916-0645]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.ide.source [3.18.100.v20201217-1657]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.http.servlet.source [1.6.800.v20201204-1648]
+[2020-12-25 18:35:20] Installing org.eclipse.jetty.security.source [9.4.35.v20201120]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.operations.source [2.5.1000.v20201106-1246]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.runtime.source [3.7.0.v20201109-0850]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.views.source [3.10.600.v20201223-1348]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.navigator.resources.source [3.7.600.v20201222-1604]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.intro.source [3.6.0.v20201120-1551]
+[2020-12-25 18:35:20] Installing org.eclipse.ltk.ui.refactoring.source [3.11.300.v20201221-0929]
+[2020-12-25 18:35:20] Installing org.eclipse.osgi.services.source [3.9.0.v20200511-1725]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.core.internal.tools.source [1.0.100.v20201225-183437]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.monitoring.source [1.1.900.v20200907-0838]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.core.source [3.24.100.v20201224-1921]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.app.source [1.5.0.v20200717-0620]
+[2020-12-25 18:35:20] Installing org.eclipse.text.source [3.10.400.v20200925-0557]
+[2020-12-25 18:35:20] Installing org.eclipse.jetty.util.ajax.source [9.4.35.v20201120]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.junit.runtime.source [3.5.500.v20201218-0611]
+[2020-12-25 18:35:20] Installing org.eclipse.swt.browser.chromium.cocoa.macosx.x86_64.source [3.115.200.v20201224-2308]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.model.workbench.source [2.1.1000.v20201221-2332]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.genericeditor.extension.source [1.1.100.v20201207-1622]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.junit.source [3.11.1100.v20201221-0929]
+[2020-12-25 18:35:20] Installing org.eclipse.jetty.servlet.source [9.4.35.v20201120]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.ui.source [3.22.100.v20201222-1738]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.preferences.source [3.8.100.v20201102-2042]
+[2020-12-25 18:35:20] Installing org.eclipse.core.jobs.source [3.10.1000.v20200909-1312]
+[2020-12-25 18:35:20] Installing javax.servlet.jsp.source [2.2.0.v201112011158]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.core.source [3.14.200.v20201222-1545]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.forms.source [3.11.100.v20201222-1604]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.debug.source [3.17.100.v20201218-0355]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.junit4.runtime.source [1.1.1400.v20200917-1125]
+[2020-12-25 18:35:20] Installing org.apache.xmlgraphics.source [2.4.0.v20200622-2037]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.ssl.source [1.2.400.v20200611-2220]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.css.swt.theme.source [0.13.0.v20201026-1147]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.workbench.source [3.122.100.v20201218-0007]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.directorywatcher.source [1.2.500.v20191211-1631]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.core.di.extensions.supplier.source [0.15.700.v20200622-1247]
+[2020-12-25 18:35:20] Installing org.eclipse.help.webapp.source [3.10.100.v20201130-2122]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.css.swt.source [0.14.100.v20201217-1340]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.compiler.tool.tests.source [1.2.900.v20201225-183437]
+[2020-12-25 18:35:20] Installing org.eclipse.ltk.core.refactoring.source [3.11.300.v20201221-0929]
+[2020-12-25 18:35:20] Installing org.eclipse.osgi.compatibility.state.source [1.2.200.v20200915-2015]
+[2020-12-25 18:35:20] Installing org.eclipse.help.ui.source [4.2.100.v20200923-2139]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.core.formatterapp.source [1.0.0.v20200119-0748]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.ds1_2.lib.source [1.0.400.v20191119-0943]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.cocoa.source [1.2.400.v20191217-1850]
+[2020-12-25 18:35:20] Installing org.eclipse.help.source [3.8.800.v20200525-0755]
+[2020-12-25 18:35:20] Installing org.eclipse.debug.ui.source [3.14.800.v20201210-1136]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.junit5.runtime.source [1.0.1100.v20200928-0432]
+[2020-12-25 18:35:20] Installing com.sun.el.source [2.2.0.v201303151357]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.services.source [1.4.0.v20201014-0944]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.identity.source [3.9.401.v20201027-0550]
+[2020-12-25 18:35:20] Installing org.hamcrest.core.source [1.3.0.v20180420-1519]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.debug.ui.source [3.12.200.v20201221-0831]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.emf.xpath.source [0.2.800.v20200609-0849]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.repository.source [2.5.0.v20201013-0853]
+[2020-12-25 18:35:20] Installing org.eclipse.team.genericeditor.diff.extension.source [1.0.600.v20200212-1524]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.frameworkadmin.equinox.source [1.1.400.v20200319-1546]
+[2020-12-25 18:35:20] Installing org.apache.jasper.glassfish.source [2.2.2.v201501141630]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.core.source [2.6.300.v20200211-1504]
+[2020-12-25 18:35:20] Installing org.apache.batik.css.source [1.13.0.v20200622-2037]
+[2020-12-25 18:35:20] Installing org.apiguardian.source [1.1.0.v20190826-0900]
+[2020-12-25 18:35:20] Installing org.w3c.dom.svg.source [1.1.0.v201011041433]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.updatechecker.source [1.2.300.v20200222-1600]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.launching.macosx.source [3.4.500.v20200116-2251]
+[2020-12-25 18:35:20] Installing org.eclipse.help.base.source [4.3.200.v20201224-1800]
+[2020-12-25 18:35:20] Installing org.eclipse.jetty.server.source [9.4.35.v20201120]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.apt.ui.source [3.6.500.v20200828-1336]
+[2020-12-25 18:35:20] Installing org.junit.jupiter.api.source [5.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing org.apache.batik.constants.source [1.13.0.v20200622-2037]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.ui.sdk.scheduler.source [1.5.0.v20201012-1421]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.ds.annotations.source [1.2.0.v20200813-0526]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.provider.filetransfer.source [3.2.601.v20201025-0700]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.core.commands.source [0.13.0.v20201119-1132]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.publisher.source [1.5.400.v20200511-1530]
+[2020-12-25 18:35:20] Installing org.eclipse.core.databinding.property.source [1.8.100.v20200619-0651]
+[2020-12-25 18:35:20] Installing org.eclipse.core.externaltools.source [1.1.800.v20201105-0600]
+[2020-12-25 18:35:20] Installing org.apache.felix.gogo.runtime.source [1.1.2.v20201023-1558]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.artifact.repository.source [1.3.500.v20200406-2025]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.core.contexts.source [1.8.400.v20191217-1710]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.workbench.swt.source [0.15.0.v20201103-0952]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.css.core.source [0.13.0.v20201015-0653]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.apt.pluggable.core.source [1.2.500.v20200322-1447]
+[2020-12-25 18:35:20] Installing com.ibm.icu.source [67.1.0.v20200706-1749]
+[2020-12-25 18:35:20] Installing org.apache.commons.codec.source [1.14.0.v20200818-1422]
+[2020-12-25 18:35:20] Installing com.jcraft.jsch.source [0.1.55.v20190404-1902]
+[2020-12-25 18:35:20] Installing org.eclipse.jetty.continuation.source [9.4.35.v20201120]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.http.jetty.source [3.7.500.v20200915-1207]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.repository.tools.source [2.2.500.v20200110-2121]
+[2020-12-25 18:35:20] Installing org.junit.platform.suite.api.source [1.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing org.eclipse.tools.layout.spy.source [1.0.600.v20200608-0818]
+[2020-12-25 18:35:20] Installing org.apache.commons.io.source [2.6.0.v20190123-2029]
+[2020-12-25 18:35:20] Installing org.apache.lucene.analyzers-smartcn.source [8.4.1.v20200122-1459]
+[2020-12-25 18:35:20] Installing org.junit.jupiter.migrationsupport.source [5.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing javax.servlet.source [3.1.0.v201410161800]
+[2020-12-25 18:35:20] Installing org.eclipse.jface.notifications.source [0.2.100.v20201130-1828]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.touchpoint.eclipse.source [2.2.700.v20200813-0739]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.workbench.texteditor.source [3.15.200.v20201211-1542]
+[2020-12-25 18:35:20] Installing org.junit.platform.engine.source [1.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing org.eclipse.team.ui.source [3.8.1100.v20200916-0836]
+[2020-12-25 18:35:20] Installing org.eclipse.update.configurator.source [3.4.700.v20200907-1237]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.launching.ui.macosx.source [1.2.600.v20200204-1737]
+[2020-12-25 18:35:20] Installing org.eclipse.core.databinding.observable.source [1.10.0.v20200730-0848]
+[2020-12-25 18:35:20] Installing org.eclipse.osgi.source [3.16.200.v20201209-1827]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.bindings.source [0.13.0.v20201119-1132]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.security.macosx.source [1.101.200.v20190903-0934]
+[2020-12-25 18:35:20] Installing org.eclipse.compare.source [3.7.1300.v20201208-1638]
+[2020-12-25 18:35:20] Installing com.sun.jna.platform.source [4.5.1.v20190425-1842]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.reconciler.dropins.source [1.3.400.v20200511-1530]
+[2020-12-25 18:35:20] Installing org.eclipse.team.core.source [3.8.1100.v20200806-0621]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.console.source [3.10.100.v20201211-1511]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.ua.core.source [1.2.100.v20201105-1530]
+[2020-12-25 18:35:20] Installing org.eclipse.jsch.core.source [1.3.900.v20200422-1935]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.annotation.source [2.2.600.v20200408-1511]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.trace.source [1.1.800.v20200106-1301]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.simpleconfigurator.source [1.3.600.v20200721-1308]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.console.source [1.1.400.v20201106-0859]
+[2020-12-25 18:35:20] Installing org.eclipse.swt.cocoa.macosx.x86_64.source [3.115.200.v20201224-2308]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.api.tools.source [1.2.200.v20201217-0908]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.intro.quicklinks.source [1.1.0.v20200724-0708]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.widgets.source [1.2.800.v20201021-1339]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.filetransfer.source [5.1.101.v20201025-2315]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.ide.application.source [1.3.900.v20201102-2031]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.simpleconfigurator.manipulator.source [2.1.500.v20200211-1505]
+[2020-12-25 18:35:20] Installing org.junit.vintage.engine.source [5.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.api.tools.annotations.source [1.1.400.v20190929-1236]
+[2020-12-25 18:35:20] Installing org.eclipse.osgi.util.source [3.5.300.v20190708-1141]
+[2020-12-25 18:35:20] Installing org.eclipse.compare.core.source [3.6.1000.v20201020-1107]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.common.source [3.14.0.v20201102-2053]
+[2020-12-25 18:35:20] Installing org.eclipse.emf.ecore.xmi.source [2.16.0.v20190528-0725]
+[2020-12-25 18:35:20] Installing org.apache.lucene.analyzers-common.source [8.4.1.v20200122-1459]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.workbench.source [1.12.100.v20201221-2332]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.launching.source [3.19.100.v20201209-0359]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.build.source [3.10.900.v20201111-1557]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.workbench.renderers.swt.source [0.15.0.v20201125-0918]
+[2020-12-25 18:35:20] Installing org.apache.felix.scr.source [2.1.24.v20200924-1939]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.director.app.source [1.1.600.v20200511-1530]
+[2020-12-25 18:35:20] Installing org.eclipse.urischeme.source [1.1.200.v20201104-0938]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.compiler.apt.source [1.3.1200.v20200916-0645]
+[2020-12-25 18:35:20] Installing org.junit.jupiter.engine.source [5.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing org.eclipse.ecf.provider.filetransfer.httpclient45.source [1.0.301.v20201025-0700]
+[2020-12-25 18:35:20] Installing org.w3c.dom.smil.source [1.0.1.v200903091627]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.bidi.source [1.3.0.v20200612-1624]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.dialogs.source [1.2.100.v20201109-2317]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.concurrent.source [1.1.500.v20200106-1437]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.views.log.source [1.2.1400.v20201223-1348]
+[2020-12-25 18:35:20] Installing org.apache.felix.gogo.command.source [1.1.0.v20201023-1558]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.jsp.jasper.registry.source [1.1.400.v20200422-1833]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.ui.sdk.source [1.1.700.v20200731-1005]
+[2020-12-25 18:35:20] Installing org.eclipse.jsch.ui.source [1.3.1100.v20200916-0731]
+[2020-12-25 18:35:20] Installing org.apache.httpcomponents.httpcore.source [4.4.12.v20200108-1212]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.externaltools.source [3.4.900.v20201105-0600]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.di.source [1.2.1000.v20201222-1825]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.launcher.source [1.6.100.v20201223-0822]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.extensionlocation.source [1.3.400.v20191213-1911]
+[2020-12-25 18:35:20] Installing org.junit.platform.launcher.source [1.7.0.v20201026-1537]
+[2020-12-25 18:35:20] Installing org.eclipse.e4.ui.workbench.addons.swt.source [1.4.100.v20201221-2332]
+[2020-12-25 18:35:20] Installing com.sun.jna.source [4.5.1.v20190425-1842]
+[2020-12-25 18:35:20] Installing org.eclipse.jface.databinding.source [1.12.200.v20201222-1604]
+[2020-12-25 18:35:20] Installing org.eclipse.emf.ecore.change.source [2.14.0.v20190528-0725]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.ui.source [3.13.0.v20201223-1005]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.director.source [2.4.700.v20200511-1530]
+[2020-12-25 18:35:20] Installing org.tukaani.xz.source [1.8.0.v20180207-1613]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.core.tests.performance.source [3.10.800.v20201225-183437]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.publisher.eclipse.source [1.3.700.v20200828-0839]
+[2020-12-25 18:35:20] Installing org.opentest4j.source [1.2.0.v20190826-0900]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.launching.source [3.9.200.v20201208-1742]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.net.source [1.3.800.v20200422-1935]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.security.source [1.3.600.v20201207-2009]
+[2020-12-25 18:35:20] Installing org.eclipse.core.databinding.source [1.10.100.v20200926-1123]
+[2020-12-25 18:35:20] Installing org.eclipse.ant.launching.source [1.2.1000.v20200610-1458]
+[2020-12-25 18:35:20] Installing org.eclipse.jetty.util.source [9.4.35.v20201120]
+[2020-12-25 18:35:20] Installing org.eclipse.ui.cheatsheets.source [3.7.100.v20200915-1059]
+[2020-12-25 18:35:20] Installing org.apache.felix.gogo.shell.source [1.1.2.v20201023-1558]
+[2020-12-25 18:35:20] Installing org.eclipse.ant.core.source [3.5.800.v20200608-1251]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.http.registry.source [1.2.0.v20200614-1851]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.ua.ui.source [1.2.100.v20201105-1530]
+[2020-12-25 18:35:20] Installing org.eclipse.equinox.p2.ui.importexport.source [1.2.600.v20201015-1002]
+[2020-12-25 18:35:20] Installing org.eclipse.pde.ds.lib.source [1.1.400.v20191119-0943]
+[2020-12-25 18:35:20] Installing org.eclipse.jdt.core.tests.binaries.source [1.0.200.v20201225-183437]
+[2020-12-25 18:35:20] Installing org.eclipse.oomph.p2.source.container [1.0.0]
+[2020-12-25 18:35:20] Collecting 3 artifacts from http://download.eclipse.org/eclipse/updates/4.19-I-builds
+[2020-12-25 18:35:20] Downloading org.eclipse.equinox.executable_root.cocoa.macosx.x86_64
+[2020-12-25 18:35:20] Repeated attempts to download http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/binary/org.eclipse.equinox.executable_root.cocoa.macosx.x86_64_3.8.1100.v20201223-0857 probably because it can't be processed
+[2020-12-25 18:35:20] Fetching org.eclipse.equinox.executable_root.cocoa.macosx.x86_64_3.8.1100.v20201223-0857 from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/binary/ (1.46kB)
+[2020-12-25 18:35:20] Downloading org.eclipse.platform_root
+[2020-12-25 18:35:20] Downloading org.eclipse.rcp_root
+[2020-12-25 18:35:20] Repeated attempts to download http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/binary/org.eclipse.platform_root_4.19.0.v20201224-2308 probably because it can't be processed
+[2020-12-25 18:35:20] Repeated attempts to download http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/binary/org.eclipse.rcp_root_4.19.0.v20201224-2308 probably because it can't be processed
+[2020-12-25 18:35:21] Fetching org.eclipse.platform_root_4.19.0.v20201224-2308 from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/binary/ (196B)
+[2020-12-25 18:35:21] Fetching org.eclipse.rcp_root_4.19.0.v20201224-2308 from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/binary/ (25.08kB)
+[2020-12-25 18:35:21] Mirrored 1 artifacts from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201223-1800/ at 4kb/s
+[2020-12-25 18:35:21] Mirrored 2 artifacts from http://download.eclipse.org/eclipse/updates/4.19-I-builds/I20201224-1800/ at 42kb/s
+[2020-12-25 18:35:21] Collected 3 artifacts for http://download.eclipse.org/eclipse/updates/4.19-I-builds in 0.918s
+[2020-12-25 18:35:21] Preparing to commit the provisioning operation.
+[2020-12-25 18:35:21] Committing the provisioning operation.
+[2020-12-25 18:35:21] Sending ProfileUpdateSucceededEvent[source=Modular Target, profile=_Users_malinda_Documents_Research_Topic_2_eclips_workspace_cpat_new_jdt-master_ws-53f93f10171f3e2b79c240a5b678c34efe0ccf2e] to PomArtifactUpdater
+[2020-12-25 18:35:21] Sending ProfileUpdateSucceededEvent[source=Modular Target, profile=_Users_malinda_Documents_Research_Topic_2_eclips_workspace_cpat_new_jdt-master_ws-53f93f10171f3e2b79c240a5b678c34efe0ccf2e] to PomModulesUpdater
+[2020-12-25 18:35:21] Sending ProfileUpdateSucceededEvent[source=Modular Target, profile=_Users_malinda_Documents_Research_Topic_2_eclips_workspace_cpat_new_jdt-master_ws-53f93f10171f3e2b79c240a5b678c34efe0ccf2e] to TargetDefinitionGenerator
+[2020-12-25 18:35:21] Targlet container profile update completed
+[2020-12-25 18:35:24] 

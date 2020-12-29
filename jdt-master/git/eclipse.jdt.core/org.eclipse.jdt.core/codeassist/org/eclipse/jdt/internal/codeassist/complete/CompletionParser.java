@@ -4237,13 +4237,13 @@ protected void consumeToken(int token) {
 					switch (previous) {
 						case TokenNameIdentifier:
 						case TokenNameboolean:
-						case TokenNamebyte:
+//						case TokenNamebyte:
 						case TokenNamechar:
 						case TokenNamedouble:
 						case TokenNamefloat:
 						case TokenNameint:
 						case TokenNamelong:
-						case TokenNameshort:
+//						case TokenNameshort:
 						case TokenNameGREATER:
 						case TokenNameRIGHT_SHIFT:
 						case TokenNameUNSIGNED_RIGHT_SHIFT:

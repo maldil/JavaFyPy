@@ -223,8 +223,8 @@ public class TokenScanner {
 			case TerminalTokens.TokenNamestatic:
 			case TerminalTokens.TokenNamefinal:
 			case TerminalTokens.TokenNameabstract:
-			case TerminalTokens.TokenNamenative:
-			case TerminalTokens.TokenNamevolatile:
+//			case TerminalTokens.TokenNamenative:
+//			case TerminalTokens.TokenNamevolatile:
 			case TerminalTokens.TokenNamestrictfp:
 			case TerminalTokens.TokenNametransient:
 			case TerminalTokens.TokenNamesynchronized:

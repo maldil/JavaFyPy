@@ -3121,6 +3121,15 @@ class ASTConverter {
 		return returnStatement;
 	}
 
+	public PyNonLocalStatement convert(org.eclipse.jdt.internal.compiler.ast.NonLocalStatement statement) {
+		final PyNonLocalStatement nolocal = new PyNonLocalStatement(this.ast);
+		nolocal.setSourceRange(statement.sourceStart, statement.sourceEnd - statement.sourceStart + 1);
+		if (statement.expression != null) {
+			nolocal.setExpression(convert(statement.expression));
+		}
+		return nolocal;
+	}
+
 	public SingleMemberAnnotation convert(org.eclipse.jdt.internal.compiler.ast.SingleMemberAnnotation annotation) {
 		final SingleMemberAnnotation singleMemberAnnotation = new SingleMemberAnnotation(this.ast);
 		setTypeNameForAnnotation(annotation, singleMemberAnnotation);
@@ -3191,6 +3200,9 @@ class ASTConverter {
 		}
 		if (statement instanceof org.eclipse.jdt.internal.compiler.ast.YieldReturnStatement) {
 			return convert((org.eclipse.jdt.internal.compiler.ast.YieldReturnStatement) statement);
+		}
+		if (statement instanceof org.eclipse.jdt.internal.compiler.ast.NonLocalStatement) {
+			return convert((org.eclipse.jdt.internal.compiler.ast.NonLocalStatement) statement);
 		}
 		if (statement instanceof org.eclipse.jdt.internal.compiler.ast.SwitchStatement) {
 			return convert((org.eclipse.jdt.internal.compiler.ast.SwitchStatement) statement);
@@ -5491,13 +5503,13 @@ class ASTConverter {
 						--count;
 						break;
 					case TerminalTokens.TokenNameIdentifier:
-					case TerminalTokens.TokenNamebyte:
+//					case TerminalTokens.TokenNamebyte:
 					case TerminalTokens.TokenNamechar:
 					case TerminalTokens.TokenNamedouble:
 					case TerminalTokens.TokenNamefloat:
 					case TerminalTokens.TokenNameint:
 					case TerminalTokens.TokenNamelong:
-					case TerminalTokens.TokenNameshort:
+//					case TerminalTokens.TokenNameshort:
 					case TerminalTokens.TokenNameboolean:
 						if (count > 0) break;
 						return new int[]{this.scanner.startPosition, this.scanner.currentPosition - 1};
@@ -5856,18 +5868,18 @@ class ASTConverter {
 					case TerminalTokens.TokenNamefinal:
 						modifier = createModifier(Modifier.ModifierKeyword.FINAL_KEYWORD);
 						break;
-					case TerminalTokens.TokenNamenative:
-						modifier = createModifier(Modifier.ModifierKeyword.NATIVE_KEYWORD);
-						break;
+//					case TerminalTokens.TokenNamenative:
+//						modifier = createModifier(Modifier.ModifierKeyword.NATIVE_KEYWORD);
+//						break;
 					case TerminalTokens.TokenNamesynchronized:
 						modifier = createModifier(Modifier.ModifierKeyword.SYNCHRONIZED_KEYWORD);
 						break;
 					case TerminalTokens.TokenNametransient:
 						modifier = createModifier(Modifier.ModifierKeyword.TRANSIENT_KEYWORD);
 						break;
-					case TerminalTokens.TokenNamevolatile:
-						modifier = createModifier(Modifier.ModifierKeyword.VOLATILE_KEYWORD);
-						break;
+//					case TerminalTokens.TokenNamevolatile:
+//						modifier = createModifier(Modifier.ModifierKeyword.VOLATILE_KEYWORD);
+//						break;
 					case TerminalTokens.TokenNamestrictfp:
 						modifier = createModifier(Modifier.ModifierKeyword.STRICTFP_KEYWORD);
 						break;
@@ -6032,18 +6044,18 @@ class ASTConverter {
 							case TerminalTokens.TokenNamefinal:
 								modifier = createModifier(Modifier.ModifierKeyword.FINAL_KEYWORD);
 								break;
-							case TerminalTokens.TokenNamenative:
-								modifier = createModifier(Modifier.ModifierKeyword.NATIVE_KEYWORD);
-								break;
+//							case TerminalTokens.TokenNamenative:
+//								modifier = createModifier(Modifier.ModifierKeyword.NATIVE_KEYWORD);
+//								break;
 							case TerminalTokens.TokenNamesynchronized:
 								modifier = createModifier(Modifier.ModifierKeyword.SYNCHRONIZED_KEYWORD);
 								break;
 							case TerminalTokens.TokenNametransient:
 								modifier = createModifier(Modifier.ModifierKeyword.TRANSIENT_KEYWORD);
 								break;
-							case TerminalTokens.TokenNamevolatile:
-								modifier = createModifier(Modifier.ModifierKeyword.VOLATILE_KEYWORD);
-								break;
+//							case TerminalTokens.TokenNamevolatile:
+//								modifier = createModifier(Modifier.ModifierKeyword.VOLATILE_KEYWORD);
+//								break;
 							case TerminalTokens.TokenNamestrictfp:
 								modifier = createModifier(Modifier.ModifierKeyword.STRICTFP_KEYWORD);
 								break;
@@ -6107,18 +6119,18 @@ class ASTConverter {
 						case TerminalTokens.TokenNamefinal:
 							modifier = createModifier(Modifier.ModifierKeyword.FINAL_KEYWORD);
 							break;
-						case TerminalTokens.TokenNamenative:
-							modifier = createModifier(Modifier.ModifierKeyword.NATIVE_KEYWORD);
-							break;
+//						case TerminalTokens.TokenNamenative:
+//							modifier = createModifier(Modifier.ModifierKeyword.NATIVE_KEYWORD);
+//							break;
 						case TerminalTokens.TokenNamesynchronized:
 							modifier = createModifier(Modifier.ModifierKeyword.SYNCHRONIZED_KEYWORD);
 							break;
 						case TerminalTokens.TokenNametransient:
 							modifier = createModifier(Modifier.ModifierKeyword.TRANSIENT_KEYWORD);
 							break;
-						case TerminalTokens.TokenNamevolatile:
-							modifier = createModifier(Modifier.ModifierKeyword.VOLATILE_KEYWORD);
-							break;
+//						case TerminalTokens.TokenNamevolatile:
+//							modifier = createModifier(Modifier.ModifierKeyword.VOLATILE_KEYWORD);
+//							break;
 						case TerminalTokens.TokenNamestrictfp:
 							modifier = createModifier(Modifier.ModifierKeyword.STRICTFP_KEYWORD);
 							break;
@@ -6188,18 +6200,18 @@ class ASTConverter {
 							case TerminalTokens.TokenNamefinal:
 								modifier = createModifier(Modifier.ModifierKeyword.FINAL_KEYWORD);
 								break;
-							case TerminalTokens.TokenNamenative:
-								modifier = createModifier(Modifier.ModifierKeyword.NATIVE_KEYWORD);
-								break;
+//							case TerminalTokens.TokenNamenative:
+//								modifier = createModifier(Modifier.ModifierKeyword.NATIVE_KEYWORD);
+//								break;
 							case TerminalTokens.TokenNamesynchronized:
 								modifier = createModifier(Modifier.ModifierKeyword.SYNCHRONIZED_KEYWORD);
 								break;
 							case TerminalTokens.TokenNametransient:
 								modifier = createModifier(Modifier.ModifierKeyword.TRANSIENT_KEYWORD);
 								break;
-							case TerminalTokens.TokenNamevolatile:
-								modifier = createModifier(Modifier.ModifierKeyword.VOLATILE_KEYWORD);
-								break;
+//							case TerminalTokens.TokenNamevolatile:
+//								modifier = createModifier(Modifier.ModifierKeyword.VOLATILE_KEYWORD);
+//								break;
 							case TerminalTokens.TokenNamestrictfp:
 								modifier = createModifier(Modifier.ModifierKeyword.STRICTFP_KEYWORD);
 								break;
@@ -6289,18 +6301,18 @@ class ASTConverter {
 							case TerminalTokens.TokenNamefinal:
 								modifier = createModifier(Modifier.ModifierKeyword.FINAL_KEYWORD);
 								break;
-							case TerminalTokens.TokenNamenative:
-								modifier = createModifier(Modifier.ModifierKeyword.NATIVE_KEYWORD);
-								break;
+//							case TerminalTokens.TokenNamenative:
+//								modifier = createModifier(Modifier.ModifierKeyword.NATIVE_KEYWORD);
+//								break;
 							case TerminalTokens.TokenNamesynchronized:
 								modifier = createModifier(Modifier.ModifierKeyword.SYNCHRONIZED_KEYWORD);
 								break;
 							case TerminalTokens.TokenNametransient:
 								modifier = createModifier(Modifier.ModifierKeyword.TRANSIENT_KEYWORD);
 								break;
-							case TerminalTokens.TokenNamevolatile:
-								modifier = createModifier(Modifier.ModifierKeyword.VOLATILE_KEYWORD);
-								break;
+//							case TerminalTokens.TokenNamevolatile:
+//								modifier = createModifier(Modifier.ModifierKeyword.VOLATILE_KEYWORD);
+//								break;
 							case TerminalTokens.TokenNamestrictfp:
 								modifier = createModifier(Modifier.ModifierKeyword.STRICTFP_KEYWORD);
 								break;
@@ -6370,18 +6382,18 @@ class ASTConverter {
 							case TerminalTokens.TokenNamefinal:
 								modifier = createModifier(Modifier.ModifierKeyword.FINAL_KEYWORD);
 								break;
-							case TerminalTokens.TokenNamenative:
-								modifier = createModifier(Modifier.ModifierKeyword.NATIVE_KEYWORD);
-								break;
+//							case TerminalTokens.TokenNamenative:
+//								modifier = createModifier(Modifier.ModifierKeyword.NATIVE_KEYWORD);
+//								break;
 							case TerminalTokens.TokenNamesynchronized:
 								modifier = createModifier(Modifier.ModifierKeyword.SYNCHRONIZED_KEYWORD);
 								break;
 							case TerminalTokens.TokenNametransient:
 								modifier = createModifier(Modifier.ModifierKeyword.TRANSIENT_KEYWORD);
 								break;
-							case TerminalTokens.TokenNamevolatile:
-								modifier = createModifier(Modifier.ModifierKeyword.VOLATILE_KEYWORD);
-								break;
+//							case TerminalTokens.TokenNamevolatile:
+//								modifier = createModifier(Modifier.ModifierKeyword.VOLATILE_KEYWORD);
+//								break;
 							case TerminalTokens.TokenNamestrictfp:
 								modifier = createModifier(Modifier.ModifierKeyword.STRICTFP_KEYWORD);
 								break;

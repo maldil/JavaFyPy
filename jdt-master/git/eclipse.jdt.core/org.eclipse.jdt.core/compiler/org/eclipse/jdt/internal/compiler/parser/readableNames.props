@@ -233,6 +233,7 @@ Name=Name
 NestedLambda=NestedLambda
 NestedMethod=NestedMethod
 NestedType=NestedType
+NonLocalStatement=NonLocalStatement
 NonWildTypeArgumentsopt=NonWildTypeArgumentsopt
 NormalAnnotation=NormalAnnotation
 NormalTypeAnnotation=NormalAnnotation

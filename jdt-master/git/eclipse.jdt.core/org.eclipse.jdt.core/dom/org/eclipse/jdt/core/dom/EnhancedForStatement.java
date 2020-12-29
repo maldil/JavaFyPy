@@ -180,8 +180,9 @@ public class EnhancedForStatement extends Statement {
 	ASTNode clone0(AST target) {
 		EnhancedForStatement result = new EnhancedForStatement(target);
 		result.setSourceRange(getStartPosition(), getLength());
-		result.setParameter(this.parameter);
-		result.parameters.addAll(this.parameters);
+		for (Object o : this.parameters) {
+			result.parameters.add(((ASTNode)o).clone(target));
+		}
 		result.copyLeadingComment(this);
 		result.setParameter((SingleVariableDeclaration) getParameter().clone(target));
 		result.setExpression((Expression) getExpression().clone(target));

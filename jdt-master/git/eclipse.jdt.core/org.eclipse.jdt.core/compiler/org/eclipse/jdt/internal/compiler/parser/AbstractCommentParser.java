@@ -1130,7 +1130,7 @@ public abstract class AbstractCommentParser implements JavadocTagConstants {
 				case TerminalTokens.TokenNameassert:
 				case TerminalTokens.TokenNameboolean:
 				case TerminalTokens.TokenNamebreak:
-				case TerminalTokens.TokenNamebyte:
+//				case TerminalTokens.TokenNamebyte:
 				case TerminalTokens.TokenNamecase:
 				case TerminalTokens.TokenNamecatch:
 				case TerminalTokens.TokenNamechar:
@@ -1153,7 +1153,7 @@ public abstract class AbstractCommentParser implements JavadocTagConstants {
 				case TerminalTokens.TokenNameint:
 				case TerminalTokens.TokenNameinterface:
 				case TerminalTokens.TokenNamelong:
-				case TerminalTokens.TokenNamenative:
+//				case TerminalTokens.TokenNamenative:
 				case TerminalTokens.TokenNamenew:
 				case TerminalTokens.TokenNamenon_sealed:
 				case TerminalTokens.TokenNamenull:
@@ -1163,7 +1163,7 @@ public abstract class AbstractCommentParser implements JavadocTagConstants {
 				case TerminalTokens.TokenNameprotected:
 				case TerminalTokens.TokenNamepublic:
 				case TerminalTokens.TokenNameRestrictedIdentifiersealed:
-				case TerminalTokens.TokenNameshort:
+//				case TerminalTokens.TokenNameshort:
 				case TerminalTokens.TokenNamestatic:
 				case TerminalTokens.TokenNamestrictfp:
 				case TerminalTokens.TokenNamesuper:
@@ -1175,7 +1175,7 @@ public abstract class AbstractCommentParser implements JavadocTagConstants {
 				case TerminalTokens.TokenNametrue:
 				case TerminalTokens.TokenNametry:
 				case TerminalTokens.TokenNamevoid:
-				case TerminalTokens.TokenNamevolatile:
+//				case TerminalTokens.TokenNamevolatile:
 				case TerminalTokens.TokenNamewhile:
 				case TerminalTokens.TokenNamein:
 					if (iToken == 0) {

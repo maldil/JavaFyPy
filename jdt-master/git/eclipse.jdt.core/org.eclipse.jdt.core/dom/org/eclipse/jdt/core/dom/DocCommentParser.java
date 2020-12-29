@@ -273,8 +273,8 @@ class DocCommentParser extends AbstractCommentParser {
 				case TerminalTokens.TokenNameboolean :
 					typeRef = this.ast.newPrimitiveType(PrimitiveType.BOOLEAN);
 					break;
-				case TerminalTokens.TokenNamebyte :
-					typeRef = this.ast.newPrimitiveType(PrimitiveType.BYTE);
+//				case TerminalTokens.TokenNamebyte :
+//					typeRef = this.ast.newPrimitiveType(PrimitiveType.BYTE);
 					break;
 				case TerminalTokens.TokenNamechar :
 					typeRef = this.ast.newPrimitiveType(PrimitiveType.CHAR);
@@ -291,9 +291,9 @@ class DocCommentParser extends AbstractCommentParser {
 				case TerminalTokens.TokenNamelong :
 					typeRef = this.ast.newPrimitiveType(PrimitiveType.LONG);
 					break;
-				case TerminalTokens.TokenNameshort :
-					typeRef = this.ast.newPrimitiveType(PrimitiveType.SHORT);
-					break;
+//				case TerminalTokens.TokenNameshort :
+//					typeRef = this.ast.newPrimitiveType(PrimitiveType.SHORT);
+//					break;
 				default:
 					// should not happen
 					return null;
@@ -624,7 +624,7 @@ class DocCommentParser extends AbstractCommentParser {
 			case TerminalTokens.TokenNameassert:
 			case TerminalTokens.TokenNameboolean:
 			case TerminalTokens.TokenNamebreak:
-			case TerminalTokens.TokenNamebyte:
+//			case TerminalTokens.TokenNamebyte:
 			case TerminalTokens.TokenNamecase:
 			case TerminalTokens.TokenNamecatch:
 			case TerminalTokens.TokenNamechar:
@@ -647,14 +647,14 @@ class DocCommentParser extends AbstractCommentParser {
 			case TerminalTokens.TokenNameint:
 			case TerminalTokens.TokenNameinterface:
 			case TerminalTokens.TokenNamelong:
-			case TerminalTokens.TokenNamenative:
+//			case TerminalTokens.TokenNamenative:
 			case TerminalTokens.TokenNamenew:
 			case TerminalTokens.TokenNamenull:
 			case TerminalTokens.TokenNamepackage:
 			case TerminalTokens.TokenNameprivate:
 			case TerminalTokens.TokenNameprotected:
 			case TerminalTokens.TokenNamepublic:
-			case TerminalTokens.TokenNameshort:
+//			case TerminalTokens.TokenNameshort:
 			case TerminalTokens.TokenNamestatic:
 			case TerminalTokens.TokenNamestrictfp:
 			case TerminalTokens.TokenNamesuper:
@@ -666,11 +666,11 @@ class DocCommentParser extends AbstractCommentParser {
 			case TerminalTokens.TokenNametrue:
 			case TerminalTokens.TokenNametry:
 			case TerminalTokens.TokenNamevoid:
-			case TerminalTokens.TokenNamevolatile:
+//			case TerminalTokens.TokenNamevolatile:
 			case TerminalTokens.TokenNamewhile:
 			case TerminalTokens.TokenNamewithstmt:
 			case TerminalTokens.TokenNameenum :
-			case TerminalTokens.TokenNameconst :
+//			case TerminalTokens.TokenNameconst :
 			case TerminalTokens.TokenNamegoto :
 			case TerminalTokens.TokenNamein:
 				this.tagValue = TAG_OTHERS_VALUE;

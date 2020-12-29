@@ -1915,6 +1915,9 @@ public abstract class ASTVisitor {
 	public boolean visit(PySetComprehension pySetComprehension) {
 		return true;
 	}
+	public boolean visit(PyNonLocalStatement pyNonLocalStatement) {
+		return true;
+	}
 
 	public boolean visit(PyYieldReturnStatement pyYieldReturnStatement) {
 		return true;
@@ -3294,5 +3297,9 @@ public abstract class ASTVisitor {
 
 
 	public void endVisit(PyComparator pyComparator) {
+	}
+
+
+	public void endVisit(PyNonLocalStatement pyNonLocalStatement) {
 	}
 }

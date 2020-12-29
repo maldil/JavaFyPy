@@ -3028,4 +3028,11 @@ public class ASTMatcher {
 		return safeSubtreeMatch(node.getExpression(), o.getExpression());
     }
 
+    public boolean match(PyNonLocalStatement node, Object other) {
+		if (!(other instanceof PyNonLocalStatement)) {
+			return false;
+		}
+		PyNonLocalStatement o = (PyNonLocalStatement) other;
+		return safeSubtreeMatch(node.getExpression(), o.getExpression());
+    }
 }

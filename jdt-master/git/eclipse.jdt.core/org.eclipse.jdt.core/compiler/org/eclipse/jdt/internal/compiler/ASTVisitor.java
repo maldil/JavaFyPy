@@ -1061,11 +1061,19 @@ public abstract class ASTVisitor {
 	public boolean visit(PyComparator pyComparator, BlockScope scope) {
 		return true;
 	}
-	
+
+	public boolean visit(YieldReturnStatement yieldReturnStatement, BlockScope scope) {
+		return true;
+	}
 	public boolean visit(PyDicComp pyDicComp, BlockScope scope) {
 		return true;
 	}
+
 	public boolean visit(NotInExpression notInExpression, BlockScope scope) {
+		return true;
+	}
+
+	public boolean visit(NonLocalStatement node, BlockScope scope) {
 		return true;
 	}
 	
@@ -1086,5 +1094,11 @@ public abstract class ASTVisitor {
 
 
 	public void endVisit(PyComparator pyComparator, BlockScope scope) {
+	}
+
+
+	public void endVisit(YieldReturnStatement yieldReturnStatement, BlockScope scope) {
+	}
+	public void endVisit(NonLocalStatement yieldReturnStatement, BlockScope scope) {
 	}
 }

@@ -5092,7 +5092,7 @@ private boolean isKeyword(int token) {
 	switch(token) {
 		case TerminalTokens.TokenNameabstract:
 		case TerminalTokens.TokenNameassert:
-		case TerminalTokens.TokenNamebyte:
+//		case TerminalTokens.TokenNamebyte:
 		case TerminalTokens.TokenNamebreak:
 		case TerminalTokens.TokenNameboolean:
 		case TerminalTokens.TokenNamecase:
@@ -5120,13 +5120,13 @@ private boolean isKeyword(int token) {
 		case TerminalTokens.TokenNamenew:
 		case TerminalTokens.TokenNamenon_sealed:
 		case TerminalTokens.TokenNamenull:
-		case TerminalTokens.TokenNamenative:
+//		case TerminalTokens.TokenNamenative:
 		case TerminalTokens.TokenNamepublic:
 		case TerminalTokens.TokenNamepackage:
 		case TerminalTokens.TokenNameprivate:
 		case TerminalTokens.TokenNameprotected:
 		case TerminalTokens.TokenNamereturn:
-		case TerminalTokens.TokenNameshort:
+//		case TerminalTokens.TokenNameshort:
 		case TerminalTokens.TokenNamesuper:
 		case TerminalTokens.TokenNamestatic:
 		case TerminalTokens.TokenNameswitch:
@@ -5139,7 +5139,7 @@ private boolean isKeyword(int token) {
 		case TerminalTokens.TokenNamethrows:
 		case TerminalTokens.TokenNametransient:
 		case TerminalTokens.TokenNamevoid:
-		case TerminalTokens.TokenNamevolatile:
+//		case TerminalTokens.TokenNamevolatile:
 		case TerminalTokens.TokenNamewhile:
 		case TerminalTokens.TokenNamewithstmt:
 		case TerminalTokens.TokenNamein:
