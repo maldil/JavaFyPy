@@ -5090,7 +5090,7 @@ private boolean isRestrictedIdentifier(int token) {
 }
 private boolean isKeyword(int token) {
 	switch(token) {
-		case TerminalTokens.TokenNameabstract:
+//		case TerminalTokens.TokenNameabstract:
 		case TerminalTokens.TokenNameassert:
 //		case TerminalTokens.TokenNamebyte:
 		case TerminalTokens.TokenNamebreak:
@@ -5124,7 +5124,7 @@ private boolean isKeyword(int token) {
 		case TerminalTokens.TokenNamepublic:
 		case TerminalTokens.TokenNamepackage:
 		case TerminalTokens.TokenNameprivate:
-		case TerminalTokens.TokenNameprotected:
+//		case TerminalTokens.TokenNameprotected:
 		case TerminalTokens.TokenNamereturn:
 //		case TerminalTokens.TokenNameshort:
 		case TerminalTokens.TokenNamesuper:

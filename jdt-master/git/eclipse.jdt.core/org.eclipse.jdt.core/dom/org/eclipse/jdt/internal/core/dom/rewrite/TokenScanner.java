@@ -218,11 +218,11 @@ public class TokenScanner {
 	public static boolean isModifier(int token) {
 		switch (token) {
 			case TerminalTokens.TokenNamepublic:
-			case TerminalTokens.TokenNameprotected:
+//			case TerminalTokens.TokenNameprotected:
 			case TerminalTokens.TokenNameprivate:
 			case TerminalTokens.TokenNamestatic:
 			case TerminalTokens.TokenNamefinal:
-			case TerminalTokens.TokenNameabstract:
+//			case TerminalTokens.TokenNameabstract:
 //			case TerminalTokens.TokenNamenative:
 //			case TerminalTokens.TokenNamevolatile:
 			case TerminalTokens.TokenNamestrictfp:

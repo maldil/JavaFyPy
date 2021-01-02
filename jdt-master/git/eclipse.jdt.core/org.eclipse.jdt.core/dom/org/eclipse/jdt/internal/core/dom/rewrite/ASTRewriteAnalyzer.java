@@ -1559,11 +1559,11 @@ public final class ASTRewriteAnalyzer extends ASTVisitor {
 				boolean keep= true;
 				switch (tok) {
 					case TerminalTokens.TokenNamepublic: keep= Modifier.isPublic(newModifiers); break;
-					case TerminalTokens.TokenNameprotected: keep= Modifier.isProtected(newModifiers); break;
+//					case TerminalTokens.TokenNameprotected: keep= Modifier.isProtected(newModifiers); break;
 					case TerminalTokens.TokenNameprivate: keep= Modifier.isPrivate(newModifiers); break;
 					case TerminalTokens.TokenNamestatic: keep= Modifier.isStatic(newModifiers); break;
 					case TerminalTokens.TokenNamefinal: keep= Modifier.isFinal(newModifiers); break;
-					case TerminalTokens.TokenNameabstract: keep= Modifier.isAbstract(newModifiers); break;
+//					case TerminalTokens.TokenNameabstract: keep= Modifier.isAbstract(newModifiers); break;
 //					case TerminalTokens.TokenNamenative: keep= Modifier.isNative(newModifiers); break;
 //					case TerminalTokens.TokenNamevolatile: keep= Modifier.isVolatile(newModifiers); break;
 					case TerminalTokens.TokenNamestrictfp: keep= Modifier.isStrictfp(newModifiers); break;

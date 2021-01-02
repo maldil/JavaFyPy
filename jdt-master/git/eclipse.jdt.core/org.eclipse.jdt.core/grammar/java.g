@@ -42,11 +42,11 @@ $Terminals
 
 	Identifier
 
-	abstract assert boolean break case catch char class
+	assert boolean break case catch char class
 	continue default do double else enum extends false final finally float
 	for goto if implements import instanceof int
 	interface long new non-sealed null package private
-	protected public return static strictfp super switch
+	public return static strictfp super switch
 	synchronized this throw throws transient true try void
     while module open requires transitive exports opens to uses provides with withstmt in pyjavatuple not yieldr nonlocal
 
@@ -664,11 +664,9 @@ Modifiers ::= Modifiers Modifier
 /.$putCase consumeModifiers2(); $break ./
 /:$readableName Modifiers:/
 
-Modifier -> 'public' 
-Modifier -> 'protected'
+Modifier -> 'public'
 Modifier -> 'private'
 Modifier -> 'static'
-Modifier -> 'abstract'
 Modifier -> 'final'
 Modifier -> 'non-sealed'
 Modifier -> RestrictedIdentifiersealed

@@ -3520,18 +3520,18 @@ private int internalScanIdentifierOrKeyword(int index, int length, char[] data) 
 	switch (data[index]) {
 		case 'a' :
 			switch(length) {
-				case 8: //abstract
-					if ((data[++index] == 'b')
-						&& (data[++index] == 's')
-						&& (data[++index] == 't')
-						&& (data[++index] == 'r')
-						&& (data[++index] == 'a')
-						&& (data[++index] == 'c')
-						&& (data[++index] == 't')) {
-							return TokenNameabstract;
-						} else {
-							return TokenNameIdentifier;
-						}
+//				case 8: //abstract
+//					if ((data[++index] == 'b')
+//						&& (data[++index] == 's')
+//						&& (data[++index] == 't')
+//						&& (data[++index] == 'r')
+//						&& (data[++index] == 'a')
+//						&& (data[++index] == 'c')
+//						&& (data[++index] == 't')) {
+//							return TokenNameabstract;
+//						} else {
+//							return TokenNameIdentifier;
+//						}
 				case 6: // assert
 					if ((data[++index] == 's')
 						&& (data[++index] == 's')
@@ -3978,18 +3978,18 @@ private int internalScanIdentifierOrKeyword(int index, int length, char[] data) 
 						return TokenNameprovides;
 					} else
 						return TokenNameIdentifier;
-				case 9 :
-					if ((data[++index] == 'r')
-						&& (data[++index] == 'o')
-						&& (data[++index] == 't')
-						&& (data[++index] == 'e')
-						&& (data[++index] == 'c')
-						&& (data[++index] == 't')
-						&& (data[++index] == 'e')
-						&& (data[++index] == 'd')) {
-						return TokenNameprotected;
-					} else
-						return TokenNameIdentifier;
+//				case 9 :
+//					if ((data[++index] == 'r')
+//						&& (data[++index] == 'o')
+//						&& (data[++index] == 't')
+//						&& (data[++index] == 'e')
+//						&& (data[++index] == 'c')
+//						&& (data[++index] == 't')
+//						&& (data[++index] == 'e')
+//						&& (data[++index] == 'd')) {
+//						return TokenNameprotected;
+//					} else
+//						return TokenNameIdentifier;
 				case 11:
 					if ((data[++index] == 'y')
 							&& (data[++index] == 'j')
@@ -4705,8 +4705,8 @@ public String toStringAction(int act) {
 			return "yield"; //$NON-NLS-1$
 		case TokenNameRestrictedIdentifierrecord :
 			return "record"; //$NON-NLS-1$
-		case TokenNameabstract :
-			return "abstract"; //$NON-NLS-1$
+//		case TokenNameabstract :
+//			return "abstract"; //$NON-NLS-1$
 		case TokenNameboolean :
 			return "boolean"; //$NON-NLS-1$
 		case TokenNamebreak :
@@ -4771,8 +4771,8 @@ public String toStringAction(int act) {
 			return "permits"; //$NON-NLS-1$
 		case TokenNameprivate :
 			return "private"; //$NON-NLS-1$
-		case TokenNameprotected :
-			return "protected"; //$NON-NLS-1$
+//		case TokenNameprotected :
+//			return "protected"; //$NON-NLS-1$
 		case TokenNamepublic :
 			return "public"; //$NON-NLS-1$
 		case TokenNamereturn :
@@ -4992,7 +4992,7 @@ public static boolean isLiteral(int token) {
 
 public static boolean isKeyword(int token) {
 	switch(token) {
-		case TerminalTokens.TokenNameabstract:
+//		case TerminalTokens.TokenNameabstract:
 		case TerminalTokens.TokenNameassert:
 //		case TerminalTokens.TokenNamebyte:
 		case TerminalTokens.TokenNamebreak:
@@ -5026,7 +5026,7 @@ public static boolean isKeyword(int token) {
 		case TerminalTokens.TokenNamepublic:
 		case TerminalTokens.TokenNamepackage:
 		case TerminalTokens.TokenNameprivate:
-		case TerminalTokens.TokenNameprotected:
+//		case TerminalTokens.TokenNameprotected:
 		case TerminalTokens.TokenNamereturn:
 //		case TerminalTokens.TokenNameshort:
 		case TerminalTokens.TokenNamesuper:
@@ -5413,9 +5413,9 @@ protected final boolean maybeAtReferenceExpression() { // Did the '<' we saw jus
 				case TokenNamenon_sealed: // non-sealed X<T>
 				case TokenNameRestrictedIdentifiersealed: // sealed X<T>
 				case TokenNamepublic:     // public List<String> foo() {}
-				case TokenNameabstract:   // abstract List<String> foo() {}
+//				case TokenNameabstract:   // abstract List<String> foo() {}
 				case TokenNameprivate:    // private List<String> foo() {}
-				case TokenNameprotected:  // protected List<String> foo() {}
+//				case TokenNameprotected:  // protected List<String> foo() {}
 				case TokenNamestatic:     // public static List<String> foo() {}
 				case TokenNameextends:    // <T extends Y<Z>>
 				case TokenNamesuper:      // ? super Context<N>
@@ -5809,7 +5809,7 @@ public int fastForward(Statement unused) {
 				if (isAtAssistIdentifier()) // do not fast forward past the assist identifier ! We don't handle collections as of now.
 					return token;
 				//$FALL-THROUGH$
-			case TokenNameabstract:
+//			case TokenNameabstract:
 			case TokenNameassert:
 			case TokenNameboolean:
 			case TokenNamebreak:
@@ -5835,7 +5835,7 @@ public int fastForward(Statement unused) {
 			case TokenNamenon_sealed:
 			case TokenNamenull:
 			case TokenNameprivate:
-			case TokenNameprotected:
+//			case TokenNameprotected:
 			case TokenNamepublic:
 			case TokenNameRestrictedIdentifiersealed:
 			case TokenNamereturn:

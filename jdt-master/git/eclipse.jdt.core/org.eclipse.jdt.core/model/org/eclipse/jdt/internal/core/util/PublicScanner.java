@@ -4240,7 +4240,7 @@ public static boolean isLiteral(int token) {
 
 public static boolean isKeyword(int token) {
 	switch(token) {
-		case TerminalTokens.TokenNameabstract:
+//		case TerminalTokens.TokenNameabstract:
 		case TerminalTokens.TokenNameassert:
 //		case TerminalTokens.TokenNamebyte:
 		case TerminalTokens.TokenNamebreak:
@@ -4274,7 +4274,7 @@ public static boolean isKeyword(int token) {
 		case TerminalTokens.TokenNamepublic:
 		case TerminalTokens.TokenNamepackage:
 		case TerminalTokens.TokenNameprivate:
-		case TerminalTokens.TokenNameprotected:
+//		case TerminalTokens.TokenNameprotected:
 		case TerminalTokens.TokenNamereturn:
 //		case TerminalTokens.TokenNameshort:
 		case TerminalTokens.TokenNamesuper:

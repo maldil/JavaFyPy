@@ -8,9 +8,9 @@
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTNode.java[ASTNode" modificationStamp="12281" restrictions="2" visibility="0"/>
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{InfixExpression.java[InfixExpression" modificationStamp="12341" restrictions="4" visibility="0"/>
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{AST.java[AST" modificationStamp="12276" restrictions="4" visibility="0"/>
-        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTConverter.java[ASTConverter" modificationStamp="12288" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTConverter.java[ASTConverter" modificationStamp="12290" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTVisitor.java[ASTVisitor" modificationStamp="12284" restrictions="0" visibility="0"/>
-        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{DocCommentParser.java[DocCommentParser" modificationStamp="12317" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{DocCommentParser.java[DocCommentParser" modificationStamp="12319" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTMatcher.java[ASTMatcher" modificationStamp="12278" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{EnhancedForStatement.java[EnhancedForStatement" modificationStamp="12319" restrictions="4" visibility="0"/>
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{PyGenerator.java[PyGenerator" modificationStamp="679708" restrictions="0" visibility="0"/>

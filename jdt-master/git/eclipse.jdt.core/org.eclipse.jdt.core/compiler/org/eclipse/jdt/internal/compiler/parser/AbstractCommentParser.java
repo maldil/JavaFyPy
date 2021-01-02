@@ -1126,7 +1126,7 @@ public abstract class AbstractCommentParser implements JavadocTagConstants {
 					consumeToken();
 					break;
 
-				case TerminalTokens.TokenNameabstract:
+//				case TerminalTokens.TokenNameabstract:
 				case TerminalTokens.TokenNameassert:
 				case TerminalTokens.TokenNameboolean:
 				case TerminalTokens.TokenNamebreak:
@@ -1160,7 +1160,7 @@ public abstract class AbstractCommentParser implements JavadocTagConstants {
 				case TerminalTokens.TokenNamepackage:
 				case TerminalTokens.TokenNameRestrictedIdentifierpermits:
 				case TerminalTokens.TokenNameprivate:
-				case TerminalTokens.TokenNameprotected:
+//				case TerminalTokens.TokenNameprotected:
 				case TerminalTokens.TokenNamepublic:
 				case TerminalTokens.TokenNameRestrictedIdentifiersealed:
 //				case TerminalTokens.TokenNameshort:

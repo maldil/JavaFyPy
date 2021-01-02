@@ -620,7 +620,7 @@ class DocCommentParser extends AbstractCommentParser {
 				this.tagValue = TAG_THROWS_VALUE;
 				valid = parseThrows();
 				break;
-			case TerminalTokens.TokenNameabstract:
+//			case TerminalTokens.TokenNameabstract:
 			case TerminalTokens.TokenNameassert:
 			case TerminalTokens.TokenNameboolean:
 			case TerminalTokens.TokenNamebreak:
@@ -652,7 +652,7 @@ class DocCommentParser extends AbstractCommentParser {
 			case TerminalTokens.TokenNamenull:
 			case TerminalTokens.TokenNamepackage:
 			case TerminalTokens.TokenNameprivate:
-			case TerminalTokens.TokenNameprotected:
+//			case TerminalTokens.TokenNameprotected:
 			case TerminalTokens.TokenNamepublic:
 //			case TerminalTokens.TokenNameshort:
 			case TerminalTokens.TokenNamestatic:
