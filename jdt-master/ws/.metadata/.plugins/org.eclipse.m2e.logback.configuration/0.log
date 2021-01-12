@@ -62,3 +62,8 @@
 2020-12-28 11:43:08,351 [Worker-19: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2021-01-01 00:05:33,874 [Worker-15: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2021-01-01 00:23:25,131 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-01-11 20:49:47,490 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-01-11 22:09:58,323 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-01-11 22:42:00,681 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2021-01-11 22:42:24,361 [Worker-31: Launching org.eclipse.jdt.apt.core] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/malinda/Documents/Research_Topic_2/eclips_workspace_cpat_new/jdt-master/git/eclipse.jdt.core/org.eclipse.jdt.apt.core
+2021-01-11 22:42:24,363 [Worker-31: Launching org.eclipse.jdt.apt.core] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B 

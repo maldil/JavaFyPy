@@ -3208,6 +3208,7 @@ public final class AST {
 
 	public PyYieldReturnStatement newPyYieldReturnStatement() {return new PyYieldReturnStatement(this);}
 
+	public EnhancedForStatementWithElse newEnhancedForStatementWithElse() {return new EnhancedForStatementWithElse(this);}
 	public WildcardType newWildcardType() {
 		WildcardType result = new WildcardType(this);
 		return result;

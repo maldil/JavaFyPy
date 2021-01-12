@@ -1025,6 +1025,8 @@ public abstract class ASTNode {
 	public static final int PY_COMPARATOR= 113;
 
 	public static final int PY_NON_LOCAL= 114;
+
+	public static final int ENHANCED_FOR_STATEMENT_WITH_ELSE = 115;
 	public static Class nodeClassForType(int nodeType) {
 		switch (nodeType) {
 			case ANNOTATION_TYPE_DECLARATION :

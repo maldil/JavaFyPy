@@ -76,6 +76,7 @@ import org.eclipse.jdt.internal.compiler.impl.CompilerOptions;
 import org.eclipse.jdt.internal.compiler.lookup.BlockScope;
 import org.eclipse.jdt.internal.compiler.lookup.ExtraCompilerModifiers;
 import org.eclipse.jdt.internal.compiler.lookup.TypeConstants;
+import org.eclipse.jdt.internal.compiler.parser.Parser;
 import org.eclipse.jdt.internal.compiler.parser.RecoveryScanner;
 import org.eclipse.jdt.internal.compiler.parser.Scanner;
 import org.eclipse.jdt.internal.compiler.parser.TerminalTokens;
@@ -2178,8 +2179,35 @@ class ASTConverter {
 			case AST.JLS2_INTERNAL :
 				return createFakeEmptyStatement(statement);
 			default :
-				EnhancedForStatement enhancedForStatement = new EnhancedForStatement(this.ast);
+				if (statement.elseaction!=null){
+					EnhancedForStatementWithElse enhanced = new EnhancedForStatementWithElse(this.ast);
+					final Statement elasAction = convert(statement.elseaction);
+					enhanced.setElseBody(elasAction);
+					ArrayList<SingleVariableDeclaration> elementVariables = new ArrayList<SingleVariableDeclaration>();
+					for  (LocalDeclaration obj:   statement.elementVariablesExtras){
+						elementVariables.add(convertToSingleVariableDeclaration(obj));
+					}
+					enhanced.setParameters(elementVariables);
+					enhanced.setParameter(convertToSingleVariableDeclaration(statement.elementVariable));
+					org.eclipse.jdt.internal.compiler.ast.Expression collection = statement.collection;
+					if (collection == null) return null;
+					enhanced.setExpression(convert(collection));
+					final Statement action = convert(statement.action);
 
+					if (statement.elseaction!=null){
+						final Statement elasAction1 = convert(statement.elseaction);
+						enhanced.setElseBody(elasAction1);
+					}
+
+					if (action == null) return null;
+					enhanced.setBody(action);
+					int start = statement.sourceStart;
+					int end = statement.sourceEnd;
+					enhanced.setSourceRange(start, end - start + 1);
+					return enhanced;
+				}
+
+				EnhancedForStatement enhancedForStatement = new EnhancedForStatement(this.ast);
 				ArrayList<SingleVariableDeclaration> elementVariables = new ArrayList<SingleVariableDeclaration>();
 				for  (LocalDeclaration obj:   statement.elementVariablesExtras){
 					elementVariables.add(convertToSingleVariableDeclaration(obj));
@@ -2582,15 +2610,15 @@ class ASTConverter {
 
 			else if ("dictc".equals(new String(expression.selector)) && expression.arguments != null && expression.arguments.length==1 && expression.arguments[0] instanceof PyDicComp){
 				PyDicComp pyDicComp = (PyDicComp) expression.arguments[0];
-				Expression target2 = convert(pyDicComp.getTarget2());
-				if (target2 instanceof Name && ((Name) target2).getFullyQualifiedName().equals("SET_PYTHON")){
+				Expression target1 = convert(pyDicComp.getTarget1());
+				if (target1 instanceof Name && ((Name) target1).getFullyQualifiedName().equals("SET_PYTHON")){
 					final PySetComprehension pyset = new PySetComprehension(this.ast);
 					for (int i = pyDicComp.getComparetors().size(); i-- > 0; ) {
 						pyset.getComparator().add(convert(pyDicComp.comparetors.get(i)));
 					}
-					Expression target1 = convert(pyDicComp.getTarget1());
-					pyset.setSourceRange(target1.getStartPosition(), expression.sourceEnd - sourceStart + 1);
-					pyset.setTargetExpression(target1);
+					Expression target2 = convert(pyDicComp.getTarget2());
+					pyset.setSourceRange(target2.getStartPosition(), expression.sourceEnd - sourceStart + 1);
+					pyset.setTargetExpression(target2);
 					return pyset;
 				}
 
@@ -2600,7 +2628,7 @@ class ASTConverter {
 					pylistcomp.getComparator().add(convert(pyDicComp.comparetors.get(i)));
 				}
 				//pyGenerator.setValueExpression(convert(pyGenerators.getValue()));
-				Expression target1 = convert(pyDicComp.getTarget1());
+				Expression target2 = convert(pyDicComp.getTarget2());
 
 				pylistcomp.setTarget1Expression(target1);
 				pylistcomp.setTarget2Expression(target2);

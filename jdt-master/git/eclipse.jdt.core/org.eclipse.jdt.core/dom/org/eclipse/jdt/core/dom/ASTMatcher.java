@@ -814,9 +814,23 @@ public class ASTMatcher {
 		}
 		EnhancedForStatement o = (EnhancedForStatement) other;
 		return (
-			safeSubtreeMatch(node.Parameters(), o.Parameters()) // changed this to match with list of parameters
+				safeSubtreeMatch(node.Parameters(), o.Parameters())
+						&& safeSubtreeMatch(node.Parameters(), o.Parameters()) // changed this to match with list of parameters
 				&& safeSubtreeMatch(node.getExpression(), o.getExpression())
 				&& safeSubtreeMatch(node.getBody(), o.getBody()));
+	}
+
+	public boolean match(EnhancedForStatementWithElse node, Object other) {
+		if (!(other instanceof EnhancedForStatementWithElse)) {
+			return false;
+		}
+		EnhancedForStatementWithElse o = (EnhancedForStatementWithElse) other;
+		return (
+				safeSubtreeMatch(node.getParameter(), o.getParameter())&&
+				safeSubtreeMatch(node.Parameters(), o.Parameters()) // changed this to match with list of parameters
+						&& safeSubtreeMatch(node.getExpression(), o.getExpression())
+						&& safeSubtreeMatch(node.getBody(), o.getBody())
+						&& safeSubtreeMatch(node.getElseBody(), o.getElseBody()));
 	}
 
 	/**
@@ -3035,4 +3049,6 @@ public class ASTMatcher {
 		PyNonLocalStatement o = (PyNonLocalStatement) other;
 		return safeSubtreeMatch(node.getExpression(), o.getExpression());
     }
+
+
 }

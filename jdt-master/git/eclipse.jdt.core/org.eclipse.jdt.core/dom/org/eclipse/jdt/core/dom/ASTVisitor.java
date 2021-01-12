@@ -613,6 +613,9 @@ public abstract class ASTVisitor {
 		return true;
 	}
 
+	public boolean visit(EnhancedForStatementWithElse node) {
+		return true;
+	}
 	/**
 	 * Visits the given type-specific AST node.
 	 * <p>
@@ -3301,5 +3304,9 @@ public abstract class ASTVisitor {
 
 
 	public void endVisit(PyNonLocalStatement pyNonLocalStatement) {
+	}
+
+
+	public void endVisit(EnhancedForStatementWithElse enhancedForStatementWithElse) {
 	}
 }

@@ -667,6 +667,28 @@ public class NaiveASTFlattener extends ASTVisitor {
 			this.buffer.append("else");
 			node.getElseBody().accept(this);
 		}
+		return false;
+	}
+
+	@Override
+	public boolean visit(EnhancedForStatementWithElse node) {
+		printIndent();
+		this.buffer.append("for (");//$NON-NLS-1$
+		node.getParameter().accept(this);
+		for (int j=0;j<node.Parameters().size();j++){
+			this.buffer.append(',');
+			((SingleVariableDeclaration)node.Parameters().get(j)).accept(this);
+		}
+		this.buffer.append(" : ");//$NON-NLS-1$
+		node.getExpression().accept(this);
+		this.buffer.append(") ");//$NON-NLS-1$
+		node.getBody().accept(this);
+		if (node.getElseBody()!=null)
+		{
+			printIndent();
+			this.buffer.append("else");
+			node.getElseBody().accept(this);
+		}
 
 		return false;
 	}
@@ -2050,6 +2072,10 @@ public class NaiveASTFlattener extends ASTVisitor {
 		if (node.internalGetConditionalExpression()!=null){
 			this.buffer.append(" if ");
 			node.getConditionalExpression().accept(this);
+		}
+		else{
+			this.buffer.append(" if DUMMY");
+
 		}
 		return false;
 	}
