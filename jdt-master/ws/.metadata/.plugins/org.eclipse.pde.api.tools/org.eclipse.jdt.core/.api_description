@@ -2,17 +2,27 @@
 <component id="org.eclipse.jdt.core" modificationStamp="12018" version="1.2">
     <package visibility="1">
         <fragment handle="=org.eclipse.jdt.core/batch&lt;org.eclipse.jdt.core.compiler.batch"/>
+        <type handle="=org.eclipse.jdt.core/batch&lt;org.eclipse.jdt.core.compiler.batch{BatchCompiler.java[BatchCompiler" modificationStamp="12808" restrictions="4" visibility="0"/>
     </package>
     <package visibility="1">
         <fragment handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom"/>
-        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTNode.java[ASTNode" modificationStamp="12281" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTNode.java[ASTNode" modificationStamp="12282" restrictions="2" visibility="0"/>
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{InfixExpression.java[InfixExpression" modificationStamp="12341" restrictions="4" visibility="0"/>
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{AST.java[AST" modificationStamp="12277" restrictions="4" visibility="0"/>
-        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTConverter.java[ASTConverter" modificationStamp="12290" restrictions="0" visibility="0"/>
-        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTVisitor.java[ASTVisitor" modificationStamp="12284" restrictions="0" visibility="0"/>
-        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{DocCommentParser.java[DocCommentParser" modificationStamp="12319" restrictions="0" visibility="0"/>
-        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTMatcher.java[ASTMatcher" modificationStamp="12278" restrictions="0" visibility="0"/>
-        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{EnhancedForStatement.java[EnhancedForStatement" modificationStamp="12319" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTConverter.java[ASTConverter" modificationStamp="12291" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTVisitor.java[ASTVisitor" modificationStamp="12285" restrictions="0" visibility="0">
+            <method name="visit" restrictions="8" signature="(Lorg/eclipse/jdt/core/dom/ModuleQualifiedName;)Z" visibility="0"/>
+            <method name="visit" restrictions="8" signature="(Lorg/eclipse/jdt/core/dom/RecordDeclaration;)Z" visibility="0"/>
+            <method name="endVisit" restrictions="8" signature="(Lorg/eclipse/jdt/core/dom/ModuleQualifiedName;)V" visibility="0"/>
+            <method name="endVisit" restrictions="8" signature="(Lorg/eclipse/jdt/core/dom/RecordDeclaration;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{DocCommentParser.java[DocCommentParser" modificationStamp="12320" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTMatcher.java[ASTMatcher" modificationStamp="12279" restrictions="0" visibility="0">
+            <method name="match" restrictions="8" signature="(Lorg/eclipse/jdt/core/dom/ModuleQualifiedName;Ljava/lang/Object;)Z" visibility="0"/>
+            <method name="match" restrictions="24" signature="(Lorg/eclipse/jdt/core/dom/TextBlock;Ljava/lang/Object;)Z" visibility="0"/>
+            <method name="match" restrictions="24" signature="(Lorg/eclipse/jdt/core/dom/YieldStatement;Ljava/lang/Object;)Z" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{EnhancedForStatement.java[EnhancedForStatement" modificationStamp="12320" restrictions="4" visibility="0"/>
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{PyGenerator.java[PyGenerator" modificationStamp="679708" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{PyInExpression.java[PyInExpression" modificationStamp="679707" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{PyListComprehension.java[PyListComprehension" modificationStamp="679710" restrictions="0" visibility="0"/>
@@ -26,21 +36,234 @@
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{TryStatement.java[TryStatement" modificationStamp="12413" restrictions="6" visibility="0"/>
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{Assignment.java[Assignment" modificationStamp="12288" restrictions="4" visibility="0"/>
         <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTRecoveryPropagator.java[ASTRecoveryPropagator" modificationStamp="12271" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{Comment.java[Comment" modificationStamp="12300" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{SimpleType.java[SimpleType" modificationStamp="12394" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{AnnotatableType.java[AnnotatableType" modificationStamp="12275" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ForStatement.java[ForStatement" modificationStamp="12325" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{RecoveredVariableBinding.java[RecoveredVariableBinding" modificationStamp="12388" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{WildcardType.java[WildcardType" modificationStamp="12428" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{AnnotationTypeMemberDeclaration.java[AnnotationTypeMemberDeclaration" modificationStamp="12279" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{Javadoc.java[Javadoc" modificationStamp="12343" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{StringLiteral.java[StringLiteral" modificationStamp="12397" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTParser.java[ASTParser" modificationStamp="12269" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{Modifier.java[Modifier" modificationStamp="12359" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ArrayType.java[ArrayType" modificationStamp="12284" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{NodeFinder.java[NodeFinder" modificationStamp="12369" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{MethodBinding.java[MethodBinding" modificationStamp="12352" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ConditionalExpression.java[ConditionalExpression" modificationStamp="12303" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{EmptyStatement.java[EmptyStatement" modificationStamp="12314" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{MemberValuePairBinding.java[MemberValuePairBinding" modificationStamp="12350" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{RecoveredTypeBinding.java[RecoveredTypeBinding" modificationStamp="12387" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{TypeMethodReference.java[TypeMethodReference" modificationStamp="12418" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ModuleBinding.java[ModuleBinding" modificationStamp="12359" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ParenthesizedExpression.java[ParenthesizedExpression" modificationStamp="12378" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{BreakStatement.java[BreakStatement" modificationStamp="12293" restrictions="4" visibility="0">
+            <method name="propertyDescriptors" restrictions="8" signature="(IZ)Ljava/util/List;" visibility="0"/>
+            <method name="getExpression" restrictions="24" signature="()Lorg/eclipse/jdt/core/dom/Expression;" visibility="0"/>
+            <method name="setExpression" restrictions="24" signature="(Lorg/eclipse/jdt/core/dom/Expression;)V" visibility="0"/>
+            <method name="isImplicit" restrictions="24" signature="()Z" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{CompilationUnit.java[CompilationUnit" modificationStamp="12302" restrictions="6" visibility="0">
+            <method name="getStatementsRecoveryData" restrictions="8" signature="()Ljava/lang/Object;" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{Name.java[Name" modificationStamp="12366" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{Block.java[Block" modificationStamp="12289" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ThrowStatement.java[ThrowStatement" modificationStamp="12411" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{Message.java[Message" modificationStamp="12351" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{TypeDeclaration.java[TypeDeclaration" modificationStamp="12415" restrictions="4" visibility="0">
+            <method name="propertyDescriptors" restrictions="8" signature="(IZ)Ljava/util/List;" visibility="0"/>
+            <method name="setRestrictedIdentifierStartPosition" restrictions="8" signature="(I)V" visibility="0"/>
+            <method name="getRestrictedIdentifierStartPosition" restrictions="8" signature="()I" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ClassInstanceCreation.java[ClassInstanceCreation" modificationStamp="12299" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{CatchClause.java[CatchClause" modificationStamp="12295" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{InstanceofExpression.java[InstanceofExpression" modificationStamp="12340" restrictions="4" visibility="0">
+            <method name="propertyDescriptors" restrictions="8" signature="(IZ)Ljava/util/List;" visibility="0"/>
+            <method name="getPatternVariable" restrictions="24" signature="()Lorg/eclipse/jdt/core/dom/SingleVariableDeclaration;" visibility="0"/>
+            <method name="setPatternVariable" restrictions="24" signature="(Lorg/eclipse/jdt/core/dom/SingleVariableDeclaration;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{SuperConstructorInvocation.java[SuperConstructorInvocation" modificationStamp="12399" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{InternalASTRewrite.java[InternalASTRewrite" modificationStamp="12341" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ModuleDeclaration.java[ModuleDeclaration" modificationStamp="12360" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTRequestor.java[ASTRequestor" modificationStamp="12271" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{SingleMemberAnnotation.java[SingleMemberAnnotation" modificationStamp="12394" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{TagElement.java[TagElement" modificationStamp="12407" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{SwitchCase.java[SwitchCase" modificationStamp="12403" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{AnonymousClassDeclaration.java[AnonymousClassDeclaration" modificationStamp="12280" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{MethodRefParameter.java[MethodRefParameter" modificationStamp="12356" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{SwitchExpression.java[SwitchExpression" modificationStamp="12404" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{VariableDeclarationStatement.java[VariableDeclarationStatement" modificationStamp="12426" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ExpressionMethodReference.java[ExpressionMethodReference" modificationStamp="12320" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{AnnotationBinding.java[AnnotationBinding" modificationStamp="12277" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{SimpleName.java[SimpleName" modificationStamp="12392" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{Expression.java[Expression" modificationStamp="12319" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{BindingComparator.java[BindingComparator" modificationStamp="12287" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ChildPropertyDescriptor.java[ChildPropertyDescriptor" modificationStamp="12299" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{IExtendedModifier.java[IExtendedModifier" modificationStamp="12329" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{IPackageBinding.java[IPackageBinding" modificationStamp="12333" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{YieldStatement.java[YieldStatement" modificationStamp="12429" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{NodeSearcher.java[NodeSearcher" modificationStamp="12370" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{BodyDeclaration.java[BodyDeclaration" modificationStamp="12292" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{IVariableBinding.java[IVariableBinding" modificationStamp="12335" restrictions="1" visibility="0">
+            <method name="isRecordComponent" restrictions="8" signature="()Z" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{AbstractTypeDeclaration.java[AbstractTypeDeclaration" modificationStamp="12274" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{FieldAccess.java[FieldAccess" modificationStamp="12322" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{FieldDeclaration.java[FieldDeclaration" modificationStamp="12323" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{PackageBinding.java[PackageBinding" modificationStamp="12375" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{PostfixExpression.java[PostfixExpression" modificationStamp="12379" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{WhileStatement.java[WhileStatement" modificationStamp="12427" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ModulePackageAccess.java[ModulePackageAccess" modificationStamp="12363" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{SimplePropertyDescriptor.java[SimplePropertyDescriptor" modificationStamp="12392" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{IMemberValuePairBinding.java[IMemberValuePairBinding" modificationStamp="12330" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ExpressionStatement.java[ExpressionStatement" modificationStamp="12321" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ModuleModifier.java[ModuleModifier" modificationStamp="12362" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{BlockComment.java[BlockComment" modificationStamp="12290" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ConstructorInvocation.java[ConstructorInvocation" modificationStamp="12304" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{MethodInvocation.java[MethodInvocation" modificationStamp="12354" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{RecordDeclaration.java[RecordDeclaration" modificationStamp="12385" restrictions="12" visibility="0">
+            <method name="propertyDescriptors" restrictions="8" signature="(I)Ljava/util/List;" visibility="0"/>
+            <method name="propertyDescriptors" restrictions="8" signature="(IZ)Ljava/util/List;" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ExportsDirective.java[ExportsDirective" modificationStamp="12318" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{TypeDeclarationStatement.java[TypeDeclarationStatement" modificationStamp="12416" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{VariableBinding.java[VariableBinding" modificationStamp="12422" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ModuleDirective.java[ModuleDirective" modificationStamp="12361" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{Dimension.java[Dimension" modificationStamp="12311" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{Initializer.java[Initializer" modificationStamp="12339" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{CharacterLiteral.java[CharacterLiteral" modificationStamp="12296" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{MethodRef.java[MethodRef" modificationStamp="12355" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{NodeEventHandler.java[NodeEventHandler" modificationStamp="12368" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{DoStatement.java[DoStatement" modificationStamp="12312" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{SwitchStatement.java[SwitchStatement" modificationStamp="12405" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{MarkerAnnotation.java[MarkerAnnotation" modificationStamp="12347" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{BindingResolver.java[BindingResolver" modificationStamp="12288" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{QualifiedName.java[QualifiedName" modificationStamp="12383" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{VariableDeclaration.java[VariableDeclaration" modificationStamp="12423" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{IMethodBinding.java[IMethodBinding" modificationStamp="12331" restrictions="1" visibility="0">
+            <method name="isCompactConstructor" restrictions="8" signature="()Z" visibility="0"/>
+            <method name="isCanonicalConstructor" restrictions="8" signature="()Z" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{LabeledStatement.java[LabeledStatement" modificationStamp="12344" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{VariableDeclarationExpression.java[VariableDeclarationExpression" modificationStamp="12424" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ThisExpression.java[ThisExpression" modificationStamp="12410" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{IModuleBinding.java[IModuleBinding" modificationStamp="12332" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{TextBlock.java[TextBlock" modificationStamp="12408" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{CastExpression.java[CastExpression" modificationStamp="12294" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ImportDeclaration.java[ImportDeclaration" modificationStamp="12338" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ArrayInitializer.java[ArrayInitializer" modificationStamp="12283" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ParameterizedType.java[ParameterizedType" modificationStamp="12377" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{Statement.java[Statement" modificationStamp="12396" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{MemberRef.java[MemberRef" modificationStamp="12348" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{SingleVariableDeclaration.java[SingleVariableDeclaration" modificationStamp="12395" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{SuperMethodReference.java[SuperMethodReference" modificationStamp="12402" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{DefaultBindingResolver.java[DefaultBindingResolver" modificationStamp="12308" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{SynchronizedStatement.java[SynchronizedStatement" modificationStamp="12406" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{IfStatement.java[IfStatement" modificationStamp="12336" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{IBinding.java[IBinding" modificationStamp="12327" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{TypeBinding.java[TypeBinding" modificationStamp="12414" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{FileASTRequestor.java[FileASTRequestor" modificationStamp="12324" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{CompilationUnitResolver.java[CompilationUnitResolver" modificationStamp="12302" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{NormalAnnotation.java[NormalAnnotation" modificationStamp="12371" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{EnumConstantDeclaration.java[EnumConstantDeclaration" modificationStamp="12316" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{IntersectionType.java[IntersectionType" modificationStamp="12342" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{PackageDeclaration.java[PackageDeclaration" modificationStamp="12376" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{StructuralPropertyDescriptor.java[StructuralPropertyDescriptor" modificationStamp="12398" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{UsesDirective.java[UsesDirective" modificationStamp="12421" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ProvidesDirective.java[ProvidesDirective" modificationStamp="12382" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{NameEnvironmentWithProgress.java[NameEnvironmentWithProgress" modificationStamp="12366" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{Annotation.java[Annotation" modificationStamp="12276" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{SuperFieldAccess.java[SuperFieldAccess" modificationStamp="12400" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{NullLiteral.java[NullLiteral" modificationStamp="12372" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{TypeParameter.java[TypeParameter" modificationStamp="12419" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ContinueStatement.java[ContinueStatement" modificationStamp="12305" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{EnumDeclaration.java[EnumDeclaration" modificationStamp="12317" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{TypeLiteral.java[TypeLiteral" modificationStamp="12417" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{UnionType.java[UnionType" modificationStamp="12420" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{NameQualifiedType.java[NameQualifiedType" modificationStamp="12367" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{DefaultASTVisitor.java[DefaultASTVisitor" modificationStamp="12307" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{QualifiedType.java[QualifiedType" modificationStamp="12384" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{OpensDirective.java[OpensDirective" modificationStamp="12374" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{IDocElement.java[IDocElement" modificationStamp="12328" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{NumberLiteral.java[NumberLiteral" modificationStamp="12373" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ArrayAccess.java[ArrayAccess" modificationStamp="12281" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{MemberValuePair.java[MemberValuePair" modificationStamp="12349" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{DefaultValuePairBinding.java[DefaultValuePairBinding" modificationStamp="12310" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{PrimitiveType.java[PrimitiveType" modificationStamp="12381" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ArrayCreation.java[ArrayCreation" modificationStamp="12282" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ASTSyntaxErrorPropagator.java[ASTSyntaxErrorPropagator" modificationStamp="12272" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{MethodDeclaration.java[MethodDeclaration" modificationStamp="12353" restrictions="4" visibility="0">
+            <method name="propertyDescriptors" restrictions="8" signature="(IZ)Ljava/util/List;" visibility="0"/>
+            <method name="isCompactConstructor" restrictions="8" signature="()Z" visibility="0"/>
+            <method name="setCompactConstructor" restrictions="8" signature="(Z)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{SuperMethodInvocation.java[SuperMethodInvocation" modificationStamp="12401" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{LineComment.java[LineComment" modificationStamp="12346" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ReturnStatement.java[ReturnStatement" modificationStamp="12390" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{AnnotationTypeDeclaration.java[AnnotationTypeDeclaration" modificationStamp="12278" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ChildListPropertyDescriptor.java[ChildListPropertyDescriptor" modificationStamp="12297" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{IAnnotationBinding.java[IAnnotationBinding" modificationStamp="12326" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{RequiresDirective.java[RequiresDirective" modificationStamp="12389" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{DefaultCommentMapper.java[DefaultCommentMapper" modificationStamp="12309" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ModuleQualifiedName.java[ModuleQualifiedName" modificationStamp="12364" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{MethodReference.java[MethodReference" modificationStamp="12357" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{PrefixExpression.java[PrefixExpression" modificationStamp="12380" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{Type.java[Type" modificationStamp="12413" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{VariableDeclarationFragment.java[VariableDeclarationFragment" modificationStamp="12425" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{RecoveredPackageBinding.java[RecoveredPackageBinding" modificationStamp="12386" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{CreationReference.java[CreationReference" modificationStamp="12306" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{BooleanLiteral.java[BooleanLiteral" modificationStamp="12292" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{ITypeBinding.java[ITypeBinding" modificationStamp="12334" restrictions="1" visibility="0">
+            <method name="isRecord" restrictions="8" signature="()Z" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{TextElement.java[TextElement" modificationStamp="12409" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom{AssertStatement.java[AssertStatement" modificationStamp="12285" restrictions="4" visibility="0"/>
     </package>
     <package visibility="1">
         <fragment handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.jdom"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.jdom{IDOMInitializer.java[IDOMInitializer" modificationStamp="12492" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.jdom{IDOMMember.java[IDOMMember" modificationStamp="12493" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.jdom{IDOMField.java[IDOMField" modificationStamp="12490" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.jdom{DOMException.java[DOMException" modificationStamp="12486" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.jdom{IDOMPackage.java[IDOMPackage" modificationStamp="12496" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.jdom{IDOMImport.java[IDOMImport" modificationStamp="12491" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.jdom{IDOMCompilationUnit.java[IDOMCompilationUnit" modificationStamp="12488" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.jdom{IDOMMethod.java[IDOMMethod" modificationStamp="12494" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.jdom{IDOMType.java[IDOMType" modificationStamp="12497" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.jdom{IDOMFactory.java[IDOMFactory" modificationStamp="12489" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.jdom{DOMFactory.java[DOMFactory" modificationStamp="12487" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.jdom{IDOMNode.java[IDOMNode" modificationStamp="12495" restrictions="1" visibility="0"/>
     </package>
     <package visibility="1">
         <fragment handle="=org.eclipse.jdt.core/formatter&lt;org.eclipse.jdt.core.formatter"/>
+        <type handle="=org.eclipse.jdt.core/formatter&lt;org.eclipse.jdt.core.formatter{DefaultCodeFormatterConstants.java[DefaultCodeFormatterConstants" modificationStamp="12461" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/formatter&lt;org.eclipse.jdt.core.formatter{IndentManipulation.java[IndentManipulation" modificationStamp="12462" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/formatter&lt;org.eclipse.jdt.core.formatter{CodeFormatter.java[CodeFormatter" modificationStamp="12459" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/formatter&lt;org.eclipse.jdt.core.formatter{CodeFormatterApplication.java[CodeFormatterApplication" modificationStamp="12460" restrictions="6" visibility="0"/>
     </package>
     <package visibility="1">
         <fragment handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.eval"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.eval{IGlobalVariable.java[IGlobalVariable" modificationStamp="12484" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.eval{ICodeSnippetRequestor.java[ICodeSnippetRequestor" modificationStamp="12482" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.eval{IEvaluationContext.java[IEvaluationContext" modificationStamp="12483" restrictions="1" visibility="0"/>
     </package>
     <package visibility="1">
         <fragment handle="=org.eclipse.jdt.core/batch&lt;org.eclipse.jdt.core.compiler"/>
         <fragment handle="=org.eclipse.jdt.core/compiler&lt;org.eclipse.jdt.core.compiler"/>
         <fragment handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.compiler"/>
         <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.compiler{ITerminalSymbols.java[ITerminalSymbols" modificationStamp="12481" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/compiler&lt;org.eclipse.jdt.core.compiler{CharOperation.java[CharOperation" modificationStamp="12235" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/compiler&lt;org.eclipse.jdt.core.compiler{CompilationProgress.java[CompilationProgress" modificationStamp="12236" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/compiler&lt;org.eclipse.jdt.core.compiler{InvalidInputException.java[InvalidInputException" modificationStamp="12238" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/compiler&lt;org.eclipse.jdt.core.compiler{CategorizedProblem.java[CategorizedProblem" modificationStamp="12234" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/compiler&lt;org.eclipse.jdt.core.compiler{IProblem.java[IProblem" modificationStamp="12237" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/compiler&lt;org.eclipse.jdt.core.compiler{SubwordMatcher.java[SubwordMatcher" modificationStamp="12239" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.compiler{CompilationParticipant.java[CompilationParticipant" modificationStamp="12478" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.compiler{ReconcileContext.java[ReconcileContext" modificationStamp="12481" restrictions="6" visibility="0">
+            <method name="&lt;init&gt;" restrictions="8" signature="(Lorg/eclipse/jdt/internal/core/ReconcileWorkingCopyOperation;Lorg/eclipse/jdt/internal/core/CompilationUnit;)V" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.compiler{BuildContext.java[BuildContext" modificationStamp="12477" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.compiler{IScanner.java[IScanner" modificationStamp="12479" restrictions="1" visibility="0"/>
     </package>
     <package visibility="1">
         <fragment handle="=org.eclipse.jdt.core/antadapter&lt;org.eclipse.jdt.core"/>
@@ -53,17 +276,223 @@
         <type handle="=org.eclipse.jdt.core/antadapter&lt;org.eclipse.jdt.core{CheckDebugAttributes.java[CheckDebugAttributes" modificationStamp="12116" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.jdt.core/antadapter&lt;org.eclipse.jdt.core{BuildJarIndex.java[BuildJarIndex" modificationStamp="12115" restrictions="0" visibility="0"/>
         <type handle="=org.eclipse.jdt.core/antadapter&lt;org.eclipse.jdt.core{JDTCompilerAdapter.java[JDTCompilerAdapter" modificationStamp="12117" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{ClasspathVariableInitializer.java[ClasspathVariableInitializer" modificationStamp="12132" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IParent.java[IParent" modificationStamp="12181" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IMemberValuePair.java[IMemberValuePair" modificationStamp="12172" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IBuffer.java[IBuffer" modificationStamp="12144" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{ICompletionRequestor.java[ICompletionRequestor" modificationStamp="12155" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{ILocalVariable.java[ILocalVariable" modificationStamp="12170" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IInitializer.java[IInitializer" modificationStamp="12161" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{Flags.java[Flags" modificationStamp="12140" restrictions="4" visibility="0">
+            <method name="isRecord" restrictions="8" signature="(I)Z" visibility="0"/>
+            <method name="isSealed" restrictions="8" signature="(I)Z" visibility="0"/>
+            <method name="isNonSealed" restrictions="8" signature="(I)Z" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IModularClassFile.java[IModularClassFile" modificationStamp="12174" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{BindingKey.java[BindingKey" modificationStamp="12129" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IJavaModelStatusConstants.java[IJavaModelStatusConstants" modificationStamp="12168" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IPackageFragmentRoot.java[IPackageFragmentRoot" modificationStamp="12180" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IModuleDescription.java[IModuleDescription" modificationStamp="12175" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{BufferChangedEvent.java[BufferChangedEvent" modificationStamp="12130" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IAccessRule.java[IAccessRule" modificationStamp="12141" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{ICodeCompletionRequestor.java[ICodeCompletionRequestor" modificationStamp="12152" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IJavaModelMarker.java[IJavaModelMarker" modificationStamp="12166" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{ITypeRoot.java[ITypeRoot" modificationStamp="12191" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{CompletionRequestorAdapter.java[CompletionRequestorAdapter" modificationStamp="12137" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{ITypeParameter.java[ITypeParameter" modificationStamp="12190" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{JavaModelException.java[JavaModelException" modificationStamp="12195" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{CorrectionEngine.java[CorrectionEngine" modificationStamp="12138" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{ISourceReference.java[ISourceReference" modificationStamp="12186" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{ICodeAssist.java[ICodeAssist" modificationStamp="12151" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IJavaElementDelta.java[IJavaElementDelta" modificationStamp="12164" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IClasspathEntry.java[IClasspathEntry" modificationStamp="12150" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IProblemRequestor.java[IProblemRequestor" modificationStamp="12182" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{ICompilationUnit.java[ICompilationUnit" modificationStamp="12154" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{NamingConventions.java[NamingConventions" modificationStamp="12196" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{SourceRange.java[SourceRange" modificationStamp="12198" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{CompletionFlags.java[CompletionFlags" modificationStamp="12134" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{JavaConventions.java[JavaConventions" modificationStamp="12193" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IImportDeclaration.java[IImportDeclaration" modificationStamp="12160" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IClasspathContainer.java[IClasspathContainer" modificationStamp="12149" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IJavaElement.java[IJavaElement" modificationStamp="12163" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IBufferChangedListener.java[IBufferChangedListener" modificationStamp="12145" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IWorkingCopy.java[IWorkingCopy" modificationStamp="12192" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IJavaProject.java[IJavaProject" modificationStamp="12169" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IAnnotation.java[IAnnotation" modificationStamp="12143" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IClasspathAttribute.java[IClasspathAttribute" modificationStamp="12148" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{ICorrectionRequestor.java[ICorrectionRequestor" modificationStamp="12156" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IElementChangedListener.java[IElementChangedListener" modificationStamp="12157" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{CompletionContext.java[CompletionContext" modificationStamp="12133" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{CompletionProposal.java[CompletionProposal" modificationStamp="12135" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IJarEntryResource.java[IJarEntryResource" modificationStamp="12162" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{ITypeHierarchy.java[ITypeHierarchy" modificationStamp="12188" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{CompletionRequestor.java[CompletionRequestor" modificationStamp="12136" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IOrdinaryClassFile.java[IOrdinaryClassFile" modificationStamp="12177" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{WorkingCopyOwner.java[WorkingCopyOwner" modificationStamp="12200" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IMethod.java[IMethod" modificationStamp="12173" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IClassFile.java[IClassFile" modificationStamp="12147" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IOpenable.java[IOpenable" modificationStamp="12176" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IType.java[IType" modificationStamp="12187" restrictions="1" visibility="0">
+            <method name="getPermittedSubtypeNames" restrictions="8" signature="()[Ljava/lang/String;" visibility="0"/>
+            <method name="isRecord" restrictions="8" signature="()Z" visibility="0"/>
+            <method name="isSealed" restrictions="8" signature="()Z" visibility="0"/>
+            <method name="getRecordComponents" restrictions="8" signature="()[Lorg/eclipse/jdt/core/IField;" visibility="0"/>
+            <method name="getRecordComponent" restrictions="8" signature="(Ljava/lang/String;)Lorg/eclipse/jdt/core/IField;" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{ToolFactory.java[ToolFactory" modificationStamp="12199" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IPackageDeclaration.java[IPackageDeclaration" modificationStamp="12178" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IImportContainer.java[IImportContainer" modificationStamp="12159" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IField.java[IField" modificationStamp="12158" restrictions="1" visibility="0">
+            <method name="isRecordComponent" restrictions="8" signature="()Z" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{ElementChangedEvent.java[ElementChangedEvent" modificationStamp="12139" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IAnnotatable.java[IAnnotatable" modificationStamp="12142" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IBufferFactory.java[IBufferFactory" modificationStamp="12146" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{JavaCore.java[JavaCore" modificationStamp="12194" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{ClasspathContainerInitializer.java[ClasspathContainerInitializer" modificationStamp="12131" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IJavaModel.java[IJavaModel" modificationStamp="12165" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IPackageFragment.java[IPackageFragment" modificationStamp="12179" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{ITypeHierarchyChangedListener.java[ITypeHierarchyChangedListener" modificationStamp="12189" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IJavaModelStatus.java[IJavaModelStatus" modificationStamp="12167" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{Signature.java[Signature" modificationStamp="12197" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IRegion.java[IRegion" modificationStamp="12183" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{IMember.java[IMember" modificationStamp="12171" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{ISourceManipulation.java[ISourceManipulation" modificationStamp="12184" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{ISourceRange.java[ISourceRange" modificationStamp="12185" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core{ICodeFormatter.java[ICodeFormatter" modificationStamp="12153" restrictions="0" visibility="0"/>
     </package>
     <package visibility="1">
         <fragment handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.index"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.index{JavaIndexer.java[JavaIndexer" modificationStamp="12768" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.index{JavaIndexerApplication.java[JavaIndexerApplication" modificationStamp="12769" restrictions="6" visibility="0"/>
     </package>
     <package visibility="1">
         <fragment handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IAttributeNamesConstants.java[IAttributeNamesConstants" modificationStamp="12509" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IAnnotationDefaultAttribute.java[IAnnotationDefaultAttribute" modificationStamp="12508" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IRequiresInfo.java[IRequiresInfo" modificationStamp="12554" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{CompilationUnitSorter.java[CompilationUnitSorter" modificationStamp="12503" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IComponentInfo.java[IComponentInfo" modificationStamp="12517" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IModuleMainClassAttribute.java[IModuleMainClassAttribute" modificationStamp="12542" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{ILineNumberAttribute.java[ILineNumberAttribute" modificationStamp="12532" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IRecordAttribute.java[IRecordAttribute" modificationStamp="12553" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{OpcodeStringValues.java[OpcodeStringValues" modificationStamp="12567" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IInnerClassesAttribute.java[IInnerClassesAttribute" modificationStamp="12530" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{ILocalVariableTypeTableEntry.java[ILocalVariableTypeTableEntry" modificationStamp="12537" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IClassFileDisassembler.java[IClassFileDisassembler" modificationStamp="12514" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IExceptionTableEntry.java[IExceptionTableEntry" modificationStamp="12526" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IModuleAttribute.java[IModuleAttribute" modificationStamp="12541" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IConstantValueAttribute.java[IConstantValueAttribute" modificationStamp="12523" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{ISourceAttribute.java[ISourceAttribute" modificationStamp="12562" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IBytecodeVisitor.java[IBytecodeVisitor" modificationStamp="12512" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IConstantPoolConstant.java[IConstantPoolConstant" modificationStamp="12519" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IVerificationTypeInfo.java[IVerificationTypeInfo" modificationStamp="12566" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{INestMembersAttribute.java[INestMembersAttribute" modificationStamp="12546" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IPermittedSubclassesAttributeEntry.java[IPermittedSubclassesAttributeEntry" modificationStamp="12551" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IRuntimeInvisibleParameterAnnotationsAttribute.java[IRuntimeInvisibleParameterAnnotationsAttribute" modificationStamp="12556" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IParameterAnnotation.java[IParameterAnnotation" modificationStamp="12549" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IConstantPoolEntry2.java[IConstantPoolEntry2" modificationStamp="12521" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IProvidesInfo.java[IProvidesInfo" modificationStamp="12552" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IModifierConstants.java[IModifierConstants" modificationStamp="12540" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IStackMapTableAttribute.java[IStackMapTableAttribute" modificationStamp="12565" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{ILocalVariableTableEntry.java[ILocalVariableTableEntry" modificationStamp="12535" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{INestHostAttribute.java[INestHostAttribute" modificationStamp="12544" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IRuntimeInvisibleAnnotationsAttribute.java[IRuntimeInvisibleAnnotationsAttribute" modificationStamp="12555" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{INestMemberAttributeEntry.java[INestMemberAttributeEntry" modificationStamp="12545" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IAnnotation.java[IAnnotation" modificationStamp="12505" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IOpcodeMnemonics.java[IOpcodeMnemonics" modificationStamp="12547" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IModulePackagesAttribute.java[IModulePackagesAttribute" modificationStamp="12543" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IAnnotationComponent.java[IAnnotationComponent" modificationStamp="12506" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IRuntimeVisibleAnnotationsAttribute.java[IRuntimeVisibleAnnotationsAttribute" modificationStamp="12558" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IClassFileReader.java[IClassFileReader" modificationStamp="12515" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IEnclosingMethodAttribute.java[IEnclosingMethodAttribute" modificationStamp="12524" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IPackageVisibilityInfo.java[IPackageVisibilityInfo" modificationStamp="12548" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{ILocalVariableTypeTableAttribute.java[ILocalVariableTypeTableAttribute" modificationStamp="12536" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IExtendedAnnotationConstants.java[IExtendedAnnotationConstants" modificationStamp="12528" restrictions="3" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IClassFileAttribute.java[IClassFileAttribute" modificationStamp="12513" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IConstantPool.java[IConstantPool" modificationStamp="12518" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IFieldInfo.java[IFieldInfo" modificationStamp="12529" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IRuntimeVisibleParameterAnnotationsAttribute.java[IRuntimeVisibleParameterAnnotationsAttribute" modificationStamp="12559" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{ExternalAnnotationUtil.java[ExternalAnnotationUtil" modificationStamp="12504" restrictions="4" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IConstantPoolEntry.java[IConstantPoolEntry" modificationStamp="12520" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IExtendedAnnotation.java[IExtendedAnnotation" modificationStamp="12527" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IConstantPoolEntry3.java[IConstantPoolEntry3" modificationStamp="12522" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IRuntimeInvisibleTypeAnnotationsAttribute.java[IRuntimeInvisibleTypeAnnotationsAttribute" modificationStamp="12557" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{ICodeAttribute.java[ICodeAttribute" modificationStamp="12516" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IInnerClassesAttributeEntry.java[IInnerClassesAttributeEntry" modificationStamp="12531" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IMethodInfo.java[IMethodInfo" modificationStamp="12538" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{ClassFileBytesDisassembler.java[ClassFileBytesDisassembler" modificationStamp="12501" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{ILocalVariableAttribute.java[ILocalVariableAttribute" modificationStamp="12533" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IMethodParametersAttribute.java[IMethodParametersAttribute" modificationStamp="12539" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IStackMapFrame.java[IStackMapFrame" modificationStamp="12564" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IBootstrapMethodsEntry.java[IBootstrapMethodsEntry" modificationStamp="12511" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{ClassFormatException.java[ClassFormatException" modificationStamp="12502" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{ByteCodeVisitorAdapter.java[ByteCodeVisitorAdapter" modificationStamp="12500" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{ISignatureAttribute.java[ISignatureAttribute" modificationStamp="12561" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IStackMapAttribute.java[IStackMapAttribute" modificationStamp="12563" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IAnnotationComponentValue.java[IAnnotationComponentValue" modificationStamp="12507" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IPermittedSubclassesAttribute.java[IPermittedSubclassesAttribute" modificationStamp="12550" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{ILocalVariableReferenceInfo.java[ILocalVariableReferenceInfo" modificationStamp="12534" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IBootstrapMethodsAttribute.java[IBootstrapMethodsAttribute" modificationStamp="12510" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IExceptionAttribute.java[IExceptionAttribute" modificationStamp="12525" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/model&lt;org.eclipse.jdt.core.util{IRuntimeVisibleTypeAnnotationsAttribute.java[IRuntimeVisibleTypeAnnotationsAttribute" modificationStamp="12560" restrictions="0" visibility="0"/>
     </package>
     <package visibility="1">
         <fragment handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom.rewrite"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom.rewrite{ImportRewrite.java[ImportRewrite" modificationStamp="13390" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom.rewrite{ListRewrite.java[ListRewrite" modificationStamp="13391" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom.rewrite{TargetSourceRangeComputer.java[TargetSourceRangeComputer" modificationStamp="13392" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom.rewrite{ASTRewrite.java[ASTRewrite" modificationStamp="13388" restrictions="6" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/dom&lt;org.eclipse.jdt.core.dom.rewrite{ITrackedNodePosition.java[ITrackedNodePosition" modificationStamp="13389" restrictions="1" visibility="0"/>
     </package>
     <package visibility="1">
         <fragment handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{MethodNameRequestor.java[MethodNameRequestor" modificationStamp="12784" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{MethodNameMatch.java[MethodNameMatch" modificationStamp="12782" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{TypeParameterDeclarationMatch.java[TypeParameterDeclarationMatch" modificationStamp="12801" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{IJavaSearchConstants.java[IJavaSearchConstants" modificationStamp="12774" restrictions="1" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{TypeParameterReferenceMatch.java[TypeParameterReferenceMatch" modificationStamp="12802" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{TypeNameRequestor.java[TypeNameRequestor" modificationStamp="12800" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{TypeReferenceMatch.java[TypeReferenceMatch" modificationStamp="12803" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{PackageDeclarationMatch.java[PackageDeclarationMatch" modificationStamp="12788" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{ModuleReferenceMatch.java[ModuleReferenceMatch" modificationStamp="12787" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{IJavaSearchScope.java[IJavaSearchScope" modificationStamp="12776" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{SearchRequestor.java[SearchRequestor" modificationStamp="12796" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{SearchPattern.java[SearchPattern" modificationStamp="12795" restrictions="0" visibility="0">
+            <field name="focus" restrictions="8" visibility="0"/>
+            <field name="kind" restrictions="8" visibility="0"/>
+            <field name="mustResolve" restrictions="8" visibility="0"/>
+            <method name="acceptMatch" restrictions="24" signature="(Ljava/lang/String;Ljava/lang/String;CLorg/eclipse/jdt/core/search/SearchPattern;Lorg/eclipse/jdt/internal/core/search/IndexQueryRequestor;Lorg/eclipse/jdt/core/search/SearchParticipant;Lorg/eclipse/jdt/core/search/IJavaSearchScope;)V" visibility="0"/>
+            <method name="acceptMatch" restrictions="24" signature="(Ljava/lang/String;Ljava/lang/String;CLorg/eclipse/jdt/core/search/SearchPattern;Lorg/eclipse/jdt/internal/core/search/IndexQueryRequestor;Lorg/eclipse/jdt/core/search/SearchParticipant;Lorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/core/runtime/IProgressMonitor;)V" visibility="0"/>
+            <method name="currentPattern" restrictions="24" signature="()Lorg/eclipse/jdt/core/search/SearchPattern;" visibility="0"/>
+            <method name="findIndexMatches" restrictions="24" signature="(Lorg/eclipse/jdt/internal/core/index/Index;Lorg/eclipse/jdt/internal/core/search/IndexQueryRequestor;Lorg/eclipse/jdt/core/search/SearchParticipant;Lorg/eclipse/jdt/core/search/IJavaSearchScope;Lorg/eclipse/core/runtime/IProgressMonitor;)V" visibility="0"/>
+            <method name="isPolymorphicSearch" restrictions="24" signature="()Z" visibility="0"/>
+            <method name="queryIn" restrictions="24" signature="(Lorg/eclipse/jdt/internal/core/index/Index;)[Lorg/eclipse/jdt/internal/core/index/EntryResult;" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{ReferenceMatch.java[ReferenceMatch" modificationStamp="12790" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{TypeNameMatchRequestor.java[TypeNameMatchRequestor" modificationStamp="12799" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{ISearchPattern.java[ISearchPattern" modificationStamp="12777" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{TypeDeclarationMatch.java[TypeDeclarationMatch" modificationStamp="12797" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{MethodReferenceMatch.java[MethodReferenceMatch" modificationStamp="12785" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{ModuleDeclarationMatch.java[ModuleDeclarationMatch" modificationStamp="12786" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{FieldReferenceMatch.java[FieldReferenceMatch" modificationStamp="12773" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{SearchDocument.java[SearchDocument" modificationStamp="12791" restrictions="0" visibility="0">
+            <method name="getParser" restrictions="24" signature="()Lorg/eclipse/jdt/internal/compiler/SourceElementParser;" visibility="0"/>
+            <method name="setIndex" restrictions="24" signature="(Lorg/eclipse/jdt/internal/core/index/Index;)V" visibility="0"/>
+            <method name="setParser" restrictions="24" signature="(Lorg/eclipse/jdt/internal/compiler/SourceElementParser;)V" visibility="0"/>
+            <method name="shouldIndexResolvedDocument" restrictions="24" signature="()Z" visibility="0"/>
+        </type>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{SearchMatch.java[SearchMatch" modificationStamp="12793" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{TypeNameMatch.java[TypeNameMatch" modificationStamp="12798" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{SearchParticipant.java[SearchParticipant" modificationStamp="12794" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{MethodDeclarationMatch.java[MethodDeclarationMatch" modificationStamp="12781" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{ITypeNameRequestor.java[ITypeNameRequestor" modificationStamp="12778" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{SearchEngine.java[SearchEngine" modificationStamp="12792" restrictions="2" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{IJavaSearchResultCollector.java[IJavaSearchResultCollector" modificationStamp="12775" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{LocalVariableReferenceMatch.java[LocalVariableReferenceMatch" modificationStamp="12780" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{FieldDeclarationMatch.java[FieldDeclarationMatch" modificationStamp="12772" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{LocalVariableDeclarationMatch.java[LocalVariableDeclarationMatch" modificationStamp="12779" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{PackageReferenceMatch.java[PackageReferenceMatch" modificationStamp="12789" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.core/search&lt;org.eclipse.jdt.core.search{MethodNameMatchRequestor.java[MethodNameMatchRequestor" modificationStamp="12783" restrictions="0" visibility="0"/>
     </package>
 </component>
