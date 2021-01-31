@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2014, 2019 Mateusz Matela and others.
+ * Copyright (c) 2014, 2020 Mateusz Matela and others.
  *
  * This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License 2.0
@@ -81,6 +81,7 @@ import org.eclipse.jdt.core.dom.IfStatement;
 import org.eclipse.jdt.core.dom.InfixExpression;
 import org.eclipse.jdt.core.dom.InfixExpression.Operator;
 import org.eclipse.jdt.core.dom.LambdaExpression;
+import org.eclipse.jdt.core.dom.MemberValuePair;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
 import org.eclipse.jdt.core.dom.MethodInvocation;
 import org.eclipse.jdt.core.dom.Name;
@@ -345,6 +346,8 @@ public class WrapPreparator extends ASTVisitor {
 
 	@Override
 	public boolean visit(RecordDeclaration node) {
+		handleAnnotations(node.modifiers(), this.options.alignment_for_annotations_on_type);
+
 		int lParen = this.tm.firstIndexAfter(node.getName(), TokenNameLPAREN);
 		List<SingleVariableDeclaration> components = node.recordComponents();
 		int rParen = this.tm.firstIndexAfter(
@@ -792,6 +795,13 @@ public class WrapPreparator extends ASTVisitor {
 				closingBrace.setWrapPolicy(new WrapPolicy(WrapMode.WHERE_NECESSARY, openingBraceIndex,
 						closingBraceIndex, 0, this.currentDepth, 1, true, false));
 			}
+		}
+		if (this.options.brace_position_for_array_initializer.equals(DefaultCodeFormatterConstants.NEXT_LINE_SHIFTED)
+				&& openingBrace.getWrapPolicy() == null && (node.getParent() instanceof SingleMemberAnnotation
+						|| node.getParent() instanceof MemberValuePair)) {
+			int parentIndex = this.tm.firstIndexIn(node.getParent(), -1);
+			int indent = this.options.indentation_size;
+			openingBrace.setWrapPolicy(new WrapPolicy(WrapMode.BLOCK_INDENT, parentIndex, indent));
 		}
 		return true;
 	}

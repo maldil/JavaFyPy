@@ -1,0 +1,46 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: javax.inject
+Export-Package: javax.inject;version="1.0.0"
+Bundle-Name: %bundleName
+Bundle-Version: 1.0.0.v20091030
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ManifestVersion: 2
+Bundle-Vendor: %bundleProvider
+
+Name: about.html
+SHA-256-Digest: Rj3IzLQTn+3IqFTA6An70TPyHPEYhXNfrZgAvtj9DJM=
+SHA1-Digest: uLAsDULTzC8HbUXgFh/wj37WTe4=
+
+Name: javax/inject/Inject.class
+SHA-256-Digest: mWzuF6vZrt9m0fzsdEC8HKmvdzbhIHz2Ia9HupJWnFQ=
+SHA1-Digest: hnbcAwYXUbkWOJsQxHhTqqR+c3s=
+
+Name: javax/inject/Scope.class
+SHA-256-Digest: HdDc9Ky7QfPupLfE2SQ6iH05r6uY5xFmF5GVDBqHsaM=
+SHA1-Digest: KpdRdjP9gxcZBs328OYQZxzWdwg=
+
+Name: javax/inject/Named.class
+SHA-256-Digest: JmFsv/Kvw0yAK8Vd5kFoe8Hds3BvZn9re3bfV9sQD8c=
+SHA1-Digest: Uf6bJdZYftcka5hjK5Fh3WFkURE=
+
+Name: plugin.properties
+SHA-256-Digest: KxtkW1SkRtrbFwZC6NY86SohXnkyGnhK3cu2P8IVJBM=
+SHA1-Digest: IbhZh1oflZPwsmW4C1Qm9P0e61A=
+
+Name: javax/inject/Provider.class
+SHA-256-Digest: u0oFKmK9Rj1Q65oj6zxBMb0py3x0iO/5i/k74p5GYZw=
+SHA1-Digest: pIRji7h2izIB/+sCY2EnAFhTQn8=
+
+Name: javax/inject/Singleton.class
+SHA-256-Digest: o0Pe438S5rFqbU8wjAB5bEkiucyHjhOGhnDZGhje66I=
+SHA1-Digest: nWl5vSgc422lSXxvtBzhJ+VOZcw=
+
+Name: javax/inject/Qualifier.class
+SHA-256-Digest: SZnYjm6uRiXxNdzZ5jrvwqdOXO/rHUKWBzyC/PZ15EE=
+SHA1-Digest: L+DV6cqAoa7QznM+D3LiwMHs8OQ=
+
+Name: META-INF/eclipse.inf
+SHA-256-Digest: SOnAUA0CB8dMRrZdLCRZFQ1WZBhIWcQsKFnHDxFJf44=
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+

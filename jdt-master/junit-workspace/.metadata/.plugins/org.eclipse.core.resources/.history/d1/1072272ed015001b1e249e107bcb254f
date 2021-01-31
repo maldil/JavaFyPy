@@ -1,6 +1,0 @@
-public class Z {
-  void foo() {
-    /*start*/class Local {
-    }/*end*/
-  }
-}

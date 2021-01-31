@@ -105,7 +105,6 @@ import org.eclipse.jdt.core.dom.VariableDeclarationStatement;
 import org.eclipse.jdt.core.dom.WhileStatement;
 import org.eclipse.jdt.core.dom.WildcardType;
 import org.eclipse.jdt.core.dom.YieldStatement;
-import org.eclipse.jdt.internal.compiler.ast.InExpression;
 import org.eclipse.jdt.internal.compiler.parser.ScannerHelper;
 
 public class SpacePreparator extends ASTVisitor {
@@ -1089,7 +1088,6 @@ public class SpacePreparator extends ASTVisitor {
 		handleCommas(typeArguments, this.options.insert_space_before_comma_in_type_arguments,
 				this.options.insert_space_after_comma_in_type_arguments);
 	}
-
 
 	@Override
 	public boolean visit(InstanceofExpression node) {

@@ -1,0 +1,50 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: ch.qos.logback.slf4j
+Bundle-SymbolicName: ch.qos.logback.slf4j
+Built-By: default
+Bundle-ManifestVersion: 2
+Bundle-Vendor: %bundleVendor
+Import-Package: ch.qos.logback.classic;version="[1.2.3,1.3)",ch.qos.lo
+ gback.classic.selector;version="[1.2.3,1.3)",ch.qos.logback.classic.u
+ til;version="[1.2.3,1.3)",ch.qos.logback.core;version="[1.2.3,1.3)",c
+ h.qos.logback.core.joran.spi;version="[1.2.3,1.3)",ch.qos.logback.cor
+ e.status;version="[1.2.3,1.3)",ch.qos.logback.core.util;version="[1.2
+ .3,1.3)",org.slf4j.spi;version="[1.7.30,1.8)",org.slf4j;version="[1.7
+ ,2)",org.slf4j.helpers;version="[1.7,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Fragment-Host: org.slf4j.api;bundle-version="[1.7.30,1.8)"
+Provide-Capability: org.slf4j.impl;org.slf4j.impl=logback;version:Vers
+ ion="1.7.30"
+Export-Package: org.slf4j.impl;x-internal:=true;version="1.7.30";uses:
+ ="org.slf4j,org.slf4j.spi"
+Bundle-Name: %bundleName
+Bundle-Version: 1.2.3.v20200428-2012
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_212
+
+Name: about.html
+SHA-256-Digest: oYhmcFOObkI6Q95UPUkfhZEkmh0wXpaVB59zIVSBNv4=
+
+Name: about_files/ECLIPSE_PUBLIC_LICENSE_V2.0.html
+SHA-256-Digest: koxKavfpz4JYnlYPmP+7at5zhbWf7Iy07zamu5HPcBg=
+
+Name: org/slf4j/impl/StaticMDCBinder.class
+SHA-256-Digest: 9mxomDOrQYZcFftdMdfwZUy9FeXqaIJ67eKnpTptOVQ=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/ch.qos.logback.slf4j/po
+ m.xml
+SHA-256-Digest: d88Dj+HA2ZIr3d6gMErvgyMrlRcd/dHAVcRC6Bp7BbY=
+
+Name: org/slf4j/impl/StaticMarkerBinder.class
+SHA-256-Digest: VnCgvbT9Spxd2Wqyyyu0wDWfvzp+j7I0b15mnxUUtcU=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/ch.qos.logback.slf4j/po
+ m.properties
+SHA-256-Digest: heMqaN+V85MPbBZefR7L4LLH19RSuyMxBKf/B48kmIk=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: 7roBhMeQyxsIjicy077/F58QJnjDa97y8m+vLlVgPzc=
+
+Name: org/slf4j/impl/StaticLoggerBinder.class
+SHA-256-Digest: cxugicVWp2EFNZkK+kFzl9tCeYwK5px7H9qGXkG9fZI=
+

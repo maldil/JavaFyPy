@@ -621,8 +621,8 @@ public class InternalNamingConventions {
 				nameScanner.setSource(baseName);
 				switch (nameScanner.getNextToken()) {
 					case TerminalTokens.TokenNameint :
-//					case TerminalTokens.TokenNamebyte :
-//					case TerminalTokens.TokenNameshort :
+					case TerminalTokens.TokenNamebyte :
+					case TerminalTokens.TokenNameshort :
 					case TerminalTokens.TokenNamechar :
 					case TerminalTokens.TokenNamelong :
 					case TerminalTokens.TokenNamefloat :

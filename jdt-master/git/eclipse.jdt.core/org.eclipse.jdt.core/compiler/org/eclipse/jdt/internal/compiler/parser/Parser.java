@@ -1978,8 +1978,8 @@ public class Parser implements TerminalTokens, ParserBasicInformation, Conflicte
             this.intPtr --;
             this.expressionLengthPtr--;
         }
-        pyGenerators.setTarget1(compareter);
-        pyGenerators.setTarget2(this.expressionStack[--this.expressionPtr]);
+        pyGenerators.setTarget1(this.expressionStack[--this.expressionPtr]);
+        pyGenerators.setTarget2(compareter);
         this.expressionLengthPtr--;
         this.expressionStack[this.expressionPtr] = pyGenerators;
     }

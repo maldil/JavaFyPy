@@ -4237,13 +4237,13 @@ protected void consumeToken(int token) {
 					switch (previous) {
 						case TokenNameIdentifier:
 						case TokenNameboolean:
-//						case TokenNamebyte:
+						case TokenNamebyte:
 						case TokenNamechar:
 						case TokenNamedouble:
 						case TokenNamefloat:
 						case TokenNameint:
 						case TokenNamelong:
-//						case TokenNameshort:
+						case TokenNameshort:
 						case TokenNameGREATER:
 						case TokenNameRIGHT_SHIFT:
 						case TokenNameUNSIGNED_RIGHT_SHIFT:
@@ -4425,9 +4425,6 @@ protected void consumeToken(int token) {
 				break;
 			case TokenNameinstanceof:
 				pushOnElementStack(K_BINARY_OPERATOR, INSTANCEOF);
-				break;
-			case TokenNamein:
-				pushOnElementStack(K_BINARY_OPERATOR, IN);
 				break;
 			case TokenNameQUESTION:
 				if(previous != TokenNameLESS && previous != TokenNameCOMMA) {

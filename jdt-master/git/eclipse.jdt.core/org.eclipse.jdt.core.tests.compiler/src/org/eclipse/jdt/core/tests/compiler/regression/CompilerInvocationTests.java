@@ -1130,6 +1130,7 @@ public void test011_problem_categories() {
 		expectedProblemAttributes.put("UseAssertAsAnIdentifier", new ProblemAttributes(CategorizedProblem.CAT_CODE_STYLE));
 		expectedProblemAttributes.put("UseEnumAsAnIdentifier", new ProblemAttributes(CategorizedProblem.CAT_CODE_STYLE));
 		expectedProblemAttributes.put("IllegalUseOfUnderscoreAsAnIdentifier", new ProblemAttributes(CategorizedProblem.CAT_SYNTAX));
+		expectedProblemAttributes.put("ErrorUseOfUnderscoreAsAnIdentifier", new ProblemAttributes(CategorizedProblem.CAT_SYNTAX));
 		expectedProblemAttributes.put("UsingDeprecatedConstructor", new ProblemAttributes(CategorizedProblem.CAT_DEPRECATION));
 		expectedProblemAttributes.put("UsingDeprecatedField", new ProblemAttributes(CategorizedProblem.CAT_DEPRECATION));
 		expectedProblemAttributes.put("UsingDeprecatedMethod", new ProblemAttributes(CategorizedProblem.CAT_DEPRECATION));
@@ -1261,7 +1262,9 @@ public void test011_problem_categories() {
 	    expectedProblemAttributes.put("RecordIllegalExplicitFinalFieldAssignInCompactConstructor", new ProblemAttributes(CategorizedProblem.CAT_PREVIEW_RELATED));
 	    expectedProblemAttributes.put("RecordMissingExplicitConstructorCallInNonCanonicalConstructor", new ProblemAttributes(CategorizedProblem.CAT_PREVIEW_RELATED));
 	    expectedProblemAttributes.put("RecordIllegalStaticModifierForLocalClassOrInterface", new ProblemAttributes(CategorizedProblem.CAT_PREVIEW_RELATED));
+	    expectedProblemAttributes.put("RecordIllegalModifierForLocalRecord", new ProblemAttributes(CategorizedProblem.CAT_PREVIEW_RELATED));
 	    expectedProblemAttributes.put("LocalStaticsIllegalVisibilityModifierForInterfaceLocalType", new ProblemAttributes(CategorizedProblem.CAT_PREVIEW_RELATED));
+	    expectedProblemAttributes.put("IllegalModifierForLocalEnumDeclaration", new ProblemAttributes(CategorizedProblem.CAT_PREVIEW_RELATED));
 	    expectedProblemAttributes.put("SealedMissingClassModifier", new ProblemAttributes(CategorizedProblem.CAT_PREVIEW_RELATED));
 	    expectedProblemAttributes.put("SealedDisAllowedNonSealedModifierInClass", new ProblemAttributes(CategorizedProblem.CAT_PREVIEW_RELATED));
 	    expectedProblemAttributes.put("SealedSuperClassDoesNotPermit", new ProblemAttributes(CategorizedProblem.CAT_PREVIEW_RELATED));
@@ -2181,6 +2184,7 @@ public void test012_compiler_problems_tuning() {
 		expectedProblemAttributes.put("UseAssertAsAnIdentifier", new ProblemAttributes(JavaCore.COMPILER_PB_ASSERT_IDENTIFIER));
 		expectedProblemAttributes.put("UseEnumAsAnIdentifier", new ProblemAttributes(JavaCore.COMPILER_PB_ENUM_IDENTIFIER));
 		expectedProblemAttributes.put("IllegalUseOfUnderscoreAsAnIdentifier", SKIP);
+		expectedProblemAttributes.put("ErrorUseOfUnderscoreAsAnIdentifier", SKIP);
 		expectedProblemAttributes.put("UsingDeprecatedConstructor", new ProblemAttributes(JavaCore.COMPILER_PB_DEPRECATION));
 		expectedProblemAttributes.put("UsingDeprecatedField", new ProblemAttributes(JavaCore.COMPILER_PB_DEPRECATION));
 		expectedProblemAttributes.put("UsingDeprecatedMethod", new ProblemAttributes(JavaCore.COMPILER_PB_DEPRECATION));
@@ -2308,10 +2312,12 @@ public void test012_compiler_problems_tuning() {
 	    expectedProblemAttributes.put("RecordCannotDefineRecordInLocalType",SKIP);
 	    expectedProblemAttributes.put("RecordMissingExplicitConstructorCallInNonCanonicalConstructor",SKIP);
 	    expectedProblemAttributes.put("RecordIllegalStaticModifierForLocalClassOrInterface", SKIP);
+	    expectedProblemAttributes.put("RecordIllegalModifierForLocalRecord", SKIP);
 	    expectedProblemAttributes.put("RecordComponentsCannotHaveModifiers",SKIP);
 	    expectedProblemAttributes.put("RecordIllegalParameterNameInCanonicalConstructor",SKIP);
 	    expectedProblemAttributes.put("RecordIllegalExplicitFinalFieldAssignInCompactConstructor",SKIP);
 	    expectedProblemAttributes.put("LocalStaticsIllegalVisibilityModifierForInterfaceLocalType",SKIP);
+	    expectedProblemAttributes.put("IllegalModifierForLocalEnumDeclaration",SKIP);
 	    expectedProblemAttributes.put("SealedMissingClassModifier", SKIP);
 	    expectedProblemAttributes.put("SealedDisAllowedNonSealedModifierInClass", SKIP);
 	    expectedProblemAttributes.put("SealedSuperClassDoesNotPermit", SKIP);

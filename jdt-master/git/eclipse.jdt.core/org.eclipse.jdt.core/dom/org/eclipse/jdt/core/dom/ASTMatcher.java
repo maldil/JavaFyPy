@@ -814,8 +814,8 @@ public class ASTMatcher {
 		}
 		EnhancedForStatement o = (EnhancedForStatement) other;
 		return (
-				safeSubtreeMatch(node.Parameters(), o.Parameters())
-						&& safeSubtreeMatch(node.Parameters(), o.Parameters()) // changed this to match with list of parameters
+				safeSubtreeMatch(node.getParameter(), o.getParameter())
+						&& safeSubtreeListMatch(node.Parameters(), o.Parameters()) // changed this to match with list of parameters
 				&& safeSubtreeMatch(node.getExpression(), o.getExpression())
 				&& safeSubtreeMatch(node.getBody(), o.getBody()));
 	}
@@ -827,7 +827,7 @@ public class ASTMatcher {
 		EnhancedForStatementWithElse o = (EnhancedForStatementWithElse) other;
 		return (
 				safeSubtreeMatch(node.getParameter(), o.getParameter())&&
-				safeSubtreeMatch(node.Parameters(), o.Parameters()) // changed this to match with list of parameters
+						safeSubtreeListMatch(node.Parameters(), o.Parameters()) // changed this to match with list of parameters
 						&& safeSubtreeMatch(node.getExpression(), o.getExpression())
 						&& safeSubtreeMatch(node.getBody(), o.getBody())
 						&& safeSubtreeMatch(node.getElseBody(), o.getElseBody()));
@@ -2960,7 +2960,7 @@ public class ASTMatcher {
 			return false;
 		}
 		PyTupleExpression o = (PyTupleExpression) other;
-		return safeSubtreeMatch(node.expressions(), o.expressions());
+		return safeSubtreeListMatch(node.expressions(), o.expressions());
     }
 
     public boolean match(PyGenerator node, Object other) {
@@ -2969,7 +2969,7 @@ public class ASTMatcher {
 		}
 		PyGenerator o = (PyGenerator) other;
 
-		return (safeSubtreeMatch(node.getComparators(), o.getComparators())
+		return (safeSubtreeListMatch(node.getComparators(), o.getComparators())
 				&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()));
 
 	}
@@ -2983,12 +2983,12 @@ public class ASTMatcher {
 			return (
 					safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())
 							&& safeSubtreeMatch(node.getConditionalExpression(), o.getConditionalExpression())&&
-							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
+							safeSubtreeListMatch(node.getValueExpression(), o.getValueExpression()));
 		}
 		else{
 			return (
 					safeSubtreeMatch(node.getIteratorExpression(), o.getIteratorExpression())&&
-							safeSubtreeMatch(node.getValueExpression(), o.getValueExpression()));
+							safeSubtreeListMatch(node.getValueExpression(), o.getValueExpression()));
 		}
 
 	}
@@ -3010,7 +3010,7 @@ public class ASTMatcher {
 		}
 		PyListComprehension o = (PyListComprehension) other;
 
-		return (safeSubtreeMatch(node.getComparator(), o.getComparator())
+		return (safeSubtreeListMatch(node.getComparator(), o.getComparator())
 				&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()));
     }
 
@@ -3019,7 +3019,7 @@ public class ASTMatcher {
 			return false;
 		}
 		PyDictComprehension o = (PyDictComprehension) other;
-		return (safeSubtreeMatch(node.getComparator(), o.getComparator())
+		return (safeSubtreeListMatch(node.getComparator(), o.getComparator())
 				&& safeSubtreeMatch(node.getTarget1Expression(), o.getTarget1Expression())
 		&& safeSubtreeMatch(node.getTarget2Expression(), o.getTarget2Expression()));
 
@@ -3030,7 +3030,7 @@ public class ASTMatcher {
 			return false;
 		}
 		PySetComprehension o = (PySetComprehension) other;
-		return (safeSubtreeMatch(node.getComparator(), o.getComparator())
+		return (safeSubtreeListMatch(node.getComparator(), o.getComparator())
 				&& safeSubtreeMatch(node.getTargetExpression(), o.getTargetExpression()));
 	}
 
@@ -3051,4 +3051,13 @@ public class ASTMatcher {
     }
 
 
+	public boolean match(PyWithStatement node, Object other) {
+		if (!(other instanceof PyWithStatement)) {
+			return false;
+		}
+		PyWithStatement o = (PyWithStatement) other;
+		return (
+				safeSubtreeMatch(node.getExpression(), o.getExpression())
+						&& safeSubtreeMatch(node.getBody(), o.getBody()));
+	}
 }

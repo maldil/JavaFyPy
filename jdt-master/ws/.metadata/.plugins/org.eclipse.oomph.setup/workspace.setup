@@ -27,7 +27,7 @@
             xsi:type="setup:VariableTask"
             type="FOLDER"
             name="git.clone.jdt.core.location"
-            value="/Users/malinda/Documents/Research_Topic_2/eclips_workspace_cpat_new/jdt-master/git/eclipse.jdt.core"
+            value="/Users/malinda/Documents/Research_Topic_2/eclipse_2020_10_3_new/jdt-master/git/eclipse.jdt.core"
             label="JDT Core Git clone location">
           <description>The absolute folder location where the JDT Core Git clone is located</description>
         </setupTask>
@@ -41,7 +41,7 @@
               xsi:type="setup:VariableTask"
               type="FOLDER"
               name="git.clone.jdt.binaries.location"
-              value="/Users/malinda/Documents/Research_Topic_2/eclips_workspace_cpat_new/jdt-master/git/eclipse.jdt.core.binaries"
+              value="/Users/malinda/Documents/Research_Topic_2/eclipse_2020_10_3_new/jdt-master/git/eclipse.jdt.core.binaries"
               label="JDT Core Tests Git clone location">
             <description>The absolute folder location where the JDT Core Tests Git clone is located</description>
           </setupTask>

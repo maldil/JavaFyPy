@@ -18,9 +18,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.osgi:3.16.100.v20201030-1916">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.osgi:3.16.200.v20201209-1827">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.osgi/3.16.100.v20201030-1916/org.eclipse.osgi-3.16.100.v20201030-1916.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.osgi/3.16.200.v20201209-1827/org.eclipse.osgi-3.16.200.v20201209-1827.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -261,9 +261,9 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.core.runtime:3.20.0.v20201027-1526">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.core.runtime:3.20.100.v20210111-0815">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.core.runtime/3.20.0.v20201027-1526/org.eclipse.core.runtime-3.20.0.v20201027-1526.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.core.runtime/3.20.100.v20210111-0815/org.eclipse.core.runtime-3.20.100.v20210111-0815.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -288,15 +288,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.core.contenttype:3.7.800.v20200724-0804">
-        <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.core.contenttype/3.7.800.v20200724-0804/org.eclipse.core.contenttype-3.7.800.v20200724-0804.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
       <library name="Maven: p2.eclipse-plugin:org.eclipse.equinox.preferences:3.8.100.v20201102-2042">
         <CLASSES>
           <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.equinox.preferences/3.8.100.v20201102-2042/org.eclipse.equinox.preferences-3.8.100.v20201102-2042.jar!/" />
@@ -315,9 +306,18 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.core.expressions:3.7.0.v20200720-1126">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.core.contenttype:3.7.900.v20210111-0918">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.core.expressions/3.7.0.v20200720-1126/org.eclipse.core.expressions-3.7.0.v20200720-1126.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.core.contenttype/3.7.900.v20210111-0918/org.eclipse.core.contenttype-3.7.900.v20210111-0918.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.core.expressions:3.7.100.v20210111-0815">
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.core.expressions/3.7.100.v20210111-0815/org.eclipse.core.expressions-3.7.100.v20210111-0815.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -333,9 +333,9 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.core.jobs:3.10.1000.v20200909-1312">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.core.jobs:3.10.1100.v20210111-0815">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.core.jobs/3.10.1000.v20200909-1312/org.eclipse.core.jobs-3.10.1000.v20200909-1312.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.core.jobs/3.10.1100.v20210111-0815/org.eclipse.core.jobs-3.10.1100.v20210111-0815.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

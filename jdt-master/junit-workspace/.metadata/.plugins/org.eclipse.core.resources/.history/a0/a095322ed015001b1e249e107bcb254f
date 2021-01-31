@@ -1,9 +1,0 @@
-public class X {
-        void test() {
-                new Object() {
-                        /*start*/public void yes() {
-                                System.out.println("hello world");
-                        }/*end*/
-                } // missing semicolon;
-        }
-}

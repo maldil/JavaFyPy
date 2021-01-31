@@ -47,7 +47,7 @@ public class PyWithStatement extends Statement{
 
     @Override
     boolean subtreeMatch0(ASTMatcher matcher, Object other) {
-        return false;
+        return matcher.match(this, other);
     }
 
     @Override

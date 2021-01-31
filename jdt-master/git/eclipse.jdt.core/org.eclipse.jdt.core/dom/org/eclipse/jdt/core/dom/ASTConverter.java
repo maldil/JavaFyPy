@@ -2087,9 +2087,13 @@ class ASTConverter {
 		if (expression.getBinaryExpression()!=null){
 			pyComparator.setConditionalExpression(convert(expression.getBinaryExpression()));
 		}
-		for (LocalDeclaration value : expression.typeValues) {
-			pyComparator.getValueExpression().add(convertToSingleVariableDeclaration(value));
+		for  (int j=expression.typeValues.size()-1;j>=0;j--){
+			pyComparator.getValueExpression().add(convertToSingleVariableDeclaration(expression.typeValues.get(j)));
 		}
+//
+//		for (LocalDeclaration value : expression.typeValues) {
+//			pyComparator.getValueExpression().add(convertToSingleVariableDeclaration(value));
+//		}
 		pyComparator.setSourceRange(expression.sourceStart, expression.sourceEnd - expression.sourceStart + 1);
 		return pyComparator;
 	}
@@ -2217,7 +2221,13 @@ class ASTConverter {
 				enhancedForStatement.setParameter(convertToSingleVariableDeclaration(statement.elementVariable));
 				org.eclipse.jdt.internal.compiler.ast.Expression collection = statement.collection;
 				if (collection == null) return null;
-				enhancedForStatement.setExpression(convert(collection));
+				Expression convert = convert(collection);
+				if (convert instanceof ParenthesizedExpression && ((ParenthesizedExpression) convert).getExpression() instanceof PyTupleExpression){
+					enhancedForStatement.setExpression((Expression) ASTNode.copySubtree(this.ast,((ParenthesizedExpression) convert).getExpression()))   ;
+				}
+				else{
+					enhancedForStatement.setExpression(convert);
+				}
 				final Statement action = convert(statement.action);
 
 				if (statement.elseaction!=null){
@@ -2797,10 +2807,13 @@ class ASTConverter {
 		final InfixExpression infixExpression = new InfixExpression(this.ast);
 		infixExpression.setOperator(InfixExpression.Operator.PLUS);
 		org.eclipse.jdt.internal.compiler.ast.Expression[] stringLiterals = expression.literals;
-		infixExpression.setLeftOperand(convert(stringLiterals[0]));
-		infixExpression.setRightOperand(convert(stringLiterals[1]));
+		Expression convert = convert(stringLiterals[0]);
+		infixExpression.setLeftOperand(convert instanceof ParenthesizedExpression && ((ParenthesizedExpression) convert).getExpression() instanceof PyTupleExpression ? ((ParenthesizedExpression) convert).getExpression(): convert);
+		Expression convert1 = convert(stringLiterals[1]);
+		infixExpression.setRightOperand(convert1 instanceof ParenthesizedExpression && ((ParenthesizedExpression) convert1).getExpression() instanceof PyTupleExpression ? ((ParenthesizedExpression) convert1).getExpression(): convert1);
 		for (int i = 2; i < expression.counter; i++) {
-			infixExpression.extendedOperands().add(convert(stringLiterals[i]));
+			Expression convert2 = convert(stringLiterals[i]);
+			infixExpression.extendedOperands().add(convert2 instanceof ParenthesizedExpression && ((ParenthesizedExpression) convert2).getExpression() instanceof PyTupleExpression ? ((ParenthesizedExpression) convert2).getExpression(): convert2);
 		}
 		if (this.resolveBindings) {
 			this.recordNodes(infixExpression, expression);
@@ -4025,7 +4038,7 @@ class ASTConverter {
 		}
 	}
 
-	public ParenthesizedExpression convertToParenthesizedExpression(org.eclipse.jdt.internal.compiler.ast.Expression expression) {
+	public Expression convertToParenthesizedExpression(org.eclipse.jdt.internal.compiler.ast.Expression expression) {
 		final ParenthesizedExpression parenthesizedExpression = new ParenthesizedExpression(this.ast);
 		if (this.resolveBindings) {
 			recordNodes(parenthesizedExpression, expression);
@@ -4037,7 +4050,9 @@ class ASTConverter {
 		int numberOfParenthesis = (expression.bits & org.eclipse.jdt.internal.compiler.ast.ASTNode.ParenthesizedMASK) >> org.eclipse.jdt.internal.compiler.ast.ASTNode.ParenthesizedSHIFT;
 		expression.bits &= ~org.eclipse.jdt.internal.compiler.ast.ASTNode.ParenthesizedMASK;
 		expression.bits |= (numberOfParenthesis - 1) << org.eclipse.jdt.internal.compiler.ast.ASTNode.ParenthesizedSHIFT;
-		parenthesizedExpression.setExpression(convert(expression));
+		Expression  converted = convert(expression);
+		if (converted instanceof PyTupleExpression) return converted;
+		parenthesizedExpression.setExpression(converted);
 		return parenthesizedExpression;
 	}
 

@@ -597,7 +597,7 @@ public class CompilationUnit extends ASTNode {
 	 * @since 3.14
 	 */
 	public ModuleDeclaration getModule() {
-		unsupportedBelow9();
+//		unsupportedBelow9();
 		return this.module;
 	}
 

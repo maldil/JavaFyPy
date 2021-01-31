@@ -99,7 +99,6 @@ public interface ITerminalSymbols {
 	int TokenNameDoubleLiteral = 43;
 	int TokenNameCharacterLiteral = 44;
 	int TokenNameStringLiteral = 45;
-	int TokenNamein = 222;
 	/**
 	 * @since 3.20
 	 * @noreference This class is not intended to be referenced by clients as it is a part of Java preview feature.

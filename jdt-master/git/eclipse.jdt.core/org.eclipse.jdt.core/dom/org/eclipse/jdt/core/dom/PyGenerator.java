@@ -105,6 +105,8 @@ public class PyGenerator extends Expression{
         PyGenerator pyGenerator = new PyGenerator(target);
         pyGenerator.setSourceRange(getStartPosition(), getLength());
 
+        pyGenerator.setTargetExpression((Expression) targetExpression.clone(target));
+
         for (Object o : comparator) {
             pyGenerator.comparator.add(
                     ((PyComparator) o).clone(target));

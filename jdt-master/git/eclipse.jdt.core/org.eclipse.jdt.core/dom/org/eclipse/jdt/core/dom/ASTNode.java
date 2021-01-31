@@ -1249,6 +1249,8 @@ public abstract class ASTNode {
 				return PyListComprehension.class;
 			case PY_SET_COMPREHENSION_EXPRESSION:
 				return PySetComprehension.class;
+			case ENHANCED_FOR_STATEMENT_WITH_ELSE:
+				return EnhancedForStatementWithElse.class;
 		}
 		throw new IllegalArgumentException();
 	}
@@ -1302,6 +1304,10 @@ public abstract class ASTNode {
 	private int pyStartPosition = -1;
 
 	private int pyColumnOffSet = -1;
+
+	private int pyLength = -1;
+
+	private int pyLineNumber = -1;
 
 	/**
 	 * A character index into the original source string,
@@ -3146,7 +3152,13 @@ public abstract class ASTNode {
 		this.pyColumnOffSet=startPos;
 	}
 
+	public final void setPyLength(int length) {
+		this.pyLength=length;
+	}
+	public final int getPyLength(){return this.pyLength;}
 
+	public final void setPyLine(int line){this.pyLineNumber=line;}
+	public final int getPyLine(){return this.pyLineNumber;}
 
 	/**
 	 * Returns the character index into the original source file indicating
@@ -3202,7 +3214,7 @@ public abstract class ASTNode {
 	 * @see #getLength()
 	 * @see ASTParser
 	 */
-	public final void setSourceRange(int startPosition, int length) {
+	public final void setSourceRange(int startPosition, int lelengthngth) {
 		if (startPosition >= 0 && length < 0) {
 			throw new IllegalArgumentException();
 		}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eclipse.jdt.annotation" modificationStamp="10448" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eclipse.jdt.annotation/src&lt;org.eclipse.jdt.annotation"/>
+        <type handle="=org.eclipse.jdt.annotation/src&lt;org.eclipse.jdt.annotation{Checks.java[Checks" modificationStamp="10456" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.annotation/src&lt;org.eclipse.jdt.annotation{DefaultLocation.java[DefaultLocation" modificationStamp="10457" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.annotation/src&lt;org.eclipse.jdt.annotation{NonNull.java[NonNull" modificationStamp="10458" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.annotation/src&lt;org.eclipse.jdt.annotation{NonNullByDefault.java[NonNullByDefault" modificationStamp="10459" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.annotation/src&lt;org.eclipse.jdt.annotation{Nullable.java[Nullable" modificationStamp="10460" restrictions="0" visibility="0"/>
+        <type handle="=org.eclipse.jdt.annotation/src&lt;org.eclipse.jdt.annotation{package-info.java[package-info" modificationStamp="10461" restrictions="0" visibility="0"/>
+    </package>
+</component>
