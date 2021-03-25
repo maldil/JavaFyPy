@@ -98,7 +98,7 @@ public class ASTMatcher {
 	 *    and match pair-wise according to {@link ASTNode#subtreeMatch(ASTMatcher, Object) ASTNode.subtreeMatch}
 	 * @see ASTNode#subtreeMatch(ASTMatcher matcher, Object other)
 	 */
-	public final boolean safeSubtreeListMatch(List list1, List list2) {
+	public  boolean safeSubtreeListMatch(List list1, List list2) {
 		int size1 = list1.size();
 		int size2 = list2.size();
 		if (size1 != size2) {

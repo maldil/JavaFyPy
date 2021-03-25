@@ -2620,15 +2620,15 @@ class ASTConverter {
 
 			else if ("dictc".equals(new String(expression.selector)) && expression.arguments != null && expression.arguments.length==1 && expression.arguments[0] instanceof PyDicComp){
 				PyDicComp pyDicComp = (PyDicComp) expression.arguments[0];
-				Expression target1 = convert(pyDicComp.getTarget1());
-				if (target1 instanceof Name && ((Name) target1).getFullyQualifiedName().equals("SET_PYTHON")){
+				Expression target2 = convert(pyDicComp.getTarget2());
+				if (target2 instanceof Name && ((Name) target2).getFullyQualifiedName().equals("SET_PYTHON")){
 					final PySetComprehension pyset = new PySetComprehension(this.ast);
 					for (int i = pyDicComp.getComparetors().size(); i-- > 0; ) {
 						pyset.getComparator().add(convert(pyDicComp.comparetors.get(i)));
 					}
-					Expression target2 = convert(pyDicComp.getTarget2());
-					pyset.setSourceRange(target2.getStartPosition(), expression.sourceEnd - sourceStart + 1);
-					pyset.setTargetExpression(target2);
+					Expression target1 = convert(pyDicComp.getTarget1());
+					pyset.setSourceRange(target1.getStartPosition(), expression.sourceEnd - sourceStart + 1);
+					pyset.setTargetExpression(target1);
 					return pyset;
 				}
 
@@ -2638,7 +2638,7 @@ class ASTConverter {
 					pylistcomp.getComparator().add(convert(pyDicComp.comparetors.get(i)));
 				}
 				//pyGenerator.setValueExpression(convert(pyGenerators.getValue()));
-				Expression target2 = convert(pyDicComp.getTarget2());
+				Expression target1 = convert(pyDicComp.getTarget1());
 
 				pylistcomp.setTarget1Expression(target1);
 				pylistcomp.setTarget2Expression(target2);
@@ -3492,12 +3492,22 @@ class ASTConverter {
 				start = catchBlocks[i].sourceEnd;
 			}
 		}
-		if (statement.finallyBlock != null) {
-			tryStatement.setFinally(convert(statement.finallyBlock));
+		if (statement.finallyBlock != null && statement.elseBlock != null){ //This is a hack. Change the grammer file properly
+			tryStatement.setFinally(convert(statement.elseBlock));
+			tryStatement.setElse(convert(statement.finallyBlock));
+
 		}
-		if (statement.elseBlock!=null){
-			tryStatement.setElse(convert(statement.elseBlock));
+		else{
+			if (statement.finallyBlock != null) {
+				tryStatement.setFinally(convert(statement.finallyBlock));
+			}
+			if (statement.elseBlock!=null){
+				tryStatement.setElse(convert(statement.elseBlock));
+			}
 		}
+
+
+
 		return tryStatement;
 	}
 

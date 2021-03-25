@@ -1789,14 +1789,19 @@ public class NaiveASTFlattener extends ASTVisitor {
 			CatchClause cc = (CatchClause) it.next();
 			cc.accept(this);
 		}
+
 		if (node.getFinally() != null) {
 			this.buffer.append(" finally ");//$NON-NLS-1$
 			node.getFinally().accept(this);
 		}
+
 		if (node.getElse() != null) {
 			this.buffer.append(" else ");//$NON-NLS-1$
 			node.getElse().accept(this);
 		}
+
+
+
 		return false;
 	}
 

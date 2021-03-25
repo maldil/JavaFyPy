@@ -5,6 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8fbc031-e1e1-4c42-8830-54a90e0856b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/core/dom/BredthASTMatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/core/dom/PythonASTParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/MapPyExpressionsJDK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/MapPyStatementsTOJDK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/PyASTNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/PyCompilationUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/PyMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/PythonASTUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/pyJDTnodes/PyImportDeclaration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/pyerrors/ExpressionNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/pyerrors/NodeNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/pyerrors/TypeParseError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/pyvisitors/PyVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/antlr/PyType.tokens" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/antlr/PyTypeLexer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/antlr/PyTypeParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/antlr/TypeInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/antlr/TypeTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/antlr3/PyType.g" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/antlr3/PyType_O.g" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/antlr3/Python.g" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/antlr3/Test.g" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/core/Configurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/core/PyASTMatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/core/PythonScripError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/core/TypeASTNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/core/TypeApproximator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/core/TypeDecNeeds.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/core/TypeInformation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/core/TypeStringToJDT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/pythonscripts/CheckTypeString.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/pythonscripts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/python/typeinference/pythonscripts/mainPyTypetest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/compiler/org/eclipse/jdt/internal/compiler/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/compiler/org/eclipse/jdt/internal/compiler/parser/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dom/org/eclipse/jdt/core/dom/ASTConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/core/dom/ASTConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dom/org/eclipse/jdt/core/dom/ASTMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/core/dom/ASTMatcher.java" afterDir="false" />
@@ -12,7 +45,11 @@
       <change beforePath="$PROJECT_DIR$/dom/org/eclipse/jdt/core/dom/CompilationUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/core/dom/CompilationUnit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dom/org/eclipse/jdt/core/dom/PyGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/core/dom/PyGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dom/org/eclipse/jdt/core/dom/PyWithStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/core/dom/PyWithStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dom/org/eclipse/jdt/internal/core/dom/NaiveASTFlattener.java" beforeDir="false" afterPath="$PROJECT_DIR$/dom/org/eclipse/jdt/internal/core/dom/NaiveASTFlattener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/java.g" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/java.g" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jdtCompilerAdapter.jar" beforeDir="false" afterPath="$PROJECT_DIR$/jdtCompilerAdapter.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.eclipse.jdt.core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/org.eclipse.jdt.core.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +58,13 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -46,7 +90,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../eclips_workspace_cpat_new_copy_2/jdt-master/git/eclipse.jdt.core/org.eclipse.jdt.core/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dom/org/eclipse/jdt" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -56,9 +100,27 @@
     <property name="settings.editor.selected.configurable" value="inlay.hints" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dom/org/eclipse/jdt" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/grammar" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -77,6 +139,18 @@
       <workItem from="1611875005390" duration="482000" />
       <workItem from="1611876536176" duration="3282000" />
       <workItem from="1611959179837" duration="2742000" />
+      <workItem from="1612084374432" duration="610000" />
+      <workItem from="1612316672051" duration="2143000" />
+      <workItem from="1612489701679" duration="1118000" />
+      <workItem from="1612503035882" duration="4679000" />
+      <workItem from="1612511869756" duration="790000" />
+      <workItem from="1613768356387" duration="443000" />
+      <workItem from="1614669855710" duration="1454000" />
+      <workItem from="1614978113968" duration="437000" />
+      <workItem from="1614978634940" duration="1286000" />
+      <workItem from="1615273056508" duration="17000" />
+      <workItem from="1615365300497" duration="1390000" />
+      <workItem from="1615698030358" duration="12248000" />
     </task>
     <servers />
   </component>
@@ -92,58 +166,72 @@
       <screen x="0" y="23" width="1920" height="996" />
     </state>
     <state x="923" y="264" width="829" height="693" key="FileChooserDialogImpl/0.23.1920.996/-1680.23.1680.1027@0.23.1920.996" timestamp="1610489360981" />
-    <state width="1573" height="203" key="GridCell.Tab.0.bottom" timestamp="1612084267085">
-      <screen x="0" y="23" width="1920" height="996" />
+    <state width="1822" height="226" key="GridCell.Tab.0.bottom" timestamp="1615803841288">
+      <screen x="0" y="23" width="1920" height="1008" />
     </state>
     <state width="1573" height="189" key="GridCell.Tab.0.bottom/0.23.1680.974@0.23.1680.974" timestamp="1611880719829" />
     <state width="1573" height="189" key="GridCell.Tab.0.bottom/0.23.1680.976@0.23.1680.976" timestamp="1611889786127" />
-    <state width="1573" height="260" key="GridCell.Tab.0.bottom/0.23.1920.1001/-1680.23.1680.1027@0.23.1920.1001" timestamp="1610654356741" />
+    <state width="1822" height="206" key="GridCell.Tab.0.bottom/0.23.1920.1001/-1680.23.1680.1027@0.23.1920.1001" timestamp="1612505388759" />
     <state width="1573" height="289" key="GridCell.Tab.0.bottom/0.23.1920.1002/-1680.23.1680.1027@0.23.1920.1002" timestamp="1611568744449" />
+    <state width="1822" height="226" key="GridCell.Tab.0.bottom/0.23.1920.1008/-1680.23.1680.1027@0.23.1920.1008" timestamp="1615803841288" />
     <state width="1573" height="193" key="GridCell.Tab.0.bottom/0.23.1920.991/-1680.23.1680.1027@0.23.1920.991" timestamp="1611651883657" />
+    <state width="1822" height="207" key="GridCell.Tab.0.bottom/0.23.1920.992/-1680.23.1680.1027@0.23.1920.992" timestamp="1612347315670" />
     <state width="1573" height="260" key="GridCell.Tab.0.bottom/0.23.1920.994/-1680.23.1680.1027@-1680.23.1680.1027" timestamp="1610488249488" />
     <state width="1573" height="203" key="GridCell.Tab.0.bottom/0.23.1920.994/-1680.23.1680.1027@0.23.1920.994" timestamp="1611969652081" />
     <state width="1573" height="260" key="GridCell.Tab.0.bottom/0.23.1920.995/-1680.23.1680.1027@0.23.1920.995" timestamp="1610610178286" />
-    <state width="1573" height="203" key="GridCell.Tab.0.bottom/0.23.1920.996/-1680.23.1680.1027@0.23.1920.996" timestamp="1612084267085" />
-    <state width="1573" height="203" key="GridCell.Tab.0.center" timestamp="1612084267084">
-      <screen x="0" y="23" width="1920" height="996" />
+    <state width="1573" height="203" key="GridCell.Tab.0.bottom/0.23.1920.996/-1680.23.1680.1027@0.23.1920.996" timestamp="1612085535649" />
+    <state width="1822" height="336" key="GridCell.Tab.0.bottom/0.23.1920.997/-1680.23.1680.1027@0.23.1920.997" timestamp="1612512666446" />
+    <state width="1822" height="226" key="GridCell.Tab.0.center" timestamp="1615803841287">
+      <screen x="0" y="23" width="1920" height="1008" />
     </state>
     <state width="1573" height="189" key="GridCell.Tab.0.center/0.23.1680.974@0.23.1680.974" timestamp="1611880719828" />
     <state width="1573" height="189" key="GridCell.Tab.0.center/0.23.1680.976@0.23.1680.976" timestamp="1611889786126" />
-    <state width="1573" height="260" key="GridCell.Tab.0.center/0.23.1920.1001/-1680.23.1680.1027@0.23.1920.1001" timestamp="1610654356740" />
+    <state width="1822" height="206" key="GridCell.Tab.0.center/0.23.1920.1001/-1680.23.1680.1027@0.23.1920.1001" timestamp="1612505388758" />
     <state width="1573" height="289" key="GridCell.Tab.0.center/0.23.1920.1002/-1680.23.1680.1027@0.23.1920.1002" timestamp="1611568744448" />
+    <state width="1822" height="226" key="GridCell.Tab.0.center/0.23.1920.1008/-1680.23.1680.1027@0.23.1920.1008" timestamp="1615803841287" />
     <state width="1573" height="193" key="GridCell.Tab.0.center/0.23.1920.991/-1680.23.1680.1027@0.23.1920.991" timestamp="1611651883657" />
+    <state width="1822" height="207" key="GridCell.Tab.0.center/0.23.1920.992/-1680.23.1680.1027@0.23.1920.992" timestamp="1612347315670" />
     <state width="1573" height="260" key="GridCell.Tab.0.center/0.23.1920.994/-1680.23.1680.1027@-1680.23.1680.1027" timestamp="1610488249488" />
     <state width="1573" height="203" key="GridCell.Tab.0.center/0.23.1920.994/-1680.23.1680.1027@0.23.1920.994" timestamp="1611969652080" />
     <state width="1573" height="260" key="GridCell.Tab.0.center/0.23.1920.995/-1680.23.1680.1027@0.23.1920.995" timestamp="1610610178286" />
-    <state width="1573" height="203" key="GridCell.Tab.0.center/0.23.1920.996/-1680.23.1680.1027@0.23.1920.996" timestamp="1612084267084" />
-    <state width="1573" height="203" key="GridCell.Tab.0.left" timestamp="1612084267083">
-      <screen x="0" y="23" width="1920" height="996" />
+    <state width="1573" height="203" key="GridCell.Tab.0.center/0.23.1920.996/-1680.23.1680.1027@0.23.1920.996" timestamp="1612085535648" />
+    <state width="1822" height="336" key="GridCell.Tab.0.center/0.23.1920.997/-1680.23.1680.1027@0.23.1920.997" timestamp="1612512666445" />
+    <state width="1822" height="226" key="GridCell.Tab.0.left" timestamp="1615803841287">
+      <screen x="0" y="23" width="1920" height="1008" />
     </state>
     <state width="1573" height="189" key="GridCell.Tab.0.left/0.23.1680.974@0.23.1680.974" timestamp="1611880719828" />
     <state width="1573" height="189" key="GridCell.Tab.0.left/0.23.1680.976@0.23.1680.976" timestamp="1611889786126" />
-    <state width="1573" height="260" key="GridCell.Tab.0.left/0.23.1920.1001/-1680.23.1680.1027@0.23.1920.1001" timestamp="1610654356739" />
+    <state width="1822" height="206" key="GridCell.Tab.0.left/0.23.1920.1001/-1680.23.1680.1027@0.23.1920.1001" timestamp="1612505388758" />
     <state width="1573" height="289" key="GridCell.Tab.0.left/0.23.1920.1002/-1680.23.1680.1027@0.23.1920.1002" timestamp="1611568744448" />
+    <state width="1822" height="226" key="GridCell.Tab.0.left/0.23.1920.1008/-1680.23.1680.1027@0.23.1920.1008" timestamp="1615803841287" />
     <state width="1573" height="193" key="GridCell.Tab.0.left/0.23.1920.991/-1680.23.1680.1027@0.23.1920.991" timestamp="1611651883656" />
+    <state width="1822" height="207" key="GridCell.Tab.0.left/0.23.1920.992/-1680.23.1680.1027@0.23.1920.992" timestamp="1612347315669" />
     <state width="1573" height="260" key="GridCell.Tab.0.left/0.23.1920.994/-1680.23.1680.1027@-1680.23.1680.1027" timestamp="1610488249487" />
     <state width="1573" height="203" key="GridCell.Tab.0.left/0.23.1920.994/-1680.23.1680.1027@0.23.1920.994" timestamp="1611969652080" />
     <state width="1573" height="260" key="GridCell.Tab.0.left/0.23.1920.995/-1680.23.1680.1027@0.23.1920.995" timestamp="1610610178285" />
-    <state width="1573" height="203" key="GridCell.Tab.0.left/0.23.1920.996/-1680.23.1680.1027@0.23.1920.996" timestamp="1612084267083" />
-    <state width="1573" height="203" key="GridCell.Tab.0.right" timestamp="1612084267084">
-      <screen x="0" y="23" width="1920" height="996" />
+    <state width="1573" height="203" key="GridCell.Tab.0.left/0.23.1920.996/-1680.23.1680.1027@0.23.1920.996" timestamp="1612085535648" />
+    <state width="1822" height="336" key="GridCell.Tab.0.left/0.23.1920.997/-1680.23.1680.1027@0.23.1920.997" timestamp="1612512666445" />
+    <state width="1822" height="226" key="GridCell.Tab.0.right" timestamp="1615803841288">
+      <screen x="0" y="23" width="1920" height="1008" />
     </state>
     <state width="1573" height="189" key="GridCell.Tab.0.right/0.23.1680.974@0.23.1680.974" timestamp="1611880719828" />
     <state width="1573" height="189" key="GridCell.Tab.0.right/0.23.1680.976@0.23.1680.976" timestamp="1611889786126" />
-    <state width="1573" height="260" key="GridCell.Tab.0.right/0.23.1920.1001/-1680.23.1680.1027@0.23.1920.1001" timestamp="1610654356740" />
+    <state width="1822" height="206" key="GridCell.Tab.0.right/0.23.1920.1001/-1680.23.1680.1027@0.23.1920.1001" timestamp="1612505388759" />
     <state width="1573" height="289" key="GridCell.Tab.0.right/0.23.1920.1002/-1680.23.1680.1027@0.23.1920.1002" timestamp="1611568744448" />
+    <state width="1822" height="226" key="GridCell.Tab.0.right/0.23.1920.1008/-1680.23.1680.1027@0.23.1920.1008" timestamp="1615803841288" />
     <state width="1573" height="193" key="GridCell.Tab.0.right/0.23.1920.991/-1680.23.1680.1027@0.23.1920.991" timestamp="1611651883657" />
+    <state width="1822" height="207" key="GridCell.Tab.0.right/0.23.1920.992/-1680.23.1680.1027@0.23.1920.992" timestamp="1612347315670" />
     <state width="1573" height="260" key="GridCell.Tab.0.right/0.23.1920.994/-1680.23.1680.1027@-1680.23.1680.1027" timestamp="1610488249488" />
     <state width="1573" height="203" key="GridCell.Tab.0.right/0.23.1920.994/-1680.23.1680.1027@0.23.1920.994" timestamp="1611969652081" />
     <state width="1573" height="260" key="GridCell.Tab.0.right/0.23.1920.995/-1680.23.1680.1027@0.23.1920.995" timestamp="1610610178286" />
-    <state width="1573" height="203" key="GridCell.Tab.0.right/0.23.1920.996/-1680.23.1680.1027@0.23.1920.996" timestamp="1612084267084" />
-    <state x="413" y="472" width="788" height="552" key="find.popup" timestamp="1611526086163">
-      <screen x="0" y="23" width="1920" height="1001" />
+    <state width="1573" height="203" key="GridCell.Tab.0.right/0.23.1920.996/-1680.23.1680.1027@0.23.1920.996" timestamp="1612085535649" />
+    <state width="1822" height="336" key="GridCell.Tab.0.right/0.23.1920.997/-1680.23.1680.1027@0.23.1920.997" timestamp="1612512666446" />
+    <state x="413" y="107" width="853" height="924" key="find.popup" timestamp="1615699562225">
+      <screen x="0" y="23" width="1920" height="1008" />
     </state>
     <state x="413" y="472" width="788" height="552" key="find.popup/0.23.1920.1001/-1680.23.1680.1027@0.23.1920.1001" timestamp="1611526086163" />
+    <state x="413" y="107" width="853" height="924" key="find.popup/0.23.1920.1008/-1680.23.1680.1027@0.23.1920.1008" timestamp="1615699562225" />
+    <state x="413" y="467" width="853" height="548" key="find.popup/0.23.1920.992/-1680.23.1680.1027@0.23.1920.992" timestamp="1612316820397" />
     <state x="413" y="470" width="788" height="548" key="find.popup/0.23.1920.995/-1680.23.1680.1027@0.23.1920.995" timestamp="1610515249474" />
     <state x="413" y="471" width="598" height="548" key="find.popup/0.23.1920.996/-1680.23.1680.1027@0.23.1920.996" timestamp="1610489528356" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1611877461774">
@@ -156,7 +244,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/dom/org/eclipse/jdt/core/dom/ASTConverter.java</url>
-          <line>4055</line>
+          <line>4065</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

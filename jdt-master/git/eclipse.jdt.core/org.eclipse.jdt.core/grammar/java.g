@@ -1614,7 +1614,7 @@ TryStatement ::= 'try' TryBlock Catches 'else' Block
 /.$putCase consumeStatementTryWithElse(false, false); $break ./
 TryStatement ::= 'try' TryBlock Catchesopt Finally
 /.$putCase consumeStatementTry(true, false); $break ./
-TryStatement ::= 'try' TryBlock Catchesopt Finally 'else' Block
+TryStatement ::= 'try' TryBlock Catchesopt  Finally 'else' Block
 /.$putCase consumeStatementTryWithElse(true, false); $break ./
 /:$readableName TryStatement:/
 
@@ -1624,7 +1624,7 @@ TryStatementWithResources ::= 'try' ResourceSpecification TryBlock Catchesopt 'e
 /.$putCase consumeStatementTryWithElse(false, true); $break ./
 TryStatementWithResources ::= 'try' ResourceSpecification TryBlock Catchesopt Finally
 /.$putCase consumeStatementTry(true, true); $break ./
-TryStatementWithResources ::= 'try' ResourceSpecification TryBlock Catchesopt Finally 'else' Block
+TryStatementWithResources ::= 'try' ResourceSpecification TryBlock Catchesopt  Finally 'else' Block
 /.$putCase consumeStatementTryWithElse(true, true); $break ./
 /:$readableName TryStatementWithResources:/
 /:$compliance 1.7:/

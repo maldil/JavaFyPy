@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -17,10 +17,41 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.mal.python:JPyParser:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.antlr:antlr4-runtime:4.8-1" level="project" />
+    <orderEntry type="library" name="Maven: org.antlr:antlr4:4.8-1" level="project" />
+    <orderEntry type="library" name="Maven: org.abego.treelayout:org.abego.treelayout.core:1.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish:javax.json:1.0.4" level="project" />
+    <orderEntry type="library" name="Maven: org.antlr:antlr-runtime:3.5.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.20" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-enxio:0.28" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-unixsocket:0.33" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:20.0" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-ffi:2.1.16" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jffi:1.2.23" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.github.jnr:jffi:native:1.2.23" level="project" />
+    <orderEntry type="library" name="Maven: org.ow2.asm:asm:7.1" level="project" />
+    <orderEntry type="library" name="Maven: org.ow2.asm:asm-commons:7.1" level="project" />
+    <orderEntry type="library" name="Maven: org.ow2.asm:asm-analysis:7.1" level="project" />
+    <orderEntry type="library" name="Maven: org.ow2.asm:asm-tree:7.1" level="project" />
+    <orderEntry type="library" name="Maven: org.ow2.asm:asm-util:7.1" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-a64asm:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-x86asm:1.0.2" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-constants:0.9.15" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-posix:3.0.58" level="project" />
+    <orderEntry type="library" name="Maven: jline:jline2:2.10.1" level="project" />
+    <orderEntry type="library" name="Maven: com.carrotsearch:hppc:0.3.4" level="project" />
+    <orderEntry type="library" name="Maven: com.ibm.icu:icu4j:4.6.1" level="project" />
+    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.5" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.json-simple:json-simple:1.1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.6" level="project" />
+    <orderEntry type="library" name="Maven: org.antlr:antlr:3.5.2" level="project" />
+    <orderEntry type="library" name="Maven: org.antlr:ST4:4.0.8" level="project" />
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.osgi:3.16.200.v20201209-1827">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.osgi:3.16.200.v20210226-1447">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.osgi/3.16.200.v20201209-1827/org.eclipse.osgi-3.16.200.v20201209-1827.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.osgi/3.16.200.v20210226-1447/org.eclipse.osgi-3.16.200.v20210226-1447.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -279,27 +310,9 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.equinox.common:3.14.0.v20201102-2053">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.equinox.common:3.14.100.v20210212-1143">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.equinox.common/3.14.0.v20201102-2053/org.eclipse.equinox.common-3.14.0.v20201102-2053.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.equinox.preferences:3.8.100.v20201102-2042">
-        <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.equinox.preferences/3.8.100.v20201102-2042/org.eclipse.equinox.preferences-3.8.100.v20201102-2042.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.equinox.registry:3.10.0.v20201107-1818">
-        <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.equinox.registry/3.10.0.v20201107-1818/org.eclipse.equinox.registry-3.10.0.v20201107-1818.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.equinox.common/3.14.100.v20210212-1143/org.eclipse.equinox.common-3.14.100.v20210212-1143.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -315,9 +328,27 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.core.expressions:3.7.100.v20210111-0815">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.equinox.preferences:3.8.200.v20210212-1143">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.core.expressions/3.7.100.v20210111-0815/org.eclipse.core.expressions-3.7.100.v20210111-0815.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.equinox.preferences/3.8.200.v20210212-1143/org.eclipse.equinox.preferences-3.8.200.v20210212-1143.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.equinox.registry:3.10.100.v20210212-1143">
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.equinox.registry/3.10.100.v20210212-1143/org.eclipse.equinox.registry-3.10.100.v20210212-1143.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.core.expressions:3.7.100.v20210203-1000">
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.core.expressions/3.7.100.v20210203-1000/org.eclipse.core.expressions-3.7.100.v20210203-1000.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -342,27 +373,27 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.core.resources:3.13.900.v20201105-1507">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.core.resources:3.14.0.v20210215-0934">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.core.resources/3.13.900.v20201105-1507/org.eclipse.core.resources-3.13.900.v20201105-1507.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.core.resources/3.14.0.v20210215-0934/org.eclipse.core.resources-3.14.0.v20210215-0934.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.equinox.app:1.5.0.v20200717-0620">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.equinox.app:1.5.100.v20210212-1143">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.equinox.app/1.5.0.v20200717-0620/org.eclipse.equinox.app-1.5.0.v20200717-0620.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.equinox.app/1.5.100.v20210212-1143/org.eclipse.equinox.app-1.5.100.v20210212-1143.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Maven: p2.eclipse-plugin:org.eclipse.text:3.10.400.v20200925-0557">
+      <library name="Maven: p2.eclipse-plugin:org.eclipse.text:3.11.0.v20210203-1022">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.text/3.10.400.v20200925-0557/org.eclipse.text-3.10.400.v20200925-0557.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/p2/osgi/bundle/org.eclipse.text/3.11.0.v20210203-1022/org.eclipse.text-3.11.0.v20210203-1022.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

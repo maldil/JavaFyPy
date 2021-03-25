@@ -1251,6 +1251,12 @@ public abstract class ASTNode {
 				return PySetComprehension.class;
 			case ENHANCED_FOR_STATEMENT_WITH_ELSE:
 				return EnhancedForStatementWithElse.class;
+			case PY_NOT_IN_EXPRESSION:
+				return PyNotInExpression.class;
+			case PY_YIELD_RETURN_STATEMENT:
+				return PyYieldReturnStatement.class;
+			case PY_COMPARATOR:
+				return PyComparator.class;
 		}
 		throw new IllegalArgumentException();
 	}
@@ -3214,7 +3220,7 @@ public abstract class ASTNode {
 	 * @see #getLength()
 	 * @see ASTParser
 	 */
-	public final void setSourceRange(int startPosition, int lelengthngth) {
+	public final void setSourceRange(int startPosition, int length) {
 		if (startPosition >= 0 && length < 0) {
 			throw new IllegalArgumentException();
 		}
