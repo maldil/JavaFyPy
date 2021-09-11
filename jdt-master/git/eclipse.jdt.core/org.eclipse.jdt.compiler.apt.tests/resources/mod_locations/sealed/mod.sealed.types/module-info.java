@@ -1,3 +1,0 @@
-module mod.sealed.types {
-}
-

@@ -1,3 +1,0 @@
-package def;
-class A {
-}

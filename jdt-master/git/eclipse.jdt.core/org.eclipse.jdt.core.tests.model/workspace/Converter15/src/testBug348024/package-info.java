@@ -1,1 +1,0 @@
-package testBug348024;

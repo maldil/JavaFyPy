@@ -1,5 +1,0 @@
-class java/util/function/Supplier
-
-get
- ()TT;
- ()TT;
