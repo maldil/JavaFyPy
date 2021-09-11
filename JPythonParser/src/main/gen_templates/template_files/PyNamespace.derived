@@ -1,4 +1,0 @@
-base_class: PyNamespace
-want_dict: true
-ctr:
-incl: object

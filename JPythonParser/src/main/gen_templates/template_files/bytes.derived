@@ -1,5 +1,0 @@
-base_class: PyBytes
-want_dict: true
-ctr: String v
-incl: object
-no_toString: true
