@@ -1,0 +1,32 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: ev8hgOybz5BNbWBmWsJTgfhmsTq0C
+ IlSOcRzOwZHxwE=
+SHA-256-Digest-Manifest: lFuYy4iL+e6XmNnKDsnMKNJL2sNzIqp+05eX1sCc5SY=
+Created-By: 1.8.0_51 (Oracle Corporation)
+
+Name: about.html
+SHA-256-Digest: LNvrdDM2l+CrB1BKqCWkfL2UJ9lDaN2NMqLB7vmswiY=
+
+Name: about_files/ECLIPSE_PUBLIC_LICENSE_V2.0.html
+SHA-256-Digest: 2NchQcPOZxU5BC/3qFHZUTiUrwa/RGx3ogpPv8uyEZQ=
+
+Name: org/slf4j/impl/StaticMDCBinder.class
+SHA-256-Digest: 4KpS0wMIjgQRy+S24FPL/gYBon+yymD9X54hHfdUnSE=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/ch.qos.logback.slf4j/po
+ m.xml
+SHA-256-Digest: maU1WUkQ4B11xUBahQezQMugnmLTOIf1KPAFMpgFWx8=
+
+Name: org/slf4j/impl/StaticMarkerBinder.class
+SHA-256-Digest: walnqLbwZoGZZx2iHGqIn+egxPqCIFO7pt0GMIAoCvA=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/ch.qos.logback.slf4j/po
+ m.properties
+SHA-256-Digest: 8OmwdwazQW3rxMVu8/tJfaB9ZKz8a9G0uuPD/1oNcjA=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: n0UMA5Pu+D8fWTAc/e2a+fTcx9MLO3hFYizd4IB0N3M=
+
+Name: org/slf4j/impl/StaticLoggerBinder.class
+SHA-256-Digest: xV32A5TahLg0ip8P/R3bcxkNZ5NeEq87CJ9RvNmfBAM=
+

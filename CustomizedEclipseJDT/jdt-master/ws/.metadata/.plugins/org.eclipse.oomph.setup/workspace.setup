@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setup:Workspace
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
+    name="workspace">
+  <setupTask
+      xsi:type="setup:CompoundTask"
+      name="Eclipse Projects">
+    <restriction
+        xsi:type="setup:ProjectCatalog"
+        href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']"/>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="JDT">
+      <restriction
+          xsi:type="setup:Project"
+          href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='jdt']"/>
+      <setupTask
+          xsi:type="setup:CompoundTask"
+          name="Core">
+        <restriction
+            xsi:type="setup:Project"
+            href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='jdt']/@projects[name='core']"/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            type="FOLDER"
+            name="git.clone.jdt.core.location"
+            value="/Users/malinda/Documents/Research_Topic_2/eclipse_2020_10_3_new/jdt-master/git/eclipse.jdt.core"
+            label="JDT Core Git clone location">
+          <description>The absolute folder location where the JDT Core Git clone is located</description>
+        </setupTask>
+        <setupTask
+            xsi:type="setup:CompoundTask"
+            name="Test Binaries">
+          <restriction
+              xsi:type="setup:Project"
+              href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='jdt']/@projects[name='core']/@projects[name='testbinaries']"/>
+          <setupTask
+              xsi:type="setup:VariableTask"
+              type="FOLDER"
+              name="git.clone.jdt.binaries.location"
+              value="/Users/malinda/Documents/Research_Topic_2/eclipse_2020_10_3_new/jdt-master/git/eclipse.jdt.core.binaries"
+              label="JDT Core Tests Git clone location">
+            <description>The absolute folder location where the JDT Core Tests Git clone is located</description>
+          </setupTask>
+        </setupTask>
+      </setupTask>
+    </setupTask>
+  </setupTask>
+  <stream href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='jdt']/@projects[name='core']/@streams[name='master']"/>
+  <stream href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='jdt']/@projects[name='core']/@projects[name='tests']/@streams[name='master']"/>
+  <stream href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']/@projects[name='jdt']/@projects[name='core']/@projects[name='testbinaries']/@streams[name='master']"/>
+</setup:Workspace>
