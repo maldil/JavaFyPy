@@ -1,0 +1,4 @@
+base_class: PyZipImporter
+want_dict: true
+ctr:
+incl: object

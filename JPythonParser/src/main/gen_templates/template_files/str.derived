@@ -1,0 +1,5 @@
+base_class: PyUnicode
+want_dict: true
+ctr: PyObject string
+incl: object
+no_toString: true

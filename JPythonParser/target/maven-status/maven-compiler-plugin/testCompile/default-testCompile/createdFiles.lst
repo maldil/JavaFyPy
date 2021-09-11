@@ -1,0 +1,6 @@
+org/antlr/Python3BaseListenerTest.class
+org/antlr/MyPython3Visitor.class
+TestVisitor.class
+TestParser$AnalyzerTreeAdaptor.class
+TestParser.class
+TestParser$AnalyzingParser.class
