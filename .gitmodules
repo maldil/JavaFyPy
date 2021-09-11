@@ -1,0 +1,3 @@
+[submodule "JPythonParser"]
+	path = JPythonParser
+	url = https://github.com/maldil/JPythonParser
