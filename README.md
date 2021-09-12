@@ -2,7 +2,7 @@
 
 Over the years, researchers have developed a solid toolset to analyse Java software systems. JavaFyPy enables adapting these tools to Python.
 
-![](https://github.com/maldil/JavaFyPy/blob/master/ICSE2022.gif)
+![](https://github.com/maldil/JavaFyPy/blob/master/ICSE2022.png)
 
 JavaFyPy creates a Python AST that the Java AST mining tools can process. The above diagram shows the steps of AST transformation performed by JavaFyPy.
 
