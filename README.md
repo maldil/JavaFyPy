@@ -15,6 +15,8 @@ mod ast = PyASTParser.parsePython(content);
 ```
 Then the class `PythonASTUtil:createPyCompilationUnit` in SyntaxtTranformer transforms the syntax and augments the AST with type information using the `TypeAugmentor`.
 
+As the next step, migrate the existing Java parser to our eclipse JDT parser provided in [CustomizedEclipseJDT](https://github.com/maldil/JavaFyPy/tree/master/CustomizedEclipseJDT)
+
 You can use the type information in [https://github.com/mlcodepatterns/PythonTypeInformation](https://github.com/mlcodepatterns/PythonTypeInformation) for type augmentation. 
 
 
