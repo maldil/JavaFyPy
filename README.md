@@ -8,16 +8,18 @@ JavaFyPy creates a Python AST that the Java AST mining tools can process. The ab
 
 This repositoy presents all the above tools
 
+You can follow the following steps to adapt Java AST mining tools to Python.
 
-JPythonParser is a Python parser developed in Java. You can use the class PyASTParser to create the initial AST of the Python code `content` as below.
-```
-mod ast = PyASTParser.parsePython(content);
-```
-Then the class `PythonASTUtil:createPyCompilationUnit` in SyntaxtTranformer transforms the syntax and augments the AST with type information using the `TypeAugmentor`.
 
-As the next step, migrate the existing Java parser to our eclipse JDT parser provided in [CustomizedEclipseJDT](https://github.com/maldil/JavaFyPy/tree/master/CustomizedEclipseJDT)
+1. JPythonParser is a Python parser developed in Java. You can use the class PyASTParser to create the initial AST of the Python code `content` as below.
+    ```
+    mod ast = PyASTParser.parsePython(content);
+    ```
+2. Then the class `PythonASTUtil:createPyCompilationUnit` in SyntaxtTranformer transforms the syntax and augments the AST with type information using the `TypeAugmentor`. You can use the type information in [https://github.com/mlcodepatterns/PythonTypeInformation](https://github.com/mlcodepatterns/PythonTypeInformation) for type augmentation. 
 
-You can use the type information in [https://github.com/mlcodepatterns/PythonTypeInformation](https://github.com/mlcodepatterns/PythonTypeInformation) for type augmentation. 
+3. As the next step, migrate the existing Java parser to our eclipse JDT parser provided in [CustomizedEclipseJDT](https://github.com/maldil/JavaFyPy/tree/master/CustomizedEclipseJDT)
+
+
 
 
 Using JavaFyPy, we adapted Java [RefactoringMiner](https://github.com/tsantalis/RefactoringMiner) and [CPATMiner](https://github.com/nguyenhoan/CPatMiner) to Python. We provide two example usages below.
