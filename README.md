@@ -17,7 +17,7 @@ You can follow the following steps to adapt Java AST mining tools to Python.
     ```
 2. Then the class `PythonASTUtil:createPyCompilationUnit` in SyntaxtTranformer transforms the syntax and augments the AST with type information using the `TypeAugmentor`. You can use the type information in [https://github.com/mlcodepatterns/PythonTypeInformation](https://github.com/mlcodepatterns/PythonTypeInformation) for type augmentation. 
 
-3. As the next step, You can migrate the existing Java parser to our eclipse JDT parser provided in [CustomizedEclipseJDT](https://github.com/maldil/JavaFyPy/tree/master/CustomizedEclipseJDT)
+3. As the next step, migrate the existing Java parser of your tool to our eclipse JDT parser provided in [CustomizedEclipseJDT](https://github.com/maldil/JavaFyPy/tree/master/CustomizedEclipseJDT)
 
 
 
